@@ -1,0 +1,119 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { CATEGORIES } from "../config/weights";
+---
+
+<Layout title="Methodology">
+  <h1>Methodology</h1>
+
+  <p>
+    This ranking combines four categories into a single composite score (0-100) per program. Every
+    weight below lives in one config file in the source code
+    (<code>src/config/weights.ts</code>), so it can be retuned without touching any scoring logic —
+    and this page is generated from that same file, so it never drifts out of sync with what was
+    actually computed.
+  </p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Category</th>
+        <th>Weight</th>
+        <th>Metrics (weight within category)</th>
+      </tr>
+    </thead>
+    <tbody>
+      {
+        CATEGORIES.map((c) => (
+          <tr>
+            <td>{c.label}</td>
+            <td>{Math.round(c.weight * 100)}%</td>
+            <td>
+              <ul>
+                {c.metrics.map((m) => (
+                  <li>
+                    {m.path} — {Math.round(m.weight * 100)}%
+                    {m.direction === "lowerIsBetter" ? " (lower is better)" : ""}
+                  </li>
+                ))}
+              </ul>
+            </td>
+          </tr>
+        ))
+      }
+    </tbody>
+  </table>
+
+  <h2>Why this split</h2>
+  <p>
+    <strong>Career outcomes &amp; industry reputation (35%)</strong> is the largest single bucket,
+    echoing how US News weights undergraduate outcomes most heavily in its own methodology: for a
+    professional degree like hospitality administration, what happens to graduates is the most
+    direct signal of program quality.
+  </p>
+  <p>
+    <strong>Academic research &amp; faculty quality (30%)</strong> mirrors US News's faculty-resources
+    and peer-assessment buckets, and QS's academic-reputation and citations-per-faculty categories —
+    but weighted lower than QS's combined ~60% research/reputation emphasis, since hospitality is a
+    vocational, apprenticeship-driven field rather than a pure research discipline.
+  </p>
+  <p>
+    <strong>Admissions selectivity (20%)</strong> is deliberately modest, echoing US News's own recent
+    de-emphasis of test-score-driven selectivity in its undergraduate methodology.
+  </p>
+  <p>
+    <strong>Internship / placement pipeline (15%)</strong> has no direct analog in US News or QS. It is
+    included because hospitality education is built around supervised work experience, and
+    hospitality-specific rankings (e.g. CEOWORLD's) treat placement-pipeline strength as a
+    first-order signal distinct from the outcomes it eventually produces.
+  </p>
+
+  <h2>Normalization</h2>
+  <p>
+    Every raw metric (dollars, percentages, ratios, counts) is converted to a 0-100 scale via
+    min-max normalization <em>against the current set of ranked programs</em> — so scores are always
+    relative to the active field, not fixed thresholds, and are recomputed every time the pipeline
+    runs. Metrics where lower is better (like acceptance rate) are inverted before averaging.
+  </p>
+  <p>
+    When a program is missing a metric, that metric is excluded and the remaining metrics in its
+    category are re-weighted proportionally — a program is never penalized to a worst-possible score
+    just because one data point hasn't been sourced yet. Instead, each program's profile page and the
+    rankings table show a <strong>data completeness</strong> percentage, so readers can see how much
+    of a program's score rests on verified data versus how much is still outstanding.
+  </p>
+
+  <h2>How this compares to other hospitality rankings</h2>
+  <p>
+    CEOWORLD Magazine publishes a well-known hospitality &amp; hotel management ranking, but its
+    methodology is reputation/survey-weighted and does not disclose per-metric, per-program sourcing.
+    This project's explicit goal is the opposite: every number behind every score is individually
+    cited and dated, visible on each program's profile page and aggregated on the <a href="/sources/">sources page</a>. Where a reliable public source doesn't yet exist for a
+    metric — recruiter reputation is the clearest example — that gap is stated outright rather than
+    filled with an estimate.
+  </p>
+</Layout>
+
+<style>
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+  }
+  th,
+  td {
+    text-align: left;
+    vertical-align: top;
+    padding: 0.6rem 0.75rem;
+    border-bottom: 1px solid var(--border);
+  }
+  ul {
+    margin: 0;
+    padding-left: 1.1rem;
+  }
+  code {
+    background: var(--accent-bg);
+    padding: 0.1rem 0.3rem;
+    border-radius: 3px;
+  }
+</style>

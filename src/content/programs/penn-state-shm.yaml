@@ -1,0 +1,85 @@
+slug: penn-state-shm
+name: B.S. in Hospitality Management
+institution: Pennsylvania State University — School of Hospitality Management
+country: United States
+region: US
+website: https://hhd.psu.edu/shm/undergraduate/major-hospitality-management
+degreeName: B.S. Hospitality Management
+
+outcomes:
+  startingSalary:
+    unit: USD/year
+    confidence: low
+    notes: >
+      No precise average found for v1. The School of Hospitality Management's Industry and Careers
+      page states "three-quarters of recent graduates employed full-time earned starting salaries
+      greater than $50k," a threshold rather than an average, so it is not recorded as a value here
+      pending a primary outcomes report with an exact figure.
+  employmentRate:
+    value: 95
+    unit: "%"
+    source:
+      label: "Industry and Careers — School of Hospitality Management"
+      url: https://hhd.psu.edu/shm/industry-and-careers
+      publisher: Penn State School of Hospitality Management
+      asOfDate: "2025-01-01"
+    lastVerified: "2026-10-05"
+    confidence: medium
+    notes: Page cites "90-95 percent" employment placement by the SHM Career Center; midpoint-high value used, no specific graduating-class year disclosed.
+  recruiterReputationScore:
+    unit: "0-100"
+    confidence: low
+    notes: Not yet sourced for v1.
+  internshipPlacementRate:
+    unit: "%"
+    confidence: low
+    notes: SHM requires a supervised work experience for graduation, but no disclosed completion-rate figure was found for v1.
+
+admissions:
+  acceptanceRate:
+    value: 55
+    unit: "%"
+    source:
+      label: "Penn State University Park Common Data Set, 2024-25 cycle"
+      url: https://www.collegetransitions.com/blog/penn-state-university-park-inside-the-numbers/
+      publisher: College Transitions (secondary aggregator of Penn State CDS)
+      asOfDate: "2024-09-01"
+    lastVerified: "2026-10-05"
+    confidence: medium
+    notes: University Park campus-wide rate; Penn State does not publish a hospitality-management-specific acceptance rate since admission is to the university, not directly to SHM.
+  satActEquivalent:
+    value: 1345
+    unit: SAT-equivalent composite
+    source:
+      label: "Penn State University Park Common Data Set, 2024-25 cycle"
+      url: https://www.collegetransitions.com/blog/penn-state-university-park-inside-the-numbers/
+      publisher: College Transitions (secondary aggregator of Penn State CDS)
+      asOfDate: "2024-09-01"
+    lastVerified: "2026-10-05"
+    confidence: low
+    notes: Midpoint of the university-wide SAT middle-50% range (1280-1410); university-wide, not program-specific, and Penn State remains test-optional.
+
+academicResearch:
+  facultyPubCitationIndex:
+    unit: index
+    confidence: low
+    notes: Not yet sourced for v1.
+  researchFundingUSD:
+    unit: USD/year
+    confidence: low
+    notes: Not yet sourced for v1.
+  facultyStudentRatio:
+    unit: students per faculty
+    confidence: low
+    notes: Not yet sourced for v1.
+  hasPhDProgram:
+    value: 1
+    unit: boolean (1=yes, 0=no)
+    source:
+      label: "Hospitality Management — Graduate Program"
+      url: https://hhd.psu.edu/shm/hospitality-management-graduate-program
+      publisher: Penn State School of Hospitality Management
+      asOfDate: "2025-01-01"
+    lastVerified: "2026-10-05"
+    confidence: high
+    notes: SHM's own graduate-program page confirms a PhD track within the department.

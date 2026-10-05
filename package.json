@@ -1,0 +1,29 @@
+{
+  "name": "hospitality-rankings",
+  "type": "module",
+  "version": "0.0.1",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "npm run build:rankings && astro dev",
+    "build": "npm run build:rankings && astro build",
+    "build:rankings": "tsx scripts/build-rankings.ts",
+    "preview": "astro preview",
+    "test": "vitest run",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "astro": "^7.3.5"
+  },
+  "allowScripts": {
+    "esbuild": true
+  },
+  "devDependencies": {
+    "@types/js-yaml": "^4.0.9",
+    "js-yaml": "^5.4.3",
+    "tsx": "^4.23.15",
+    "vitest": "^5.0.3",
+    "zod": "^4.6.5"
+  }
+}

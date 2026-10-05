@@ -1,0 +1,150 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import rankingsData from "../../../data/generated/rankings.json";
+import type { RankingsOutput } from "../../lib/types";
+import { getMetric } from "../../lib/metricPath";
+
+export function getStaticPaths() {
+  const data = rankingsData as RankingsOutput;
+  return data.rankings.map((r) => ({
+    params: { slug: r.program.slug },
+    props: { ranking: r },
+  }));
+}
+
+const { ranking } = Astro.props;
+const { program } = ranking;
+---
+
+<Layout title={program.name}>
+  <p><a href="/">&larr; Back to rankings</a></p>
+  <h1>{program.name}</h1>
+  <p class="institution">{program.institution} &middot; {program.country}</p>
+  <p>
+    <a href={program.website} target="_blank" rel="noopener noreferrer">{program.website}</a>
+  </p>
+
+  <div class="score-banner">
+    <div>
+      <span class="big">{ranking.rank ?? "—"}</span>
+      <span class="label">Rank</span>
+    </div>
+    <div>
+      <span class="big">{ranking.compositeScore?.toFixed(1) ?? "—"}</span>
+      <span class="label">Composite score</span>
+    </div>
+    <div>
+      <span class="big">{Math.round(ranking.dataCompleteness * 100)}%</span>
+      <span class="label">Data completeness</span>
+    </div>
+  </div>
+
+  {
+    ranking.categories.map((category) => (
+      <section>
+        <h2>
+          {category.label} — {category.score?.toFixed(1) ?? "—"}
+        </h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Metric</th>
+              <th>Value</th>
+              <th>Normalized</th>
+              <th>Confidence</th>
+              <th>Source</th>
+            </tr>
+          </thead>
+          <tbody>
+            {category.metrics.map((m) => {
+              const metric = getMetric(program, m.path);
+              return (
+                <tr>
+                  <td>{m.path}</td>
+                  <td>{m.rawValue !== null ? `${m.rawValue} ${metric?.unit ?? ""}` : "Not yet sourced"}</td>
+                  <td>{m.normalized !== null ? m.normalized.toFixed(0) : "—"}</td>
+                  <td>{metric?.confidence ?? "—"}</td>
+                  <td>
+                    {metric?.source ? (
+                      <a href={metric.source.url} target="_blank" rel="noopener noreferrer">
+                        {metric.source.label}
+                      </a>
+                    ) : (
+                      "—"
+                    )}
+                  </td>
+                </tr>
+              );
+            })}
+          </tbody>
+        </table>
+        {category.metrics.some((m) => getMetric(program, m.path)?.notes) && (
+          <ul class="notes">
+            {category.metrics
+              .filter((m) => getMetric(program, m.path)?.notes)
+              .map((m) => (
+                <li>
+                  <strong>{m.path}:</strong> {getMetric(program, m.path)?.notes}
+                </li>
+              ))}
+          </ul>
+        )}
+      </section>
+    ))
+  }
+</Layout>
+
+<style>
+  .institution {
+    color: var(--muted);
+  }
+
+  .score-banner {
+    display: flex;
+    gap: 2rem;
+    margin: 1.5rem 0 2.5rem;
+  }
+
+  .score-banner .big {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
+  .score-banner .label {
+    font-size: 0.8rem;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+  }
+
+  section {
+    margin-bottom: 2.5rem;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+  }
+
+  th,
+  td {
+    text-align: left;
+    padding: 0.5rem 0.6rem;
+    border-bottom: 1px solid var(--border);
+  }
+
+  th {
+    color: var(--muted);
+    font-size: 0.75rem;
+    text-transform: uppercase;
+  }
+
+  .notes {
+    margin-top: 0.75rem;
+    font-size: 0.85rem;
+    color: var(--muted);
+    padding-left: 1.1rem;
+  }
+</style>

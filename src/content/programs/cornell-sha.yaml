@@ -1,0 +1,88 @@
+slug: cornell-sha
+name: B.S. in Hotel Administration
+institution: Cornell University — Nolan School of Hotel Administration, SC Johnson College of Business
+country: United States
+region: US
+website: https://sha.cornell.edu/
+degreeName: B.S. Hotel Administration
+
+outcomes:
+  startingSalary:
+    value: 86034
+    unit: USD/year
+    source:
+      label: "B.S. in Hotel Administration Career Outcomes — Class of 2025"
+      url: https://business.cornell.edu/admissions/undergraduate/bs-hotel-administration/career-outcomes/
+      publisher: Cornell SC Johnson College of Business
+      asOfDate: "2025-01-01"
+    lastVerified: "2026-10-05"
+    confidence: high
+    notes: Average base salary across US- and non-US-work-authorized graduates combined; excludes the reported average bonus of $10,218.
+  employmentRate:
+    value: 91
+    unit: "%"
+    source:
+      label: "B.S. in Hotel Administration Career Outcomes — Class of 2025"
+      url: https://business.cornell.edu/admissions/undergraduate/bs-hotel-administration/career-outcomes/
+      publisher: Cornell SC Johnson College of Business
+      asOfDate: "2025-01-01"
+    lastVerified: "2026-10-05"
+    confidence: high
+    notes: 91% of the class received full-time offers and 91% accepted within 4 months of graduation; figure covers the 170 of 221 graduates who sought full-time employment.
+  recruiterReputationScore:
+    unit: "0-100"
+    confidence: low
+    notes: Not yet sourced — no disclosed recruiting-partner-breadth dataset found for v1. Left blank rather than estimated.
+  internshipPlacementRate:
+    unit: "%"
+    confidence: low
+    notes: Not yet sourced for v1.
+
+admissions:
+  acceptanceRate:
+    value: 30.1
+    unit: "%"
+    source:
+      label: "Cornell Hotel School acceptance rate (secondary aggregator)"
+      url: https://www.saveourschools-march.com/cornell-hotel-school-acceptance-rate/
+      publisher: Save Our Schools March (aggregator, not Cornell IR)
+      asOfDate: "2024-01-01"
+    lastVerified: "2026-10-05"
+    confidence: medium
+    notes: Program-specific (Class of 2024) rate from a secondary aggregator, not Cornell's own Common Data Set, which does not break out acceptance rate by college. Flagged medium confidence pending a primary-source replacement.
+  satActEquivalent:
+    value: 1520
+    unit: SAT-equivalent composite
+    source:
+      label: "Cornell University Common Data Set 2025-26"
+      url: https://irp.cornell.edu/wp-content/uploads/2026/09/Cornell-Common-Data-Set-2025-26.pdf
+      publisher: Cornell Institutional Research and Planning
+      asOfDate: "2025-09-01"
+    lastVerified: "2026-10-05"
+    confidence: low
+    notes: Midpoint of the university-wide SAT middle-50% range (1490-1550) for the entering class covered by the 2025-26 CDS; not SHA-specific, since Cornell does not publish per-college test score ranges.
+
+academicResearch:
+  facultyPubCitationIndex:
+    unit: index
+    confidence: low
+    notes: Not yet sourced for v1 — plan calls for OpenAlex API lookup by institution + hospitality-relevant concepts in a later pass.
+  researchFundingUSD:
+    unit: USD/year
+    confidence: low
+    notes: Not yet sourced for v1.
+  facultyStudentRatio:
+    unit: students per faculty
+    confidence: low
+    notes: Not yet sourced for v1.
+  hasPhDProgram:
+    value: 1
+    unit: boolean (1=yes, 0=no)
+    source:
+      label: "Field of Hotel Administration — Cornell University Graduate School"
+      url: https://www.petersons.com/graduate-schools/cornell-university-graduate-school-field-of-hotel-administration-000_10042504.aspx
+      publisher: Peterson's (secondary; Cornell Graduate School field listing)
+      asOfDate: "2025-01-01"
+    lastVerified: "2026-10-05"
+    confidence: medium
+    notes: Cornell's Graduate School lists a Field of Hotel Administration (PhD-granting); confirmed via secondary listing rather than Cornell's own graduate catalog for v1.

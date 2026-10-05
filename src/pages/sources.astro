@@ -1,0 +1,79 @@
+---
+import Layout from "../layouts/Layout.astro";
+import rankingsData from "../../data/generated/rankings.json";
+import type { RankingsOutput } from "../lib/types";
+import { CATEGORIES } from "../config/weights";
+import { getMetric } from "../lib/metricPath";
+
+const data = rankingsData as RankingsOutput;
+
+interface Citation {
+  url: string;
+  label: string;
+  publisher: string;
+  asOfDate: string;
+  programs: Set<string>;
+}
+
+const byUrl = new Map<string, Citation>();
+
+for (const r of data.rankings) {
+  for (const category of CATEGORIES) {
+    for (const m of category.metrics) {
+      const metric = getMetric(r.program, m.path);
+      if (!metric?.source) continue;
+      const existing = byUrl.get(metric.source.url);
+      if (existing) {
+        existing.programs.add(r.program.name + " — " + r.program.institution);
+      } else {
+        byUrl.set(metric.source.url, {
+          url: metric.source.url,
+          label: metric.source.label,
+          publisher: metric.source.publisher,
+          asOfDate: metric.source.asOfDate,
+          programs: new Set([r.program.name + " — " + r.program.institution]),
+        });
+      }
+    }
+  }
+}
+
+const citations = Array.from(byUrl.values()).sort((a, b) => a.label.localeCompare(b.label));
+---
+
+<Layout title="Sources">
+  <h1>Sources</h1>
+  <p>
+    Every metric behind every score is individually cited. This page aggregates the distinct sources
+    used across all ranked programs; per-metric citations also appear inline on each program's
+    profile page (linked from the <a href="/">rankings table</a>).
+  </p>
+
+  <ul class="citations">
+    {
+      citations.map((c) => (
+        <li>
+          <a href={c.url} target="_blank" rel="noopener noreferrer">{c.label}</a>
+          <div class="meta">{c.publisher} &middot; as of {c.asOfDate}</div>
+          <div class="used-by">Used for: {Array.from(c.programs).join("; ")}</div>
+        </li>
+      ))
+    }
+  </ul>
+</Layout>
+
+<style>
+  .citations {
+    list-style: none;
+    padding: 0;
+  }
+  .citations li {
+    padding: 0.9rem 0;
+    border-bottom: 1px solid var(--border);
+  }
+  .meta,
+  .used-by {
+    font-size: 0.85rem;
+    color: var(--muted);
+  }
+</style>

@@ -1,0 +1,166 @@
+---
+import Layout from "../layouts/Layout.astro";
+import rankingsData from "../../data/generated/rankings.json";
+import type { RankingsOutput } from "../lib/types";
+
+const data = rankingsData as RankingsOutput;
+const rankings = [...data.rankings].sort((a, b) => (a.rank ?? Infinity) - (b.rank ?? Infinity));
+const generated = new Date(data.generatedAt);
+---
+
+<Layout title="Rankings">
+  <h1>Global Undergraduate Hospitality Program Rankings</h1>
+  <p class="subhead">
+    A composite ranking of hospitality &amp; hotel administration programs combining career outcomes,
+    academic research, admissions selectivity, and internship/placement pipeline strength. See the <a href="/methodology/">methodology</a> for weights and the <a href="/sources/">sources</a> page for every citation.
+  </p>
+  <p class="meta">
+    Rankings last computed on {generated.toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" })}
+    &middot; {data.programCount} programs scored
+  </p>
+
+  <table id="rankings-table">
+    <thead>
+      <tr>
+        <th data-key="rank" aria-sort="ascending">Rank</th>
+        <th data-key="name">Program</th>
+        <th data-key="composite">Composite Score</th>
+        <th data-key="outcomes">Outcomes</th>
+        <th data-key="academicResearch">Research</th>
+        <th data-key="admissions">Admissions</th>
+        <th data-key="placement">Placement</th>
+        <th data-key="completeness">Data Completeness</th>
+      </tr>
+    </thead>
+    <tbody>
+      {
+        rankings.map((r) => {
+          const cat = (key: string) => r.categories.find((c) => c.key === key)?.score;
+          return (
+            <tr
+              data-rank={r.rank ?? ""}
+              data-composite={r.compositeScore ?? ""}
+              data-outcomes={cat("outcomes") ?? ""}
+              data-academicresearch={cat("academicResearch") ?? ""}
+              data-admissions={cat("admissions") ?? ""}
+              data-placement={cat("placement") ?? ""}
+              data-completeness={r.dataCompleteness}
+            >
+              <td>{r.rank ?? "—"}</td>
+              <td>
+                <a href={`/programs/${r.program.slug}/`}>{r.program.name}</a>
+                <div class="institution">{r.program.institution}</div>
+              </td>
+              <td class="score">{r.compositeScore?.toFixed(1) ?? "—"}</td>
+              <td>{cat("outcomes")?.toFixed(0) ?? "—"}</td>
+              <td>{cat("academicResearch")?.toFixed(0) ?? "—"}</td>
+              <td>{cat("admissions")?.toFixed(0) ?? "—"}</td>
+              <td>{cat("placement")?.toFixed(0) ?? "—"}</td>
+              <td>{Math.round(r.dataCompleteness * 100)}%</td>
+            </tr>
+          );
+        })
+      }
+    </tbody>
+  </table>
+</Layout>
+
+<script>
+  const table = document.getElementById("rankings-table") as HTMLTableElement;
+  const headers = table.querySelectorAll<HTMLTableCellElement>("th[data-key]");
+  const tbody = table.querySelector("tbody")!;
+
+  const columnToAttr: Record<string, string> = {
+    rank: "data-rank",
+    composite: "data-composite",
+    outcomes: "data-outcomes",
+    academicResearch: "data-academicresearch",
+    admissions: "data-admissions",
+    placement: "data-placement",
+    completeness: "data-completeness",
+  };
+
+  let currentKey = "rank";
+  let ascending = true;
+
+  function sortBy(key: string) {
+    const attr = columnToAttr[key];
+    if (!attr) return; // "name" column is not sortable
+    ascending = key === currentKey ? !ascending : true;
+    currentKey = key;
+
+    const rows = Array.from(tbody.querySelectorAll("tr"));
+    rows.sort((a, b) => {
+      const av = parseFloat(a.getAttribute(attr) ?? "");
+      const bv = parseFloat(b.getAttribute(attr) ?? "");
+      const aMissing = Number.isNaN(av);
+      const bMissing = Number.isNaN(bv);
+      if (aMissing && bMissing) return 0;
+      if (aMissing) return 1; // missing values always sort last
+      if (bMissing) return -1;
+      return ascending ? av - bv : bv - av;
+    });
+    rows.forEach((row) => tbody.appendChild(row));
+
+    headers.forEach((h) => h.removeAttribute("aria-sort"));
+    const activeHeader = table.querySelector(`th[data-key="${key}"]`);
+    activeHeader?.setAttribute("aria-sort", ascending ? "ascending" : "descending");
+  }
+
+  headers.forEach((h) => {
+    h.style.cursor = "pointer";
+    h.addEventListener("click", () => sortBy(h.dataset.key!));
+  });
+</script>
+
+<style>
+  .subhead {
+    color: var(--muted);
+    max-width: 40em;
+  }
+
+  .meta {
+    font-size: 0.85rem;
+    color: var(--muted);
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1.5rem;
+    font-size: 0.95rem;
+  }
+
+  th,
+  td {
+    text-align: left;
+    padding: 0.6rem 0.75rem;
+    border-bottom: 1px solid var(--border);
+  }
+
+  th {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    color: var(--muted);
+    user-select: none;
+  }
+
+  th[aria-sort="ascending"]::after {
+    content: " \25B2";
+  }
+
+  th[aria-sort="descending"]::after {
+    content: " \25BC";
+  }
+
+  td.score,
+  td:nth-child(3) {
+    font-weight: 600;
+  }
+
+  .institution {
+    font-size: 0.8rem;
+    color: var(--muted);
+  }
+</style>

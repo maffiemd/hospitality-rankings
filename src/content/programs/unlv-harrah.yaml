@@ -1,0 +1,90 @@
+slug: unlv-harrah
+name: B.S. in Hospitality Management
+institution: University of Nevada, Las Vegas — William F. Harrah College of Hospitality
+country: United States
+region: US
+website: https://www.unlv.edu/hospitality
+degreeName: B.S. Hospitality Management
+
+outcomes:
+  startingSalary:
+    value: 56500
+    unit: USD/year
+    source:
+      label: "Careers in Hospitality"
+      url: https://www.unlv.edu/hospitality/careers
+      publisher: UNLV William F. Harrah College of Hospitality
+      asOfDate: "2025-01-01"
+    lastVerified: "2026-10-05"
+    confidence: low
+    notes: >
+      UNLV's own careers page cites an average starting salary range of $45K-$68K (midpoint used here);
+      a Las Vegas Review-Journal piece on the local hospitality labor market separately cited a lower
+      $36K-$45K range for hospitality-management starters, likely reflecting broader Las Vegas-market
+      entry roles rather than this program's outcomes specifically. Flagged low confidence pending a
+      primary outcomes report that reconciles the two.
+  employmentRate:
+    unit: "%"
+    confidence: low
+    notes: Not yet sourced for v1 — no disclosed employment-rate figure found on the college's career-services pages.
+  recruiterReputationScore:
+    unit: "0-100"
+    confidence: low
+    notes: >
+      Not scored for v1. UNLV was separately ranked #1 globally for Hospitality & Hotel Management by
+      CEOWORLD Magazine and #1 in the US for Hospitality & Leisure Management by QS World University
+      Rankings by Subject 2026 — noted here for context only, not used as an input, since neither
+      ranking discloses a raw, program-comparable recruiter-reputation score.
+  internshipPlacementRate:
+    unit: "%"
+    confidence: low
+    notes: Harrah College requires 1,000 hours of work experience per student, but no disclosed placement-rate percentage was found for v1.
+
+admissions:
+  acceptanceRate:
+    value: 84.6
+    unit: "%"
+    source:
+      label: "UNLV Common Data Set, 2024-25 cycle"
+      url: https://www.gradgpt.com/common-data-set/university-of-nevada-las-vegas-unlv
+      publisher: GradGPT (secondary aggregator of UNLV CDS)
+      asOfDate: "2024-09-01"
+    lastVerified: "2026-10-05"
+    confidence: medium
+    notes: University-wide rate; other secondary sources cite figures as high as 96% depending on applicant-pool definition. Not Harrah-College-specific.
+  satActEquivalent:
+    value: 1120
+    unit: SAT-equivalent composite
+    source:
+      label: "UNLV admissions profile"
+      url: https://www.univstats.com/colleges/university-of-nevada-las-vegas/admission/
+      publisher: Univstats (secondary aggregator of UNLV CDS)
+      asOfDate: "2024-09-01"
+    lastVerified: "2026-10-05"
+    confidence: low
+    notes: Average SAT of enrolled students, university-wide; UNLV is test-optional and not program-specific.
+
+academicResearch:
+  facultyPubCitationIndex:
+    unit: index
+    confidence: low
+    notes: Not yet sourced for v1.
+  researchFundingUSD:
+    unit: USD/year
+    confidence: low
+    notes: Not yet sourced for v1.
+  facultyStudentRatio:
+    unit: students per faculty
+    confidence: low
+    notes: Not yet sourced for v1.
+  hasPhDProgram:
+    value: 1
+    unit: boolean (1=yes, 0=no)
+    source:
+      label: "Graduate Programs — William F. Harrah College of Hospitality"
+      url: https://www.unlv.edu/hospitality/graduate-programs
+      publisher: UNLV William F. Harrah College of Hospitality
+      asOfDate: "2025-01-01"
+    lastVerified: "2026-10-05"
+    confidence: high
+    notes: Harrah College's own graduate-programs page lists a PhD in Hospitality Administration.
