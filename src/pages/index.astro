@@ -3,6 +3,7 @@ import Layout from "../layouts/Layout.astro";
 import rankingsData from "../../data/generated/rankings.json";
 import type { RankingsOutput } from "../lib/types";
 import { MIN_COMPLETENESS_FOR_RANK } from "../config/weights";
+import { href } from "../lib/url";
 
 const data = rankingsData as RankingsOutput;
 const ranked = data.rankings.filter((r) => r.rank !== null).sort((a, b) => (a.rank as number) - (b.rank as number));
@@ -17,14 +18,14 @@ const generated = new Date(data.generatedAt);
   <h1 class="display">Hospitality programs, <em>ranked</em> in the open</h1>
   <p class="subhead">
     A composite ranking of hospitality &amp; hotel administration programs combining career outcomes,
-    academic research, admissions selectivity, and internship/placement pipeline strength. See the <a href="/methodology/">methodology</a> for weights and the <a href="/sources/">sources</a> page for every citation.
+    academic research, admissions selectivity, and internship/placement pipeline strength. See the <a href={href("/methodology/")}>methodology</a> for weights and the <a href={href("/sources/")}>sources</a> page for every citation.
   </p>
   <p class="meta">
     Rankings last computed on {generated.toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" })}
     &middot; {ranked.length} of {data.programCount} programs ranked
   </p>
 
-  <p class="cta"><a class="btn-outline" href="/methodology/">How it's scored</a></p>
+  <p class="cta"><a class="btn-outline" href={href("/methodology/")}>How it's scored</a></p>
 
   <table id="rankings-table">
     <thead>
@@ -55,7 +56,7 @@ const generated = new Date(data.generatedAt);
             >
               <td>{r.rank ?? "—"}</td>
               <td>
-                <a href={`/programs/${r.program.slug}/`}>{r.program.name}</a>
+                <a href={href(`/programs/${r.program.slug}/`)}>{r.program.name}</a>
                 <div class="institution">{r.program.institution}</div>
               </td>
               <td class="score">{r.compositeScore?.toFixed(1) ?? "—"}</td>
@@ -77,7 +78,7 @@ const generated = new Date(data.generatedAt);
         <h2><span class="marker">&#9656;</span> Not yet ranked — insufficient data</h2>
         <p class="subhead">
           These programs have fewer than {Math.round(MIN_COMPLETENESS_FOR_RANK * 100)}% of tracked metrics sourced, which isn't enough
-          to compute a meaningful composite score against better-documented programs (see <a href="/methodology/">methodology</a>). They're listed here, alphabetically, with whatever has been
+          to compute a meaningful composite score against better-documented programs (see <a href={href("/methodology/")}>methodology</a>). They're listed here, alphabetically, with whatever has been
           verified so far — not penalized with a low rank, and not given an inflated one either.
         </p>
         <table>
@@ -91,7 +92,7 @@ const generated = new Date(data.generatedAt);
             {unranked.map((r) => (
               <tr>
                 <td>
-                  <a href={`/programs/${r.program.slug}/`}>{r.program.name}</a>
+                  <a href={href(`/programs/${r.program.slug}/`)}>{r.program.name}</a>
                   <div class="institution">{r.program.institution}</div>
                 </td>
                 <td>{Math.round(r.dataCompleteness * 100)}%</td>

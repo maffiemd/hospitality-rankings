@@ -1,6 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import { CATEGORIES, MIN_COMPLETENESS_FOR_RANK } from "../config/weights";
+import { href } from "../lib/url";
 ---
 
 <Layout title="Methodology">
@@ -91,7 +92,7 @@ import { CATEGORIES, MIN_COMPLETENESS_FOR_RANK } from "../config/weights";
     program's one strong metric can otherwise dominate its (nearly empty) composite score. To prevent
     data sparsity itself from producing a misleadingly high rank, a program needs at least {Math.round(MIN_COMPLETENESS_FOR_RANK * 100)}%
     of tracked metrics sourced to receive a numeric rank. Programs below that threshold are still
-    scored and shown — nothing is hidden — but listed separately as <a href="/">not yet ranked</a> rather
+    scored and shown — nothing is hidden — but listed separately as <a href={href("/")}>not yet ranked</a> rather
     than competing against better-documented programs.
   </p>
 
@@ -100,7 +101,7 @@ import { CATEGORIES, MIN_COMPLETENESS_FOR_RANK } from "../config/weights";
     CEOWORLD Magazine publishes a well-known hospitality &amp; hotel management ranking, but its
     methodology is reputation/survey-weighted and does not disclose per-metric, per-program sourcing.
     This project's explicit goal is the opposite: every number behind every score is individually
-    cited and dated, visible on each program's profile page and aggregated on the <a href="/sources/">sources page</a>. Where a reliable public source doesn't yet exist for a
+    cited and dated, visible on each program's profile page and aggregated on the <a href={href("/sources/")}>sources page</a>. Where a reliable public source doesn't yet exist for a
     metric — recruiter reputation is the clearest example — that gap is stated outright rather than
     filled with an estimate.
   </p>

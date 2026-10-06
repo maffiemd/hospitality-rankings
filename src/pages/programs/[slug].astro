@@ -3,6 +3,7 @@ import Layout from "../../layouts/Layout.astro";
 import rankingsData from "../../../data/generated/rankings.json";
 import type { RankingsOutput } from "../../lib/types";
 import { getMetric } from "../../lib/metricPath";
+import { href } from "../../lib/url";
 
 export function getStaticPaths() {
   const data = rankingsData as RankingsOutput;
@@ -17,7 +18,7 @@ const { program } = ranking;
 ---
 
 <Layout title={program.name}>
-  <p class="back"><a href="/">&larr; Back to rankings</a></p>
+  <p class="back"><a href={href("/")}>&larr; Back to rankings</a></p>
   <span class="eyebrow">{ranking.rank !== null ? `Ranked #${ranking.rank}` : "Not yet ranked"}</span>
   <h1 class="display">{program.name}</h1>
   <p class="institution">{program.institution} &middot; {program.country}</p>
@@ -44,7 +45,7 @@ const { program } = ranking;
     ranking.rank === null && (
       <p class="unranked-note">
         This program isn't yet eligible for a numeric rank — too few of the tracked metrics have a
-        sourced value (see the <a href="/methodology/">methodology</a>). The composite score above is
+        sourced value (see the <a href={href("/methodology/")}>methodology</a>). The composite score above is
         shown for transparency but shouldn't be compared directly to a ranked program's score.
       </p>
     )

@@ -4,6 +4,7 @@ import rankingsData from "../../data/generated/rankings.json";
 import type { RankingsOutput } from "../lib/types";
 import { CATEGORIES } from "../config/weights";
 import { getMetric } from "../lib/metricPath";
+import { href } from "../lib/url";
 
 const data = rankingsData as RankingsOutput;
 
@@ -47,7 +48,7 @@ const citations = Array.from(byUrl.values()).sort((a, b) => a.label.localeCompar
   <p>
     Every metric behind every score is individually cited. This page aggregates the distinct sources
     used across all ranked programs; per-metric citations also appear inline on each program's
-    profile page (linked from the <a href="/">rankings table</a>).
+    profile page (linked from the <a href={href("/")}>rankings table</a>).
   </p>
 
   <ul class="citations">
