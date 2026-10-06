@@ -1,0 +1,93 @@
+slug: wsu-hospitality
+name: B.A. in Hospitality Business Management
+institution: Washington State University — School of Hospitality Business Management, Carson College of Business
+country: United States
+region: US
+website: https://business.wsu.edu/hospitality-business-management/
+degreeName: B.A. Hospitality Business Management
+
+outcomes:
+  startingSalary:
+    unit: USD/year
+    confidence: low
+    notes: >
+      No WSU- or Carson-College-specific starting-salary figure for Hospitality Business Management
+      graduates was found for v1. Search turned up only national NACE class-wide averages and O*NET
+      occupational median salaries for related job titles (e.g., Hotel/Resort Manager, General Manager),
+      neither of which reflects this program's own graduates.
+  employmentRate:
+    unit: "%"
+    confidence: low
+    notes: >
+      No disclosed employment-rate figure specific to the School of Hospitality Business Management, or
+      to Carson College of Business as a whole, was found for v1. An 89%-"accepted jobs in degree field"
+      figure circulates for the Carson College Class of 2016-17, but it is roughly a decade old, not
+      hospitality-specific, and no current equivalent was found, so it was not used.
+  recruiterReputationScore:
+    unit: "0-100"
+    confidence: low
+    notes: Not yet sourced for v1.
+  internshipPlacementRate:
+    unit: "%"
+    confidence: low
+    notes: >
+      The major requires 1,000 hours of paid industry work for graduation, but no disclosed
+      completion- or placement-rate percentage was found for v1.
+
+admissions:
+  acceptanceRate:
+    value: 86.6
+    unit: "%"
+    source:
+      label: "Washington State University admission profile (2024-25 cycle)"
+      url: https://www.collegetuitioncompare.com/edu/236939/washington-state-university/admission/
+      publisher: "CollegeTuitionCompare (secondary aggregator of WSU Common Data Set)"
+      asOfDate: "2024-12-11"
+    lastVerified: "2026-10-05"
+    confidence: medium
+    notes: >
+      University-wide rate; WSU's School of Hospitality Business Management does not run a separate
+      selective-admission process — students declare the major after meeting course and GPA
+      prerequisites rather than through a separate application.
+  satActEquivalent:
+    value: 1115
+    unit: SAT-equivalent composite
+    source:
+      label: "Washington State University SAT score trends"
+      url: https://www.collegetuitioncompare.com/trends/washington-state-university/sat-act-scores/
+      publisher: "CollegeTuitionCompare (secondary aggregator of WSU Common Data Set)"
+      asOfDate: "2021-01-01"
+    lastVerified: "2026-10-05"
+    confidence: low
+    notes: >
+      Midpoint of the most recently available university-wide SAT middle-50% range (1020-1210, 2020-21
+      cycle). WSU is test-optional and does not consider scores in admission, so more recent Common Data
+      Sets do not report this figure, and it is not program-specific.
+
+academicResearch:
+  facultyPubCitationIndex:
+    unit: index
+    confidence: low
+    notes: Not yet sourced for v1.
+  researchFundingUSD:
+    unit: USD/year
+    confidence: low
+    notes: Not yet sourced for v1.
+  facultyStudentRatio:
+    unit: students per faculty
+    confidence: low
+    notes: Not yet sourced for v1.
+  hasPhDProgram:
+    value: 1
+    unit: boolean (1=yes, 0=no)
+    source:
+      label: "Ph.D.: Hospitality & Tourism Management Concentration"
+      url: https://business.wsu.edu/graduate-programs/phd-business/hospitality-tourism/
+      publisher: WSU Carson College of Business
+      asOfDate: "2025-01-01"
+    lastVerified: "2026-10-05"
+    confidence: high
+    notes: >
+      Carson College's own graduate-programs page confirms a Ph.D. in Business Administration with a
+      Hospitality and Tourism Management concentration, housed within the School of Hospitality Business
+      Management.

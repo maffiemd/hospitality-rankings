@@ -1,0 +1,60 @@
+slug: oxford-brookes
+name: BSc (Hons) International Hospitality and Tourism Management
+institution: Oxford Brookes University — Oxford Brookes Business School
+country: United Kingdom
+region: Europe
+website: https://www.brookes.ac.uk/courses/undergraduate/international-hospitality-and-tourism-management
+degreeName: BSc (Hons) International Hospitality and Tourism Management
+
+outcomes:
+  startingSalary:
+    unit: USD/year
+    confidence: low
+    notes: "Discover Uni (UK official source, using HESA Longitudinal Education Outcomes / LEO data) publishes only 3-year and 5-year post-graduation earnings for this specific course — £26,500 after 3 years and £33,000 after 5 years, both from the 2016-18 graduating cohort (n=70) — not a 15-month \"starting salary\" figure. The 15-month earnings/outcomes split is explicitly suppressed on Discover Uni for this course (\"there is no data available for this course,\" attributed to small cohort/response size). Left blank rather than substituting the 3-year figure as a stand-in for starting salary."
+  employmentRate:
+    unit: "%"
+    confidence: low
+    notes: Discover Uni shows no published Graduate Outcomes (15 months after course) data for this specific course, citing small course size / insufficient survey responses. A broader "Business and management" subject aggregate for Oxford Brookes reports about 87% in work/study after 15 months, but that figure is not specific to this hospitality program, so it was not used here. Left blank.
+  recruiterReputationScore:
+    unit: "0-100"
+    confidence: low
+    notes: Not yet sourced for v1.
+  internshipPlacementRate:
+    unit: "%"
+    confidence: low
+    notes: The course offers an optional (not mandatory) supervised year-long work placement in year 3 of the 4-year route, with past placements at employers such as Marriott, Four Seasons, and The Savoy. No placement-rate percentage is published. Left blank.
+
+admissions:
+  acceptanceRate:
+    unit: "%"
+    confidence: low
+    notes: Not publicly disclosed per-course by Oxford Brookes or UCAS; UK universities generally do not publish programme-level acceptance rates. Left blank.
+  satActEquivalent:
+    unit: SAT-equivalent composite
+    confidence: low
+    notes: Oxford Brookes uses the UK UCAS Tariff system, not SAT/ACT. The standard offer for this course is 112 UCAS Tariff Points (BBC at A-Level, 27 IB points, or DMM at BTEC), plus GCSE Maths and English at grade 4+, per the official course page. Left blank rather than inventing a false SAT-equivalent conversion.
+
+academicResearch:
+  facultyPubCitationIndex:
+    unit: index
+    confidence: low
+    notes: Not yet sourced for v1.
+  researchFundingUSD:
+    unit: USD/year
+    confidence: low
+    notes: Not yet sourced for v1.
+  facultyStudentRatio:
+    unit: students per faculty
+    confidence: low
+    notes: Not yet sourced for v1.
+  hasPhDProgram:
+    value: 1
+    unit: boolean (1=yes, 0=no)
+    source:
+      label: "MPhil or PhD in Hospitality, Tourism and Events Management"
+      url: https://www.brookes.ac.uk/courses/research/hospitality-tourism-and-events-management
+      publisher: Oxford Brookes Business School
+      asOfDate: "2026-01-01"
+    lastVerified: "2026-10-05"
+    confidence: high
+    notes: Oxford Brookes Business School offers a dedicated MPhil/PhD in Hospitality, Tourism and Events Management (full-time minimum 3 years), with research active in sustainable tourism development, experience design, revenue management, and related areas.

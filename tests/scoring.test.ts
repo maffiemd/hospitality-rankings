@@ -48,7 +48,9 @@ function makeProgram(overrides: {
 
 describe("scorePrograms", () => {
   it("handles a single-program dataset without dividing by zero", () => {
-    const programs = [makeProgram({ slug: "solo", startingSalary: 50000, employmentRate: 90 })];
+    const programs = [
+      makeProgram({ slug: "solo", startingSalary: 50000, employmentRate: 90, recruiterReputationScore: 70 }),
+    ];
     const { rankings } = scorePrograms(programs);
     expect(rankings).toHaveLength(1);
     expect(rankings[0].rank).toBe(1);
@@ -98,9 +100,9 @@ describe("scorePrograms", () => {
 
   it("assigns the same rank to tied composite scores", () => {
     const programs = [
-      makeProgram({ slug: "a", startingSalary: 50000 }),
-      makeProgram({ slug: "b", startingSalary: 50000 }),
-      makeProgram({ slug: "c", startingSalary: 70000 }),
+      makeProgram({ slug: "a", startingSalary: 50000, employmentRate: 90, recruiterReputationScore: 70 }),
+      makeProgram({ slug: "b", startingSalary: 50000, employmentRate: 90, recruiterReputationScore: 70 }),
+      makeProgram({ slug: "c", startingSalary: 70000, employmentRate: 90, recruiterReputationScore: 70 }),
     ];
     const { rankings } = scorePrograms(programs);
     const a = rankings.find((r) => r.program.slug === "a")!;
@@ -109,6 +111,34 @@ describe("scorePrograms", () => {
     expect(a.rank).toBe(b.rank);
     expect(c.rank).toBe(1);
     expect(a.rank).toBe(2);
+  });
+
+  it("does not let a sparsely-populated program outrank a well-documented one", () => {
+    // Regression test: a program with a single metric present (here, just
+    // hasPhDProgram=1, the only value in its field so it normalizes to a
+    // "neutral" 100) must not out-rank a program with rich, merely-average
+    // data just because its one data point happened to score well.
+    const sparse = makeProgram({ slug: "sparse", hasPhDProgram: 1 });
+    const wellDocumented = makeProgram({
+      slug: "well-documented",
+      startingSalary: 60000,
+      employmentRate: 85,
+      recruiterReputationScore: 60,
+      internshipPlacementRate: 70,
+      acceptanceRate: 40,
+      satActEquivalent: 1200,
+      facultyPubCitationIndex: 50,
+      researchFundingUSD: 500000,
+      facultyStudentRatio: 12,
+      hasPhDProgram: 1,
+    });
+    const { rankings } = scorePrograms([sparse, wellDocumented]);
+    const sparseEntry = rankings.find((r) => r.program.slug === "sparse")!;
+    const wellDocumentedEntry = rankings.find((r) => r.program.slug === "well-documented")!;
+
+    expect(sparseEntry.compositeScore).toBe(100); // still computed/shown...
+    expect(sparseEntry.rank).toBeNull(); // ...but not eligible for a numeric rank
+    expect(wellDocumentedEntry.rank).toBe(1);
   });
 
   it("marks programs with no usable metrics as unranked (null) rather than crashing", () => {

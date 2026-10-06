@@ -1,0 +1,101 @@
+slug: udel-hrim
+name: B.S. in Hospitality and Event Business Management
+institution: University of Delaware — Alfred Lerner College of Business and Economics, Department of Hospitality and Sport Business Management
+country: United States
+region: US
+website: https://lerner.udel.edu/programs/undergraduate-programs/majors/hospitality-and-event-business-management-bs/
+degreeName: B.S. Hospitality and Event Business Management (formerly Hotel, Restaurant and Institutional Management / HRIM)
+
+outcomes:
+  startingSalary:
+    value: 59723
+    unit: USD/year
+    source:
+      label: "Hospitality and Event Business Management (B.S.) — program page career outcomes"
+      url: https://lerner.udel.edu/programs/undergraduate-programs/majors/hospitality-and-event-business-management-bs/
+      publisher: University of Delaware, Alfred Lerner College of Business and Economics
+      asOfDate: "2025-06-01"
+    lastVerified: "2026-10-05"
+    confidence: high
+    notes: >
+      Mean starting salary for the Class of 2025, disclosed directly on the program's own page
+      (which still references "UD HRIM Students," confirming this major is HRIM's direct successor).
+      Up from a mean of $56,384 for the Class of 2024 — a consistent upward trend, not a conflicting
+      figure.
+  employmentRate:
+    value: 94
+    unit: "%"
+    source:
+      label: "Hospitality and Event Business Management (B.S.) — program page career outcomes"
+      url: https://lerner.udel.edu/programs/undergraduate-programs/majors/hospitality-and-event-business-management-bs/
+      publisher: University of Delaware, Alfred Lerner College of Business and Economics
+      asOfDate: "2025-06-01"
+    lastVerified: "2026-10-05"
+    confidence: high
+    notes: >
+      Share of Class of 2025 graduates employed or pursuing further education within 6 months of
+      graduation, program-specific. The Class of 2024 figure was 91%, so this reflects a one-year
+      improvement, not a discrepancy.
+  recruiterReputationScore:
+    unit: "0-100"
+    confidence: low
+    notes: Not yet sourced for v1.
+  internshipPlacementRate:
+    unit: "%"
+    confidence: low
+    notes: Not yet sourced for v1 — no disclosed internship-completion or placement-rate percentage found.
+
+admissions:
+  acceptanceRate:
+    value: 70.6
+    unit: "%"
+    source:
+      label: "University of Delaware Acceptance Rate and SAT Scores, 2024-25 admission cycle"
+      url: https://www.collegetuitioncompare.com/edu/130943/university-of-delaware/admission/
+      publisher: College Tuition Compare (secondary aggregator of UD's IPEDS/Common Data Set figures)
+      asOfDate: "2024-09-01"
+    lastVerified: "2026-10-05"
+    confidence: medium
+    notes: >
+      University-wide rate; UD admits students to the university/Lerner College rather than
+      directly to the Hospitality and Event Business Management major, so no major-specific
+      acceptance rate is published.
+  satActEquivalent:
+    value: 1280
+    unit: SAT-equivalent composite
+    source:
+      label: "University of Delaware Acceptance Rate and SAT Scores, 2024-25 admission cycle"
+      url: https://www.collegetuitioncompare.com/edu/130943/university-of-delaware/admission/
+      publisher: College Tuition Compare (secondary aggregator of UD's IPEDS/Common Data Set figures)
+      asOfDate: "2024-09-01"
+    lastVerified: "2026-10-05"
+    confidence: low
+    notes: Midpoint of the university-wide SAT middle-50% range (1190-1370); not program-specific, and UD considers but does not require test scores.
+
+academicResearch:
+  facultyPubCitationIndex:
+    unit: index
+    confidence: low
+    notes: Not yet sourced for v1.
+  researchFundingUSD:
+    unit: USD/year
+    confidence: low
+    notes: Not yet sourced for v1.
+  facultyStudentRatio:
+    unit: students per faculty
+    confidence: low
+    notes: Not yet sourced for v1.
+  hasPhDProgram:
+    value: 1
+    unit: boolean (1=yes, 0=no)
+    source:
+      label: "Hospitality Business Analytics (Ph.D.)"
+      url: https://lerner.udel.edu/programs/phd-programs/hospitality-business-analytics-ph-d/
+      publisher: University of Delaware, Alfred Lerner College of Business and Economics
+      asOfDate: "2025-01-01"
+    lastVerified: "2026-10-05"
+    confidence: high
+    notes: >
+      Lerner College's own PhD-programs page confirms a Ph.D. in Hospitality Business Analytics
+      (admits every other year, in even-numbered years); not a traditional "Hotel Administration"
+      PhD title, but a hospitality-focused doctoral program in the same college.

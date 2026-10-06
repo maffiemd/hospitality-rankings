@@ -1,0 +1,96 @@
+slug: uh-hilton
+name: B.S. in Global Hospitality Leadership
+institution: University of Houston — Conrad N. Hilton College of Global Hospitality Leadership
+country: United States
+region: US
+website: https://www.uh.edu/hilton-college/
+degreeName: B.S. Global Hospitality Leadership
+
+outcomes:
+  startingSalary:
+    unit: USD/year
+    confidence: low
+    notes: >
+      No specific average or median starting-salary figure was found for v1. Hilton College's own
+      About and Careers pages highlight job-offer and placement rates but do not disclose a dollar
+      figure, so none is recorded here pending a primary outcomes report with an exact number.
+  employmentRate:
+    value: 92
+    unit: "%"
+    source:
+      label: "About — Conrad N. Hilton College of Global Hospitality Leadership"
+      url: https://www.uh.edu/hilton-college/about/
+      publisher: University of Houston, Conrad N. Hilton College
+      asOfDate: "2025-01-01"
+    lastVerified: "2026-10-05"
+    confidence: medium
+    notes: >
+      Hilton College's own About page states "92% of our graduates have job offers at graduation,"
+      but does not disclose a specific graduating-class year. An older 2018 Dean's Report cited 91%
+      "hospitality hires" and a secondary aggregator separately cites an 84% job-placement figure;
+      the current 92% figure from the college's own page is used here as the most recent primary source.
+  recruiterReputationScore:
+    unit: "0-100"
+    confidence: low
+    notes: Not yet sourced for v1 — no disclosed recruiting-partner-breadth dataset found.
+  internshipPlacementRate:
+    unit: "%"
+    confidence: low
+    notes: >
+      Hilton College requires a minimum of 1,000 clock hours of hospitality-industry work experience
+      for graduation, but no disclosed completion or placement-rate percentage was found for v1.
+
+admissions:
+  acceptanceRate:
+    value: 73.92
+    unit: "%"
+    source:
+      label: "University of Houston Acceptance Rate and SAT Scores, 2024-25 admission cycle"
+      url: https://www.collegetuitioncompare.com/edu/225511/university-of-houston/admission/
+      publisher: College Tuition Compare (secondary aggregator of UH's IPEDS/Common Data Set figures)
+      asOfDate: "2024-09-01"
+    lastVerified: "2026-10-05"
+    confidence: medium
+    notes: >
+      University-wide rate; Hilton College undergraduate admission flows through general UH
+      admission plus an internal minimum 2.85 cumulative UH GPA to formally declare the major,
+      rather than a separate college-level acceptance rate.
+  satActEquivalent:
+    value: 1250
+    unit: SAT-equivalent composite
+    source:
+      label: "University of Houston Acceptance Rate and SAT Scores, 2024-25 admission cycle"
+      url: https://www.collegetuitioncompare.com/edu/225511/university-of-houston/admission/
+      publisher: College Tuition Compare (secondary aggregator of UH's IPEDS/Common Data Set figures)
+      asOfDate: "2024-09-01"
+    lastVerified: "2026-10-05"
+    confidence: low
+    notes: Midpoint of the university-wide SAT middle-50% range (1160-1340); not Hilton-College-specific, and UH is test-optional.
+
+academicResearch:
+  facultyPubCitationIndex:
+    unit: index
+    confidence: low
+    notes: Not yet sourced for v1.
+  researchFundingUSD:
+    unit: USD/year
+    confidence: low
+    notes: Not yet sourced for v1.
+  facultyStudentRatio:
+    unit: students per faculty
+    confidence: low
+    notes: Not yet sourced for v1.
+  hasPhDProgram:
+    value: 1
+    unit: boolean (1=yes, 0=no)
+    source:
+      label: "Program: Hospitality Administration, PhD"
+      url: https://publications.uh.edu/preview_program.php?catoid=33&poid=12240
+      publisher: University of Houston (official academic catalog)
+      asOfDate: "2025-01-01"
+    lastVerified: "2026-10-05"
+    confidence: high
+    notes: >
+      UH's own academic catalog lists a PhD in Hospitality Administration housed at Hilton College;
+      the college also launched a separate professional online Doctorate in Global Hospitality
+      Leadership in fall 2025.

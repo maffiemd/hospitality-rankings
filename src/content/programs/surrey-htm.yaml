@@ -1,0 +1,74 @@
+slug: surrey-htm
+name: BSc (Hons) International Hospitality Management
+institution: University of Surrey — School of Hospitality and Tourism Management
+country: United Kingdom
+region: Europe
+website: https://www.surrey.ac.uk/undergraduate/international-hospitality-management
+degreeName: BSc (Hons) International Hospitality Management
+
+outcomes:
+  startingSalary:
+    value: 35560
+    unit: USD/year
+    source:
+      label: "International Hospitality Management BSc (Hons) — course data"
+      url: https://www.discoveruni.gov.uk/course-details/10007160/UKA10S0002U/FullTime/
+      publisher: Discover Uni (Office for Students / HESA Graduate Outcomes survey)
+      asOfDate: "2025-01-01"
+    lastVerified: "2026-10-05"
+    confidence: medium
+    notes: "Original figure: median £28,000 GBP, 15 months after graduation, from the HESA Graduate Outcomes survey of the 2023-24 graduating cohort (25 respondents, 60% response rate — a small sample, per Discover Uni's own caveat). Converted to USD at an approximate rate of £1 = $1.27 (Oct 2026); treat as approximate given both the small underlying sample and exchange-rate fluctuation."
+  employmentRate:
+    value: 90
+    unit: "%"
+    source:
+      label: "International Hospitality Management BSc (Hons) — course data"
+      url: https://www.discoveruni.gov.uk/course-details/10007160/UKA10S0002U/FullTime/
+      publisher: Discover Uni (Office for Students / HESA Graduate Outcomes survey)
+      asOfDate: "2025-01-01"
+    lastVerified: "2026-10-05"
+    confidence: medium
+    notes: "90% of graduates were in work and/or further study 15 months after completing the course (HESA Graduate Outcomes survey, 2023-24 graduating cohort, 25 respondents / 60% response rate). Surrey's own marketing page separately cites a broader \"96% of hospitality and tourism management graduates\" figure across the whole department/multiple courses; the course-specific Discover Uni figure was used instead for program-level accuracy."
+  recruiterReputationScore:
+    unit: "0-100"
+    confidence: low
+    notes: Not yet sourced for v1.
+  internshipPlacementRate:
+    unit: "%"
+    confidence: low
+    notes: Surrey's hospitality programmes include an optional professional training/placement year, but no specific internship or placement "rate" percentage is disclosed. Left blank.
+
+admissions:
+  acceptanceRate:
+    unit: "%"
+    confidence: low
+    notes: Not publicly disclosed per-course by Surrey or UCAS; UK universities generally do not publish programme-level acceptance rates. Left blank.
+  satActEquivalent:
+    unit: SAT-equivalent composite
+    confidence: low
+    notes: Surrey uses the UK A-Level/GCSE system rather than SAT/ACT. The typical offer for this course is BCC-CCC at A-Level plus GCSE English and Maths at grade 4+ (the UCAS Tariff itself is not accepted as a formal entry route for this course). Left blank rather than inventing a false SAT-equivalent conversion.
+
+academicResearch:
+  facultyPubCitationIndex:
+    unit: index
+    confidence: low
+    notes: Not yet sourced for v1.
+  researchFundingUSD:
+    unit: USD/year
+    confidence: low
+    notes: Not yet sourced for v1.
+  facultyStudentRatio:
+    unit: students per faculty
+    confidence: low
+    notes: Not yet sourced for v1.
+  hasPhDProgram:
+    value: 1
+    unit: boolean (1=yes, 0=no)
+    source:
+      label: "Hospitality, Tourism, Transport and Events PhD"
+      url: https://www.surrey.ac.uk/postgraduate/hospitality-tourism-transport-and-events-phd
+      publisher: University of Surrey
+      asOfDate: "2026-01-01"
+    lastVerified: "2026-10-05"
+    confidence: high
+    notes: Surrey describes this as the largest hospitality, tourism and events PhD programme in the world, hosting more than 50 postgraduate researchers from 20+ nationalities; it sits within the same academic unit as the School of Hospitality and Tourism Management's undergraduate programs.

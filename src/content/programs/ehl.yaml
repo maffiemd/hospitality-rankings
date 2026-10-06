@@ -1,0 +1,68 @@
+slug: ehl
+name: BSc International Hospitality Management
+institution: EHL Hospitality Business School (École hôtelière de Lausanne)
+country: Switzerland
+region: Europe
+website: https://www.ehl.edu/en
+degreeName: BSc International Hospitality Management
+accreditation: New England Commission of Higher Education (NECHE); Swiss federal accreditation (HES-SO)
+
+outcomes:
+  startingSalary:
+    unit: USD/year
+    confidence: low
+    notes: No official EHL starting-salary disclosure was found. Only crowd-sourced aggregator data (Glassdoor/Emolument alumni self-reports) exists, ranging roughly $61,000-$105,000/year depending on role and degree classification, which is too inconsistent and unverifiable to cite as a figure. Left blank rather than averaging unreliable third-party data.
+  employmentRate:
+    value: 90.74
+    unit: "%"
+    source:
+      label: "Graduate Outcomes — Bachelor of Science in International Hospitality Management (March 2024)"
+      url: https://info.ehl.edu/hubfs/web-singapore/6.2.1.ii%20Graduate%20Outcomes%20of%20EHL%20Bachelor%20in%20International%20Hospitality%20Management.pdf
+      publisher: EHL Hospitality Business School
+      asOfDate: "2023-05-01"
+    lastVerified: "2026-10-05"
+    confidence: high
+    notes: This is EHL's own NECHE-mandated public disclosure figure for the "active graduates" rate (employed, in a management trainee scheme, running their own business, or continuing study) among the 2022 graduating cohort, surveyed roughly 1 year after graduation. EHL's marketing pages separately advertise "96% securing jobs within 6 months," but that figure does not state a cohort year, so the dated official disclosure report was used instead as the more verifiable primary source.
+  recruiterReputationScore:
+    unit: "0-100"
+    confidence: low
+    notes: Not yet sourced for v1.
+  internshipPlacementRate:
+    unit: "%"
+    confidence: low
+    notes: EHL's bachelor curriculum includes mandatory paid internships, but no specific "placement rate" percentage is independently disclosed by the school. Left blank rather than inferring a figure from the fact that internships are a curriculum requirement.
+
+admissions:
+  acceptanceRate:
+    unit: "%"
+    confidence: low
+    notes: Not publicly disclosed by EHL. Third-party aggregators cite conflicting, unverified figures (30%, 34%, 45%, 90% have all appeared) with no traceable link to an EHL or Swiss accreditor primary source. Left blank rather than picking one of the conflicting estimates.
+  satActEquivalent:
+    unit: SAT-equivalent composite
+    confidence: low
+    notes: EHL does not publish an SAT-equivalent composite score for its admitted class. Its bachelor admission requirements list a minimum SAT of 1000+ as one of several accepted alternative qualifications (alongside ATAR 75+, IELTS 7+, TOEFL 80+, or Duolingo 130+), but this is a minimum eligibility threshold, not a cohort average, so it was not used to construct an SAT-equivalent value.
+
+academicResearch:
+  facultyPubCitationIndex:
+    unit: index
+    confidence: low
+    notes: Not yet sourced for v1.
+  researchFundingUSD:
+    unit: USD/year
+    confidence: low
+    notes: Not yet sourced for v1.
+  facultyStudentRatio:
+    unit: students per faculty
+    confidence: low
+    notes: Not yet sourced for v1.
+  hasPhDProgram:
+    value: 1
+    unit: boolean (1=yes, 0=no)
+    source:
+      label: "Doctorate of Business Administration (DBA) — EHL and Drucker School of Management, Claremont Graduate University"
+      url: https://gs.ehl.edu/doctorate-of-business-administration
+      publisher: EHL Graduate School
+      asOfDate: "2026-01-01"
+    lastVerified: "2026-10-05"
+    confidence: medium
+    notes: EHL is not itself accredited by swissuniversities to award a standalone PhD, but it co-delivers a Doctor of Business Administration (DBA, awarded by Claremont Graduate University's Drucker School of Management) and participates in a PhD pathway via a HES-SO/University of Lausanne framework agreement and a partnership with Università della Svizzera italiana (USI). Counted as "yes" given these doctoral-level offerings, flagged medium confidence given the degree is not a traditional stand-alone PhD.

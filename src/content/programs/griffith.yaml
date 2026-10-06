@@ -1,0 +1,93 @@
+slug: griffith
+name: Bachelor of International Tourism and Hotel Management
+institution: Griffith University — Griffith Business School
+country: Australia
+region: Asia-Pacific
+website: https://www.griffith.edu.au/study/degrees/bachelor-of-international-tourism-and-hotel-management-1408
+degreeName: Bachelor of International Tourism and Hotel Management
+
+outcomes:
+  startingSalary:
+    unit: USD/year
+    confidence: low
+    notes: >
+      No Griffith-specific or program-specific salary figure found for v1. The national QILT 2024
+      Graduate Outcomes Survey reports a median full-time undergraduate salary of AUD 63,900 for the
+      "Tourism, Hospitality, Personal Services, Sport and Recreation" study area, but that is an
+      Australia-wide aggregate across all universities in the field, not a Griffith- or
+      program-specific figure, so it is not recorded as this program's value. Left blank pending a
+      Griffith-reported or QILT institution-level breakout.
+  employmentRate:
+    unit: "%"
+    confidence: low
+    notes: >
+      No figure isolated to this program was found for v1. QILT (qilt.edu.au) reports Griffith's
+      "Business & Management" course-grouping outcome (73.9% employed full-time) via its interactive
+      comparison tool, but that grouping is broader than International Tourism and Hotel Management
+      specifically and the tool is JS-rendered and could not be queried for a narrower breakout in this
+      pass. Left blank rather than recording a broader-grouping figure as this program's own.
+  recruiterReputationScore:
+    unit: "0-100"
+    confidence: low
+    notes: >
+      Not scored for v1. Noted for context only: Griffith is ranked Australia's No. 1 and world No. 6 for
+      Tourism and Hotel Management-related subjects in the Shanghai Ranking's Global Ranking of
+      Academic Subjects, but this does not disclose a raw, program-comparable recruiter-reputation
+      score.
+  internshipPlacementRate:
+    unit: "%"
+    confidence: low
+    notes: Program includes work-integrated learning/industry placement components, but no disclosed completion or placement-rate percentage was found for v1.
+
+admissions:
+  acceptanceRate:
+    unit: "%"
+    confidence: low
+    notes: >
+      Not publicly disclosed. Australian undergraduate admission operates on a minimum ATAR/rank
+      threshold rather than a US-style applicant-to-admit acceptance rate, and Griffith does not publish
+      an acceptance-rate figure for this program.
+  satActEquivalent:
+    unit: SAT-equivalent composite
+    confidence: low
+    notes: >
+      Australian admission does not use the SAT/ACT. Entry is based on the ATAR (Australian Tertiary
+      Admission Rank); the minimum ATAR/rank for this program is 63.00 per Griffith's official program
+      page and QTAC, the Queensland Tertiary Admissions Centre. No SAT-equivalent conversion is recorded
+      here per project convention.
+    source:
+      label: "Bachelor of International Tourism and Hotel Management — entry requirements"
+      url: https://www.qtac.edu.au/courses/listing/bachelor-of-international-tourism-and-hotel-management-272025/
+      publisher: Queensland Tertiary Admissions Centre (QTAC)
+      asOfDate: "2025-01-01"
+
+academicResearch:
+  facultyPubCitationIndex:
+    unit: index
+    confidence: low
+    notes: Not yet sourced for v1.
+  researchFundingUSD:
+    unit: USD/year
+    confidence: low
+    notes: Not yet sourced for v1.
+  facultyStudentRatio:
+    unit: students per faculty
+    confidence: low
+    notes: Not yet sourced for v1.
+  hasPhDProgram:
+    value: 1
+    unit: boolean (1=yes, 0=no)
+    source:
+      label: "Griffith Institute for Tourism (GIFT)"
+      url: https://www.griffith.edu.au/research/business/institute-tourism
+      publisher: Griffith University
+      asOfDate: "2025-01-01"
+    lastVerified: "2026-10-05"
+    confidence: medium
+    notes: >
+      Griffith does not offer a standalone "PhD in Tourism" degree title; doctoral research in tourism
+      and hospitality is undertaken through the university's general PhD (Business) within the Griffith
+      Business School, supervised through the Griffith Institute for Tourism — Australia's largest
+      tourism research institute, with 130+ academic, adjunct, and PhD members. Recorded as 1 (yes)
+      since PhD-level research in this field is confirmed available, at medium confidence given it is
+      not a dedicated degree title.

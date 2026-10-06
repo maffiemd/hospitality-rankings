@@ -1,0 +1,112 @@
+slug: msu-hospitality
+name: B.A. in Hospitality Business
+institution: Michigan State University — School of Hospitality Business, Eli Broad College of Business
+country: United States
+region: US
+website: https://broad.msu.edu/hospitality-business/
+degreeName: B.A. Hospitality Business
+
+outcomes:
+  startingSalary:
+    value: 58265
+    unit: USD/year
+    source:
+      label: "School of Hospitality Business Undergraduate Full-Time Employment Report — Class of 2025"
+      url: https://broad.msu.edu/app/uploads/2026/02/HB-Undergrad-FullTimeReport25.pdf
+      publisher: "MSU Broad College of Business, School of Hospitality Business"
+      asOfDate: "2025-12-01"
+    lastVerified: "2026-10-05"
+    confidence: medium
+    notes: >
+      Mean base salary for the Class of 2025 (median was $57,000). The prior year's report (Class of
+      2024) cited a higher mean of $65,000 (median $63,000), so the two most recent cohorts show a
+      meaningful year-over-year decline — flagged here rather than silently averaged or picking one.
+  employmentRate:
+    value: 81
+    unit: "%"
+    source:
+      label: "School of Hospitality Business Undergraduate Full-Time Employment Report — Class of 2025"
+      url: https://broad.msu.edu/app/uploads/2026/02/HB-Undergrad-FullTimeReport25.pdf
+      publisher: "MSU Broad College of Business, School of Hospitality Business"
+      asOfDate: "2025-12-01"
+    lastVerified: "2026-10-05"
+    confidence: medium
+    notes: >
+      81% of Class of 2025 graduates were employed full-time as of the report (6% continuing education,
+      11% still seeking, 1% other/venture). The Class of 2024 report cited a higher 87% employed, a
+      notable year-over-year difference between the two cohorts' reports.
+  recruiterReputationScore:
+    unit: "0-100"
+    confidence: low
+    notes: Not yet sourced for v1.
+  internshipPlacementRate:
+    value: 100
+    unit: "%"
+    source:
+      label: "School of Hospitality Business Undergraduate Internship Report — Class of 2025"
+      url: https://broad.msu.edu/app/uploads/2026/02/HB-Undergrad-InternshipReport25.pdf
+      publisher: "MSU Broad College of Business, School of Hospitality Business"
+      asOfDate: "2025-12-01"
+    lastVerified: "2026-10-05"
+    confidence: medium
+    notes: >
+      Two internships (a Level 1 and a Level 2, each a minimum of 400 paid hours over 10 weeks) are a
+      mandatory graduation requirement for the major, so this 100% figure measures required-and-completed
+      internships rather than competitive placement selectivity.
+
+admissions:
+  acceptanceRate:
+    value: 84.8
+    unit: "%"
+    source:
+      label: "Michigan State University admission profile (2024-25 cycle)"
+      url: https://www.collegetuitioncompare.com/edu/171100/michigan-state-university/admission/
+      publisher: "CollegeTuitionCompare (secondary aggregator of MSU Common Data Set)"
+      asOfDate: "2024-12-11"
+    lastVerified: "2026-10-05"
+    confidence: medium
+    notes: >
+      University-wide rate; MSU does not publish a Hospitality-Business-specific acceptance rate since
+      admission is to the university/Broad College rather than directly to the School.
+  satActEquivalent:
+    value: 1270
+    unit: SAT-equivalent composite
+    source:
+      label: "Michigan State University admission profile (2024-25 cycle)"
+      url: https://www.collegetuitioncompare.com/edu/171100/michigan-state-university/admission/
+      publisher: "CollegeTuitionCompare (secondary aggregator of MSU Common Data Set)"
+      asOfDate: "2024-12-11"
+    lastVerified: "2026-10-05"
+    confidence: low
+    notes: >
+      Midpoint of the university-wide SAT middle-50% range (1180-1360). MSU is test-optional and only
+      about 52% of enrolled students submit SAT scores; not program-specific.
+
+academicResearch:
+  facultyPubCitationIndex:
+    unit: index
+    confidence: low
+    notes: Not yet sourced for v1.
+  researchFundingUSD:
+    unit: USD/year
+    confidence: low
+    notes: Not yet sourced for v1.
+  facultyStudentRatio:
+    unit: students per faculty
+    confidence: low
+    notes: Not yet sourced for v1.
+  hasPhDProgram:
+    value: 0
+    unit: boolean (1=yes, 0=no)
+    source:
+      label: "The School of Hospitality Business — Michigan State University, Graduate Programs and Degrees"
+      url: https://www.petersons.com/graduate-schools/michigan-state-university-eli-broad-graduate-school-of-management-the-school-of-hospitality-business-000_10014959.aspx
+      publisher: "Peterson's (secondary; MSU Eli Broad Graduate School of Management listing)"
+      asOfDate: "2025-01-01"
+    lastVerified: "2026-10-05"
+    confidence: medium
+    notes: >
+      Peterson's graduate-program listing for the School shows only M.S. degrees (Hospitality Business
+      Management; Foodservice Business Management) — no standalone PhD. MSU does allow doctoral students
+      in other business disciplines to teach and specialize within the School under a joint guidance
+      committee, but there is no dedicated hospitality-business PhD-granting program, so recorded as 0.

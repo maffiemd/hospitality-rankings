@@ -1,0 +1,68 @@
+slug: les-roches
+name: BSc Global Hospitality Management
+institution: Les Roches Global Hospitality Education
+country: Switzerland
+region: Europe
+website: https://lesroches.edu/
+degreeName: BSc Global Hospitality Management
+accreditation: New England Commission of Higher Education (NECHE); Swiss federal accreditation
+
+outcomes:
+  startingSalary:
+    unit: USD/year
+    confidence: low
+    notes: No official Les Roches starting-salary disclosure was found. Only unverified third-party estimates exist (e.g. roughly CHF 50,000-60,000/year or approximately USD 54,000/year from uncredited aggregator sources), none traceable to an institutional employment report. Left blank rather than citing unverifiable figures.
+  employmentRate:
+    value: 98
+    unit: "%"
+    source:
+      label: "Les Roches ranked No. 2 worldwide for hospitality & leisure management in the QS 2026 rankings"
+      url: https://lesroches.edu/rankings/
+      publisher: Les Roches Global Hospitality Education
+      asOfDate: "2026-03-26"
+    lastVerified: "2026-10-05"
+    confidence: medium
+    notes: '"98% of Les Roches students are employed upon graduation" and "94% have one or more job offers before completing their studies," per Les Roches'' own rankings/FAQ page. The page does not state a specific graduating cohort or survey year; asOfDate reflects the QS 2026 subject-ranking cycle the page is built around.'
+  recruiterReputationScore:
+    unit: "0-100"
+    confidence: low
+    notes: Not yet sourced for v1.
+  internshipPlacementRate:
+    unit: "%"
+    confidence: low
+    notes: Les Roches' bachelor curriculum includes mandatory paid internships, and the school cites roughly 300 recruiting-company visits per year and multiple job offers per student, but no specific internship "placement rate" percentage is independently disclosed. Left blank.
+
+admissions:
+  acceptanceRate:
+    unit: "%"
+    confidence: low
+    notes: Not publicly disclosed by Les Roches. A single third-party aggregator (gotouniversity.com) cites approximately 90% with no verifiable link to an institutional source. Left blank rather than citing an unverified aggregator figure.
+  satActEquivalent:
+    unit: SAT-equivalent composite
+    confidence: low
+    notes: Les Roches bachelor admissions are based on secondary-school transcripts (minimum ~50% academic achievement), English proficiency (IELTS 6.0+, no component below 5.5), and an aptitude/motivation assessment rather than SAT/ACT scores. No SAT-equivalent composite is published for the admitted cohort, so left blank.
+
+academicResearch:
+  facultyPubCitationIndex:
+    unit: index
+    confidence: low
+    notes: Not yet sourced for v1.
+  researchFundingUSD:
+    unit: USD/year
+    confidence: low
+    notes: Not yet sourced for v1.
+  facultyStudentRatio:
+    unit: students per faculty
+    confidence: low
+    notes: Not yet sourced for v1.
+  hasPhDProgram:
+    value: 0
+    unit: boolean (1=yes, 0=no)
+    source:
+      label: "Les Roches — PhD Portal institution listing"
+      url: https://www.phdportal.com/universities/11406/les-roches.html
+      publisher: PhDportal (Keystone Academic Solutions) — secondary aggregator
+      asOfDate: "2026-10-05"
+    lastVerified: "2026-10-05"
+    confidence: medium
+    notes: No PhD or doctoral-level program was identified for Les Roches; its published offerings are bachelor's and master's degrees plus postgraduate diplomas and executive programs (e.g. in golf course management, luxury cruises, F&B entrepreneurship). Recorded as "no," flagged medium confidence since this rests on absence of evidence in available directories rather than an explicit institutional statement ruling it out.

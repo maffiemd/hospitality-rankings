@@ -1,4 +1,4 @@
-import { CATEGORIES } from "../config/weights.js";
+import { CATEGORIES, MIN_COMPLETENESS_FOR_RANK } from "../config/weights.js";
 import { minMaxNormalize, weightedAverage } from "./normalize.js";
 import type { Program } from "./schema.js";
 import type { CategoryScore, MetricScore, RankingsOutput, ScoredProgram } from "./types.js";
@@ -71,20 +71,33 @@ export function scorePrograms(programs: Program[]): RankingsOutput {
     return { program, categories, compositeScore, dataCompleteness };
   });
 
-  const ranked = [...scored].sort((a, b) => (b.compositeScore ?? -Infinity) - (a.compositeScore ?? -Infinity));
+  const isEligible = (entry: (typeof scored)[number]) =>
+    entry.compositeScore !== null && entry.dataCompleteness >= MIN_COMPLETENESS_FOR_RANK;
+
+  // Eligible programs sort by score, highest first; ineligible ones (too
+  // little data to rank meaningfully) sort after all eligible ones,
+  // alphabetically, so sparse data can never outrank well-documented data.
+  const ranked = [...scored].sort((a, b) => {
+    const aEligible = isEligible(a);
+    const bEligible = isEligible(b);
+    if (aEligible !== bEligible) return aEligible ? -1 : 1;
+    if (aEligible) return (b.compositeScore ?? 0) - (a.compositeScore ?? 0);
+    return a.program.name.localeCompare(b.program.name);
+  });
 
   const rankings: ScoredProgram[] = [];
   let rank = 0;
   let previousScore: number | null = null;
   for (const entry of ranked) {
-    if (entry.compositeScore === null) {
+    if (!isEligible(entry)) {
       rankings.push({ ...entry, rank: null });
       continue;
     }
-    if (previousScore === null || Math.abs(entry.compositeScore - previousScore) > TIE_EPSILON) {
+    const score = entry.compositeScore as number;
+    if (previousScore === null || Math.abs(score - previousScore) > TIE_EPSILON) {
       rank += 1;
     }
-    previousScore = entry.compositeScore;
+    previousScore = score;
     rankings.push({ ...entry, rank });
   }
 

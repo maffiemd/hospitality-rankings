@@ -1,0 +1,101 @@
+slug: purdue-htm
+name: B.S. in Hospitality and Tourism Management
+institution: Purdue University — White Lodging-J.W. Marriott, Jr. School of Hospitality and Tourism Management, College of Health and Human Sciences
+country: United States
+region: US
+website: https://hhs.purdue.edu/htm/
+degreeName: B.S. Hospitality and Tourism Management
+
+outcomes:
+  startingSalary:
+    value: 48973
+    unit: USD/year
+    source:
+      label: "The Hospitality Management Major at Purdue University-Main Campus"
+      url: https://www.collegefactual.com/colleges/purdue-university-main-campus/academic-life/academic-majors/business-management-marketing-sales/hospitality-management/
+      publisher: College Factual (secondary, College Scorecard-derived earnings data)
+      asOfDate: "2024-01-01"
+    lastVerified: "2026-10-05"
+    confidence: low
+    notes: >
+      College Scorecard-derived post-completion earnings figure for Hospitality Management
+      bachelor's graduates, not a self-reported "starting salary" from a primary HTM career-outcomes
+      report; the site does not specify an exact reporting year. A 2001 Purdue News release separately
+      cited first-year earnings of "$25,000 to $40,000," which is now clearly stale and was not used.
+  employmentRate:
+    value: 98
+    unit: "%"
+    source:
+      label: "Hospitality and Tourism Management Major"
+      url: https://hhs.purdue.edu/undergraduate-majors/hospitality-and-tourism-management/
+      publisher: Purdue University College of Health and Human Sciences
+      asOfDate: "2025-01-01"
+    lastVerified: "2026-10-05"
+    confidence: medium
+    notes: >
+      Program's own major page states "a 98% job placement rate" without specifying a graduating
+      class year. A separate HTM Career Center page cites "more than 94% of graduates secure
+      employment within six months of graduation" — a consistent but not identical figure, likely
+      from a different survey cohort/methodology.
+  recruiterReputationScore:
+    unit: "0-100"
+    confidence: low
+    notes: Not yet sourced for v1.
+  internshipPlacementRate:
+    unit: "%"
+    confidence: low
+    notes: >
+      HTM requires industry work experience as part of the curriculum, but no disclosed
+      internship-completion or placement-rate percentage was found for v1.
+
+admissions:
+  acceptanceRate:
+    value: 43.4
+    unit: "%"
+    source:
+      label: "Purdue Common Data Set (CDS) 2026: Acceptance Rate, SAT, GPA"
+      url: https://www.gradgpt.com/common-data-set/purdue-university
+      publisher: GradGPT (secondary aggregator of Purdue's Common Data Set)
+      asOfDate: "2025-09-01"
+    lastVerified: "2026-10-05"
+    confidence: medium
+    notes: >
+      University-wide (West Lafayette) rate for the 2025-26 cycle; Purdue does not publish a
+      separate acceptance rate for the School of Hospitality and Tourism Management, since
+      admission is to the university/college rather than directly to the school.
+  satActEquivalent:
+    value: 1345
+    unit: SAT-equivalent composite
+    source:
+      label: "Purdue Common Data Set (CDS) 2026: Acceptance Rate, SAT, GPA"
+      url: https://www.gradgpt.com/common-data-set/purdue-university
+      publisher: GradGPT (secondary aggregator of Purdue's Common Data Set)
+      asOfDate: "2025-09-01"
+    lastVerified: "2026-10-05"
+    confidence: low
+    notes: Midpoint of the university-wide SAT middle-50% range (1220-1470); not HTM-specific.
+
+academicResearch:
+  facultyPubCitationIndex:
+    unit: index
+    confidence: low
+    notes: Not yet sourced for v1.
+  researchFundingUSD:
+    unit: USD/year
+    confidence: low
+    notes: Not yet sourced for v1.
+  facultyStudentRatio:
+    unit: students per faculty
+    confidence: low
+    notes: Not yet sourced for v1.
+  hasPhDProgram:
+    value: 1
+    unit: boolean (1=yes, 0=no)
+    source:
+      label: "Program: Hospitality and Tourism Management, PHD"
+      url: https://catalog.purdue.edu/preview_program.php?catoid=18&poid=34527&returnto=24155
+      publisher: Purdue University (official academic catalog)
+      asOfDate: "2025-01-01"
+    lastVerified: "2026-10-05"
+    confidence: high
+    notes: Purdue's own catalog lists a PhD in Hospitality and Tourism Management within the school.

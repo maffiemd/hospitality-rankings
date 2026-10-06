@@ -1,0 +1,84 @@
+slug: polyu-shtm
+name: BSc (Hons) Scheme in Hotel and Tourism Management
+institution: The Hong Kong Polytechnic University — School of Hotel and Tourism Management
+country: Hong Kong
+region: Asia-Pacific
+website: https://www.polyu.edu.hk/shtm/
+degreeName: BSc (Hons) in Hotel and Tourism Management
+
+outcomes:
+  startingSalary:
+    unit: USD/year
+    confidence: low
+    notes: >
+      No SHTM-specific starting-salary figure found for v1. A PolyU SPEED (School of Professional
+      Education and Executive Development) BBA (Hons) in Hospitality Management page cites an average
+      starting salary of HK$16,709/month (2024), but SPEED is a separate self-financed teaching unit
+      from SHTM's UGC-funded BSc scheme, so that figure is not used here to avoid misattributing it to
+      SHTM. A Hong Kong Standard article on Q1 2026 graduate hiring cites a HK$20,000/month median
+      starting salary for the broader "tourism" hiring category, but that is an economy-wide sector
+      stat, not SHTM-program-specific, so it is also excluded. Left blank pending SHTM's own
+      program-level outcomes report.
+  employmentRate:
+    unit: "%"
+    confidence: low
+    notes: Not yet sourced for v1 — no SHTM-specific graduate employment rate found; PolyU's university-wide Graduate Employment Survey (GES) PDFs did not yield a readable, program-level breakout for Hotel and Tourism Management in this pass.
+  recruiterReputationScore:
+    unit: "0-100"
+    confidence: low
+    notes: >
+      Not scored for v1. Noted for context only, not used as an input: SHTM is ranked No. 1 globally in
+      "Hospitality and Tourism Management" by ShanghaiRanking's Global Ranking of Academic Subjects for
+      multiple consecutive years, and No. 2 globally in Hospitality and Leisure Management by QS World
+      University Rankings by Subject 2026. Neither ranking discloses a raw, program-comparable
+      recruiter-reputation score.
+  internshipPlacementRate:
+    unit: "%"
+    confidence: low
+    notes: Not yet sourced for v1. The BSc scheme includes industry placement components, but no disclosed placement-completion-rate percentage was found.
+
+admissions:
+  acceptanceRate:
+    unit: "%"
+    confidence: low
+    notes: >
+      Not publicly disclosed in acceptance-rate terms. Hong Kong's JUPAS system reports first-year
+      intake and offer counts rather than an applicant-to-offer acceptance rate; PolyU's JS3310 (Hotel
+      and Tourism Management) JUPAS page lists a first-year intake of 74 places and Band-A offer counts
+      of 75 (2024), 55 (2025), and 43 (2026), but does not publish total Band-A/B/C applicant volume
+      needed to compute a comparable acceptance rate.
+  satActEquivalent:
+    unit: SAT-equivalent composite
+    confidence: low
+    notes: >
+      Hong Kong undergraduate admission does not use the SAT/ACT; local applicants are admitted through
+      JUPAS based on HKDSE (Hong Kong Diploma of Secondary Education) subject-level scores aggregated
+      into a JUPAS composite admission score, with non-local/international applicants assessed via their
+      own qualifications (A-Levels, IB, etc.) on a case-by-case basis. PolyU's JUPAS page for JS3310 did
+      not disclose a specific median HKDSE admission-score threshold in this pass, and no false
+      SAT-equivalent conversion is recorded here per project convention.
+
+academicResearch:
+  facultyPubCitationIndex:
+    unit: index
+    confidence: low
+    notes: Not yet sourced for v1.
+  researchFundingUSD:
+    unit: USD/year
+    confidence: low
+    notes: Not yet sourced for v1.
+  facultyStudentRatio:
+    unit: students per faculty
+    confidence: low
+    notes: Not yet sourced for v1.
+  hasPhDProgram:
+    value: 1
+    unit: boolean (1=yes, 0=no)
+    source:
+      label: "Doctor of Philosophy in Hotel and Tourism Management — Entrance Requirements and Application Documents"
+      url: https://www.polyu.edu.hk/shtm/study/research-postgraduate-programme/doctor-of-philosophy-in-hotel-and-tourism-management/entrance-requirements-and-application-documents/
+      publisher: PolyU School of Hotel and Tourism Management
+      asOfDate: "2025-01-01"
+    lastVerified: "2026-10-05"
+    confidence: high
+    notes: SHTM's own site confirms both a PhD and a Doctor of Hotel and Tourism Management (D.HTM) research-postgraduate program; SHTM is widely regarded as having one of the field's largest and most research-active doctoral cohorts.

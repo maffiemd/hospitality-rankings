@@ -1,0 +1,81 @@
+slug: taylors
+name: Bachelor of Culinary Management (Honours)
+institution: Taylor's University — Taylor's Culinary Institute
+country: Malaysia
+region: Asia-Pacific
+website: https://university.taylors.edu.my/en/study/explore-all-programmes/taylors-culinary-institute/undergraduate/bachelor-of-culinary-management.html
+degreeName: Bachelor of Culinary Management (Honours)
+
+outcomes:
+  startingSalary:
+    unit: USD/year
+    confidence: low
+    notes: Not yet sourced for v1 — no RM or USD starting-salary figure disclosed on Taylor's program page or in the 2025 MOHE (Ministry of Higher Education) Graduate Tracer Study coverage found in this pass.
+  employmentRate:
+    value: 100
+    unit: "%"
+    source:
+      label: "Bachelor of Culinary Management (Honours) program page"
+      url: https://university.taylors.edu.my/en/study/explore-all-programmes/taylors-culinary-institute/undergraduate/bachelor-of-culinary-management.html
+      publisher: Taylor's University (citing the 2025 MOHE Graduate Tracer Study)
+      asOfDate: "2025-01-01"
+    lastVerified: "2026-10-05"
+    confidence: low
+    notes: Taylor's cites a "100% graduate employment rate (2025 MOHE Graduate Tracer Study)" on this program's own page, but the underlying Graduate Tracer Study figure is Taylor's University-wide, not broken out specifically for the Culinary Management cohort. Flagged low confidence pending a program-specific figure.
+  recruiterReputationScore:
+    unit: "0-100"
+    confidence: low
+    notes: >
+      Not scored for v1. Noted for context only: Taylor's Culinary Institute is ranked world No. 26 and
+      No. 1 in Southeast Asia for Hospitality & Leisure Management in the QS World University Rankings
+      by Subject 2026, and Taylor's University ranked #16 globally for Graduate Employment Rate in the
+      QS Graduate Employability Rankings 2022. Neither discloses a raw, program-comparable
+      recruiter-reputation score.
+  internshipPlacementRate:
+    unit: "%"
+    confidence: low
+    notes: Program places students with industry partners (e.g., Hilton, Shangri-La, Mandarin Oriental, Westin, InterContinental, Accor) as part of its curriculum, but no disclosed placement-completion-rate percentage was found for v1.
+
+admissions:
+  acceptanceRate:
+    unit: "%"
+    confidence: low
+    notes: Not publicly disclosed. As a private Malaysian university, Taylor's does not publish a US-style applicant-to-admit acceptance rate for this program.
+  satActEquivalent:
+    unit: SAT-equivalent composite
+    confidence: low
+    notes: >
+      Malaysian admission does not use the SAT/ACT. Local entry is via Taylor's own Foundation/Diploma
+      pathway (min. CGPA 2.00), STPM (min. CC, CGPA 2.00), or UEC (min. 5 B's); other accepted
+      qualifications include A-Levels (min. DD), IB (min. 24 points), and — for applicants holding it —
+      ATAR (min. 55). No SAT-equivalent conversion is recorded here per project convention.
+    source:
+      label: "Bachelor of Culinary Management (Honours) — Entry Requirements"
+      url: https://university.taylors.edu.my/en/study/explore-all-programmes/taylors-culinary-institute/undergraduate/bachelor-of-culinary-management.html
+      publisher: Taylor's University
+      asOfDate: "2025-01-01"
+
+academicResearch:
+  facultyPubCitationIndex:
+    unit: index
+    confidence: low
+    notes: Not yet sourced for v1.
+  researchFundingUSD:
+    unit: USD/year
+    confidence: low
+    notes: Not yet sourced for v1.
+  facultyStudentRatio:
+    unit: students per faculty
+    confidence: low
+    notes: Not yet sourced for v1.
+  hasPhDProgram:
+    value: 1
+    unit: boolean (1=yes, 0=no)
+    source:
+      label: "Doctor of Philosophy in Hospitality and Tourism (Research)"
+      url: https://university.taylors.edu.my/en/study/postgraduate-research/hospitality/phd-hospitality-and-tourism-research.html
+      publisher: Taylor's University
+      asOfDate: "2025-01-01"
+    lastVerified: "2026-10-05"
+    confidence: high
+    notes: Taylor's own site confirms a research PhD in Hospitality & Tourism (3-6 years full-time), offered through the School of Hospitality, Tourism and Events, a sibling school to the Culinary Institute within Taylor's hospitality cluster.

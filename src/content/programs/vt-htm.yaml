@@ -1,0 +1,106 @@
+slug: vt-htm
+name: B.S. in Hospitality and Tourism Management
+institution: Virginia Tech — Howard Feiertag Department of Hospitality and Tourism Management, Pamplin College of Business
+country: United States
+region: US
+website: https://htm.pamplin.vt.edu/
+degreeName: B.S. Hospitality and Tourism Management
+
+outcomes:
+  startingSalary:
+    value: 54000
+    unit: USD/year
+    source:
+      label: "Post-Graduation Report, 2023-24 Cohort — Pamplin College of Business (by major)"
+      url: "https://fds.career.vt.edu/Salary/Details?cohort=2023-2024&college=Pamplin+College+of+Business&dispmajor=Y"
+      publisher: Virginia Tech Career and Professional Development
+      asOfDate: "2024-01-01"
+    lastVerified: "2026-10-05"
+    confidence: medium
+    notes: >
+      Median of the reported 25th/75th percentile range ($45,000-$60,000) for Hospitality and Tourism
+      Management graduates in the 2023-24 cohort; based on only 15 of 44 graduates (about one-third)
+      reporting a salary, a small sample. Secondary sources separately cite a rounder "$55,000" figure
+      for the Class of 2025 without a primary link, so flagged medium confidence pending a
+      larger-sample primary figure.
+  employmentRate:
+    value: 89
+    unit: "%"
+    source:
+      label: "Post-Graduation Report, 2023-24 Cohort — Pamplin College of Business (by major)"
+      url: "https://fds.career.vt.edu/Salary/Details?cohort=2023-2024&college=Pamplin+College+of+Business&dispmajor=Y"
+      publisher: Virginia Tech Career and Professional Development
+      asOfDate: "2024-01-01"
+    lastVerified: "2026-10-05"
+    confidence: medium
+    notes: >
+      31 of 35 survey respondents (an 80% response rate out of 44 total 2023-24 graduates) reported
+      being employed. The department's own careers page separately cites a broader historical
+      "85-90% placement rate upon graduation," consistent with this figure. Other secondary sources
+      claim up to 100% employment for the Class of 2025 "seeking employment," but no primary figure
+      for that specific cohort was found for v1.
+  recruiterReputationScore:
+    unit: "0-100"
+    confidence: low
+    notes: Not yet sourced for v1.
+  internshipPlacementRate:
+    unit: "%"
+    confidence: low
+    notes: Not yet sourced for v1 — no disclosed internship-completion or placement-rate percentage found.
+
+admissions:
+  acceptanceRate:
+    value: 55
+    unit: "%"
+    source:
+      label: "Virginia Tech Common Data Set, 2025-26 cycle"
+      url: https://www.collegedata.fyi/schools/virginia-tech
+      publisher: CollegeData.fyi (secondary aggregator of Virginia Tech's Common Data Set)
+      asOfDate: "2025-09-01"
+    lastVerified: "2026-10-05"
+    confidence: medium
+    notes: >
+      University-wide rate (31,515 admitted of 57,755 applicants). Pamplin College of Business and
+      the HTM department do not publish a separate department-level acceptance rate; students are
+      admitted to the university and declare/compete for the major afterward.
+  satActEquivalent:
+    value: 1365
+    unit: SAT-equivalent composite
+    source:
+      label: "Virginia Tech Common Data Set, 2025-26 cycle"
+      url: https://www.collegedata.fyi/schools/virginia-tech
+      publisher: CollegeData.fyi (secondary aggregator of Virginia Tech's Common Data Set)
+      asOfDate: "2025-09-01"
+    lastVerified: "2026-10-05"
+    confidence: low
+    notes: >
+      Virginia Tech's 2025-26 Common Data Set does not publish a composite SAT range; this value
+      sums the reported IPEDS section midpoints (Evidence-Based Reading & Writing 640-710, Math
+      640-740). Other secondary aggregators report composite ranges anywhere from 1210-1410 to
+      1280-1450 depending on the cycle cited, so flagged low confidence. University-wide, not
+      program-specific.
+
+academicResearch:
+  facultyPubCitationIndex:
+    unit: index
+    confidence: low
+    notes: Not yet sourced for v1.
+  researchFundingUSD:
+    unit: USD/year
+    confidence: low
+    notes: Not yet sourced for v1.
+  facultyStudentRatio:
+    unit: students per faculty
+    confidence: low
+    notes: Not yet sourced for v1.
+  hasPhDProgram:
+    value: 1
+    unit: boolean (1=yes, 0=no)
+    source:
+      label: "Hospitality and Tourism Management Ph.D. in Business"
+      url: https://htm.pamplin.vt.edu/graduate/phd-business.html
+      publisher: Virginia Tech, Howard Feiertag Department of Hospitality and Tourism Management
+      asOfDate: "2025-01-01"
+    lastVerified: "2026-10-05"
+    confidence: high
+    notes: Department's own graduate page confirms a Ph.D. in Business with an HTM research concentration.

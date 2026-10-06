@@ -2,9 +2,13 @@
 import Layout from "../layouts/Layout.astro";
 import rankingsData from "../../data/generated/rankings.json";
 import type { RankingsOutput } from "../lib/types";
+import { MIN_COMPLETENESS_FOR_RANK } from "../config/weights";
 
 const data = rankingsData as RankingsOutput;
-const rankings = [...data.rankings].sort((a, b) => (a.rank ?? Infinity) - (b.rank ?? Infinity));
+const ranked = data.rankings.filter((r) => r.rank !== null).sort((a, b) => (a.rank as number) - (b.rank as number));
+const unranked = data.rankings
+  .filter((r) => r.rank === null)
+  .sort((a, b) => a.program.name.localeCompare(b.program.name));
 const generated = new Date(data.generatedAt);
 ---
 
@@ -16,7 +20,7 @@ const generated = new Date(data.generatedAt);
   </p>
   <p class="meta">
     Rankings last computed on {generated.toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" })}
-    &middot; {data.programCount} programs scored
+    &middot; {ranked.length} of {data.programCount} programs ranked
   </p>
 
   <table id="rankings-table">
@@ -34,7 +38,7 @@ const generated = new Date(data.generatedAt);
     </thead>
     <tbody>
       {
-        rankings.map((r) => {
+        ranked.map((r) => {
           const cat = (key: string) => r.categories.find((c) => c.key === key)?.score;
           return (
             <tr
@@ -63,6 +67,38 @@ const generated = new Date(data.generatedAt);
       }
     </tbody>
   </table>
+
+  {
+    unranked.length > 0 && (
+      <section class="unranked">
+        <h2>Not yet ranked — insufficient data</h2>
+        <p class="subhead">
+          These programs have fewer than {Math.round(MIN_COMPLETENESS_FOR_RANK * 100)}% of tracked metrics sourced, which isn't enough
+          to compute a meaningful composite score against better-documented programs (see <a href="/methodology/">methodology</a>). They're listed here, alphabetically, with whatever has been
+          verified so far — not penalized with a low rank, and not given an inflated one either.
+        </p>
+        <table>
+          <thead>
+            <tr>
+              <th>Program</th>
+              <th>Data completeness</th>
+            </tr>
+          </thead>
+          <tbody>
+            {unranked.map((r) => (
+              <tr>
+                <td>
+                  <a href={`/programs/${r.program.slug}/`}>{r.program.name}</a>
+                  <div class="institution">{r.program.institution}</div>
+                </td>
+                <td>{Math.round(r.dataCompleteness * 100)}%</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </section>
+    )
+  }
 </Layout>
 
 <script>
@@ -162,5 +198,11 @@ const generated = new Date(data.generatedAt);
   .institution {
     font-size: 0.8rem;
     color: var(--muted);
+  }
+
+  .unranked {
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border);
   }
 </style>

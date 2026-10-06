@@ -26,12 +26,12 @@ const { program } = ranking;
 
   <div class="score-banner">
     <div>
-      <span class="big">{ranking.rank ?? "—"}</span>
+      <span class="big">{ranking.rank ?? "Unranked"}</span>
       <span class="label">Rank</span>
     </div>
     <div>
       <span class="big">{ranking.compositeScore?.toFixed(1) ?? "—"}</span>
-      <span class="label">Composite score</span>
+      <span class="label">Composite score{ranking.rank === null && ranking.compositeScore !== null ? " (informational — see note below)" : ""}</span>
     </div>
     <div>
       <span class="big">{Math.round(ranking.dataCompleteness * 100)}%</span>
@@ -40,11 +40,19 @@ const { program } = ranking;
   </div>
 
   {
+    ranking.rank === null && (
+      <p class="unranked-note">
+        This program isn't yet eligible for a numeric rank — too few of the tracked metrics have a
+        sourced value (see the <a href="/methodology/">methodology</a>). The composite score above is
+        shown for transparency but shouldn't be compared directly to a ranked program's score.
+      </p>
+    )
+  }
+
+  {
     ranking.categories.map((category) => (
       <section>
-        <h2>
-          {category.label} — {category.score?.toFixed(1) ?? "—"}
-        </h2>
+        <h2>{category.label}{category.score !== null ? ` — ${category.score.toFixed(1)}` : " (no data yet)"}</h2>
         <table>
           <thead>
             <tr>
@@ -103,6 +111,14 @@ const { program } = ranking;
     display: flex;
     gap: 2rem;
     margin: 1.5rem 0 2.5rem;
+  }
+
+  .unranked-note {
+    background: var(--accent-bg);
+    border-radius: 6px;
+    padding: 0.9rem 1rem;
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
   }
 
   .score-banner .big {

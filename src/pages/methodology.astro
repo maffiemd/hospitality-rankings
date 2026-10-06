@@ -1,6 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import { CATEGORIES } from "../config/weights";
+import { CATEGORIES, MIN_COMPLETENESS_FOR_RANK } from "../config/weights";
 ---
 
 <Layout title="Methodology">
@@ -81,6 +81,17 @@ import { CATEGORIES } from "../config/weights";
     just because one data point hasn't been sourced yet. Instead, each program's profile page and the
     rankings table show a <strong>data completeness</strong> percentage, so readers can see how much
     of a program's score rests on verified data versus how much is still outstanding.
+  </p>
+
+  <h2>Minimum data to be ranked</h2>
+  <p>
+    A composite score computed from one or two sourced metrics isn't a meaningful comparison against
+    a program with a dozen verified data points — but the re-weighting rule above means a sparse
+    program's one strong metric can otherwise dominate its (nearly empty) composite score. To prevent
+    data sparsity itself from producing a misleadingly high rank, a program needs at least {Math.round(MIN_COMPLETENESS_FOR_RANK * 100)}%
+    of tracked metrics sourced to receive a numeric rank. Programs below that threshold are still
+    scored and shown — nothing is hidden — but listed separately as <a href="/">not yet ranked</a> rather
+    than competing against better-documented programs.
   </p>
 
   <h2>How this compares to other hospitality rankings</h2>

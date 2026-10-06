@@ -1,0 +1,97 @@
+slug: fiu-chaplin
+name: B.S. in Hospitality and Tourism Management
+institution: Florida International University — Chaplin School of Hospitality & Tourism Management
+country: United States
+region: US
+website: https://hospitality.fiu.edu/
+degreeName: B.S. Hospitality and Tourism Management
+
+outcomes:
+  startingSalary:
+    value: 63921
+    unit: USD/year
+    source:
+      label: "Career Development Office — Chaplin School Career Statistics"
+      url: https://hospitality.fiu.edu/career/
+      publisher: "FIU Chaplin School of Hospitality & Tourism Management (salary data via Steppingblocks.com)"
+      asOfDate: "2026-09-18"
+    lastVerified: "2026-10-05"
+    confidence: medium
+    notes: >
+      Chaplin School's own Career Development page cites a $63,921 average starting salary for
+      Bachelor's graduates (and $68,828 separately for Master's graduates), sourced to Steppingblocks.com
+      and covering a rolling 2020-2026 multi-year window rather than a single graduating class. No
+      FIU-produced outcomes report with an exact single-class-year figure was found for v1.
+  employmentRate:
+    unit: "%"
+    confidence: low
+    notes: >
+      No disclosed employment-rate or offer-acceptance percentage was found on the Chaplin School's
+      Career Development page or elsewhere for v1; the page reports counts (250+ employers visiting,
+      500+ internship positions filled) rather than a rate.
+  recruiterReputationScore:
+    unit: "0-100"
+    confidence: low
+    notes: Not yet sourced for v1.
+  internshipPlacementRate:
+    unit: "%"
+    confidence: low
+    notes: >
+      The Chaplin School cites "500+ internship positions filled by students" — a count, not a
+      percentage/rate — so no internship-placement-rate figure is recorded for v1.
+
+admissions:
+  acceptanceRate:
+    value: 54.7
+    unit: "%"
+    source:
+      label: "Florida International University admission profile (2024-25 cycle)"
+      url: https://www.collegetuitioncompare.com/edu/133951/florida-international-university/admission/
+      publisher: "CollegeTuitionCompare (secondary aggregator of FIU Common Data Set)"
+      asOfDate: "2024-12-11"
+    lastVerified: "2026-10-05"
+    confidence: medium
+    notes: >
+      University-wide rate (32,855 applicants, 17,957 admitted) for the 2024-25 cycle. FIU's hospitality
+      programs admit through the standard university application process rather than a separate
+      selective review by the Chaplin School.
+  satActEquivalent:
+    value: 1165
+    unit: SAT-equivalent composite
+    source:
+      label: "Florida International University admission profile (2024-25 cycle)"
+      url: https://www.collegetuitioncompare.com/edu/133951/florida-international-university/admission/
+      publisher: "CollegeTuitionCompare (secondary aggregator of FIU Common Data Set)"
+      asOfDate: "2024-12-11"
+    lastVerified: "2026-10-05"
+    confidence: low
+    notes: Midpoint of the university-wide SAT middle-50% range (1070-1260) for the 2024-25 cycle; not program-specific.
+
+academicResearch:
+  facultyPubCitationIndex:
+    unit: index
+    confidence: low
+    notes: Not yet sourced for v1.
+  researchFundingUSD:
+    unit: USD/year
+    confidence: low
+    notes: Not yet sourced for v1.
+  facultyStudentRatio:
+    unit: students per faculty
+    confidence: low
+    notes: Not yet sourced for v1.
+  hasPhDProgram:
+    value: 0
+    unit: boolean (1=yes, 0=no)
+    source:
+      label: "FIU Business adds a hospitality concentration to the doctoral program"
+      url: https://business.fiu.edu/news/2024/fiu-business-adds-a-hospitality-concentration-to-the-doctoral-program.html
+      publisher: FIU Business
+      asOfDate: "2024-01-01"
+    lastVerified: "2026-10-05"
+    confidence: medium
+    notes: >
+      The Chaplin School does not itself grant a PhD. FIU Business launched a hospitality concentration
+      within its Doctorate in Business Administration (DBA), enrolling its first cohort in Spring 2025.
+      A DBA is a practitioner-oriented professional doctorate rather than a traditional research PhD, so
+      this is recorded as 0 pending a dedicated research-PhD offering.

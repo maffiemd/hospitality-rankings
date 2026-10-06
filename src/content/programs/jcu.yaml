@@ -1,0 +1,82 @@
+slug: jcu
+name: Bachelor of Tourism, Hospitality and Events
+institution: James Cook University — College of Business, Law and Governance
+country: Australia
+region: Asia-Pacific
+website: https://www.jcu.edu.au/courses/bachelor-of-tourism-hospitality-and-events
+degreeName: Bachelor of Tourism, Hospitality and Events
+
+outcomes:
+  startingSalary:
+    unit: USD/year
+    confidence: low
+    notes: >
+      Not yet sourced for v1. JCU is cited in secondary coverage as ranked #1 in Australia for median
+      graduate salary among international-student graduates per the QILT Graduate Outcomes Survey
+      2020-2022, but that is a university-wide, international-cohort statistic (and a ranking rather
+      than a disclosed dollar figure), not specific to this program or to domestic/overall graduates,
+      so it is not recorded as a value here.
+  employmentRate:
+    unit: "%"
+    confidence: low
+    notes: Not yet sourced for v1 — no program-specific employment-rate figure found; secondary coverage cites JCU as #1 in Queensland for full-time graduate employment outcomes (Good Universities Guide 2023), but that is university-wide, not isolated to this degree.
+  recruiterReputationScore:
+    unit: "0-100"
+    confidence: low
+    notes: Not scored for v1. No disclosed, program-comparable recruiter-reputation dataset found.
+  internshipPlacementRate:
+    unit: "%"
+    confidence: low
+    notes: Program requires 400 hours of work experience/industry-based placement (including real-world placements with five-star industry partners), but no disclosed completion-rate percentage was found for v1.
+
+admissions:
+  acceptanceRate:
+    unit: "%"
+    confidence: low
+    notes: Not publicly disclosed. Australian undergraduate admission operates on a minimum ATAR/rank threshold rather than a US-style applicant-to-admit acceptance rate.
+  satActEquivalent:
+    value: 59.4
+    unit: ATAR (not SAT-equivalent; recorded as the local admission metric)
+    source:
+      label: "Bachelor of Tourism, Hospitality and Events — entry requirements (secondary aggregator)"
+      url: https://www.bachelorsportal.com/studies/327797/tourism-hospitality-and-events.html
+      publisher: Bachelorsportal (secondary aggregator of JCU entry requirements)
+      asOfDate: "2025-01-01"
+    lastVerified: "2026-10-05"
+    confidence: low
+    notes: >
+      Australian admission does not use the SAT/ACT; entry is based on the ATAR (Australian Tertiary
+      Admission Rank), with a minimum ATAR/rank of 59.4 for this program per multiple secondary
+      aggregators (not confirmed against JCU's own course page in this pass, which returned an access
+      error). Recorded as the ATAR itself rather than a false SAT-equivalent conversion, per project
+      convention; flagged low confidence pending a primary JCU source.
+
+academicResearch:
+  facultyPubCitationIndex:
+    unit: index
+    confidence: low
+    notes: Not yet sourced for v1.
+  researchFundingUSD:
+    unit: USD/year
+    confidence: low
+    notes: Not yet sourced for v1.
+  facultyStudentRatio:
+    unit: students per faculty
+    confidence: low
+    notes: Not yet sourced for v1.
+  hasPhDProgram:
+    value: 1
+    unit: boolean (1=yes, 0=no)
+    source:
+      label: "Doctor of Philosophy (Management and Commerce)"
+      url: https://www.jcu.edu.au/course-and-subject-handbook-2024/courses/research-courses/doctor-of-philosophy-management-and-commerce
+      publisher: James Cook University
+      asOfDate: "2024-01-01"
+    lastVerified: "2026-10-05"
+    confidence: medium
+    notes: >
+      JCU does not offer a standalone "PhD in Tourism/Hospitality" degree title; doctoral research in
+      tourism, hospitality, and events is undertaken through the university's general Doctor of
+      Philosophy (Management and Commerce), supervised within JCU's tourism, hospitality and events
+      research group. Recorded as 1 (yes) since PhD-level research in this field is confirmed
+      available, at medium confidence given it is not a dedicated degree title.

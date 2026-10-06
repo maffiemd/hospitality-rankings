@@ -1,0 +1,68 @@
+slug: glion
+name: BSc International Hospitality Business
+institution: Glion Institute of Higher Education
+country: Switzerland
+region: Europe
+website: https://www.glion.edu/
+degreeName: BSc International Hospitality Business
+accreditation: New England Commission of Higher Education (NECHE); Swiss federal accreditation
+
+outcomes:
+  startingSalary:
+    unit: USD/year
+    confidence: low
+    notes: No official Glion starting-salary disclosure was found. Only crowd-sourced aggregator data (Glassdoor, Emolument) exists, with large unexplained variance by role and degree classification (e.g. a BSc sample of $40,000/year vs. a "Bachelor (Other)" sample of $112,000/year from the same aggregator) — too inconsistent to treat as a reliable figure. Left blank.
+  employmentRate:
+    value: 98
+    unit: "%"
+    source:
+      label: "About Us — Glion"
+      url: https://www.glion.edu/about-us/
+      publisher: Glion Institute of Higher Education
+      asOfDate: "2026-01-01"
+    lastVerified: "2026-10-05"
+    confidence: medium
+    notes: '"98% of job-seeking students have one or more job offers upon graduation" per Glion''s own site. This is a job-offer rate at graduation, not a post-graduation employment survey result like EHL''s, and Glion''s page does not state a specific graduating cohort or survey year — the figure is treated as current as of the QS 2026 rankings cycle referenced on the same page.'
+  recruiterReputationScore:
+    unit: "0-100"
+    confidence: low
+    notes: Not yet sourced for v1.
+  internshipPlacementRate:
+    unit: "%"
+    confidence: low
+    notes: Glion's bachelor curriculum includes two mandatory 6-month paid internships, and the school cites an average of multiple internship offers per student per semester, but no specific internship "placement rate" percentage is disclosed. Left blank rather than inferring one from curriculum structure.
+
+admissions:
+  acceptanceRate:
+    unit: "%"
+    confidence: low
+    notes: Not publicly disclosed by Glion. A single third-party aggregator (gotouniversity.com) cites 85% with no verifiable link to an institutional source. Left blank rather than citing an unverified aggregator figure.
+  satActEquivalent:
+    unit: SAT-equivalent composite
+    confidence: low
+    notes: Glion's bachelor admissions are holistic rather than SAT/ACT-based — direct entry requires a vocational baccalaureate or a secondary diploma plus relevant work experience, assessed alongside motivation and an English-proficiency threshold (IELTS 5.5+). No SAT-equivalent composite is published for the admitted cohort, so left blank.
+
+academicResearch:
+  facultyPubCitationIndex:
+    unit: index
+    confidence: low
+    notes: Not yet sourced for v1.
+  researchFundingUSD:
+    unit: USD/year
+    confidence: low
+    notes: Not yet sourced for v1.
+  facultyStudentRatio:
+    unit: students per faculty
+    confidence: low
+    notes: Not yet sourced for v1.
+  hasPhDProgram:
+    value: 0
+    unit: boolean (1=yes, 0=no)
+    source:
+      label: "Glion Institute of Higher Education — PhD Portal institution listing"
+      url: https://www.phdportal.com/universities/22514/glion-institute-of-higher-education.html
+      publisher: PhDportal (Keystone Academic Solutions) — secondary aggregator
+      asOfDate: "2026-10-05"
+    lastVerified: "2026-10-05"
+    confidence: medium
+    notes: No PhD or doctoral-level program was identified for Glion on its own site or in third-party doctoral-program directories; Glion's published offerings are limited to bachelor's and master's degrees. Unlike its sister Sommet Education school EHL, Glion does not appear to co-deliver a DBA or other doctorate, so recorded as "no," flagged medium confidence since this rests on absence of evidence rather than an explicit institutional statement.

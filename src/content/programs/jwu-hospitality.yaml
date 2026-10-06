@@ -1,0 +1,104 @@
+slug: jwu-hospitality
+name: B.S. in Hospitality Management
+institution: Johnson & Wales University — College of Hospitality Management
+country: United States
+region: US
+website: https://hospitality.jwu.edu/
+degreeName: B.S. Hospitality Management
+
+outcomes:
+  startingSalary:
+    unit: USD/year
+    confidence: low
+    notes: >
+      No JWU-specific or College-of-Hospitality-Management-specific starting-salary figure was found
+      for v1; JWU's public Career Outcomes reporting discloses an outcomes rate (employed, continuing
+      education, or in service/military) rather than a salary figure.
+  employmentRate:
+    value: 92.3
+    unit: "%"
+    source:
+      label: "Career Outcomes — Providence Campus"
+      url: https://www.jwu.edu/career-outcomes/index.html
+      publisher: Johnson & Wales University
+      asOfDate: "2024-01-01"
+    lastVerified: "2026-10-05"
+    confidence: medium
+    notes: >
+      University-wide (Providence campus) undergraduate Career Outcomes Rate for the Class of 2023-24,
+      based on a 69.9% knowledge rate; measures graduates employed, continuing education, performing
+      voluntary service, or enlisted in the military within six months of graduation — not a pure
+      employment rate. Separately, legacy program pages for the Hotel & Resort Management and Tourism &
+      Hospitality Management B.S. majors — both folded into a single Hospitality Management B.S. starting
+      Fall 2023 — cite a higher 96.8% career-outcomes rate specific to those majors. That figure's exact
+      vintage could not be confirmed and the program structure has since changed, so it is noted here as
+      a discrepancy rather than used as the primary value.
+  recruiterReputationScore:
+    unit: "0-100"
+    confidence: low
+    notes: Not yet sourced for v1.
+  internshipPlacementRate:
+    unit: "%"
+    confidence: low
+    notes: >
+      JWU reports that roughly 3,500 students complete internships annually university-wide and that
+      more than 60% receive a job offer at completion, per JWU's own news coverage, but no clean
+      "percentage of students placed into an internship" figure specific to the College of Hospitality
+      Management was found for v1.
+
+admissions:
+  acceptanceRate:
+    value: 88.4
+    unit: "%"
+    source:
+      label: "Johnson & Wales University-Providence admission profile (2024-25 cycle)"
+      url: https://www.collegetuitioncompare.com/edu/217235/johnson-and-wales-university-providence/admission/
+      publisher: "CollegeTuitionCompare (secondary aggregator of JWU Common Data Set)"
+      asOfDate: "2024-12-11"
+    lastVerified: "2026-10-05"
+    confidence: medium
+    notes: >
+      University-wide (Providence campus) rate; JWU's College of Hospitality Management does not run a
+      separate selective-admission process from the university.
+  satActEquivalent:
+    value: 1025
+    unit: SAT-equivalent composite
+    source:
+      label: "Johnson & Wales University-Providence admission profile (2024-25 cycle)"
+      url: https://www.collegetuitioncompare.com/edu/217235/johnson-and-wales-university-providence/admission/
+      publisher: "CollegeTuitionCompare (secondary aggregator of JWU Common Data Set)"
+      asOfDate: "2024-12-11"
+    lastVerified: "2026-10-05"
+    confidence: low
+    notes: >
+      Midpoint of the university-wide SAT middle-50% range (890-1160); JWU uses holistic, largely
+      test-optional review, and the figure is not program-specific.
+
+academicResearch:
+  facultyPubCitationIndex:
+    unit: index
+    confidence: low
+    notes: Not yet sourced for v1.
+  researchFundingUSD:
+    unit: USD/year
+    confidence: low
+    notes: Not yet sourced for v1.
+  facultyStudentRatio:
+    unit: students per faculty
+    confidence: low
+    notes: Not yet sourced for v1.
+  hasPhDProgram:
+    value: 0
+    unit: boolean (1=yes, 0=no)
+    source:
+      label: "Johnson & Wales University to Offer Two, New Online-Only Doctoral Programs"
+      url: https://www.jwu.edu/news/university-press-releases/providence/doctoral-programs.html
+      publisher: Johnson & Wales University
+      asOfDate: "2025-01-01"
+    lastVerified: "2026-10-05"
+    confidence: medium
+    notes: >
+      JWU offers a Doctor of Business Administration (DBA) with a Hospitality Leadership concentration
+      (alongside an Ed.D. and applied clinical doctorates), delivered fully online in a cohort model, but
+      no traditional research PhD. Recorded as 0 since a DBA is a practitioner-oriented professional
+      doctorate rather than a PhD.

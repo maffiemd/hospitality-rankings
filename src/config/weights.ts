@@ -22,6 +22,16 @@ export interface CategoryConfig {
   metrics: MetricWeightConfig[];
 }
 
+/**
+ * A program needs at least this fraction of tracked metrics sourced to
+ * receive a numeric rank. Below this, a composite score computed from one
+ * or two populated metrics (e.g. a single "has PhD program" flag) is not a
+ * meaningful comparison — the program is still scored and shown, but as
+ * unranked pending more data, rather than letting data sparsity itself
+ * produce a misleadingly high rank.
+ */
+export const MIN_COMPLETENESS_FOR_RANK = 0.3;
+
 export const CATEGORIES: CategoryConfig[] = [
   {
     key: "outcomes",
