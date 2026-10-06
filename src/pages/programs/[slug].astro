@@ -17,8 +17,9 @@ const { program } = ranking;
 ---
 
 <Layout title={program.name}>
-  <p><a href="/">&larr; Back to rankings</a></p>
-  <h1>{program.name}</h1>
+  <p class="back"><a href="/">&larr; Back to rankings</a></p>
+  <span class="eyebrow">{ranking.rank !== null ? `Ranked #${ranking.rank}` : "Not yet ranked"}</span>
+  <h1 class="display">{program.name}</h1>
   <p class="institution">{program.institution} &middot; {program.country}</p>
   <p>
     <a href={program.website} target="_blank" rel="noopener noreferrer">{program.website}</a>
@@ -52,7 +53,7 @@ const { program } = ranking;
   {
     ranking.categories.map((category) => (
       <section>
-        <h2>{category.label}{category.score !== null ? ` — ${category.score.toFixed(1)}` : " (no data yet)"}</h2>
+        <h2><span class="marker">&#9656;</span> {category.label}{category.score !== null ? ` — ${category.score.toFixed(1)}` : " (no data yet)"}</h2>
         <table>
           <thead>
             <tr>
@@ -103,19 +104,43 @@ const { program } = ranking;
 </Layout>
 
 <style>
+  .back {
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  .back a {
+    color: var(--fg);
+    text-decoration: none;
+  }
+
+  .back a:hover {
+    color: var(--accent);
+  }
+
+  .display {
+    font-size: clamp(1.8rem, 4vw, 2.6rem);
+    margin: 0 0 0.5rem;
+  }
+
   .institution {
     color: var(--muted);
   }
 
   .score-banner {
     display: flex;
-    gap: 2rem;
+    gap: 2.5rem;
     margin: 1.5rem 0 2.5rem;
+    padding: 1.25rem 0;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
   }
 
   .unranked-note {
     background: var(--accent-bg);
-    border-radius: 6px;
+    border-left: 3px solid var(--accent);
     padding: 0.9rem 1rem;
     font-size: 0.9rem;
     margin-bottom: 2rem;
@@ -123,19 +148,30 @@ const { program } = ranking;
 
   .score-banner .big {
     display: block;
-    font-size: 2rem;
-    font-weight: 700;
+    font-family: var(--font-serif);
+    font-size: 2.3rem;
+    color: var(--accent);
   }
 
   .score-banner .label {
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     color: var(--muted);
     text-transform: uppercase;
-    letter-spacing: 0.03em;
+    letter-spacing: 0.06em;
+    font-weight: 600;
   }
 
   section {
     margin-bottom: 2.5rem;
+  }
+
+  section h2 {
+    font-size: 1.25rem;
+  }
+
+  .marker {
+    color: var(--accent);
+    display: inline-block;
   }
 
   table {
@@ -155,6 +191,7 @@ const { program } = ranking;
     color: var(--muted);
     font-size: 0.75rem;
     text-transform: uppercase;
+    border-bottom: 2px solid var(--accent);
   }
 
   .notes {

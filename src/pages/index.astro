@@ -13,7 +13,8 @@ const generated = new Date(data.generatedAt);
 ---
 
 <Layout title="Rankings">
-  <h1>Global Undergraduate Hospitality Program Rankings</h1>
+  <span class="eyebrow">Undergraduate &middot; Global &middot; Source-cited</span>
+  <h1 class="display">Hospitality programs, <em>ranked</em> in the open</h1>
   <p class="subhead">
     A composite ranking of hospitality &amp; hotel administration programs combining career outcomes,
     academic research, admissions selectivity, and internship/placement pipeline strength. See the <a href="/methodology/">methodology</a> for weights and the <a href="/sources/">sources</a> page for every citation.
@@ -22,6 +23,8 @@ const generated = new Date(data.generatedAt);
     Rankings last computed on {generated.toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" })}
     &middot; {ranked.length} of {data.programCount} programs ranked
   </p>
+
+  <p class="cta"><a class="btn-outline" href="/methodology/">How it's scored</a></p>
 
   <table id="rankings-table">
     <thead>
@@ -71,7 +74,7 @@ const generated = new Date(data.generatedAt);
   {
     unranked.length > 0 && (
       <section class="unranked">
-        <h2>Not yet ranked — insufficient data</h2>
+        <h2><span class="marker">&#9656;</span> Not yet ranked — insufficient data</h2>
         <p class="subhead">
           These programs have fewer than {Math.round(MIN_COMPLETENESS_FOR_RANK * 100)}% of tracked metrics sourced, which isn't enough
           to compute a meaningful composite score against better-documented programs (see <a href="/methodology/">methodology</a>). They're listed here, alphabetically, with whatever has been
@@ -150,6 +153,12 @@ const generated = new Date(data.generatedAt);
 </script>
 
 <style>
+  .display {
+    font-size: clamp(2.1rem, 4.5vw, 3.2rem);
+    line-height: 1.1;
+    margin: 0 0 1rem;
+  }
+
   .subhead {
     color: var(--muted);
     max-width: 40em;
@@ -158,6 +167,10 @@ const generated = new Date(data.generatedAt);
   .meta {
     font-size: 0.85rem;
     color: var(--muted);
+  }
+
+  .cta {
+    margin: 1.5rem 0 2rem;
   }
 
   table {
@@ -195,6 +208,12 @@ const generated = new Date(data.generatedAt);
     font-weight: 600;
   }
 
+  #rankings-table tbody tr td:first-child {
+    font-family: var(--font-serif);
+    font-size: 1.1rem;
+    color: var(--accent);
+  }
+
   .institution {
     font-size: 0.8rem;
     color: var(--muted);
@@ -204,5 +223,14 @@ const generated = new Date(data.generatedAt);
     margin-top: 3rem;
     padding-top: 1.5rem;
     border-top: 1px solid var(--border);
+  }
+
+  .unranked h2 {
+    font-size: 1.4rem;
+  }
+
+  .marker {
+    color: var(--accent);
+    display: inline-block;
   }
 </style>

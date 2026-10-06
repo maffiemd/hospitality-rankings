@@ -1,6 +1,7 @@
 ---
 interface Props {
   title: string;
+  eyebrow?: string;
 }
 const { title } = Astro.props;
 ---
@@ -10,11 +11,17 @@ const { title } = Astro.props;
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="generator" content={Astro.generator} />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;1,8..60,400;1,8..60,500&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <title>{title} · Global Hospitality Program Rankings</title>
   </head>
   <body>
     <header class="site-header">
-      <a class="brand" href="/">Global Hospitality Program Rankings</a>
+      <a class="brand" href="/">Global <em>Hospitality</em> Rankings</a>
       <nav>
         <a href="/">Rankings</a>
         <a href="/methodology/">Methodology</a>
@@ -27,7 +34,7 @@ const { title } = Astro.props;
     <footer class="site-footer">
       <p>
         An independent, source-cited ranking of undergraduate hospitality &amp; hotel administration programs.
-        Not affiliated with any ranked institution.
+        Not affiliated with, endorsed by, or produced by any ranked institution.
       </p>
     </footer>
   </body>
@@ -36,40 +43,97 @@ const { title } = Astro.props;
 <style>
   :root {
     --bg: #ffffff;
-    --fg: #1a1a1a;
-    --muted: #666666;
-    --border: #e0e0e0;
-    --accent: #7a1f2b;
-    --accent-bg: #fbeeef;
+    --fg: #15120f;
+    --muted: #6b6560;
+    --border: #e2ddd6;
+    --accent: #b31b1b;
+    --accent-ink: #ffffff;
+    --accent-bg: #faf0ef;
+    --accent-secondary: #1863dc;
+    --font-serif: "Source Serif 4", Georgia, "Times New Roman", serif;
+    --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
     color-scheme: light dark;
   }
 
   @media (prefers-color-scheme: dark) {
     :root {
       --bg: #15120f;
-      --fg: #f0ece6;
+      --fg: #f3efe9;
       --muted: #a89f94;
       --border: #3a332c;
-      --accent: #e3a6ab;
-      --accent-bg: #2a1d1f;
+      --accent: #e8625f;
+      --accent-ink: #15120f;
+      --accent-bg: #2a1c1b;
+      --accent-secondary: #6fa8dc;
     }
   }
 
   :global(html) {
     background: var(--bg);
     color: var(--fg);
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    font-family: var(--font-sans);
   }
 
   :global(body) {
     margin: 0;
-    max-width: 960px;
-    padding: 0 1rem;
+    max-width: 1080px;
+    padding: 0 1.5rem;
     margin-inline: auto;
   }
 
   :global(a) {
+    color: var(--accent-secondary);
+  }
+
+  :global(h1),
+  :global(h2),
+  :global(h3) {
+    font-family: var(--font-serif);
+    font-weight: 400;
+    letter-spacing: -0.01em;
+  }
+
+  :global(em),
+  :global(.accent) {
+    font-style: italic;
     color: var(--accent);
+  }
+
+  :global(.eyebrow) {
+    display: block;
+    font-family: var(--font-sans);
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 0.6rem;
+  }
+
+  :global(.btn-outline) {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    border: 1px solid var(--accent);
+    color: var(--accent);
+    background: transparent;
+    padding: 0.6rem 1.1rem;
+    font-family: var(--font-sans);
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: background 0.15s ease, color 0.15s ease;
+  }
+
+  :global(.btn-outline::after) {
+    content: "\25B8";
+  }
+
+  :global(.btn-outline:hover) {
+    background: var(--accent);
+    color: var(--accent-ink);
   }
 
   .site-header {
@@ -78,23 +142,41 @@ const { title } = Astro.props;
     align-items: baseline;
     justify-content: space-between;
     gap: 1rem;
-    padding: 1.5rem 0;
+    padding: 1.75rem 0;
     border-bottom: 1px solid var(--border);
   }
 
   .brand {
-    font-weight: 700;
+    font-family: var(--font-serif);
+    font-size: 1.15rem;
     text-decoration: none;
     color: var(--fg);
   }
 
+  .brand em {
+    color: var(--accent);
+  }
+
   nav {
     display: flex;
-    gap: 1.25rem;
+    gap: 1.5rem;
+  }
+
+  nav a {
+    text-decoration: none;
+    color: var(--fg);
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  nav a:hover {
+    color: var(--accent);
   }
 
   main {
-    padding: 2rem 0 4rem;
+    padding: 2.5rem 0 4rem;
   }
 
   .site-footer {

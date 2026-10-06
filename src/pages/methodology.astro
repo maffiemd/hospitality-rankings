@@ -4,7 +4,8 @@ import { CATEGORIES, MIN_COMPLETENESS_FOR_RANK } from "../config/weights";
 ---
 
 <Layout title="Methodology">
-  <h1>Methodology</h1>
+  <span class="eyebrow">How the ranking is built</span>
+  <h1 class="display">The <em>methodology</em></h1>
 
   <p>
     This ranking combines four categories into a single composite score (0-100) per program. Every
@@ -44,7 +45,7 @@ import { CATEGORIES, MIN_COMPLETENESS_FOR_RANK } from "../config/weights";
     </tbody>
   </table>
 
-  <h2>Why this split</h2>
+  <h2><span class="marker">&#9656;</span> Why this split</h2>
   <p>
     <strong>Career outcomes &amp; industry reputation (35%)</strong> is the largest single bucket,
     echoing how US News weights undergraduate outcomes most heavily in its own methodology: for a
@@ -68,7 +69,7 @@ import { CATEGORIES, MIN_COMPLETENESS_FOR_RANK } from "../config/weights";
     first-order signal distinct from the outcomes it eventually produces.
   </p>
 
-  <h2>Normalization</h2>
+  <h2><span class="marker">&#9656;</span> Normalization</h2>
   <p>
     Every raw metric (dollars, percentages, ratios, counts) is converted to a 0-100 scale via
     min-max normalization <em>against the current set of ranked programs</em> — so scores are always
@@ -83,7 +84,7 @@ import { CATEGORIES, MIN_COMPLETENESS_FOR_RANK } from "../config/weights";
     of a program's score rests on verified data versus how much is still outstanding.
   </p>
 
-  <h2>Minimum data to be ranked</h2>
+  <h2><span class="marker">&#9656;</span> Minimum data to be ranked</h2>
   <p>
     A composite score computed from one or two sourced metrics isn't a meaningful comparison against
     a program with a dozen verified data points — but the re-weighting rule above means a sparse
@@ -94,7 +95,7 @@ import { CATEGORIES, MIN_COMPLETENESS_FOR_RANK } from "../config/weights";
     than competing against better-documented programs.
   </p>
 
-  <h2>How this compares to other hospitality rankings</h2>
+  <h2><span class="marker">&#9656;</span> How this compares to other hospitality rankings</h2>
   <p>
     CEOWORLD Magazine publishes a well-known hospitality &amp; hotel management ranking, but its
     methodology is reputation/survey-weighted and does not disclose per-metric, per-program sourcing.
@@ -106,6 +107,22 @@ import { CATEGORIES, MIN_COMPLETENESS_FOR_RANK } from "../config/weights";
 </Layout>
 
 <style>
+  .display {
+    font-size: clamp(2.1rem, 4.5vw, 3.2rem);
+    line-height: 1.1;
+    margin: 0 0 1rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+    margin-top: 2.5rem;
+  }
+
+  .marker {
+    color: var(--accent);
+    display: inline-block;
+  }
+
   table {
     width: 100%;
     border-collapse: collapse;
@@ -117,6 +134,13 @@ import { CATEGORIES, MIN_COMPLETENESS_FOR_RANK } from "../config/weights";
     vertical-align: top;
     padding: 0.6rem 0.75rem;
     border-bottom: 1px solid var(--border);
+  }
+  thead th {
+    border-bottom: 2px solid var(--accent);
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--muted);
   }
   ul {
     margin: 0;

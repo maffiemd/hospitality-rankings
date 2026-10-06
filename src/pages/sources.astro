@@ -42,7 +42,8 @@ const citations = Array.from(byUrl.values()).sort((a, b) => a.label.localeCompar
 ---
 
 <Layout title="Sources">
-  <h1>Sources</h1>
+  <span class="eyebrow">Full bibliography</span>
+  <h1 class="display">Where the <em>numbers</em> come from</h1>
   <p>
     Every metric behind every score is individually cited. This page aggregates the distinct sources
     used across all ranked programs; per-metric citations also appear inline on each program's
@@ -63,6 +64,12 @@ const citations = Array.from(byUrl.values()).sort((a, b) => a.label.localeCompar
 </Layout>
 
 <style>
+  .display {
+    font-size: clamp(2.1rem, 4.5vw, 3.2rem);
+    line-height: 1.1;
+    margin: 0 0 1rem;
+  }
+
   .citations {
     list-style: none;
     padding: 0;
@@ -70,6 +77,9 @@ const citations = Array.from(byUrl.values()).sort((a, b) => a.label.localeCompar
   .citations li {
     padding: 0.9rem 0;
     border-bottom: 1px solid var(--border);
+  }
+  .citations a {
+    font-weight: 600;
   }
   .meta,
   .used-by {
