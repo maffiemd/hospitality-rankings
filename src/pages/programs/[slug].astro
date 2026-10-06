@@ -17,11 +17,11 @@ const { ranking } = Astro.props;
 const { program } = ranking;
 ---
 
-<Layout title={program.name}>
+<Layout title={program.institution}>
   <p class="back"><a href={href("/")}>&larr; Back to rankings</a></p>
   <span class="eyebrow">{ranking.rank !== null ? `Ranked #${ranking.rank}` : "Not yet ranked"}</span>
-  <h1 class="display">{program.name}</h1>
-  <p class="institution">{program.institution} &middot; {program.country}</p>
+  <h1 class="display">{program.institution}</h1>
+  <p class="institution">{program.name} &middot; {program.country}</p>
   <p>
     <a href={program.website} target="_blank" rel="noopener noreferrer">{program.website}</a>
   </p>

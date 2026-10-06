@@ -25,14 +25,14 @@ for (const r of data.rankings) {
       if (!metric?.source) continue;
       const existing = byUrl.get(metric.source.url);
       if (existing) {
-        existing.programs.add(r.program.name + " — " + r.program.institution);
+        existing.programs.add(r.program.institution + " — " + r.program.name);
       } else {
         byUrl.set(metric.source.url, {
           url: metric.source.url,
           label: metric.source.label,
           publisher: metric.source.publisher,
           asOfDate: metric.source.asOfDate,
-          programs: new Set([r.program.name + " — " + r.program.institution]),
+          programs: new Set([r.program.institution + " — " + r.program.name]),
         });
       }
     }

@@ -9,7 +9,7 @@ const data = rankingsData as RankingsOutput;
 const ranked = data.rankings.filter((r) => r.rank !== null).sort((a, b) => (a.rank as number) - (b.rank as number));
 const unranked = data.rankings
   .filter((r) => r.rank === null)
-  .sort((a, b) => a.program.name.localeCompare(b.program.name));
+  .sort((a, b) => a.program.institution.localeCompare(b.program.institution));
 const generated = new Date(data.generatedAt);
 ---
 
@@ -33,11 +33,11 @@ const generated = new Date(data.generatedAt);
         <th data-key="rank" aria-sort="ascending">Rank</th>
         <th data-key="name">Program</th>
         <th data-key="composite">Composite Score</th>
-        <th data-key="outcomes">Outcomes</th>
-        <th data-key="academicResearch">Research</th>
-        <th data-key="admissions">Admissions</th>
-        <th data-key="placement">Placement</th>
-        <th data-key="completeness">Data Completeness</th>
+        <th data-key="outcomes" class="mobile-hide">Outcomes</th>
+        <th data-key="academicResearch" class="mobile-hide">Research</th>
+        <th data-key="admissions" class="mobile-hide">Admissions</th>
+        <th data-key="placement" class="mobile-hide">Placement</th>
+        <th data-key="completeness" class="mobile-hide">Data Completeness</th>
       </tr>
     </thead>
     <tbody>
@@ -56,15 +56,15 @@ const generated = new Date(data.generatedAt);
             >
               <td>{r.rank ?? "—"}</td>
               <td>
-                <a href={href(`/programs/${r.program.slug}/`)}>{r.program.name}</a>
-                <div class="institution">{r.program.institution}</div>
+                <a href={href(`/programs/${r.program.slug}/`)}>{r.program.institution}</a>
+                <div class="institution">{r.program.name}</div>
               </td>
               <td class="score">{r.compositeScore?.toFixed(1) ?? "—"}</td>
-              <td>{cat("outcomes")?.toFixed(0) ?? "—"}</td>
-              <td>{cat("academicResearch")?.toFixed(0) ?? "—"}</td>
-              <td>{cat("admissions")?.toFixed(0) ?? "—"}</td>
-              <td>{cat("placement")?.toFixed(0) ?? "—"}</td>
-              <td>{Math.round(r.dataCompleteness * 100)}%</td>
+              <td class="mobile-hide">{cat("outcomes")?.toFixed(0) ?? "—"}</td>
+              <td class="mobile-hide">{cat("academicResearch")?.toFixed(0) ?? "—"}</td>
+              <td class="mobile-hide">{cat("admissions")?.toFixed(0) ?? "—"}</td>
+              <td class="mobile-hide">{cat("placement")?.toFixed(0) ?? "—"}</td>
+              <td class="mobile-hide">{Math.round(r.dataCompleteness * 100)}%</td>
             </tr>
           );
         })
@@ -92,8 +92,8 @@ const generated = new Date(data.generatedAt);
             {unranked.map((r) => (
               <tr>
                 <td>
-                  <a href={href(`/programs/${r.program.slug}/`)}>{r.program.name}</a>
-                  <div class="institution">{r.program.institution}</div>
+                  <a href={href(`/programs/${r.program.slug}/`)}>{r.program.institution}</a>
+                  <div class="institution">{r.program.name}</div>
                 </td>
                 <td>{Math.round(r.dataCompleteness * 100)}%</td>
               </tr>
@@ -233,5 +233,20 @@ const generated = new Date(data.generatedAt);
   .marker {
     color: var(--accent);
     display: inline-block;
+  }
+
+  @media (max-width: 640px) {
+    .mobile-hide {
+      display: none;
+    }
+
+    table {
+      font-size: 0.85rem;
+    }
+
+    th,
+    td {
+      padding: 0.5rem 0.4rem;
+    }
   }
 </style>
