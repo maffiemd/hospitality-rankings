@@ -1,0 +1,251 @@
+# Industry-centrality research: current C-suite education cross-referenced
+# against our 20-school dataset (data-gathering only — NOT wired into site
+# scoring yet; normalization/weighting decisions deferred).
+#
+# Scope: current (as of 2026-10-06) CEO/President/CFO/COO at the 7 major
+# publicly-traded hotel companies: Marriott, Hilton, Hyatt, IHG, Accor,
+# Wyndham, Choice Hotels.
+#
+# Sourcing discipline: official company investor-relations/leadership bios,
+# SEC EDGAR filings (DEF 14A proxies, 8-K press-release exhibits), Accor's
+# AMF-filed Universal Registration Document. No LinkedIn. No secondary
+# aggregator sites used as a sole source for any fact. Every "education: []"
+# or missing credential reflects a genuine absence in the primary source,
+# not a skipped search.
+#
+# Compiled by two parallel research passes on 2026-10-06; merged here.
+
+- name: "Anthony G. Capuano"
+  title: "President and Chief Executive Officer"
+  company: "Marriott International"
+  education:
+    - institution: "Cornell University"
+      credential: "Bachelor's degree, Hotel Administration"
+      matchesDataset: cornell-sha
+  source:
+    url: "https://marriott.gcs-web.com/board-directors/anthony-capuano"
+    label: "Anthony G. Capuano — official board/executive biography"
+    publisher: "Marriott International Investor Relations"
+    asOfDate: "2026-10-06"
+  lastVerified: "2026-10-06"
+  confidence: high
+  notes: "Became CEO February 2021; additionally designated President in February 2023, so this is a combined President+CEO role with no separate President at Marriott. The gcs-web.com IR bio page itself repeatedly timed out on direct fetch in this session, so the exact sentence ('Capuano earned a bachelor's degree in hotel administration from Cornell University') is relied on via a verified live retrieval of that same URL rather than a manual page load; it is independently corroborated by Cornell's own institutional pages (business.cornell.edu/news/2026/03/13/marriott-ceo-named-2026-cornell-hospitality-icon and sha.cornell.edu/people/anthony-capuano), which identify him as 'Anthony (Tony) Capuano '87,' a 'proud alum of the Nolan School [of Hotel Administration].' Marriott's 2026 DEF 14A proxy statement (sec.gov/Archives/edgar/data/1048286/000114036126011590/ny20062722x771_def14a.htm) confirms his Cornell Hotel Society / Dean's Advisory Board affiliations but does not restate the degree. Clear match to our dataset: Cornell Nolan School of Hotel Administration, hospitality-specific program."
+
+- name: "Jennifer C. Mason"
+  title: "Executive Vice President and Chief Financial Officer"
+  company: "Marriott International"
+  education:
+    - institution: "University of Virginia, McIntire School of Commerce"
+      credential: "B.S. in Commerce, concentration in finance"
+    - institution: "The Wharton School, University of Pennsylvania"
+      credential: "MBA"
+  source:
+    url: "https://www.sec.gov/Archives/edgar/data/1048286/000119312525158742/d858138dex991.htm"
+    label: "Exhibit 99.1 to Form 8-K — press release announcing Jennifer C. Mason's appointment as EVP & CFO"
+    publisher: "Marriott International / SEC EDGAR"
+    asOfDate: "2025-07-14"
+  lastVerified: "2026-10-06"
+  confidence: high
+  notes: "Announced July 14, 2025 as successor CFO to Leeny Oberg, effective upon Oberg's stepping down (effective March 31, 2026); Mason is the current CFO as of October 2026. A 33-year Marriott veteran (joined 1992); most recently Global Officer, Treasurer and Risk Management. Neither of her degrees is from a school in our 20-school dataset (University of Virginia is distinct from Virginia Tech, which is in the dataset; Wharton/UPenn is not in the dataset). No separate COO role at Marriott."
+
+- name: "Christopher J. Nassetta"
+  title: "President and Chief Executive Officer"
+  company: "Hilton Worldwide Holdings"
+  education:
+    - institution: "University of Virginia, McIntire School of Commerce"
+      credential: "Degree in finance"
+  source:
+    url: "https://ir.hilton.com/corporate-governance/management"
+    label: "Management — official executive leadership bios"
+    publisher: "Hilton Worldwide Holdings Investor Relations"
+    asOfDate: "2026-10-06"
+  lastVerified: "2026-10-06"
+  confidence: high
+  notes: "CEO since 2007; combined President+CEO role, no separate President at Hilton. Official IR bio: 'Chris graduated from the University of Virginia McIntire School of Commerce with a degree in finance.' University of Virginia is not in our 20-school dataset (Virginia Tech, a separate institution, is)."
+
+- name: "Kevin J. Jacobs"
+  title: "Executive Vice President and Chief Financial Officer"
+  company: "Hilton Worldwide Holdings"
+  education:
+    - institution: "Cornell University, School of Hotel Administration"
+      matchesDataset: cornell-sha
+  source:
+    url: "https://ir.hilton.com/corporate-governance/management"
+    label: "Management — official executive leadership bios"
+    publisher: "Hilton Worldwide Holdings Investor Relations"
+    asOfDate: "2026-10-06"
+  lastVerified: "2026-10-06"
+  confidence: high
+  notes: "CFO since 2013; also leads real estate and corporate strategy/business development. Official IR bio: 'Kevin is a graduate of the Cornell University School of Hotel Administration' — no specific degree type stated, so none is recorded here. Clear, hospitality-specific match to our dataset. No separate COO role identified at Hilton's leadership page."
+
+- name: "Mark S. Hoplamazian"
+  title: "Chairman, President and Chief Executive Officer"
+  company: "Hyatt Hotels Corporation"
+  education:
+    - institution: "Harvard College"
+      credential: "Bachelor's degree"
+    - institution: "University of Chicago (Graduate School of Business / Booth School of Business)"
+      credential: "MBA"
+  source:
+    url: "https://newsroom.hyatt.com/2006-11-28-MARK-S-HOPLAMAZIAN-NAMED-PRESIDENT-AND-CEO-GLOBAL-HYATT-CORPORATION"
+    label: "Mark S. Hoplamazian Named President and CEO, Global Hyatt Corporation — official press release"
+    publisher: "Hyatt (Global Hyatt Corporation) Newsroom"
+    asOfDate: "2006-11-28"
+  lastVerified: "2026-10-06"
+  confidence: high
+  notes: "President & CEO since December 2006; added Chairman of the Board in February 2026, making this a combined Chairman+President+CEO role with no separate President/Chairman at Hyatt currently. His current standing bio on Hyatt's own newsroom (newsroom.hyatt.com/mark-s-hoplamazian) covers his roles and board memberships but does NOT restate education, so the 2006 appointment press release (still hosted on Hyatt's official newsroom) is used as the official source instead; it states he 'graduated from Harvard College and earned an MBA from the University of Chicago Graduate School of Business' (now known as Chicago Booth). Neither school is in our 20-school dataset."
+
+- name: "Joan L. Bottarini"
+  title: "Executive Vice President and Chief Financial Officer"
+  company: "Hyatt Hotels Corporation"
+  education:
+    - institution: "Northern Illinois University"
+  source:
+    url: "https://newsroom.hyatt.com/joan-bottarini"
+    label: "Joan Bottarini — official executive biography"
+    publisher: "Hyatt Hotels Corporation Newsroom"
+    asOfDate: "2026-10-06"
+  lastVerified: "2026-10-06"
+  confidence: medium
+  notes: "CFO since November 2018; with Hyatt since 1999/2000. Hyatt's own official bio states only that she 'graduated from Northern Illinois University' without naming a degree or major, so no credential field is recorded (per the 'record exactly what the source says' rule). Northern Illinois University's own alumni-foundation page (foundation.myniu.com/article.html?aid=1809, 'Joan Bottarini, '93, CFO of Hyatt Hotels, Receives Distinguished Alumna Award') independently states she earned a B.S. in accountancy and graduated in 1993, which is consistent but is a secondary (university-side, not company-side) source — hence 'medium' confidence rather than 'high' for the specific degree detail, even though the institution itself is confirmed by Hyatt's own bio. Not in our 20-school dataset. No separate COO role identified at Hyatt."
+
+- name: "Elie W. Maalouf"
+  title: "Chief Executive Officer"
+  company: "InterContinental Hotels Group (IHG)"
+  education:
+    - institution: "Virginia Tech"
+      credential: "Bachelor's degree in Engineering"
+      matchesDataset: vt-htm
+    - institution: "University of Virginia, Darden School of Business"
+      credential: "MBA"
+  source:
+    url: "https://www.ihgplc.com/en/about-us/our-leadership/executive-committee/elie-maalouf"
+    label: "Elie Maalouf — official Executive Committee biography"
+    publisher: "InterContinental Hotels Group PLC"
+    asOfDate: "2026-10-06"
+  lastVerified: "2026-10-06"
+  confidence: high
+  notes: "CEO since July 2023 (joined IHG as Americas CEO in February 2015). IHG uses 'Chief Executive Officer' rather than 'President'; no distinct President role identified. Official bio: 'Elie holds an MBA from the University of Virginia Darden School of Business' and 'a Bachelor's degree in engineering from Virginia Tech.' IMPORTANT CAVEAT: his Virginia Tech degree is in engineering, not from VT's Hospitality and Tourism Management program that is in our dataset — recorded as matchesDataset: vt-htm for institution-level cross-referencing only, per the task's own instruction to still log the match while flagging that it is not the hospitality-specific program. The Darden MBA (University of Virginia) is a different institution from our dataset's Virginia Tech entry and is not itself a match."
+
+- name: "Michael Glover"
+  title: "Chief Financial Officer"
+  company: "InterContinental Hotels Group (IHG)"
+  education:
+    - institution: "Baylor University"
+      credential: "Bachelor of Business Administration, Accounting and Finance"
+  source:
+    url: "https://www.ihgplc.com/en/about-us/our-leadership/executive-committee/michael-glover"
+    label: "Michael Glover — official Executive Committee biography"
+    publisher: "InterContinental Hotels Group PLC"
+    asOfDate: "2026-10-06"
+  lastVerified: "2026-10-06"
+  confidence: high
+  notes: "CFO since March 2023; first joined IHG in 2004 (not 1995, per the official bio — an earlier Halliburton/Waste Management career came before IHG). Official bio: 'Michael is an Accounting & Finance graduate of Baylor University and a certified public accountant.' CPA is a professional credential, not a degree, so it is noted here rather than listed as a separate education entry. Not in our 20-school dataset. No distinct COO or President role identified at IHG."
+
+- name: "Sébastien Bazin"
+  title: "Group Chairman and Chief Executive Officer"
+  company: "Accor"
+  education:
+    - institution: "Paris-Sorbonne University"
+      credential: "Master's in business management"
+  source:
+    url: "https://assets.group.accor.com/yrj0orc8tx24/dwdklcBVai21ztMLgb3A5/e53a5c4937c07351b855819fd097b8a6/ACCOR_DEU2025_MEL_US_270326.pdf"
+    label: "Accor 2025 Universal Registration Document (English) — Director biography, Sébastien Bazin, Chairman and Chief Executive Officer"
+    publisher: "Accor Investor Relations / filed with Autorité des Marchés Financiers (AMF)"
+    asOfDate: "2026-03-27"
+  lastVerified: "2026-10-06"
+  confidence: high
+  notes: "Education not mentioned on Accor's standing online leadership bio (group.accor.com/en/sebastien-bazin), which covers career history only; the exact sentence 'Sébastien Bazin holds a Master's in business management from the Paris-Sorbonne University' appears in the URD's board-of-directors biography section (he is Chairman & CEO and a Board director, so he receives a full statutory bio there; the other two Accor executives below are not Board members and have no equivalent URD bio). No hospitality-specific program; general business/management degree. No clear match to our 20-school dataset."
+
+- name: "Jean-Jacques Morin"
+  title: "Group Deputy CEO (Directeur général adjoint) and Premium, Midscale & Economy Division CEO"
+  company: "Accor"
+  education:
+    - institution: "École Nationale Supérieure de l'Aéronautique et de l'Espace"
+    - institution: "Thunderbird School of Global Management (Arizona State University)"
+      credential: "MBA"
+  source:
+    url: "https://group.accor.com/en/jean-jacques-morin"
+    label: "Jean-Jacques Morin — official biography page"
+    publisher: "Accor Group (group.accor.com)"
+    asOfDate: "2026-10-06"
+  lastVerified: "2026-10-06"
+  confidence: high
+  notes: "Not the CFO (that is Martine Gerow); included as the company's #2 executive role (Deputy CEO), which functions closest to a President/COO-equivalent position since Accor does not use those titles. He is also noted as qualified with the French Institute of Chartered Accountants (Ordre des Experts Comptables), a professional credential rather than a degree, so it was not listed as an education entry. Bio page is a live, undated company page; asOfDate reflects the date it was accessed/verified, not a dated publication. No hospitality-specific program; aerospace engineering + general-management MBA. No match to our 20-school dataset."
+
+- name: "Martine Gerow"
+  title: "Group Chief Finance Officer"
+  company: "Accor"
+  education:
+    - institution: "HEC Paris"
+      credential: "Diplôme HEC, Finance"
+    - institution: "Columbia Business School"
+      credential: "MBA, Accounting and Finance"
+  source:
+    url: "https://group.accor.com/en/martine-gerow"
+    label: "Martine Gerow — official biography page"
+    publisher: "Accor Group (group.accor.com)"
+    asOfDate: "2026-10-06"
+  lastVerified: "2026-10-06"
+  confidence: high
+  notes: "Appointed Group CFO July 2023; still CFO as of the 2025 Universal Registration Document and the current leadership page. Bio page is a live, undated company page; asOfDate reflects date accessed/verified. General business/finance degrees, not hospitality-specific. No match to our 20-school dataset."
+
+- name: "Geoff Ballotti"
+  title: "President and Chief Executive Officer"
+  company: "Wyndham Hotels & Resorts"
+  education: []
+  source:
+    url: "https://corporate.wyndhamhotels.com/team/geoff-ballotti/"
+    label: "Geoff Ballotti — official leadership biography"
+    publisher: "Wyndham Hotels & Resorts Corporate (corporate.wyndhamhotels.com)"
+    asOfDate: "2026-10-06"
+  lastVerified: "2026-10-06"
+  confidence: high
+  notes: "Education not publicly disclosed in any official source found. Checked: Wyndham's own leadership bio page (no education mentioned), the FY2025/2026 DEF 14A proxy statement filed 2026-03-25 (sec.gov/Archives/edgar/data/1722684/000172268426000050/wh-20260325.htm, which covers governance/compensation but omits executive education bios), and company press releases. Secondary aggregator sites (not used as sources here) claim a Colby College BA and Harvard Business School MBA, but this is not confirmed by any official Wyndham or SEC source, so it is omitted per the 'do not force an answer from a lower-quality source' rule. Combined President+CEO role — no separate President at this company."
+
+- name: "Amit Sripathi"
+  title: "Chief Financial Officer"
+  company: "Wyndham Hotels & Resorts"
+  education: []
+  source:
+    url: "https://corporate.wyndhamhotels.com/team/amit-sripathi/"
+    label: "Amit Sripathi — official leadership biography"
+    publisher: "Wyndham Hotels & Resorts Corporate (corporate.wyndhamhotels.com)"
+    asOfDate: "2026-10-06"
+  lastVerified: "2026-10-06"
+  confidence: high
+  notes: "Appointed CFO effective 2026-03-03 (succeeding interim CFO Kurt Albert), per the company's investor-relations press release (investor.wyndhamhotels.com/news-events/press-releases/detail/410/wyndham-hotels-resorts-appoints-amit-sripathi-chief). Neither that press release nor his standing corporate bio page discloses education. No COO role exists at Wyndham per its current leadership page."
+
+- name: "Dominic Dragisich"
+  title: "President and Chief Executive Officer"
+  company: "Choice Hotels International"
+  education:
+    - institution: "University of Virginia, McIntire School of Commerce"
+      credential: "B.S., Finance and Accounting"
+    - institution: "Harvard Business School"
+      credential: "MBA"
+  source:
+    url: "https://media.choicehotels.com/dominic-dragisich"
+    label: "Dominic Dragisich — official biography"
+    publisher: "Choice Hotels International Media Center"
+    asOfDate: "2026-10-06"
+  lastVerified: "2026-10-06"
+  confidence: high
+  notes: "Became Interim CEO 2026-05-20 (press release: media.choicehotels.com/2026-05-20-Choice-Hotels-International-Announces-CEO-Transition, which did not include education) and permanent President & CEO effective 2026-08-31 (media.choicehotels.com/2026-08-31-Choice-Hotels-International-Appoints-Dominic-Dragisich-as-President-Chief-Executive-Officer, also no education in that release). Education confirmed via his standing official bio page on Choice's own media center, which is undated/live. Succeeded Patrick Pacious, who exited the CEO role in 2026 (not included here as he is no longer current). Combined President+CEO role. General finance/accounting and general-management degrees, not hospitality-specific. No match to our 20-school dataset (UVA McIntire and Harvard Business School are not among the 20 schools)."
+
+- name: "Scott E. Oaksmith"
+  title: "Chief Financial Officer"
+  company: "Choice Hotels International"
+  education:
+    - institution: "Towson University"
+      credential: "B.S., Accounting"
+    - institution: "Johns Hopkins University"
+      credential: "MBA, Finance concentration"
+  source:
+    url: "https://media.choicehotels.com/Scott-E-Oaksmith"
+    label: "Scott E. Oaksmith — official biography"
+    publisher: "Choice Hotels International Media Center"
+    asOfDate: "2026-10-06"
+  lastVerified: "2026-10-06"
+  confidence: high
+  notes: "CFO since September 2023; remains CFO as of the most recent 2026 CEO-transition press releases, which continued to list him as CFO alongside the CEO change. Bio page is a live, undated company page; asOfDate reflects date accessed/verified. General accounting/finance degrees, not hospitality-specific. No match to our 20-school dataset. No separate COO role identified at Choice Hotels."
