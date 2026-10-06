@@ -8,12 +8,22 @@ degreeName: B.S. Global Hospitality Leadership
 
 outcomes:
   startingSalary:
+    value: 34488
     unit: USD/year
+    source:
+      label: "Fall 2019 Placement Report"
+      url: https://www.uh.edu/hilton-college/student-resources/career-services/placement-reports/fall-2019.pdf
+      publisher: University of Houston, Conrad N. Hilton College, Career Services
+      asOfDate: "2019-12-01"
+    lastVerified: "2026-10-05"
     confidence: low
     notes: >
-      No specific average or median starting-salary figure was found for v1. Hilton College's own
-      About and Careers pages highlight job-offer and placement rates but do not disclose a dollar
-      figure, so none is recorded here pending a primary outcomes report with an exact number.
+      Average salary for domestic undergraduate students reported in Hilton College's own Fall 2019
+      Placement Report — the most recent placement report published on the college's career-services
+      site (the listing runs Spring 2015 through Fall 2019, with nothing newer posted). The same
+      report lists $58,375 as the average for domestic graduate students and $32,000 for
+      international undergraduates, neither of which is used here. Flagged low confidence since the
+      figure is several years old and the college has not published an updated placement report.
   employmentRate:
     value: 92
     unit: "%"

@@ -20,9 +20,24 @@ outcomes:
       stat, not SHTM-program-specific, so it is also excluded. Left blank pending SHTM's own
       program-level outcomes report.
   employmentRate:
+    value: 99.4
     unit: "%"
-    confidence: low
-    notes: Not yet sourced for v1 — no SHTM-specific graduate employment rate found; PolyU's university-wide Graduate Employment Survey (GES) PDFs did not yield a readable, program-level breakout for Hotel and Tourism Management in this pass.
+    source:
+      label: "Summary of Graduate Employment Survey 2023 (Degree Programmes) — First Destination by Department"
+      url: https://www.polyu.edu.hk/sao/docdrive/cps/GES2023_Survey_Summary.pdf
+      publisher: PolyU Student Affairs Office, Careers and Placement Section
+      asOfDate: "2023-01-01"
+    lastVerified: "2026-10-05"
+    confidence: medium
+    notes: >
+      Not directly published as a school-level rate, but computed from the SHTM row of GES2023's
+      department breakdown using the survey's own stated formula. SHTM's First Destination breakdown:
+      161 employed, 8 further studies, 1 unemployed, 14 other (79.5% response rate; 184 respondents
+      implied). Applying "Employment Rate = Employed / (Employed + Unemployed but seeking employment)"
+      — the same formula GES2023 uses for its university-wide 98.7% headline figure, with further-studies
+      and other/non-seeking graduates excluded — to the SHTM-only counts gives 161 / (161 + 1) = 99.4%.
+      Flagged medium confidence because this is a maintainer calculation from raw published counts rather
+      than a rate PolyU itself discloses pre-computed for SHTM.
   recruiterReputationScore:
     unit: "0-100"
     confidence: low
@@ -48,15 +63,26 @@ admissions:
       of 75 (2024), 55 (2025), and 43 (2026), but does not publish total Band-A/B/C applicant volume
       needed to compute a comparable acceptance rate.
   satActEquivalent:
-    unit: SAT-equivalent composite
-    confidence: low
+    value: 163.5
+    unit: "JUPAS admission score, Best 5 HKDSE subjects with subject weighting (not SAT-equivalent; recorded as the local admission metric)"
+    source:
+      label: "JS3310 — Bachelor of Science (Honours) Scheme in Hotel and Tourism Management — JUPAS admission score"
+      url: https://www.polyu.edu.hk/study/ug/jupas/2026/js3310
+      publisher: The Hong Kong Polytechnic University
+      asOfDate: "2026-01-01"
+    lastVerified: "2026-10-05"
+    confidence: medium
     notes: >
       Hong Kong undergraduate admission does not use the SAT/ACT; local applicants are admitted through
       JUPAS based on HKDSE (Hong Kong Diploma of Secondary Education) subject-level scores aggregated
       into a JUPAS composite admission score, with non-local/international applicants assessed via their
-      own qualifications (A-Levels, IB, etc.) on a case-by-case basis. PolyU's JUPAS page for JS3310 did
-      not disclose a specific median HKDSE admission-score threshold in this pass, and no false
-      SAT-equivalent conversion is recorded here per project convention.
+      own qualifications (A-Levels, IB, etc.) on a case-by-case basis. PolyU's own JS3310 JUPAS page lists
+      an average admission score of 163.5 (2026/27 entry, Any Best 5 Subjects with subject weighting);
+      third-party aggregation of JUPAS's own published scores separately shows a median of 160.5 / lower
+      quartile 155.5 for 2024 entry and median 166.5 / lower quartile 163.0 for 2025 entry, so the figure
+      fluctuates year to year and by statistic (average vs. median). Recorded as the JUPAS admission score
+      itself rather than a false SAT-equivalent conversion, per project convention. Confidence set to
+      medium given the year-to-year volatility of this figure.
 
 academicResearch:
   facultyPubCitationIndex:

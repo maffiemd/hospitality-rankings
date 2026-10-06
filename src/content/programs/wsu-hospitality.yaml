@@ -8,21 +8,39 @@ degreeName: B.A. Hospitality Business Management
 
 outcomes:
   startingSalary:
+    value: 49500
     unit: USD/year
+    source:
+      label: "WSU Hospitality program garners high ranking"
+      url: https://www.spokanejournal.com/articles/1978-wsu-hospitality-program-garners-high-ranking
+      publisher: "Journal of Business (Spokane), reporting a School of Hospitality Business Management graduate survey"
+      asOfDate: "2020-02-27"
+    lastVerified: "2026-10-05"
     confidence: low
     notes: >
-      No WSU- or Carson-College-specific starting-salary figure for Hospitality Business Management
-      graduates was found for v1. Search turned up only national NACE class-wide averages and O*NET
-      occupational median salaries for related job titles (e.g., Hotel/Resort Manager, General Manager),
-      neither of which reflects this program's own graduates.
+      Average salary of recent graduates per a School of Hospitality Business Management program survey
+      (284 of 345 total program graduates responded, dating back to fall 2017), as reported by the
+      Journal of Business (Spokane); the same survey separately cited a $50,000 median. This is
+      WSU/program-specific self-reported survey data rather than the national NACE/O*NET aggregates
+      rejected above, but it was reported second-hand via a regional business journal rather than a
+      primary WSU outcomes report and reflects a multi-year-old cohort, so confidence is kept low.
   employmentRate:
+    value: 90
     unit: "%"
+    source:
+      label: "WSU Hospitality program garners high ranking"
+      url: https://www.spokanejournal.com/articles/1978-wsu-hospitality-program-garners-high-ranking
+      publisher: "Journal of Business (Spokane), reporting a School of Hospitality Business Management graduate survey"
+      asOfDate: "2020-02-27"
+    lastVerified: "2026-10-05"
     confidence: low
     notes: >
-      No disclosed employment-rate figure specific to the School of Hospitality Business Management, or
-      to Carson College of Business as a whole, was found for v1. An 89%-"accepted jobs in degree field"
-      figure circulates for the Carson College Class of 2016-17, but it is roughly a decade old, not
-      hospitality-specific, and no current equivalent was found, so it was not used.
+      The Journal of Business (Spokane) reported that "nine out of 10 graduates find employment in the
+      industry once they've completed coursework," per the same School of Hospitality Business
+      Management program survey (284 of 345 program grads, dating back to fall 2017); recorded here as
+      approximately 90%. This is WSU/program-specific data rather than the national aggregates rejected
+      above, but it is an approximate phrase rather than an exact percentage and several years old, so
+      confidence is kept low.
   recruiterReputationScore:
     unit: "0-100"
     confidence: low
