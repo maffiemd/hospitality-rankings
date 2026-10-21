@@ -86,10 +86,6 @@ academicResearch:
     unit: USD/year
     confidence: low
     notes: Not yet sourced for v1.
-  facultyStudentRatio:
-    unit: students per faculty
-    confidence: low
-    notes: Not yet sourced for v1.
   hasPhDProgram:
     value: 1
     unit: boolean (1=yes, 0=no)
@@ -104,3 +100,38 @@ academicResearch:
       UH's own academic catalog lists a PhD in Hospitality Administration housed at Hilton College;
       the college also launched a separate professional online Doctorate in Global Hospitality
       Leadership in fall 2025.
+
+academicQuality:
+  sixYearGraduationRate:
+    value: 65.67
+    unit: "%"
+    source:
+      label: "College Navigator — institution profile (NCES UnitID 225511)"
+      url: https://nces.ed.gov/collegenavigator/?id=225511
+      publisher: National Center for Education Statistics (NCES), U.S. Department of Education
+      asOfDate: "2024-01-01"
+    lastVerified: "2026-10-21"
+    confidence: medium
+    notes: University-wide 150%-of-normal-time (6-year) graduation rate for the Fall 2018 entering bachelor's cohort, per IPEDS/College Navigator; not program-specific, since IPEDS does not break completion rates out by major.
+  retentionRate:
+    value: 86.99
+    unit: "%"
+    source:
+      label: "College Navigator — institution profile (NCES UnitID 225511)"
+      url: https://nces.ed.gov/collegenavigator/?id=225511
+      publisher: National Center for Education Statistics (NCES), U.S. Department of Education
+      asOfDate: "2024-01-01"
+    lastVerified: "2026-10-21"
+    confidence: medium
+    notes: University-wide full-time first-to-second-year retention rate (Fall 2023 cohort returning Fall 2024), per IPEDS/College Navigator; not program-specific.
+  facultyStudentRatio:
+    value: 22
+    unit: students per faculty
+    source:
+      label: "College Navigator — institution profile (NCES UnitID 225511)"
+      url: https://nces.ed.gov/collegenavigator/?id=225511
+      publisher: National Center for Education Statistics (NCES), U.S. Department of Education
+      asOfDate: "2024-01-01"
+    lastVerified: "2026-10-21"
+    confidence: medium
+    notes: University-wide ratio; IPEDS/College Navigator does not report this broken out by individual school or department.

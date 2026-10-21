@@ -9,7 +9,7 @@ import { href } from "../lib/url";
   <h1 class="display">The <em>methodology</em></h1>
 
   <p>
-    This ranking combines four categories into a single composite score (0-100) per program. Every
+    This ranking combines five categories into a single composite score (0-100) per program. Every
     weight below lives in one config file in the source code
     (<code>src/config/weights.ts</code>), so it can be retuned without touching any scoring logic —
     and this page is generated from that same file, so it never drifts out of sync with what was
@@ -48,19 +48,29 @@ import { href } from "../lib/url";
 
   <h2><span class="marker">&#9656;</span> Why this split</h2>
   <p>
-    <strong>Career outcomes &amp; industry reputation (35%)</strong> is the largest single bucket,
+    <strong>Career outcomes &amp; industry reputation (30%)</strong> is the largest single bucket,
     echoing how US News weights undergraduate outcomes most heavily in its own methodology: for a
     professional degree like hospitality administration, what happens to graduates is the most
     direct signal of program quality.
   </p>
   <p>
-    <strong>Academic research &amp; faculty quality (30%)</strong> mirrors US News's faculty-resources
+    <strong>Academic research &amp; faculty quality (25%)</strong> mirrors US News's faculty-resources
     and peer-assessment buckets, and QS's academic-reputation and citations-per-faculty categories —
     but weighted lower than QS's combined ~60% research/reputation emphasis, since hospitality is a
     vocational, apprenticeship-driven field rather than a pure research discipline.
   </p>
   <p>
-    <strong>Admissions selectivity (20%)</strong> is deliberately modest, echoing US News's own recent
+    <strong>Academic quality &amp; completion (15%)</strong> is a newer addition, tracking whether
+    students who enroll actually finish: six-year graduation rate, first-to-second-year retention, and
+    faculty-student ratio. This is the single largest factor in US News's own undergraduate
+    methodology (graduation and retention together typically run 17-20% there) — a program can have
+    excellent outcomes for the students who make it to graduation while still losing a large share of
+    its cohort along the way, which outcomes and admissions data alone wouldn't surface. For now this
+    data comes from IPEDS/College Navigator and is university-wide rather than program-specific (the
+    federal data doesn't break completion out by major) — flagged on every program's profile page.
+  </p>
+  <p>
+    <strong>Admissions selectivity (15%)</strong> is deliberately modest, echoing US News's own recent
     de-emphasis of test-score-driven selectivity in its undergraduate methodology.
   </p>
   <p>

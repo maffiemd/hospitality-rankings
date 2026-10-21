@@ -43,11 +43,20 @@ and dated — see [`/methodology`](src/pages/methodology.astro) for the weightin
 
 ## Status
 
-**v1 seed data**: 3 of the ~20 planned undergraduate programs (Cornell, Penn State, UNLV) are
-populated with real, cited figures where a public source was found for v1; several metrics per
-program are intentionally left unsourced (flagged in each profile's "data completeness") rather
-than estimated. Remaining programs and metrics — including all research-output figures, which are
-planned to come from the OpenAlex API — are still to be added.
+All 20 planned undergraduate programs are seeded with real, cited figures where a public source
+exists; metrics without a credible source are left genuinely blank (flagged in each profile's "data
+completeness") rather than estimated. 13 of 20 currently clear the ranking threshold — the other 7
+are mostly non-US private/international schools whose admissions and outcomes data isn't published
+in a comparable form; see the methodology page.
+
+The `academicQuality` category (six-year graduation rate, first-to-second-year retention,
+faculty-student ratio) is sourced from IPEDS/College Navigator for the 11 US programs; non-US
+programs and the `academicResearch` category (faculty citations via OpenAlex, research funding) are
+still largely unsourced.
+
+`research/` holds exploratory data not yet wired into the scoring pipeline — currently a first pass
+at C-suite executive education at major hotel companies, gathering evidence for a possible future
+"industry centrality" metric.
 
 ## Deploying
 

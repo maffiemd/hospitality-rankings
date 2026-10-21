@@ -51,10 +51,6 @@ academicResearch:
     unit: USD/year
     confidence: low
     notes: Not yet sourced for v1.
-  facultyStudentRatio:
-    unit: students per faculty
-    confidence: low
-    notes: Not yet sourced for v1.
   hasPhDProgram:
     value: 0
     unit: boolean (1=yes, 0=no)
@@ -66,3 +62,17 @@ academicResearch:
     lastVerified: "2026-10-05"
     confidence: medium
     notes: No PhD or doctoral-level program was identified for Glion on its own site or in third-party doctoral-program directories; Glion's published offerings are limited to bachelor's and master's degrees. Unlike its sister Sommet Education school EHL, Glion does not appear to co-deliver a DBA or other doctorate, so recorded as "no," flagged medium confidence since this rests on absence of evidence rather than an explicit institutional statement.
+
+academicQuality:
+  sixYearGraduationRate:
+    unit: "%"
+    confidence: low
+    notes: Not yet sourced for v1.
+  retentionRate:
+    unit: "%"
+    confidence: low
+    notes: Not yet sourced for v1.
+  facultyStudentRatio:
+    unit: students per faculty
+    confidence: low
+    notes: Not yet sourced for v1.

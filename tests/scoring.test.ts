@@ -16,8 +16,10 @@ function makeProgram(overrides: {
   satActEquivalent?: number;
   facultyPubCitationIndex?: number;
   researchFundingUSD?: number;
-  facultyStudentRatio?: number;
   hasPhDProgram?: number;
+  sixYearGraduationRate?: number;
+  retentionRate?: number;
+  facultyStudentRatio?: number;
 }): Program {
   return {
     slug: overrides.slug,
@@ -40,8 +42,12 @@ function makeProgram(overrides: {
     academicResearch: {
       facultyPubCitationIndex: makeMetric(overrides.facultyPubCitationIndex, "index"),
       researchFundingUSD: makeMetric(overrides.researchFundingUSD, "USD/year"),
-      facultyStudentRatio: makeMetric(overrides.facultyStudentRatio, "ratio"),
       hasPhDProgram: makeMetric(overrides.hasPhDProgram, "bool"),
+    },
+    academicQuality: {
+      sixYearGraduationRate: makeMetric(overrides.sixYearGraduationRate, "%"),
+      retentionRate: makeMetric(overrides.retentionRate, "%"),
+      facultyStudentRatio: makeMetric(overrides.facultyStudentRatio, "ratio"),
     },
   };
 }
@@ -49,7 +55,13 @@ function makeProgram(overrides: {
 describe("scorePrograms", () => {
   it("handles a single-program dataset without dividing by zero", () => {
     const programs = [
-      makeProgram({ slug: "solo", startingSalary: 50000, employmentRate: 90, recruiterReputationScore: 70 }),
+      makeProgram({
+        slug: "solo",
+        startingSalary: 50000,
+        employmentRate: 90,
+        recruiterReputationScore: 70,
+        internshipPlacementRate: 80,
+      }),
     ];
     const { rankings } = scorePrograms(programs);
     expect(rankings).toHaveLength(1);
@@ -100,9 +112,27 @@ describe("scorePrograms", () => {
 
   it("assigns the same rank to tied composite scores", () => {
     const programs = [
-      makeProgram({ slug: "a", startingSalary: 50000, employmentRate: 90, recruiterReputationScore: 70 }),
-      makeProgram({ slug: "b", startingSalary: 50000, employmentRate: 90, recruiterReputationScore: 70 }),
-      makeProgram({ slug: "c", startingSalary: 70000, employmentRate: 90, recruiterReputationScore: 70 }),
+      makeProgram({
+        slug: "a",
+        startingSalary: 50000,
+        employmentRate: 90,
+        recruiterReputationScore: 70,
+        internshipPlacementRate: 80,
+      }),
+      makeProgram({
+        slug: "b",
+        startingSalary: 50000,
+        employmentRate: 90,
+        recruiterReputationScore: 70,
+        internshipPlacementRate: 80,
+      }),
+      makeProgram({
+        slug: "c",
+        startingSalary: 70000,
+        employmentRate: 90,
+        recruiterReputationScore: 70,
+        internshipPlacementRate: 80,
+      }),
     ];
     const { rankings } = scorePrograms(programs);
     const a = rankings.find((r) => r.program.slug === "a")!;

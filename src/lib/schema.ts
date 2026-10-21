@@ -34,8 +34,13 @@ export const admissionsMetrics = z.object({
 export const academicResearchMetrics = z.object({
   facultyPubCitationIndex: metric, // normalized citation index from OpenAlex
   researchFundingUSD: metric, // USD/year
-  facultyStudentRatio: metric, // students per faculty (lower is better)
   hasPhDProgram: metric, // 1 = yes, 0 = no
+});
+
+export const academicQualityMetrics = z.object({
+  sixYearGraduationRate: metric, // %, higher is better — IPEDS "150% of normal time" completion rate
+  retentionRate: metric, // %, higher is better — first-to-second-year full-time retention
+  facultyStudentRatio: metric, // students per faculty (lower is better) — moved here from academicResearch
 });
 
 export const programSchema = z.object({
@@ -50,6 +55,7 @@ export const programSchema = z.object({
   outcomes: outcomesMetrics,
   admissions: admissionsMetrics,
   academicResearch: academicResearchMetrics,
+  academicQuality: academicQualityMetrics,
 });
 
 export type Metric = z.infer<typeof metric>;

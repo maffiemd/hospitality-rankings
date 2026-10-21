@@ -93,10 +93,6 @@ academicResearch:
     unit: USD/year
     confidence: low
     notes: Not yet sourced for v1.
-  facultyStudentRatio:
-    unit: students per faculty
-    confidence: low
-    notes: Not yet sourced for v1.
   hasPhDProgram:
     value: 1
     unit: boolean (1=yes, 0=no)
@@ -108,3 +104,17 @@ academicResearch:
     lastVerified: "2026-10-05"
     confidence: high
     notes: SHTM's own site confirms both a PhD and a Doctor of Hotel and Tourism Management (D.HTM) research-postgraduate program; SHTM is widely regarded as having one of the field's largest and most research-active doctoral cohorts.
+
+academicQuality:
+  sixYearGraduationRate:
+    unit: "%"
+    confidence: low
+    notes: Not yet sourced for v1.
+  retentionRate:
+    unit: "%"
+    confidence: low
+    notes: Not yet sourced for v1.
+  facultyStudentRatio:
+    unit: students per faculty
+    confidence: low
+    notes: Not yet sourced for v1.

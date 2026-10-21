@@ -36,7 +36,7 @@ export const CATEGORIES: CategoryConfig[] = [
   {
     key: "outcomes",
     label: "Career Outcomes & Industry Reputation",
-    weight: 0.35,
+    weight: 0.3,
     metrics: [
       { path: "outcomes.startingSalary", weight: 15 / 35, direction: "higherIsBetter" },
       { path: "outcomes.employmentRate", weight: 10 / 35, direction: "higherIsBetter" },
@@ -46,18 +46,27 @@ export const CATEGORIES: CategoryConfig[] = [
   {
     key: "academicResearch",
     label: "Academic Research & Faculty Quality",
-    weight: 0.3,
+    weight: 0.25,
     metrics: [
-      { path: "academicResearch.facultyPubCitationIndex", weight: 15 / 30, direction: "higherIsBetter" },
-      { path: "academicResearch.facultyStudentRatio", weight: 7 / 30, direction: "lowerIsBetter" },
-      { path: "academicResearch.researchFundingUSD", weight: 5 / 30, direction: "higherIsBetter" },
-      { path: "academicResearch.hasPhDProgram", weight: 3 / 30, direction: "higherIsBetter" },
+      { path: "academicResearch.facultyPubCitationIndex", weight: 0.65, direction: "higherIsBetter" },
+      { path: "academicResearch.researchFundingUSD", weight: 0.22, direction: "higherIsBetter" },
+      { path: "academicResearch.hasPhDProgram", weight: 0.13, direction: "higherIsBetter" },
+    ],
+  },
+  {
+    key: "academicQuality",
+    label: "Academic Quality & Completion",
+    weight: 0.15,
+    metrics: [
+      { path: "academicQuality.sixYearGraduationRate", weight: 0.4, direction: "higherIsBetter" },
+      { path: "academicQuality.retentionRate", weight: 0.3, direction: "higherIsBetter" },
+      { path: "academicQuality.facultyStudentRatio", weight: 0.3, direction: "lowerIsBetter" },
     ],
   },
   {
     key: "admissions",
     label: "Admissions Selectivity",
-    weight: 0.2,
+    weight: 0.15,
     metrics: [
       { path: "admissions.acceptanceRate", weight: 10 / 20, direction: "lowerIsBetter" },
       { path: "admissions.satActEquivalent", weight: 10 / 20, direction: "higherIsBetter" },

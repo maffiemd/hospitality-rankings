@@ -51,10 +51,6 @@ academicResearch:
     unit: USD/year
     confidence: low
     notes: Not yet sourced for v1.
-  facultyStudentRatio:
-    unit: students per faculty
-    confidence: low
-    notes: Not yet sourced for v1.
   hasPhDProgram:
     value: 0
     unit: boolean (1=yes, 0=no)
@@ -66,3 +62,17 @@ academicResearch:
     lastVerified: "2026-10-05"
     confidence: medium
     notes: No PhD or doctoral-level program was identified for Les Roches; its published offerings are bachelor's and master's degrees plus postgraduate diplomas and executive programs (e.g. in golf course management, luxury cruises, F&B entrepreneurship). Recorded as "no," flagged medium confidence since this rests on absence of evidence in available directories rather than an explicit institutional statement ruling it out.
+
+academicQuality:
+  sixYearGraduationRate:
+    unit: "%"
+    confidence: low
+    notes: Not yet sourced for v1.
+  retentionRate:
+    unit: "%"
+    confidence: low
+    notes: Not yet sourced for v1.
+  facultyStudentRatio:
+    unit: students per faculty
+    confidence: low
+    notes: Not yet sourced for v1.

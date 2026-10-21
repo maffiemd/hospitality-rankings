@@ -43,10 +43,6 @@ academicResearch:
     unit: USD/year
     confidence: low
     notes: Not yet sourced for v1.
-  facultyStudentRatio:
-    unit: students per faculty
-    confidence: low
-    notes: Not yet sourced for v1.
   hasPhDProgram:
     value: 1
     unit: boolean (1=yes, 0=no)
@@ -58,3 +54,17 @@ academicResearch:
     lastVerified: "2026-10-05"
     confidence: high
     notes: Oxford Brookes Business School offers a dedicated MPhil/PhD in Hospitality, Tourism and Events Management (full-time minimum 3 years), with research active in sustainable tourism development, experience design, revenue management, and related areas.
+
+academicQuality:
+  sixYearGraduationRate:
+    unit: "%"
+    confidence: low
+    notes: Not yet sourced for v1.
+  retentionRate:
+    unit: "%"
+    confidence: low
+    notes: Not yet sourced for v1.
+  facultyStudentRatio:
+    unit: students per faculty
+    confidence: low
+    notes: Not yet sourced for v1.

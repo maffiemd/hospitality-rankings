@@ -81,10 +81,6 @@ academicResearch:
     unit: USD/year
     confidence: low
     notes: Not yet sourced for v1.
-  facultyStudentRatio:
-    unit: students per faculty
-    confidence: low
-    notes: Not yet sourced for v1.
   hasPhDProgram:
     value: 1
     unit: boolean (1=yes, 0=no)
@@ -99,3 +95,38 @@ academicResearch:
       Lerner College's own PhD-programs page confirms a Ph.D. in Hospitality Business Analytics
       (admits every other year, in even-numbered years); not a traditional "Hotel Administration"
       PhD title, but a hospitality-focused doctoral program in the same college.
+
+academicQuality:
+  sixYearGraduationRate:
+    value: 78.28
+    unit: "%"
+    source:
+      label: "College Navigator — institution profile (NCES UnitID 130943)"
+      url: https://nces.ed.gov/collegenavigator/?id=130943
+      publisher: National Center for Education Statistics (NCES), U.S. Department of Education
+      asOfDate: "2024-01-01"
+    lastVerified: "2026-10-21"
+    confidence: medium
+    notes: University-wide 150%-of-normal-time (6-year) graduation rate for the Fall 2018 entering bachelor's cohort, per IPEDS/College Navigator; not program-specific, since IPEDS does not break completion rates out by major.
+  retentionRate:
+    value: 91.96
+    unit: "%"
+    source:
+      label: "College Navigator — institution profile (NCES UnitID 130943)"
+      url: https://nces.ed.gov/collegenavigator/?id=130943
+      publisher: National Center for Education Statistics (NCES), U.S. Department of Education
+      asOfDate: "2024-01-01"
+    lastVerified: "2026-10-21"
+    confidence: medium
+    notes: University-wide full-time first-to-second-year retention rate (Fall 2023 cohort returning Fall 2024), per IPEDS/College Navigator; not program-specific.
+  facultyStudentRatio:
+    value: 16
+    unit: students per faculty
+    source:
+      label: "College Navigator — institution profile (NCES UnitID 130943)"
+      url: https://nces.ed.gov/collegenavigator/?id=130943
+      publisher: National Center for Education Statistics (NCES), U.S. Department of Education
+      asOfDate: "2024-01-01"
+    lastVerified: "2026-10-21"
+    confidence: medium
+    notes: University-wide ratio; IPEDS/College Navigator does not report this broken out by individual school or department.

@@ -74,10 +74,6 @@ academicResearch:
     unit: USD/year
     confidence: low
     notes: Not yet sourced for v1.
-  facultyStudentRatio:
-    unit: students per faculty
-    confidence: low
-    notes: Not yet sourced for v1.
   hasPhDProgram:
     value: 1
     unit: boolean (1=yes, 0=no)
@@ -95,3 +91,17 @@ academicResearch:
       tourism research institute, with 130+ academic, adjunct, and PhD members. Recorded as 1 (yes)
       since PhD-level research in this field is confirmed available, at medium confidence given it is
       not a dedicated degree title.
+
+academicQuality:
+  sixYearGraduationRate:
+    unit: "%"
+    confidence: low
+    notes: Not yet sourced for v1.
+  retentionRate:
+    unit: "%"
+    confidence: low
+    notes: Not yet sourced for v1.
+  facultyStudentRatio:
+    unit: students per faculty
+    confidence: low
+    notes: Not yet sourced for v1.
