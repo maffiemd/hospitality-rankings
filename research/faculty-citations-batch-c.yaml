@@ -574,10 +574,14 @@ polyu-shtm:
     confidence: high
   - name: Yitong Yu
     title: Assistant Professor
-    openalex_id: https://openalex.org/A5100633632
-    works_count: 5817
-    cited_by_count: 19276
-    confidence: medium
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: Initially matched to OpenAlex author A5100633632, but that record is actually registered
+      under the name "Yue Wang" and spans ~94 unrelated institutions across medicine, agriculture, and
+      engineering fields -- a classic OpenAlex name-disambiguation merge, not this person. Removed after
+      manual verification found the name mismatch.
   - name: Huihui Zhang
     title: Assistant Professor
     openalex_id: https://openalex.org/A5100651510
@@ -748,9 +752,9 @@ polyu-shtm:
     confidence: medium
   totals:
     faculty_count: 85
-    matched_count: 78
-    total_works: 14484
-    total_citations: 216003
+    matched_count: 77
+    total_works: 8667
+    total_citations: 196727
 griffith:
   directory_url: https://www.griffith.edu.au/griffith-business-school/department-of-tourism-and-marketing/staff
   directory_note: 'Griffith restructured its tourism/hotel unit; the former Department of Tourism, Sport

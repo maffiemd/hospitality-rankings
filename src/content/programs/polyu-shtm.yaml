@@ -86,7 +86,7 @@ admissions:
 
 academicResearch:
   facultyPubCitationIndex:
-    value: 216003
+    value: 196727
     unit: "total career citations, current named faculty (OpenAlex)"
     source:
       label: "OpenAlex author records matched to this program's current faculty directory"
@@ -96,7 +96,7 @@ academicResearch:
     lastVerified: "2026-10-22"
     confidence: medium
     notes: >-
-      Sum of career cited_by_count across 78 of 85 current named faculty (sourced from the program's own official directory) matched to an OpenAlex author record by name + institution — covers ALL of each person's publications (any journal/field), not just hospitality-tagged ones, and their full career (not a fixed year window). Unmatched faculty (common names, no OpenAlex presence, etc.) are excluded from the sum, not counted as zero. Top contributors: Haiyan Song (19417 citations, 349 works); Yitong Yu (19276 citations, 5817 works); Sam Kim (16887 citations, 450 works); Ying Wang (14398 citations, 797 works); Cathy Hsu (12299 citations, 303 works).
+      Sum of career cited_by_count across 77 of 85 current named faculty (sourced from the program's own official directory) matched to an OpenAlex author record by name + institution — covers ALL of each person's publications (any journal/field), not just hospitality-tagged ones, and their full career (not a fixed year window). Unmatched faculty (common names, no OpenAlex presence, etc.) are excluded from the sum, not counted as zero. Top contributors: Haiyan Song (19417 citations, 349 works); Sam Kim (16887 citations, 450 works); Ying Wang (14398 citations, 797 works); Cathy Hsu (12299 citations, 303 works); Jinsoo Lee (11607 citations, 350 works). (One initial match, "Yitong Yu" -> OpenAlex author A5100633632, was removed after manual verification found that author ID is actually registered as "Yue Wang" and spans ~94 unrelated institutions -- a name-disambiguation merge, not this person; see research/faculty-citations-batch-c.yaml for detail.)
   researchFundingUSD:
     unit: USD/year
     confidence: low
