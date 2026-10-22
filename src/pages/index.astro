@@ -48,6 +48,9 @@ function metricNormalized(r: RankingsOutput["rankings"][number], path: string): 
       until you set your own priorities — drag what you care about, leave the rest at zero. Weights
       don't need to add up to 100%; they're normalized against each other automatically.
     </p>
+    <p class="cta advanced-toggle">
+      <button type="button" class="btn-outline" id="toggle-advanced" aria-expanded="false">Advanced weighting</button>
+    </p>
     <div class="sliders" role="group" aria-label="Category weights">
       {
         CATEGORIES.map((c) => (
@@ -58,32 +61,30 @@ function metricNormalized(r: RankingsOutput["rankings"][number], path: string): 
               <span class="slider-value" id={`value-${c.key}`}>0%</span>
             </div>
             {c.metrics.length > 1 && (
-              <details class="subweights">
-                <summary>Adjust sub-weights within {c.label}</summary>
-                <div class="subweight-list">
-                  {c.metrics.map((m) => (
-                    <div class="slider-row sub">
-                      <label for={`sub-${metricKey(m.path)}`}>
-                        {m.label}
-                        {m.direction === "lowerIsBetter" ? " (lower is better)" : ""}
-                      </label>
-                      <input
-                        type="range"
-                        id={`sub-${metricKey(m.path)}`}
-                        data-subweight-category={c.key}
-                        data-metric={m.path}
-                        min="0"
-                        max="100"
-                        step="5"
-                        value={Math.round(m.weight * 100)}
-                      />
-                      <span class="slider-value" id={`subvalue-${metricKey(m.path)}`}>
-                        {Math.round(m.weight * 100)}%
-                      </span>
-                    </div>
-                  ))}
-                </div>
-              </details>
+              <div class="subweight-list" hidden>
+                <p class="subweight-label">Sub-category weights</p>
+                {c.metrics.map((m) => (
+                  <div class="slider-row sub">
+                    <label for={`sub-${metricKey(m.path)}`}>
+                      {m.label}
+                      {m.direction === "lowerIsBetter" ? " (lower is better)" : ""}
+                    </label>
+                    <input
+                      type="range"
+                      id={`sub-${metricKey(m.path)}`}
+                      data-subweight-category={c.key}
+                      data-metric={m.path}
+                      min="0"
+                      max="100"
+                      step="5"
+                      value={Math.round(m.weight * 100)}
+                    />
+                    <span class="slider-value" id={`subvalue-${metricKey(m.path)}`}>
+                      {Math.round(m.weight * 100)}%
+                    </span>
+                  </div>
+                ))}
+              </div>
             )}
           </div>
         ))
@@ -253,18 +254,28 @@ function metricNormalized(r: RankingsOutput["rankings"][number], path: string): 
   const subSliders = Array.from(document.querySelectorAll<HTMLInputElement>("#customize input[data-subweight-category]"));
   const buildButton = document.getElementById("build-ranking") as HTMLButtonElement;
   const resetButton = document.getElementById("reset-weights") as HTMLButtonElement;
+  const advancedToggle = document.getElementById("toggle-advanced") as HTMLButtonElement;
+  const subweightLists = Array.from(document.querySelectorAll<HTMLElement>(".subweight-list"));
   const hint = document.getElementById("customize-hint")!;
   const results = document.getElementById("results") as HTMLDivElement;
   const rankedCount = document.getElementById("ranked-count")!;
 
   const CATEGORY_KEYS = categorySliders.map((s) => s.dataset.category!);
-  // Multi-metric categories (the ones with a sub-weight disclosure in the markup).
+  // Multi-metric categories (the ones with a sub-weight block in the markup).
   const SUBWEIGHTED_CATEGORIES = CATEGORIES.filter((c) => c.metrics.length > 1);
   const DEFAULT_SUBWEIGHTS: Record<string, number> = {};
   for (const c of SUBWEIGHTED_CATEGORIES) {
     for (const m of c.metrics) DEFAULT_SUBWEIGHTS[m.path] = Math.round(m.weight * 100);
   }
   let hasBuilt = false;
+  let advancedMode = false;
+
+  function setAdvancedMode(on: boolean) {
+    advancedMode = on;
+    subweightLists.forEach((el) => (el.hidden = !on));
+    advancedToggle.setAttribute("aria-expanded", String(on));
+    advancedToggle.textContent = on ? "Hide advanced weighting" : "Advanced weighting";
+  }
 
   function readWeights(): Record<string, number> {
     const weights: Record<string, number> = {};
@@ -404,14 +415,17 @@ function metricNormalized(r: RankingsOutput["rankings"][number], path: string): 
     if (hasBuilt) recompute();
   }
 
-  function applyFromUrl(): boolean {
+  function applyFromUrl(): { hasWeights: boolean; hasSubWeights: boolean } {
     const params = new URLSearchParams(location.search);
     const w = params.get("w");
-    if (!w) return false;
+    if (!w) return { hasWeights: false, hasSubWeights: false };
     const values = w.split(",").map(Number);
-    if (values.length !== categorySliders.length || values.some((v) => Number.isNaN(v))) return false;
+    if (values.length !== categorySliders.length || values.some((v) => Number.isNaN(v))) {
+      return { hasWeights: false, hasSubWeights: false };
+    }
     categorySliders.forEach((s, i) => (s.value = String(values[i])));
 
+    let hasSubWeights = false;
     const m = params.get("m");
     if (m) {
       const order = SUBWEIGHTED_CATEGORIES.flatMap((c) => c.metrics.map((mm) => mm.path));
@@ -422,22 +436,26 @@ function metricNormalized(r: RankingsOutput["rankings"][number], path: string): 
           const v = byPath.get(s.dataset.metric!);
           if (v !== undefined) s.value = String(v);
         });
+        hasSubWeights = true;
       }
     }
-    return totalWeight(readWeights()) > 0;
+    return { hasWeights: totalWeight(readWeights()) > 0, hasSubWeights };
   }
 
   categorySliders.forEach((s) => s.addEventListener("input", onSliderInput));
   subSliders.forEach((s) => s.addEventListener("input", onSliderInput));
   buildButton.addEventListener("click", revealResults);
+  advancedToggle.addEventListener("click", () => setAdvancedMode(!advancedMode));
   resetButton.addEventListener("click", () => {
     categorySliders.forEach((s) => (s.value = "0"));
     subSliders.forEach((s) => (s.value = String(DEFAULT_SUBWEIGHTS[s.dataset.metric!])));
     onSliderInput();
     hideResults();
+    setAdvancedMode(false);
   });
 
-  const sharedWeightsPresent = applyFromUrl();
+  const { hasWeights: sharedWeightsPresent, hasSubWeights } = applyFromUrl();
+  setAdvancedMode(hasSubWeights);
   updateSliderLabels(readWeights(), readSubWeights());
   buildButton.disabled = totalWeight(readWeights()) === 0;
   if (sharedWeightsPresent) revealResults();
@@ -584,41 +602,32 @@ function metricNormalized(r: RankingsOutput["rankings"][number], path: string): 
     height: 1rem;
   }
 
-  .subweights {
-    margin-left: 1rem;
+  .advanced-toggle {
+    margin: 0 0 1rem;
   }
 
-  .subweights summary {
-    font-size: 0.68rem;
-    font-weight: 600;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: var(--muted);
-    cursor: pointer;
-    user-select: none;
-    list-style: none;
+  .advanced-toggle .btn-outline {
+    font-size: 0.72rem;
+    padding: 0.45rem 0.8rem;
   }
 
-  .subweights summary::-webkit-details-marker {
+  .subweight-list[hidden] {
     display: none;
-  }
-
-  .subweights summary::before {
-    content: "\25B8";
-    display: inline-block;
-    margin-right: 0.4rem;
-    color: var(--accent);
-    transition: transform 0.15s ease;
-  }
-
-  .subweights[open] summary::before {
-    transform: rotate(90deg);
   }
 
   .subweight-list {
     display: grid;
     gap: 0.3rem;
-    margin: 0.45rem 0 0.2rem;
+    margin: 0.3rem 0 0.2rem 1rem;
+  }
+
+  .subweight-label {
+    margin: 0;
+    font-size: 0.65rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--muted);
   }
 
   .slider-row.sub {
@@ -705,7 +714,7 @@ function metricNormalized(r: RankingsOutput["rankings"][number], path: string): 
       grid-column: 1 / -1;
     }
 
-    .subweights {
+    .subweight-list {
       margin-left: 0.5rem;
     }
   }
