@@ -33,7 +33,7 @@ const { program } = ranking;
     </div>
     <div>
       <span class="big">{ranking.compositeScore?.toFixed(1) ?? "—"}</span>
-      <span class="label">Composite score{ranking.rank === null && ranking.compositeScore !== null ? " (informational — see note below)" : ""}</span>
+      <span class="label">Fit score{ranking.rank === null && ranking.compositeScore !== null ? " (informational, see note below)" : ""}</span>
     </div>
     <div>
       <span class="big">{Math.round(ranking.dataCompleteness * 100)}%</span>

@@ -5,17 +5,30 @@ import { href } from "../lib/url";
 ---
 
 <Layout title="Methodology">
-  <span class="eyebrow">How the ranking is built</span>
+  <span class="eyebrow">How the comparison is built</span>
   <h1 class="display">The <em>methodology</em></h1>
 
   <p>
-    This ranking combines five categories into a single composite score (0-100) per program. Every
-    weight below lives in one config file in the source code
+    This tool combines five categories into a single fit score (0-100) per program. Every weight
+    below lives in one config file in the source code
     (<code>src/config/weights.ts</code>), so it can be retuned without touching any scoring logic —
     and this page is generated from that same file, so it never drifts out of sync with what was
-    actually computed. These are the default weights; if you'd rather weight categories by what
-    matters to you, the <a href={href("/#customize")}>rankings page has live sliders</a> that
-    re-sort the table instantly and produce a shareable link.
+    actually computed. These weights aren't shown by default; the <a href={href("/#customize")}>comparison page</a> asks
+    you to set your own priorities with live sliders before showing any results at all.
+  </p>
+
+  <h2><span class="marker">&#9656;</span> Disclosure</h2>
+  <p>
+    Michael Maffie, who built and maintains this tool, is an Assistant Professor at Cornell
+    University's Nolan School of Hotel Administration, one of the 20 programs compared here. Every
+    program's raw metrics and normalized category scores are computed by the identical public
+    formula described on this page, with no manual overrides for any program, including Cornell.
+    Those scores are fixed before any weighting is applied. The comparison page doesn't show a
+    default weighting at all; nothing is ranked until a reader sets their own priorities with the
+    sliders, so no single set of weights, ours or anyone else's, determines the result shown. Every
+    input is individually cited on that program's profile page, and the full scoring pipeline is
+    open source, so the computation behind any program's numbers, Cornell's included, can be
+    independently checked.
   </p>
 
   <table>

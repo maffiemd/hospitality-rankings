@@ -13,20 +13,26 @@ const unranked = data.rankings
 const generated = new Date(data.generatedAt);
 ---
 
-<Layout title="Rankings">
+<Layout title="Compare">
   <span class="eyebrow">Undergraduate &middot; Global &middot; Source-cited</span>
-  <h1 class="display">Hospitality Education, <em>Open Rankings</em></h1>
+  <h1 class="display">Find the Hospitality Program That <em>Fits You</em></h1>
   <p class="subhead">
-    A composite ranking of hospitality &amp; hotel administration programs combining career outcomes,
-    academic research, admissions selectivity, and internship/placement pipeline strength. See the <a href={href("/methodology/")}>methodology</a> for our own default weights and the <a href={href("/sources/")}>sources</a> page for every citation.
+    Hospitality is in the service of others. In that spirit, this tool exists to help students discover
+    the hospitality program that <em>fits them best</em>. Compare hospitality &amp; hotel administration
+    programs by career outcomes, academic research, admissions selectivity, and internship/placement
+    pipeline strength, weighted however matters most to you. See the <a href={href("/methodology/")}>methodology</a> and the <a href={href("/sources/")}>sources</a> page for every citation.
+  </p>
+  <p class="subhead">
+    Service is life. We're glad you're considering a career in hospitality and hotel administration.
+    Wherever you land, we hope it's the right fit.
   </p>
 
   <p class="cta"><a class="btn-outline" href={href("/methodology/")}>How it's scored</a></p>
 
   <section class="customize" id="customize">
-    <h2><span class="marker">&#9656;</span> Build your own ranking</h2>
+    <h2><span class="marker">&#9656;</span> Build your shortlist</h2>
     <p class="subhead">
-      Every ranking is a choice about what matters. Rather than default to ours, nothing's ranked below
+      Every comparison is a choice about what matters. Rather than default to ours, nothing's shown below
       until you set your own priorities — drag what you care about, leave the rest at zero. Weights
       don't need to add up to 100%; they're normalized against each other automatically.
     </p>
@@ -43,7 +49,7 @@ const generated = new Date(data.generatedAt);
     </div>
     <div class="customize-actions">
       <button type="button" class="btn-solid" id="build-ranking" disabled>
-        Build my ranking
+        Build my shortlist
       </button>
       <button type="button" class="btn-outline" id="reset-weights">Start over</button>
     </div>
@@ -61,7 +67,7 @@ const generated = new Date(data.generatedAt);
         <tr>
           <th data-key="rank" aria-sort="descending">Rank</th>
           <th data-key="name">Program</th>
-          <th data-key="composite">Composite Score</th>
+          <th data-key="composite">Fit Score</th>
           <th data-key="outcomes" class="mobile-hide">Outcomes</th>
           <th data-key="academicResearch" class="mobile-hide">Research</th>
           <th data-key="academicQuality" class="mobile-hide">Academic Quality</th>
