@@ -18,11 +18,7 @@ const generated = new Date(data.generatedAt);
   <h1 class="display">Hospitality Education, <em>Open Rankings</em></h1>
   <p class="subhead">
     A composite ranking of hospitality &amp; hotel administration programs combining career outcomes,
-    academic research, admissions selectivity, and internship/placement pipeline strength. See the <a href={href("/methodology/")}>methodology</a> for weights and the <a href={href("/sources/")}>sources</a> page for every citation.
-  </p>
-  <p class="meta">
-    Rankings last computed on {generated.toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" })}
-    &middot; {ranked.length} of {data.programCount} programs ranked
+    academic research, admissions selectivity, and internship/placement pipeline strength. See the <a href={href("/methodology/")}>methodology</a> for our own default weights and the <a href={href("/sources/")}>sources</a> page for every citation.
   </p>
 
   <p class="cta"><a class="btn-outline" href={href("/methodology/")}>How it's scored</a></p>
@@ -30,114 +26,117 @@ const generated = new Date(data.generatedAt);
   <section class="customize" id="customize">
     <h2><span class="marker">&#9656;</span> Build your own ranking</h2>
     <p class="subhead">
-      Drag any slider to weight that category more or less heavily — the table below re-sorts live.
-      Weights don't need to add up to 100%; they're normalized automatically against each other. This
-      only reorders the {ranked.length} already-ranked programs below; it can't promote a program out
-      of <a href="#unranked">not yet ranked</a>, since that's about missing data, not what you value.
+      Every ranking is a choice about what matters. Rather than default to ours, nothing's ranked below
+      until you set your own priorities — drag what you care about, leave the rest at zero. Weights
+      don't need to add up to 100%; they're normalized against each other automatically.
     </p>
     <div class="sliders" role="group" aria-label="Category weights">
       {
         CATEGORIES.map((c) => (
           <div class="slider-row">
-            <div class="slider-label">
-              <label for={`weight-${c.key}`}>{c.label}</label>
-              <span class="slider-value" id={`value-${c.key}`}>{Math.round(c.weight * 100)}%</span>
-            </div>
-            <input
-              type="range"
-              id={`weight-${c.key}`}
-              data-category={c.key}
-              min="0"
-              max="100"
-              step="5"
-              value={Math.round(c.weight * 100)}
-            />
+            <label for={`weight-${c.key}`}>{c.label}</label>
+            <input type="range" id={`weight-${c.key}`} data-category={c.key} min="0" max="100" step="5" value="0" />
+            <span class="slider-value" id={`value-${c.key}`}>0%</span>
           </div>
         ))
       }
     </div>
-    <button type="button" class="btn-outline" id="reset-weights">Reset to default weights</button>
+    <div class="customize-actions">
+      <button type="button" class="btn-solid" id="build-ranking" disabled>
+        Build my ranking
+      </button>
+      <button type="button" class="btn-outline" id="reset-weights">Start over</button>
+    </div>
+    <p class="customize-hint" id="customize-hint">Move at least one slider above zero to continue.</p>
   </section>
 
-  <table id="rankings-table">
-    <thead>
-      <tr>
-        <th data-key="rank" aria-sort="ascending">Rank</th>
-        <th data-key="name">Program</th>
-        <th data-key="composite">Composite Score</th>
-        <th data-key="outcomes" class="mobile-hide">Outcomes</th>
-        <th data-key="academicResearch" class="mobile-hide">Research</th>
-        <th data-key="academicQuality" class="mobile-hide">Academic Quality</th>
-        <th data-key="admissions" class="mobile-hide">Admissions</th>
-        <th data-key="placement" class="mobile-hide">Placement</th>
-        <th data-key="completeness" class="mobile-hide">Data Completeness</th>
-      </tr>
-    </thead>
-    <tbody>
-      {
-        ranked.map((r) => {
-          const cat = (key: string) => r.categories.find((c) => c.key === key)?.score;
-          return (
-            <tr
-              data-rank={r.rank ?? ""}
-              data-composite={r.compositeScore ?? ""}
-              data-outcomes={cat("outcomes") ?? ""}
-              data-academicresearch={cat("academicResearch") ?? ""}
-              data-academicquality={cat("academicQuality") ?? ""}
-              data-admissions={cat("admissions") ?? ""}
-              data-placement={cat("placement") ?? ""}
-              data-completeness={r.dataCompleteness}
-            >
-              <td>{r.rank ?? "—"}</td>
-              <td>
-                <a href={href(`/programs/${r.program.slug}/`)}>{r.program.institution}</a>
-                <div class="institution">{r.program.name}</div>
-              </td>
-              <td class="score">{r.compositeScore?.toFixed(1) ?? "—"}</td>
-              <td class="mobile-hide">{cat("outcomes")?.toFixed(0) ?? "—"}</td>
-              <td class="mobile-hide">{cat("academicResearch")?.toFixed(0) ?? "—"}</td>
-              <td class="mobile-hide">{cat("academicQuality")?.toFixed(0) ?? "—"}</td>
-              <td class="mobile-hide">{cat("admissions")?.toFixed(0) ?? "—"}</td>
-              <td class="mobile-hide">{cat("placement")?.toFixed(0) ?? "—"}</td>
-              <td class="mobile-hide">{Math.round(r.dataCompleteness * 100)}%</td>
-            </tr>
-          );
-        })
-      }
-    </tbody>
-  </table>
+  <div id="results" hidden>
+    <p class="meta">
+      Rankings last computed on {generated.toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" })}
+      &middot; <span id="ranked-count">{ranked.length}</span> of {data.programCount} programs ranked by your weights
+    </p>
 
-  {
-    unranked.length > 0 && (
-      <section class="unranked" id="unranked">
-        <h2><span class="marker">&#9656;</span> Not yet ranked — insufficient data</h2>
-        <p class="subhead">
-          These programs have fewer than {Math.round(MIN_COMPLETENESS_FOR_RANK * 100)}% of tracked metrics sourced, which isn't enough
-          to compute a meaningful composite score against better-documented programs (see <a href={href("/methodology/")}>methodology</a>). They're listed here, alphabetically, with whatever has been
-          verified so far — not penalized with a low rank, and not given an inflated one either.
-        </p>
-        <table>
-          <thead>
-            <tr>
-              <th>Program</th>
-              <th>Data completeness</th>
-            </tr>
-          </thead>
-          <tbody>
-            {unranked.map((r) => (
-              <tr>
+    <table id="rankings-table">
+      <thead>
+        <tr>
+          <th data-key="rank" aria-sort="descending">Rank</th>
+          <th data-key="name">Program</th>
+          <th data-key="composite">Composite Score</th>
+          <th data-key="outcomes" class="mobile-hide">Outcomes</th>
+          <th data-key="academicResearch" class="mobile-hide">Research</th>
+          <th data-key="academicQuality" class="mobile-hide">Academic Quality</th>
+          <th data-key="admissions" class="mobile-hide">Admissions</th>
+          <th data-key="placement" class="mobile-hide">Placement</th>
+          <th data-key="completeness" class="mobile-hide">Data Completeness</th>
+        </tr>
+      </thead>
+      <tbody>
+        {
+          ranked.map((r) => {
+            const cat = (key: string) => r.categories.find((c) => c.key === key)?.score;
+            return (
+              <tr
+                data-rank={r.rank ?? ""}
+                data-composite={r.compositeScore ?? ""}
+                data-outcomes={cat("outcomes") ?? ""}
+                data-academicresearch={cat("academicResearch") ?? ""}
+                data-academicquality={cat("academicQuality") ?? ""}
+                data-admissions={cat("admissions") ?? ""}
+                data-placement={cat("placement") ?? ""}
+                data-completeness={r.dataCompleteness}
+              >
+                <td>{r.rank ?? "—"}</td>
                 <td>
                   <a href={href(`/programs/${r.program.slug}/`)}>{r.program.institution}</a>
                   <div class="institution">{r.program.name}</div>
                 </td>
-                <td>{Math.round(r.dataCompleteness * 100)}%</td>
+                <td class="score">{r.compositeScore?.toFixed(1) ?? "—"}</td>
+                <td class="mobile-hide">{cat("outcomes")?.toFixed(0) ?? "—"}</td>
+                <td class="mobile-hide">{cat("academicResearch")?.toFixed(0) ?? "—"}</td>
+                <td class="mobile-hide">{cat("academicQuality")?.toFixed(0) ?? "—"}</td>
+                <td class="mobile-hide">{cat("admissions")?.toFixed(0) ?? "—"}</td>
+                <td class="mobile-hide">{cat("placement")?.toFixed(0) ?? "—"}</td>
+                <td class="mobile-hide">{Math.round(r.dataCompleteness * 100)}%</td>
               </tr>
-            ))}
-          </tbody>
-        </table>
-      </section>
-    )
-  }
+            );
+          })
+        }
+      </tbody>
+    </table>
+
+    {
+      unranked.length > 0 && (
+        <section class="unranked" id="unranked">
+          <h2><span class="marker">&#9656;</span> Not yet ranked — insufficient data</h2>
+          <p class="subhead">
+            These programs have fewer than {Math.round(MIN_COMPLETENESS_FOR_RANK * 100)}% of tracked metrics sourced, which isn't enough
+            to compute a meaningful composite score against better-documented programs (see <a href={href("/methodology/")}>methodology</a>). They're listed here, alphabetically, with whatever has been
+            verified so far — not penalized with a low rank, and not given an inflated one either. No
+            weighting changes this; it's about missing data, not what you value.
+          </p>
+          <table>
+            <thead>
+              <tr>
+                <th>Program</th>
+                <th>Data completeness</th>
+              </tr>
+            </thead>
+            <tbody>
+              {unranked.map((r) => (
+                <tr>
+                  <td>
+                    <a href={href(`/programs/${r.program.slug}/`)}>{r.program.institution}</a>
+                    <div class="institution">{r.program.name}</div>
+                  </td>
+                  <td>{Math.round(r.dataCompleteness * 100)}%</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </section>
+      )
+    }
+  </div>
 </Layout>
 
 <script>
@@ -193,10 +192,14 @@ const generated = new Date(data.generatedAt);
 
   // ---- Build-your-own-ranking sliders ----
   const sliders = Array.from(document.querySelectorAll<HTMLInputElement>("#customize input[type=range]"));
+  const buildButton = document.getElementById("build-ranking") as HTMLButtonElement;
   const resetButton = document.getElementById("reset-weights") as HTMLButtonElement;
-  const defaultWeights = new Map(sliders.map((s) => [s.dataset.category!, Number(s.value)]));
+  const hint = document.getElementById("customize-hint")!;
+  const results = document.getElementById("results") as HTMLDivElement;
+  const rankedCount = document.getElementById("ranked-count")!;
 
   const CATEGORY_KEYS = sliders.map((s) => s.dataset.category!);
+  let hasBuilt = false;
 
   function readWeights(): Record<string, number> {
     const weights: Record<string, number> = {};
@@ -204,8 +207,12 @@ const generated = new Date(data.generatedAt);
     return weights;
   }
 
+  function totalWeight(weights: Record<string, number>): number {
+    return CATEGORY_KEYS.reduce((t, k) => t + weights[k], 0);
+  }
+
   function updateSliderLabels(weights: Record<string, number>) {
-    const sum = CATEGORY_KEYS.reduce((t, k) => t + weights[k], 0);
+    const sum = totalWeight(weights);
     for (const key of CATEGORY_KEYS) {
       const label = document.getElementById(`value-${key}`);
       if (!label) continue;
@@ -216,7 +223,6 @@ const generated = new Date(data.generatedAt);
 
   function recompute() {
     const weights = readWeights();
-    updateSliderLabels(weights);
 
     for (const row of rows) {
       const pairs = CATEGORY_KEYS.map((key) => {
@@ -242,6 +248,8 @@ const generated = new Date(data.generatedAt);
       if (bMissing) return -1;
       return bv - av;
     });
+    const eligible = rows.filter((r) => r.getAttribute("data-composite") !== "");
+    rankedCount.textContent = String(eligible.length);
     rows.forEach((row, i) => {
       row.setAttribute("data-rank", String(i + 1));
       const rankCell = row.querySelector("td:first-child");
@@ -259,33 +267,58 @@ const generated = new Date(data.generatedAt);
 
   function syncUrl(weights: Record<string, number>) {
     const params = new URLSearchParams(location.search);
-    const isDefault = CATEGORY_KEYS.every((k) => weights[k] === defaultWeights.get(k));
-    if (isDefault) {
-      params.delete("w");
-    } else {
-      params.set("w", CATEGORY_KEYS.map((k) => weights[k]).join(","));
-    }
+    params.set("w", CATEGORY_KEYS.map((k) => weights[k]).join(","));
     const query = params.toString();
     history.replaceState(null, "", query ? `?${query}` : location.pathname);
   }
 
-  function applyFromUrl() {
-    const params = new URLSearchParams(location.search);
-    const w = params.get("w");
-    if (!w) return;
-    const values = w.split(",").map(Number);
-    if (values.length !== sliders.length || values.some((v) => Number.isNaN(v))) return;
-    sliders.forEach((s, i) => (s.value = String(values[i])));
+  function clearUrl() {
+    history.replaceState(null, "", location.pathname);
   }
 
-  sliders.forEach((s) => s.addEventListener("input", recompute));
-  resetButton.addEventListener("click", () => {
-    sliders.forEach((s) => s.value = String(defaultWeights.get(s.dataset.category!)));
+  function revealResults() {
+    hasBuilt = true;
+    results.hidden = false;
+    hint.hidden = true;
     recompute();
+  }
+
+  function hideResults() {
+    hasBuilt = false;
+    results.hidden = true;
+    hint.hidden = false;
+    clearUrl();
+  }
+
+  function onSliderInput() {
+    const weights = readWeights();
+    updateSliderLabels(weights);
+    buildButton.disabled = totalWeight(weights) === 0;
+    if (hasBuilt) recompute();
+  }
+
+  function applyFromUrl(): boolean {
+    const params = new URLSearchParams(location.search);
+    const w = params.get("w");
+    if (!w) return false;
+    const values = w.split(",").map(Number);
+    if (values.length !== sliders.length || values.some((v) => Number.isNaN(v))) return false;
+    sliders.forEach((s, i) => (s.value = String(values[i])));
+    return totalWeight(readWeights()) > 0;
+  }
+
+  sliders.forEach((s) => s.addEventListener("input", onSliderInput));
+  buildButton.addEventListener("click", revealResults);
+  resetButton.addEventListener("click", () => {
+    sliders.forEach((s) => (s.value = "0"));
+    onSliderInput();
+    hideResults();
   });
 
-  applyFromUrl();
-  recompute();
+  const sharedWeightsPresent = applyFromUrl();
+  updateSliderLabels(readWeights());
+  buildButton.disabled = totalWeight(readWeights()) === 0;
+  if (sharedWeightsPresent) revealResults();
 </script>
 
 <style>
@@ -371,57 +404,97 @@ const generated = new Date(data.generatedAt);
   }
 
   .customize {
-    margin-top: 3rem;
-    padding: 1.5rem;
+    margin-top: 2.5rem;
+    padding: 1rem 1.25rem 1.25rem;
+    max-width: 30em;
     background: var(--accent-bg);
     border-left: 3px solid var(--accent);
   }
 
   .customize h2 {
-    font-size: 1.25rem;
-    margin: 0 0 0.5rem;
+    font-size: 1.05rem;
+    margin: 0 0 0.4rem;
   }
 
   .customize .subhead {
-    margin-top: 0;
+    margin: 0 0 0.9rem;
     max-width: none;
+    font-size: 0.82rem;
+    line-height: 1.45;
   }
 
   .sliders {
     display: grid;
-    gap: 1.1rem;
-    margin: 1.5rem 0;
+    gap: 0.45rem;
+    margin-bottom: 0.9rem;
   }
 
   .slider-row {
     display: grid;
-    gap: 0.3rem;
+    grid-template-columns: minmax(0, 11rem) 1fr 2.4rem;
+    align-items: center;
+    gap: 0.6rem;
   }
 
-  .slider-label {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    font-size: 0.85rem;
-  }
-
-  .slider-label label {
+  .slider-row label {
+    font-size: 0.72rem;
     font-weight: 600;
+    line-height: 1.25;
   }
 
   .slider-value {
-    font-family: var(--font-serif);
-    font-size: 1.1rem;
+    font-size: 0.78rem;
+    font-weight: 700;
     color: var(--accent);
-    min-width: 3ch;
     text-align: right;
+    font-variant-numeric: tabular-nums;
   }
 
   .sliders input[type="range"] {
     width: 100%;
     accent-color: var(--accent);
     cursor: pointer;
-    height: 1.25rem;
+    height: 1rem;
+  }
+
+  .customize-actions {
+    display: flex;
+    gap: 0.75rem;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .btn-solid {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    border: 1px solid var(--accent);
+    background: var(--accent);
+    color: var(--accent-ink);
+    padding: 0.5rem 1rem;
+    font-family: var(--font-sans);
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+
+  .btn-solid:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+  }
+
+  #reset-weights {
+    padding: 0.5rem 0.9rem;
+    font-size: 0.78rem;
+  }
+
+  .customize-hint {
+    margin: 0.6rem 0 0;
+    font-size: 0.78rem;
+    color: var(--muted);
+    font-style: italic;
   }
 
   @media (max-width: 640px) {
@@ -439,9 +512,19 @@ const generated = new Date(data.generatedAt);
     }
 
     .customize {
-      padding: 1.1rem;
+      max-width: none;
+      padding: 1rem;
       margin-left: -1rem;
       margin-right: -1rem;
+    }
+
+    .slider-row {
+      grid-template-columns: 1fr 2.4rem;
+      row-gap: 0.15rem;
+    }
+
+    .slider-row label {
+      grid-column: 1 / -1;
     }
   }
 </style>
