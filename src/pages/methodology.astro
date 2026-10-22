@@ -49,7 +49,7 @@ import { href } from "../lib/url";
               <ul>
                 {c.metrics.map((m) => (
                   <li>
-                    {m.path} — {Math.round(m.weight * 100)}%
+                    {m.label} ({m.path}) — {Math.round(m.weight * 100)}%
                     {m.direction === "lowerIsBetter" ? " (lower is better)" : ""}
                   </li>
                 ))}

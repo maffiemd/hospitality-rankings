@@ -9,6 +9,8 @@ export type MetricDirection = "higherIsBetter" | "lowerIsBetter";
 export interface MetricWeightConfig {
   /** dot-path into the Program object, e.g. "outcomes.startingSalary" */
   path: string;
+  /** short human-readable name, used for the methodology table and sub-weight sliders */
+  label: string;
   /** weight within its category; category weights are normalized to sum to 1 */
   weight: number;
   direction: MetricDirection;
@@ -38,9 +40,14 @@ export const CATEGORIES: CategoryConfig[] = [
     label: "Career Outcomes & Industry Reputation",
     weight: 0.3,
     metrics: [
-      { path: "outcomes.startingSalary", weight: 15 / 35, direction: "higherIsBetter" },
-      { path: "outcomes.employmentRate", weight: 10 / 35, direction: "higherIsBetter" },
-      { path: "outcomes.recruiterReputationScore", weight: 10 / 35, direction: "higherIsBetter" },
+      { path: "outcomes.startingSalary", label: "Starting Salary", weight: 15 / 35, direction: "higherIsBetter" },
+      { path: "outcomes.employmentRate", label: "Employment Rate", weight: 10 / 35, direction: "higherIsBetter" },
+      {
+        path: "outcomes.recruiterReputationScore",
+        label: "Recruiter Reputation",
+        weight: 10 / 35,
+        direction: "higherIsBetter",
+      },
     ],
   },
   {
@@ -48,9 +55,19 @@ export const CATEGORIES: CategoryConfig[] = [
     label: "Academic Research & Faculty Quality",
     weight: 0.25,
     metrics: [
-      { path: "academicResearch.facultyPubCitationIndex", weight: 0.65, direction: "higherIsBetter" },
-      { path: "academicResearch.researchFundingUSD", weight: 0.22, direction: "higherIsBetter" },
-      { path: "academicResearch.hasPhDProgram", weight: 0.13, direction: "higherIsBetter" },
+      {
+        path: "academicResearch.facultyPubCitationIndex",
+        label: "Faculty Citations",
+        weight: 0.65,
+        direction: "higherIsBetter",
+      },
+      {
+        path: "academicResearch.researchFundingUSD",
+        label: "Research Funding",
+        weight: 0.22,
+        direction: "higherIsBetter",
+      },
+      { path: "academicResearch.hasPhDProgram", label: "PhD Program", weight: 0.13, direction: "higherIsBetter" },
     ],
   },
   {
@@ -58,9 +75,19 @@ export const CATEGORIES: CategoryConfig[] = [
     label: "Academic Quality & Completion",
     weight: 0.15,
     metrics: [
-      { path: "academicQuality.sixYearGraduationRate", weight: 0.4, direction: "higherIsBetter" },
-      { path: "academicQuality.retentionRate", weight: 0.3, direction: "higherIsBetter" },
-      { path: "academicQuality.facultyStudentRatio", weight: 0.3, direction: "lowerIsBetter" },
+      {
+        path: "academicQuality.sixYearGraduationRate",
+        label: "Graduation Rate",
+        weight: 0.4,
+        direction: "higherIsBetter",
+      },
+      { path: "academicQuality.retentionRate", label: "Retention Rate", weight: 0.3, direction: "higherIsBetter" },
+      {
+        path: "academicQuality.facultyStudentRatio",
+        label: "Faculty:Student Ratio",
+        weight: 0.3,
+        direction: "lowerIsBetter",
+      },
     ],
   },
   {
@@ -68,8 +95,13 @@ export const CATEGORIES: CategoryConfig[] = [
     label: "Admissions Selectivity",
     weight: 0.15,
     metrics: [
-      { path: "admissions.acceptanceRate", weight: 10 / 20, direction: "lowerIsBetter" },
-      { path: "admissions.satActEquivalent", weight: 10 / 20, direction: "higherIsBetter" },
+      { path: "admissions.acceptanceRate", label: "Acceptance Rate", weight: 10 / 20, direction: "lowerIsBetter" },
+      {
+        path: "admissions.satActEquivalent",
+        label: "SAT/ACT Equivalent",
+        weight: 10 / 20,
+        direction: "higherIsBetter",
+      },
     ],
   },
   {
@@ -77,7 +109,12 @@ export const CATEGORIES: CategoryConfig[] = [
     label: "Internship / Placement Pipeline",
     weight: 0.15,
     metrics: [
-      { path: "outcomes.internshipPlacementRate", weight: 1, direction: "higherIsBetter" },
+      {
+        path: "outcomes.internshipPlacementRate",
+        label: "Internship Placement Rate",
+        weight: 1,
+        direction: "higherIsBetter",
+      },
     ],
   },
 ];

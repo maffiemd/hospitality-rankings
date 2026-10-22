@@ -11,6 +11,18 @@ const unranked = data.rankings
   .filter((r) => r.rank === null)
   .sort((a, b) => a.program.institution.localeCompare(b.program.institution));
 const generated = new Date(data.generatedAt);
+
+/** Turns a metric dot-path into a DOM-safe id/attribute fragment, e.g. "outcomes.startingSalary" -> "outcomes-startingSalary". */
+const metricKey = (path: string) => path.replace(/\./g, "-");
+
+/** Looks up a program's normalized (0-100) score for one metric, wherever it lives in its categories. */
+function metricNormalized(r: RankingsOutput["rankings"][number], path: string): number | undefined {
+  for (const c of r.categories) {
+    const m = c.metrics.find((mm) => mm.path === path);
+    if (m) return m.normalized ?? undefined;
+  }
+  return undefined;
+}
 ---
 
 <Layout title="Compare">
@@ -39,10 +51,40 @@ const generated = new Date(data.generatedAt);
     <div class="sliders" role="group" aria-label="Category weights">
       {
         CATEGORIES.map((c) => (
-          <div class="slider-row">
-            <label for={`weight-${c.key}`}>{c.label}</label>
-            <input type="range" id={`weight-${c.key}`} data-category={c.key} min="0" max="100" step="5" value="0" />
-            <span class="slider-value" id={`value-${c.key}`}>0%</span>
+          <div class="category-block">
+            <div class="slider-row">
+              <label for={`weight-${c.key}`}>{c.label}</label>
+              <input type="range" id={`weight-${c.key}`} data-category={c.key} min="0" max="100" step="5" value="0" />
+              <span class="slider-value" id={`value-${c.key}`}>0%</span>
+            </div>
+            {c.metrics.length > 1 && (
+              <details class="subweights">
+                <summary>Adjust sub-weights within {c.label}</summary>
+                <div class="subweight-list">
+                  {c.metrics.map((m) => (
+                    <div class="slider-row sub">
+                      <label for={`sub-${metricKey(m.path)}`}>
+                        {m.label}
+                        {m.direction === "lowerIsBetter" ? " (lower is better)" : ""}
+                      </label>
+                      <input
+                        type="range"
+                        id={`sub-${metricKey(m.path)}`}
+                        data-subweight-category={c.key}
+                        data-metric={m.path}
+                        min="0"
+                        max="100"
+                        step="5"
+                        value={Math.round(m.weight * 100)}
+                      />
+                      <span class="slider-value" id={`subvalue-${metricKey(m.path)}`}>
+                        {Math.round(m.weight * 100)}%
+                      </span>
+                    </div>
+                  ))}
+                </div>
+              </details>
+            )}
           </div>
         ))
       }
@@ -80,6 +122,12 @@ const generated = new Date(data.generatedAt);
         {
           ranked.map((r) => {
             const cat = (key: string) => r.categories.find((c) => c.key === key)?.score;
+            const metricAttrs: Record<string, number | string> = {};
+            for (const c of CATEGORIES) {
+              for (const m of c.metrics) {
+                metricAttrs[`data-m-${metricKey(m.path)}`] = metricNormalized(r, m.path) ?? "";
+              }
+            }
             return (
               <tr
                 data-rank={r.rank ?? ""}
@@ -90,6 +138,7 @@ const generated = new Date(data.generatedAt);
                 data-admissions={cat("admissions") ?? ""}
                 data-placement={cat("placement") ?? ""}
                 data-completeness={r.dataCompleteness}
+                {...metricAttrs}
               >
                 <td>{r.rank ?? "—"}</td>
                 <td>
@@ -97,11 +146,11 @@ const generated = new Date(data.generatedAt);
                   <div class="institution">{r.program.name}</div>
                 </td>
                 <td class="score">{r.compositeScore?.toFixed(1) ?? "—"}</td>
-                <td class="mobile-hide">{cat("outcomes")?.toFixed(0) ?? "—"}</td>
-                <td class="mobile-hide">{cat("academicResearch")?.toFixed(0) ?? "—"}</td>
-                <td class="mobile-hide">{cat("academicQuality")?.toFixed(0) ?? "—"}</td>
-                <td class="mobile-hide">{cat("admissions")?.toFixed(0) ?? "—"}</td>
-                <td class="mobile-hide">{cat("placement")?.toFixed(0) ?? "—"}</td>
+                <td class="mobile-hide" data-col="outcomes">{cat("outcomes")?.toFixed(0) ?? "—"}</td>
+                <td class="mobile-hide" data-col="academicResearch">{cat("academicResearch")?.toFixed(0) ?? "—"}</td>
+                <td class="mobile-hide" data-col="academicQuality">{cat("academicQuality")?.toFixed(0) ?? "—"}</td>
+                <td class="mobile-hide" data-col="admissions">{cat("admissions")?.toFixed(0) ?? "—"}</td>
+                <td class="mobile-hide" data-col="placement">{cat("placement")?.toFixed(0) ?? "—"}</td>
                 <td class="mobile-hide">{Math.round(r.dataCompleteness * 100)}%</td>
               </tr>
             );
@@ -147,6 +196,9 @@ const generated = new Date(data.generatedAt);
 
 <script>
   import { weightedAverage } from "../lib/normalize";
+  import { CATEGORIES } from "../config/weights";
+
+  const metricKey = (path: string) => path.replace(/\./g, "-");
 
   const table = document.getElementById("rankings-table") as HTMLTableElement;
   const headers = table.querySelectorAll<HTMLTableCellElement>("th[data-key]");
@@ -196,20 +248,33 @@ const generated = new Date(data.generatedAt);
     h.addEventListener("click", () => sortBy(h.dataset.key!));
   });
 
-  // ---- Build-your-own-ranking sliders ----
-  const sliders = Array.from(document.querySelectorAll<HTMLInputElement>("#customize input[type=range]"));
+  // ---- Build-your-own-ranking sliders (category weights + per-metric sub-weights) ----
+  const categorySliders = Array.from(document.querySelectorAll<HTMLInputElement>("#customize input[data-category]"));
+  const subSliders = Array.from(document.querySelectorAll<HTMLInputElement>("#customize input[data-subweight-category]"));
   const buildButton = document.getElementById("build-ranking") as HTMLButtonElement;
   const resetButton = document.getElementById("reset-weights") as HTMLButtonElement;
   const hint = document.getElementById("customize-hint")!;
   const results = document.getElementById("results") as HTMLDivElement;
   const rankedCount = document.getElementById("ranked-count")!;
 
-  const CATEGORY_KEYS = sliders.map((s) => s.dataset.category!);
+  const CATEGORY_KEYS = categorySliders.map((s) => s.dataset.category!);
+  // Multi-metric categories (the ones with a sub-weight disclosure in the markup).
+  const SUBWEIGHTED_CATEGORIES = CATEGORIES.filter((c) => c.metrics.length > 1);
+  const DEFAULT_SUBWEIGHTS: Record<string, number> = {};
+  for (const c of SUBWEIGHTED_CATEGORIES) {
+    for (const m of c.metrics) DEFAULT_SUBWEIGHTS[m.path] = Math.round(m.weight * 100);
+  }
   let hasBuilt = false;
 
   function readWeights(): Record<string, number> {
     const weights: Record<string, number> = {};
-    for (const s of sliders) weights[s.dataset.category!] = Number(s.value);
+    for (const s of categorySliders) weights[s.dataset.category!] = Number(s.value);
+    return weights;
+  }
+
+  function readSubWeights(): Record<string, number> {
+    const weights: Record<string, number> = {};
+    for (const s of subSliders) weights[s.dataset.metric!] = Number(s.value);
     return weights;
   }
 
@@ -217,7 +282,7 @@ const generated = new Date(data.generatedAt);
     return CATEGORY_KEYS.reduce((t, k) => t + weights[k], 0);
   }
 
-  function updateSliderLabels(weights: Record<string, number>) {
+  function updateSliderLabels(weights: Record<string, number>, subWeights: Record<string, number>) {
     const sum = totalWeight(weights);
     for (const key of CATEGORY_KEYS) {
       const label = document.getElementById(`value-${key}`);
@@ -225,19 +290,48 @@ const generated = new Date(data.generatedAt);
       const pct = sum === 0 ? 0 : (weights[key] / sum) * 100;
       label.textContent = `${Math.round(pct)}%`;
     }
+    for (const c of SUBWEIGHTED_CATEGORIES) {
+      const catSum = c.metrics.reduce((t, m) => t + subWeights[m.path], 0);
+      for (const m of c.metrics) {
+        const label = document.getElementById(`subvalue-${metricKey(m.path)}`);
+        if (!label) continue;
+        const pct = catSum === 0 ? 0 : (subWeights[m.path] / catSum) * 100;
+        label.textContent = `${Math.round(pct)}%`;
+      }
+    }
+  }
+
+  /** A category's score for one row, recomputed from its metrics using current sub-weights (falls back to the metric's default weight for categories with no sub-weight sliders, i.e. single-metric categories). */
+  function categoryScoreForRow(
+    row: HTMLTableRowElement,
+    category: (typeof CATEGORIES)[number],
+    subWeights: Record<string, number>,
+  ): number | null {
+    const pairs = category.metrics.map((m) => {
+      const raw = row.getAttribute(`data-m-${metricKey(m.path)}`);
+      const value = raw === null || raw === "" ? null : Number(raw);
+      const weight = subWeights[m.path] ?? m.weight;
+      return { value, weight };
+    });
+    return weightedAverage(pairs);
   }
 
   function recompute() {
     const weights = readWeights();
+    const subWeights = readSubWeights();
+    updateSliderLabels(weights, subWeights);
 
     for (const row of rows) {
-      const pairs = CATEGORY_KEYS.map((key) => {
-        const attr = columnToAttr[key];
-        const raw = row.getAttribute(attr);
-        const value = raw === null || raw === "" ? null : Number(raw);
-        return { value, weight: weights[key] };
-      });
-      const composite = weightedAverage(pairs);
+      const categoryScores: Record<string, number | null> = {};
+      for (const c of CATEGORIES) {
+        const score = categoryScoreForRow(row, c, subWeights);
+        categoryScores[c.key] = score;
+        row.setAttribute(columnToAttr[c.key], score === null ? "" : String(score));
+        const cell = row.querySelector<HTMLTableCellElement>(`td[data-col="${c.key}"]`);
+        if (cell) cell.textContent = score === null ? "—" : score.toFixed(0);
+      }
+
+      const composite = weightedAverage(CATEGORIES.map((c) => ({ value: categoryScores[c.key], weight: weights[c.key] })));
       row.setAttribute("data-composite", composite === null ? "" : String(composite));
       const scoreCell = row.querySelector("td.score");
       if (scoreCell) scoreCell.textContent = composite === null ? "—" : composite.toFixed(1);
@@ -268,12 +362,19 @@ const generated = new Date(data.generatedAt);
     headers.forEach((h) => h.removeAttribute("aria-sort"));
     table.querySelector('th[data-key="composite"]')?.setAttribute("aria-sort", "descending");
 
-    syncUrl(weights);
+    syncUrl(weights, subWeights);
   }
 
-  function syncUrl(weights: Record<string, number>) {
+  function syncUrl(weights: Record<string, number>, subWeights: Record<string, number>) {
     const params = new URLSearchParams(location.search);
     params.set("w", CATEGORY_KEYS.map((k) => weights[k]).join(","));
+    const subChanged = Object.keys(DEFAULT_SUBWEIGHTS).some((path) => subWeights[path] !== DEFAULT_SUBWEIGHTS[path]);
+    if (subChanged) {
+      const order = SUBWEIGHTED_CATEGORIES.flatMap((c) => c.metrics.map((m) => m.path));
+      params.set("m", order.map((path) => subWeights[path]).join(","));
+    } else {
+      params.delete("m");
+    }
     const query = params.toString();
     history.replaceState(null, "", query ? `?${query}` : location.pathname);
   }
@@ -298,7 +399,7 @@ const generated = new Date(data.generatedAt);
 
   function onSliderInput() {
     const weights = readWeights();
-    updateSliderLabels(weights);
+    updateSliderLabels(weights, readSubWeights());
     buildButton.disabled = totalWeight(weights) === 0;
     if (hasBuilt) recompute();
   }
@@ -308,21 +409,36 @@ const generated = new Date(data.generatedAt);
     const w = params.get("w");
     if (!w) return false;
     const values = w.split(",").map(Number);
-    if (values.length !== sliders.length || values.some((v) => Number.isNaN(v))) return false;
-    sliders.forEach((s, i) => (s.value = String(values[i])));
+    if (values.length !== categorySliders.length || values.some((v) => Number.isNaN(v))) return false;
+    categorySliders.forEach((s, i) => (s.value = String(values[i])));
+
+    const m = params.get("m");
+    if (m) {
+      const order = SUBWEIGHTED_CATEGORIES.flatMap((c) => c.metrics.map((mm) => mm.path));
+      const mValues = m.split(",").map(Number);
+      if (mValues.length === order.length && !mValues.some((v) => Number.isNaN(v))) {
+        const byPath = new Map(order.map((path, i) => [path, mValues[i]]));
+        subSliders.forEach((s) => {
+          const v = byPath.get(s.dataset.metric!);
+          if (v !== undefined) s.value = String(v);
+        });
+      }
+    }
     return totalWeight(readWeights()) > 0;
   }
 
-  sliders.forEach((s) => s.addEventListener("input", onSliderInput));
+  categorySliders.forEach((s) => s.addEventListener("input", onSliderInput));
+  subSliders.forEach((s) => s.addEventListener("input", onSliderInput));
   buildButton.addEventListener("click", revealResults);
   resetButton.addEventListener("click", () => {
-    sliders.forEach((s) => (s.value = "0"));
+    categorySliders.forEach((s) => (s.value = "0"));
+    subSliders.forEach((s) => (s.value = String(DEFAULT_SUBWEIGHTS[s.dataset.metric!])));
     onSliderInput();
     hideResults();
   });
 
   const sharedWeightsPresent = applyFromUrl();
-  updateSliderLabels(readWeights());
+  updateSliderLabels(readWeights(), readSubWeights());
   buildButton.disabled = totalWeight(readWeights()) === 0;
   if (sharedWeightsPresent) revealResults();
 </script>
@@ -431,8 +547,13 @@ const generated = new Date(data.generatedAt);
 
   .sliders {
     display: grid;
-    gap: 0.45rem;
+    gap: 0.5rem;
     margin-bottom: 0.9rem;
+  }
+
+  .category-block {
+    display: grid;
+    gap: 0.3rem;
   }
 
   .slider-row {
@@ -461,6 +582,57 @@ const generated = new Date(data.generatedAt);
     accent-color: var(--accent);
     cursor: pointer;
     height: 1rem;
+  }
+
+  .subweights {
+    margin-left: 1rem;
+  }
+
+  .subweights summary {
+    font-size: 0.68rem;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--muted);
+    cursor: pointer;
+    user-select: none;
+    list-style: none;
+  }
+
+  .subweights summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .subweights summary::before {
+    content: "\25B8";
+    display: inline-block;
+    margin-right: 0.4rem;
+    color: var(--accent);
+    transition: transform 0.15s ease;
+  }
+
+  .subweights[open] summary::before {
+    transform: rotate(90deg);
+  }
+
+  .subweight-list {
+    display: grid;
+    gap: 0.3rem;
+    margin: 0.45rem 0 0.2rem;
+  }
+
+  .slider-row.sub {
+    grid-template-columns: minmax(0, 10rem) 1fr 2.4rem;
+  }
+
+  .slider-row.sub label {
+    font-weight: 400;
+    font-size: 0.68rem;
+    color: var(--muted);
+  }
+
+  .slider-row.sub .slider-value {
+    font-size: 0.72rem;
   }
 
   .customize-actions {
@@ -531,6 +703,10 @@ const generated = new Date(data.generatedAt);
 
     .slider-row label {
       grid-column: 1 / -1;
+    }
+
+    .subweights {
+      margin-left: 0.5rem;
     }
   }
 </style>
