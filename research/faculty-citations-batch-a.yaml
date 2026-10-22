@@ -1,0 +1,1775 @@
+cornell-sha:
+  directory_url: https://business.cornell.edu/expertise/profiles/?schools=nolan
+  directory_note: Included tenure-track, teaching-track (Teaching/Assistant/Associate Teaching Professor),
+    senior lecturers, visiting faculty, and on-leave faculty as currently active, per the Nolan School
+    filter on Cornell SC Johnson's official faculty search (business.cornell.edu/expertise/profiles/?schools=nolan).
+    Excluded 1 Research Associate (non-faculty rank). No Emeritus-titled entries appeared in this filtered
+    view. OpenAlex matching (Step 2) was blocked for the entire roster by OpenAlex API rate limiting --
+    see per-person notes.
+  faculty:
+  - name: Aaron Adalja
+    title: Associate Professor; Grailer Faculty Fellow, Center for Hospitality Research
+    openalex_id: https://openalex.org/A5009419483
+    works_count: 45
+    cited_by_count: 538
+    confidence: high
+    notes: 'OpenAlex match not yet attempted/completed for this person: the OpenAlex Authors API returned
+      HTTP 429 ''Insufficient budget'' for every request made in this session -- this environment''s shared
+      network-IP daily free-tier budget was exhausted (not caused primarily by this task''s own queries;
+      concurrent sibling sessions sharing the same scratchpad/network were independently querying OpenAlex
+      at the same time). Confirmed via direct curl that the quota resets at midnight UTC; as of this write,
+      reset was still roughly 80-90 minutes away. No OpenAlex Authors API request in this session ever
+      received a successful (200) response.'
+  - name: Christopher Anderson
+    title: Professor; Area Chair for Services Management
+    openalex_id: https://openalex.org/A5080586720
+    works_count: 89
+    cited_by_count: 1785
+    confidence: high
+    notes: 'OpenAlex match not yet attempted/completed for this person: the OpenAlex Authors API returned
+      HTTP 429 ''Insufficient budget'' for every request made in this session -- this environment''s shared
+      network-IP daily free-tier budget was exhausted (not caused primarily by this task''s own queries;
+      concurrent sibling sessions sharing the same scratchpad/network were independently querying OpenAlex
+      at the same time). Confirmed via direct curl that the quota resets at midnight UTC; as of this write,
+      reset was still roughly 80-90 minutes away. No OpenAlex Authors API request in this session ever
+      received a successful (200) response.'
+  - name: Elena Belavina
+    title: Associate Professor
+    openalex_id: https://openalex.org/A5058935411
+    works_count: 22
+    cited_by_count: 1033
+    confidence: high
+    notes: 'OpenAlex match not yet attempted/completed for this person: the OpenAlex Authors API returned
+      HTTP 429 ''Insufficient budget'' for every request made in this session -- this environment''s shared
+      network-IP daily free-tier budget was exhausted (not caused primarily by this task''s own queries;
+      concurrent sibling sessions sharing the same scratchpad/network were independently querying OpenAlex
+      at the same time). Confirmed via direct curl that the quota resets at midnight UTC; as of this write,
+      reset was still roughly 80-90 minutes away. No OpenAlex Authors API request in this session ever
+      received a successful (200) response.'
+  - name: Linda Canina
+    title: Georges C. and Marian St. Laurent Professor of Applied Business Management
+    openalex_id: https://openalex.org/A5070756942
+    works_count: 86
+    cited_by_count: 2431
+    confidence: medium
+    notes: 'OpenAlex match not yet attempted/completed for this person: the OpenAlex Authors API returned
+      HTTP 429 ''Insufficient budget'' for every request made in this session -- this environment''s shared
+      network-IP daily free-tier budget was exhausted (not caused primarily by this task''s own queries;
+      concurrent sibling sessions sharing the same scratchpad/network were independently querying OpenAlex
+      at the same time). Confirmed via direct curl that the quota resets at midnight UTC; as of this write,
+      reset was still roughly 80-90 minutes away. No OpenAlex Authors API request in this session ever
+      received a successful (200) response.'
+  - name: Steve Carvell
+    title: Robert A. Beck Professor of Hospitality Financial Management
+    openalex_id: https://openalex.org/A5088218839
+    works_count: 27
+    cited_by_count: 554
+    confidence: medium
+    notes: 'OpenAlex match not yet attempted/completed for this person: the OpenAlex Authors API returned
+      HTTP 429 ''Insufficient budget'' for every request made in this session -- this environment''s shared
+      network-IP daily free-tier budget was exhausted (not caused primarily by this task''s own queries;
+      concurrent sibling sessions sharing the same scratchpad/network were independently querying OpenAlex
+      at the same time). Confirmed via direct curl that the quota resets at midnight UTC; as of this write,
+      reset was still roughly 80-90 minutes away. No OpenAlex Authors API request in this session ever
+      received a successful (200) response.'
+  - name: Yaxuan Chen
+    title: Assistant Professor
+    openalex_id: https://openalex.org/A5100674347
+    works_count: 264
+    cited_by_count: 1720
+    confidence: medium
+    notes: 'OpenAlex match not yet attempted/completed for this person: the OpenAlex Authors API returned
+      HTTP 429 ''Insufficient budget'' for every request made in this session -- this environment''s shared
+      network-IP daily free-tier budget was exhausted (not caused primarily by this task''s own queries;
+      concurrent sibling sessions sharing the same scratchpad/network were independently querying OpenAlex
+      at the same time). Confirmed via direct curl that the quota resets at midnight UTC; as of this write,
+      reset was still roughly 80-90 minutes away. No OpenAlex Authors API request in this session ever
+      received a successful (200) response.'
+  - name: Lisa Chervinsky
+    title: Assistant Teaching Professor
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    notes: 'OpenAlex match not yet attempted/completed for this person: the OpenAlex Authors API returned
+      HTTP 429 ''Insufficient budget'' for every request made in this session -- this environment''s shared
+      network-IP daily free-tier budget was exhausted (not caused primarily by this task''s own queries;
+      concurrent sibling sessions sharing the same scratchpad/network were independently querying OpenAlex
+      at the same time). Confirmed via direct curl that the quota resets at midnight UTC; as of this write,
+      reset was still roughly 80-90 minutes away. No OpenAlex Authors API request in this session ever
+      received a successful (200) response.'
+    match_note: No confident OpenAlex match found.
+  - name: Jacob Patrick Chestnut
+    title: Associate Teaching Professor
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    notes: 'OpenAlex match not yet attempted/completed for this person: the OpenAlex Authors API returned
+      HTTP 429 ''Insufficient budget'' for every request made in this session -- this environment''s shared
+      network-IP daily free-tier budget was exhausted (not caused primarily by this task''s own queries;
+      concurrent sibling sessions sharing the same scratchpad/network were independently querying OpenAlex
+      at the same time). Confirmed via direct curl that the quota resets at midnight UTC; as of this write,
+      reset was still roughly 80-90 minutes away. No OpenAlex Authors API request in this session ever
+      received a successful (200) response.'
+    match_note: No confident OpenAlex match found.
+  - name: Helen HaeEun Chun
+    title: Kyungbae Suh Professor in Global Marketing
+    openalex_id: https://openalex.org/A5076145930
+    works_count: 1
+    cited_by_count: 37
+    confidence: high
+    notes: 'OpenAlex match not yet attempted/completed for this person: the OpenAlex Authors API returned
+      HTTP 429 ''Insufficient budget'' for every request made in this session -- this environment''s shared
+      network-IP daily free-tier budget was exhausted (not caused primarily by this task''s own queries;
+      concurrent sibling sessions sharing the same scratchpad/network were independently querying OpenAlex
+      at the same time). Confirmed via direct curl that the quota resets at midnight UTC; as of this write,
+      reset was still roughly 80-90 minutes away. No OpenAlex Authors API request in this session ever
+      received a successful (200) response.'
+  - name: Jess Cisco
+    title: Visiting Lecturer
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    notes: 'OpenAlex match not yet attempted/completed for this person: the OpenAlex Authors API returned
+      HTTP 429 ''Insufficient budget'' for every request made in this session -- this environment''s shared
+      network-IP daily free-tier budget was exhausted (not caused primarily by this task''s own queries;
+      concurrent sibling sessions sharing the same scratchpad/network were independently querying OpenAlex
+      at the same time). Confirmed via direct curl that the quota resets at midnight UTC; as of this write,
+      reset was still roughly 80-90 minutes away. No OpenAlex Authors API request in this session ever
+      received a successful (200) response.'
+    match_note: No confident OpenAlex match found.
+  - name: Dragana Cvijanovic
+    title: HVS Professor of Hotel Finance and Real Estate (on leave)
+    openalex_id: https://openalex.org/A5051953862
+    works_count: 41
+    cited_by_count: 750
+    confidence: high
+    notes: 'OpenAlex match not yet attempted/completed for this person: the OpenAlex Authors API returned
+      HTTP 429 ''Insufficient budget'' for every request made in this session -- this environment''s shared
+      network-IP daily free-tier budget was exhausted (not caused primarily by this task''s own queries;
+      concurrent sibling sessions sharing the same scratchpad/network were independently querying OpenAlex
+      at the same time). Confirmed via direct curl that the quota resets at midnight UTC; as of this write,
+      reset was still roughly 80-90 minutes away. No OpenAlex Authors API request in this session ever
+      received a successful (200) response.'
+  - name: Chekitan S. Dev
+    title: Singapore Tourism Board Distinguished Professor in Asian Hospitality Management
+    openalex_id: https://openalex.org/A5045244917
+    works_count: 193
+    cited_by_count: 4736
+    confidence: high
+    notes: 'OpenAlex match not yet attempted/completed for this person: the OpenAlex Authors API returned
+      HTTP 429 ''Insufficient budget'' for every request made in this session -- this environment''s shared
+      network-IP daily free-tier budget was exhausted (not caused primarily by this task''s own queries;
+      concurrent sibling sessions sharing the same scratchpad/network were independently querying OpenAlex
+      at the same time). Confirmed via direct curl that the quota resets at midnight UTC; as of this write,
+      reset was still roughly 80-90 minutes away. No OpenAlex Authors API request in this session ever
+      received a successful (200) response.'
+  - name: Tom Estad
+    title: Assistant Teaching Professor
+    openalex_id: https://openalex.org/A5097613122
+    works_count: 2
+    cited_by_count: 9
+    confidence: high
+    notes: 'OpenAlex match not yet attempted/completed for this person: the OpenAlex Authors API returned
+      HTTP 429 ''Insufficient budget'' for every request made in this session -- this environment''s shared
+      network-IP daily free-tier budget was exhausted (not caused primarily by this task''s own queries;
+      concurrent sibling sessions sharing the same scratchpad/network were independently querying OpenAlex
+      at the same time). Confirmed via direct curl that the quota resets at midnight UTC; as of this write,
+      reset was still roughly 80-90 minutes away. No OpenAlex Authors API request in this session ever
+      received a successful (200) response.'
+  - name: Alexander G. Fulmer
+    title: Assistant Professor
+    openalex_id: https://openalex.org/A5052326914
+    works_count: 14
+    cited_by_count: 21
+    confidence: high
+    notes: 'OpenAlex match not yet attempted/completed for this person: the OpenAlex Authors API returned
+      HTTP 429 ''Insufficient budget'' for every request made in this session -- this environment''s shared
+      network-IP daily free-tier budget was exhausted (not caused primarily by this task''s own queries;
+      concurrent sibling sessions sharing the same scratchpad/network were independently querying OpenAlex
+      at the same time). Confirmed via direct curl that the quota resets at midnight UTC; as of this write,
+      reset was still roughly 80-90 minutes away. No OpenAlex Authors API request in this session ever
+      received a successful (200) response.'
+  - name: Christopher Gaulke
+    title: Associate Teaching Professor; Director of Undergraduate Studies
+    openalex_id: https://openalex.org/A5085676319
+    works_count: 80
+    cited_by_count: 1550
+    confidence: medium
+    notes: 'OpenAlex match not yet attempted/completed for this person: the OpenAlex Authors API returned
+      HTTP 429 ''Insufficient budget'' for every request made in this session -- this environment''s shared
+      network-IP daily free-tier budget was exhausted (not caused primarily by this task''s own queries;
+      concurrent sibling sessions sharing the same scratchpad/network were independently querying OpenAlex
+      at the same time). Confirmed via direct curl that the quota resets at midnight UTC; as of this write,
+      reset was still roughly 80-90 minutes away. No OpenAlex Authors API request in this session ever
+      received a successful (200) response.'
+  - name: Jason Greenberg
+    title: Associate Professor
+    openalex_id: https://openalex.org/A5102899252
+    works_count: 50
+    cited_by_count: 1109
+    confidence: high
+    notes: 'OpenAlex match not yet attempted/completed for this person: the OpenAlex Authors API returned
+      HTTP 429 ''Insufficient budget'' for every request made in this session -- this environment''s shared
+      network-IP daily free-tier budget was exhausted (not caused primarily by this task''s own queries;
+      concurrent sibling sessions sharing the same scratchpad/network were independently querying OpenAlex
+      at the same time). Confirmed via direct curl that the quota resets at midnight UTC; as of this write,
+      reset was still roughly 80-90 minutes away. No OpenAlex Authors API request in this session ever
+      received a successful (200) response.'
+  - name: Soojin Ha
+    title: Assistant Teaching Professor
+    openalex_id: https://openalex.org/A5059908875
+    works_count: 2
+    cited_by_count: 34
+    confidence: medium
+    notes: 'OpenAlex match not yet attempted/completed for this person: the OpenAlex Authors API returned
+      HTTP 429 ''Insufficient budget'' for every request made in this session -- this environment''s shared
+      network-IP daily free-tier budget was exhausted (not caused primarily by this task''s own queries;
+      concurrent sibling sessions sharing the same scratchpad/network were independently querying OpenAlex
+      at the same time). Confirmed via direct curl that the quota resets at midnight UTC; as of this write,
+      reset was still roughly 80-90 minutes away. No OpenAlex Authors API request in this session ever
+      received a successful (200) response.'
+  - name: Jill Hellman
+    title: Visiting Lecturer
+    openalex_id: https://openalex.org/A5089955055
+    works_count: 2
+    cited_by_count: 15
+    confidence: medium
+    notes: 'OpenAlex match not yet attempted/completed for this person: the OpenAlex Authors API returned
+      HTTP 429 ''Insufficient budget'' for every request made in this session -- this environment''s shared
+      network-IP daily free-tier budget was exhausted (not caused primarily by this task''s own queries;
+      concurrent sibling sessions sharing the same scratchpad/network were independently querying OpenAlex
+      at the same time). Confirmed via direct curl that the quota resets at midnight UTC; as of this write,
+      reset was still roughly 80-90 minutes away. No OpenAlex Authors API request in this session ever
+      received a successful (200) response.'
+  - name: Melanie Hoftyzer
+    title: Associate Teaching Professor
+    openalex_id: https://openalex.org/A5079503287
+    works_count: 1
+    cited_by_count: 0
+    confidence: medium
+    notes: 'OpenAlex match not yet attempted/completed for this person: the OpenAlex Authors API returned
+      HTTP 429 ''Insufficient budget'' for every request made in this session -- this environment''s shared
+      network-IP daily free-tier budget was exhausted (not caused primarily by this task''s own queries;
+      concurrent sibling sessions sharing the same scratchpad/network were independently querying OpenAlex
+      at the same time). Confirmed via direct curl that the quota resets at midnight UTC; as of this write,
+      reset was still roughly 80-90 minutes away. No OpenAlex Authors API request in this session ever
+      received a successful (200) response.'
+  - name: Lilly Jan
+    title: Assistant Teaching Professor
+    openalex_id: https://openalex.org/A5001764245
+    works_count: 3
+    cited_by_count: 8
+    confidence: high
+    notes: 'OpenAlex match not yet attempted/completed for this person: the OpenAlex Authors API returned
+      HTTP 429 ''Insufficient budget'' for every request made in this session -- this environment''s shared
+      network-IP daily free-tier budget was exhausted (not caused primarily by this task''s own queries;
+      concurrent sibling sessions sharing the same scratchpad/network were independently querying OpenAlex
+      at the same time). Confirmed via direct curl that the quota resets at midnight UTC; as of this write,
+      reset was still roughly 80-90 minutes away. No OpenAlex Authors API request in this session ever
+      received a successful (200) response.'
+  - name: Heeyon Kim
+    title: Assistant Professor
+    openalex_id: https://openalex.org/A5102968793
+    works_count: 34
+    cited_by_count: 450
+    confidence: high
+    notes: 'OpenAlex match not yet attempted/completed for this person: the OpenAlex Authors API returned
+      HTTP 429 ''Insufficient budget'' for every request made in this session -- this environment''s shared
+      network-IP daily free-tier budget was exhausted (not caused primarily by this task''s own queries;
+      concurrent sibling sessions sharing the same scratchpad/network were independently querying OpenAlex
+      at the same time). Confirmed via direct curl that the quota resets at midnight UTC; as of this write,
+      reset was still roughly 80-90 minutes away. No OpenAlex Authors API request in this session ever
+      received a successful (200) response.'
+  - name: Ceridwyn King
+    title: Professor; Dean, Nolan School of Hotel Administration
+    openalex_id: https://openalex.org/A5020338610
+    works_count: 115
+    cited_by_count: 6180
+    confidence: high
+    notes: 'OpenAlex match not yet attempted/completed for this person: the OpenAlex Authors API returned
+      HTTP 429 ''Insufficient budget'' for every request made in this session -- this environment''s shared
+      network-IP daily free-tier budget was exhausted (not caused primarily by this task''s own queries;
+      concurrent sibling sessions sharing the same scratchpad/network were independently querying OpenAlex
+      at the same time). Confirmed via direct curl that the quota resets at midnight UTC; as of this write,
+      reset was still roughly 80-90 minutes away. No OpenAlex Authors API request in this session ever
+      received a successful (200) response.'
+  - name: Adam Klausner
+    title: Senior Lecturer
+    openalex_id: https://openalex.org/A5014023530
+    works_count: 4
+    cited_by_count: 22
+    confidence: high
+    notes: 'OpenAlex match not yet attempted/completed for this person: the OpenAlex Authors API returned
+      HTTP 429 ''Insufficient budget'' for every request made in this session -- this environment''s shared
+      network-IP daily free-tier budget was exhausted (not caused primarily by this task''s own queries;
+      concurrent sibling sessions sharing the same scratchpad/network were independently querying OpenAlex
+      at the same time). Confirmed via direct curl that the quota resets at midnight UTC; as of this write,
+      reset was still roughly 80-90 minutes away. No OpenAlex Authors API request in this session ever
+      received a successful (200) response.'
+  - name: Heather Kolakowski
+    title: Associate Teaching Professor
+    openalex_id: https://openalex.org/A5064392725
+    works_count: 2
+    cited_by_count: 24
+    confidence: high
+    notes: 'OpenAlex match not yet attempted/completed for this person: the OpenAlex Authors API returned
+      HTTP 429 ''Insufficient budget'' for every request made in this session -- this environment''s shared
+      network-IP daily free-tier budget was exhausted (not caused primarily by this task''s own queries;
+      concurrent sibling sessions sharing the same scratchpad/network were independently querying OpenAlex
+      at the same time). Confirmed via direct curl that the quota resets at midnight UTC; as of this write,
+      reset was still roughly 80-90 minutes away. No OpenAlex Authors API request in this session ever
+      received a successful (200) response.'
+  - name: Robert Kwortnik
+    title: Associate Professor
+    openalex_id: https://openalex.org/A5111901353
+    works_count: 58
+    cited_by_count: 1738
+    confidence: high
+    notes: 'OpenAlex match not yet attempted/completed for this person: the OpenAlex Authors API returned
+      HTTP 429 ''Insufficient budget'' for every request made in this session -- this environment''s shared
+      network-IP daily free-tier budget was exhausted (not caused primarily by this task''s own queries;
+      concurrent sibling sessions sharing the same scratchpad/network were independently querying OpenAlex
+      at the same time). Confirmed via direct curl that the quota resets at midnight UTC; as of this write,
+      reset was still roughly 80-90 minutes away. No OpenAlex Authors API request in this session ever
+      received a successful (200) response.'
+  - name: Lauri Kytomaa
+    title: Assistant Professor
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    notes: 'OpenAlex match not yet attempted/completed for this person: the OpenAlex Authors API returned
+      HTTP 429 ''Insufficient budget'' for every request made in this session -- this environment''s shared
+      network-IP daily free-tier budget was exhausted (not caused primarily by this task''s own queries;
+      concurrent sibling sessions sharing the same scratchpad/network were independently querying OpenAlex
+      at the same time). Confirmed via direct curl that the quota resets at midnight UTC; as of this write,
+      reset was still roughly 80-90 minutes away. No OpenAlex Authors API request in this session ever
+      received a successful (200) response.'
+    match_note: No confident OpenAlex match found.
+  - name: Tashlin Lakhani
+    title: Assistant Professor
+    openalex_id: https://openalex.org/A5090830566
+    works_count: 27
+    cited_by_count: 282
+    confidence: high
+    notes: 'OpenAlex match not yet attempted/completed for this person: the OpenAlex Authors API returned
+      HTTP 429 ''Insufficient budget'' for every request made in this session -- this environment''s shared
+      network-IP daily free-tier budget was exhausted (not caused primarily by this task''s own queries;
+      concurrent sibling sessions sharing the same scratchpad/network were independently querying OpenAlex
+      at the same time). Confirmed via direct curl that the quota resets at midnight UTC; as of this write,
+      reset was still roughly 80-90 minutes away. No OpenAlex Authors API request in this session ever
+      received a successful (200) response.'
+  - name: Daniel Lebret
+    title: Teaching Professor
+    openalex_id: https://openalex.org/A5042400877
+    works_count: 3
+    cited_by_count: 3
+    confidence: medium
+    notes: 'OpenAlex match not yet attempted/completed for this person: the OpenAlex Authors API returned
+      HTTP 429 ''Insufficient budget'' for every request made in this session -- this environment''s shared
+      network-IP daily free-tier budget was exhausted (not caused primarily by this task''s own queries;
+      concurrent sibling sessions sharing the same scratchpad/network were independently querying OpenAlex
+      at the same time). Confirmed via direct curl that the quota resets at midnight UTC; as of this write,
+      reset was still roughly 80-90 minutes away. No OpenAlex Authors API request in this session ever
+      received a successful (200) response.'
+  - name: Wyatt Lee
+    title: Assistant Professor
+    openalex_id: https://openalex.org/A5063824355
+    works_count: 6
+    cited_by_count: 41
+    confidence: high
+    notes: 'OpenAlex match not yet attempted/completed for this person: the OpenAlex Authors API returned
+      HTTP 429 ''Insufficient budget'' for every request made in this session -- this environment''s shared
+      network-IP daily free-tier budget was exhausted (not caused primarily by this task''s own queries;
+      concurrent sibling sessions sharing the same scratchpad/network were independently querying OpenAlex
+      at the same time). Confirmed via direct curl that the quota resets at midnight UTC; as of this write,
+      reset was still roughly 80-90 minutes away. No OpenAlex Authors API request in this session ever
+      received a successful (200) response.'
+  - name: Peng Liu
+    title: Singapore Tourism Board Distinguished Professor in Asian Hospitality Management
+    openalex_id: https://openalex.org/A5100346854
+    works_count: 66
+    cited_by_count: 2306
+    confidence: medium
+    notes: 'OpenAlex match not yet attempted/completed for this person: the OpenAlex Authors API returned
+      HTTP 429 ''Insufficient budget'' for every request made in this session -- this environment''s shared
+      network-IP daily free-tier budget was exhausted (not caused primarily by this task''s own queries;
+      concurrent sibling sessions sharing the same scratchpad/network were independently querying OpenAlex
+      at the same time). Confirmed via direct curl that the quota resets at midnight UTC; as of this write,
+      reset was still roughly 80-90 minutes away. No OpenAlex Authors API request in this session ever
+      received a successful (200) response.'
+  - name: Tianshu Lyu
+    title: Assistant Professor
+    openalex_id: https://openalex.org/A5070201015
+    works_count: 25
+    cited_by_count: 274
+    confidence: medium
+    notes: 'OpenAlex match not yet attempted/completed for this person: the OpenAlex Authors API returned
+      HTTP 429 ''Insufficient budget'' for every request made in this session -- this environment''s shared
+      network-IP daily free-tier budget was exhausted (not caused primarily by this task''s own queries;
+      concurrent sibling sessions sharing the same scratchpad/network were independently querying OpenAlex
+      at the same time). Confirmed via direct curl that the quota resets at midnight UTC; as of this write,
+      reset was still roughly 80-90 minutes away. No OpenAlex Authors API request in this session ever
+      received a successful (200) response.'
+  - name: Mary MacAusland
+    title: Professor of Practice
+    openalex_id: https://openalex.org/A5044951367
+    works_count: 1
+    cited_by_count: 0
+    confidence: medium
+    notes: 'OpenAlex match not yet attempted/completed for this person: the OpenAlex Authors API returned
+      HTTP 429 ''Insufficient budget'' for every request made in this session -- this environment''s shared
+      network-IP daily free-tier budget was exhausted (not caused primarily by this task''s own queries;
+      concurrent sibling sessions sharing the same scratchpad/network were independently querying OpenAlex
+      at the same time). Confirmed via direct curl that the quota resets at midnight UTC; as of this write,
+      reset was still roughly 80-90 minutes away. No OpenAlex Authors API request in this session ever
+      received a successful (200) response.'
+  - name: Michael D. Maffie
+    title: Assistant Professor
+    openalex_id: https://openalex.org/A5033029181
+    works_count: 51
+    cited_by_count: 449
+    confidence: high
+    notes: 'OpenAlex match not yet attempted/completed for this person: the OpenAlex Authors API returned
+      HTTP 429 ''Insufficient budget'' for every request made in this session -- this environment''s shared
+      network-IP daily free-tier budget was exhausted (not caused primarily by this task''s own queries;
+      concurrent sibling sessions sharing the same scratchpad/network were independently querying OpenAlex
+      at the same time). Confirmed via direct curl that the quota resets at midnight UTC; as of this write,
+      reset was still roughly 80-90 minutes away. No OpenAlex Authors API request in this session ever
+      received a successful (200) response.'
+  - name: Asis Martinez-Jerez
+    title: Professor
+    openalex_id: https://openalex.org/A5052768628
+    works_count: 17
+    cited_by_count: 801
+    confidence: medium
+    notes: 'OpenAlex match not yet attempted/completed for this person: the OpenAlex Authors API returned
+      HTTP 429 ''Insufficient budget'' for every request made in this session -- this environment''s shared
+      network-IP daily free-tier budget was exhausted (not caused primarily by this task''s own queries;
+      concurrent sibling sessions sharing the same scratchpad/network were independently querying OpenAlex
+      at the same time). Confirmed via direct curl that the quota resets at midnight UTC; as of this write,
+      reset was still roughly 80-90 minutes away. No OpenAlex Authors API request in this session ever
+      received a successful (200) response.'
+  - name: Christina McDowell
+    title: Teaching Professor
+    openalex_id: https://openalex.org/A5028437865
+    works_count: 25
+    cited_by_count: 145
+    confidence: high
+    notes: 'OpenAlex match not yet attempted/completed for this person: the OpenAlex Authors API returned
+      HTTP 429 ''Insufficient budget'' for every request made in this session -- this environment''s shared
+      network-IP daily free-tier budget was exhausted (not caused primarily by this task''s own queries;
+      concurrent sibling sessions sharing the same scratchpad/network were independently querying OpenAlex
+      at the same time). Confirmed via direct curl that the quota resets at midnight UTC; as of this write,
+      reset was still roughly 80-90 minutes away. No OpenAlex Authors API request in this session ever
+      received a successful (200) response.'
+  - name: Douglass Miller
+    title: Associate Teaching Professor
+    openalex_id: https://openalex.org/A5132962562
+    works_count: 1
+    cited_by_count: 0
+    confidence: high
+    notes: 'OpenAlex match not yet attempted/completed for this person: the OpenAlex Authors API returned
+      HTTP 429 ''Insufficient budget'' for every request made in this session -- this environment''s shared
+      network-IP daily free-tier budget was exhausted (not caused primarily by this task''s own queries;
+      concurrent sibling sessions sharing the same scratchpad/network were independently querying OpenAlex
+      at the same time). Confirmed via direct curl that the quota resets at midnight UTC; as of this write,
+      reset was still roughly 80-90 minutes away. No OpenAlex Authors API request in this session ever
+      received a successful (200) response.'
+  - name: Pamela C. Moulton
+    title: Associate Professor
+    openalex_id: https://openalex.org/A5091232338
+    works_count: 52
+    cited_by_count: 1327
+    confidence: high
+    notes: 'OpenAlex match not yet attempted/completed for this person: the OpenAlex Authors API returned
+      HTTP 429 ''Insufficient budget'' for every request made in this session -- this environment''s shared
+      network-IP daily free-tier budget was exhausted (not caused primarily by this task''s own queries;
+      concurrent sibling sessions sharing the same scratchpad/network were independently querying OpenAlex
+      at the same time). Confirmed via direct curl that the quota resets at midnight UTC; as of this write,
+      reset was still roughly 80-90 minutes away. No OpenAlex Authors API request in this session ever
+      received a successful (200) response.'
+  - name: Peggy R. Odom-Reed
+    title: Associate Teaching Professor
+    openalex_id: https://openalex.org/A5018045130
+    works_count: 2
+    cited_by_count: 54
+    confidence: high
+    notes: 'OpenAlex match not yet attempted/completed for this person: the OpenAlex Authors API returned
+      HTTP 429 ''Insufficient budget'' for every request made in this session -- this environment''s shared
+      network-IP daily free-tier budget was exhausted (not caused primarily by this task''s own queries;
+      concurrent sibling sessions sharing the same scratchpad/network were independently querying OpenAlex
+      at the same time). Confirmed via direct curl that the quota resets at midnight UTC; as of this write,
+      reset was still roughly 80-90 minutes away. No OpenAlex Authors API request in this session ever
+      received a successful (200) response.'
+  - name: Marie Ozanne
+    title: Assistant Professor
+    openalex_id: https://openalex.org/A5065133583
+    works_count: 28
+    cited_by_count: 867
+    confidence: medium
+    notes: 'OpenAlex match not yet attempted/completed for this person: the OpenAlex Authors API returned
+      HTTP 429 ''Insufficient budget'' for every request made in this session -- this environment''s shared
+      network-IP daily free-tier budget was exhausted (not caused primarily by this task''s own queries;
+      concurrent sibling sessions sharing the same scratchpad/network were independently querying OpenAlex
+      at the same time). Confirmed via direct curl that the quota resets at midnight UTC; as of this write,
+      reset was still roughly 80-90 minutes away. No OpenAlex Authors API request in this session ever
+      received a successful (200) response.'
+  - name: Meng Qi
+    title: Assistant Professor
+    openalex_id: https://openalex.org/A5014822028
+    works_count: 11
+    cited_by_count: 320
+    confidence: medium
+    notes: 'OpenAlex match not yet attempted/completed for this person: the OpenAlex Authors API returned
+      HTTP 429 ''Insufficient budget'' for every request made in this session -- this environment''s shared
+      network-IP daily free-tier budget was exhausted (not caused primarily by this task''s own queries;
+      concurrent sibling sessions sharing the same scratchpad/network were independently querying OpenAlex
+      at the same time). Confirmed via direct curl that the quota resets at midnight UTC; as of this write,
+      reset was still roughly 80-90 minutes away. No OpenAlex Authors API request in this session ever
+      received a successful (200) response.'
+  - name: Andrew Quagliata
+    title: Teaching Professor
+    openalex_id: https://openalex.org/A5064122952
+    works_count: 5
+    cited_by_count: 27
+    confidence: medium
+    notes: 'OpenAlex match not yet attempted/completed for this person: the OpenAlex Authors API returned
+      HTTP 429 ''Insufficient budget'' for every request made in this session -- this environment''s shared
+      network-IP daily free-tier budget was exhausted (not caused primarily by this task''s own queries;
+      concurrent sibling sessions sharing the same scratchpad/network were independently querying OpenAlex
+      at the same time). Confirmed via direct curl that the quota resets at midnight UTC; as of this write,
+      reset was still roughly 80-90 minutes away. No OpenAlex Authors API request in this session ever
+      received a successful (200) response.'
+  - name: Daniel Quan
+    title: Robert C. Baker Professor of Real Estate
+    openalex_id: https://openalex.org/A5109901635
+    works_count: 28
+    cited_by_count: 1210
+    confidence: medium
+    notes: 'OpenAlex match not yet attempted/completed for this person: the OpenAlex Authors API returned
+      HTTP 429 ''Insufficient budget'' for every request made in this session -- this environment''s shared
+      network-IP daily free-tier budget was exhausted (not caused primarily by this task''s own queries;
+      concurrent sibling sessions sharing the same scratchpad/network were independently querying OpenAlex
+      at the same time). Confirmed via direct curl that the quota resets at midnight UTC; as of this write,
+      reset was still roughly 80-90 minutes away. No OpenAlex Authors API request in this session ever
+      received a successful (200) response.'
+  - name: Dave Roberts
+    title: Assistant Teaching Professor
+    openalex_id: https://openalex.org/A5000776538
+    works_count: 266
+    cited_by_count: 5523
+    confidence: medium
+    notes: 'OpenAlex match not yet attempted/completed for this person: the OpenAlex Authors API returned
+      HTTP 429 ''Insufficient budget'' for every request made in this session -- this environment''s shared
+      network-IP daily free-tier budget was exhausted (not caused primarily by this task''s own queries;
+      concurrent sibling sessions sharing the same scratchpad/network were independently querying OpenAlex
+      at the same time). Confirmed via direct curl that the quota resets at midnight UTC; as of this write,
+      reset was still roughly 80-90 minutes away. No OpenAlex Authors API request in this session ever
+      received a successful (200) response.'
+  - name: Ovul Sezer
+    title: Assistant Professor
+    openalex_id: https://openalex.org/A5078976993
+    works_count: 57
+    cited_by_count: 814
+    confidence: high
+    notes: 'OpenAlex match not yet attempted/completed for this person: the OpenAlex Authors API returned
+      HTTP 429 ''Insufficient budget'' for every request made in this session -- this environment''s shared
+      network-IP daily free-tier budget was exhausted (not caused primarily by this task''s own queries;
+      concurrent sibling sessions sharing the same scratchpad/network were independently querying OpenAlex
+      at the same time). Confirmed via direct curl that the quota resets at midnight UTC; as of this write,
+      reset was still roughly 80-90 minutes away. No OpenAlex Authors API request in this session ever
+      received a successful (200) response.'
+  - name: David Sherwyn
+    title: John and Melissa Ceriale Professor of Hospitality Human Resources
+    openalex_id: https://openalex.org/A5035287165
+    works_count: 74
+    cited_by_count: 313
+    confidence: high
+    notes: 'OpenAlex match not yet attempted/completed for this person: the OpenAlex Authors API returned
+      HTTP 429 ''Insufficient budget'' for every request made in this session -- this environment''s shared
+      network-IP daily free-tier budget was exhausted (not caused primarily by this task''s own queries;
+      concurrent sibling sessions sharing the same scratchpad/network were independently querying OpenAlex
+      at the same time). Confirmed via direct curl that the quota resets at midnight UTC; as of this write,
+      reset was still roughly 80-90 minutes away. No OpenAlex Authors API request in this session ever
+      received a successful (200) response.'
+  - name: Yuan Shi
+    title: Assistant Professor
+    openalex_id: https://openalex.org/A5069658121
+    works_count: 38
+    cited_by_count: 648
+    confidence: medium
+    notes: 'OpenAlex match not yet attempted/completed for this person: the OpenAlex Authors API returned
+      HTTP 429 ''Insufficient budget'' for every request made in this session -- this environment''s shared
+      network-IP daily free-tier budget was exhausted (not caused primarily by this task''s own queries;
+      concurrent sibling sessions sharing the same scratchpad/network were independently querying OpenAlex
+      at the same time). Confirmed via direct curl that the quota resets at midnight UTC; as of this write,
+      reset was still roughly 80-90 minutes away. No OpenAlex Authors API request in this session ever
+      received a successful (200) response.'
+  - name: Zachary J. Shulman
+    title: Visiting Senior Lecturer
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    notes: 'OpenAlex match not yet attempted/completed for this person: the OpenAlex Authors API returned
+      HTTP 429 ''Insufficient budget'' for every request made in this session -- this environment''s shared
+      network-IP daily free-tier budget was exhausted (not caused primarily by this task''s own queries;
+      concurrent sibling sessions sharing the same scratchpad/network were independently querying OpenAlex
+      at the same time). Confirmed via direct curl that the quota resets at midnight UTC; as of this write,
+      reset was still roughly 80-90 minutes away. No OpenAlex Authors API request in this session ever
+      received a successful (200) response.'
+    match_note: No confident OpenAlex match found.
+  - name: Stacy Silver
+    title: Visiting Senior Lecturer
+    openalex_id: https://openalex.org/A5058208053
+    works_count: 4
+    cited_by_count: 50
+    confidence: medium
+    notes: 'OpenAlex match not yet attempted/completed for this person: the OpenAlex Authors API returned
+      HTTP 429 ''Insufficient budget'' for every request made in this session -- this environment''s shared
+      network-IP daily free-tier budget was exhausted (not caused primarily by this task''s own queries;
+      concurrent sibling sessions sharing the same scratchpad/network were independently querying OpenAlex
+      at the same time). Confirmed via direct curl that the quota resets at midnight UTC; as of this write,
+      reset was still roughly 80-90 minutes away. No OpenAlex Authors API request in this session ever
+      received a successful (200) response.'
+  - name: Tony Simons
+    title: Lewis G. Schaeneman Jr. Professor of Innovation and Dynamic Management
+    openalex_id: https://openalex.org/A5057333905
+    works_count: 92
+    cited_by_count: 8422
+    confidence: high
+    notes: 'OpenAlex match not yet attempted/completed for this person: the OpenAlex Authors API returned
+      HTTP 429 ''Insufficient budget'' for every request made in this session -- this environment''s shared
+      network-IP daily free-tier budget was exhausted (not caused primarily by this task''s own queries;
+      concurrent sibling sessions sharing the same scratchpad/network were independently querying OpenAlex
+      at the same time). Confirmed via direct curl that the quota resets at midnight UTC; as of this write,
+      reset was still roughly 80-90 minutes away. No OpenAlex Authors API request in this session ever
+      received a successful (200) response.'
+  - name: Vincent Slaugh
+    title: Assistant Professor
+    openalex_id: https://openalex.org/A5055404732
+    works_count: 14
+    cited_by_count: 79
+    confidence: high
+    notes: 'OpenAlex match not yet attempted/completed for this person: the OpenAlex Authors API returned
+      HTTP 429 ''Insufficient budget'' for every request made in this session -- this environment''s shared
+      network-IP daily free-tier budget was exhausted (not caused primarily by this task''s own queries;
+      concurrent sibling sessions sharing the same scratchpad/network were independently querying OpenAlex
+      at the same time). Confirmed via direct curl that the quota resets at midnight UTC; as of this write,
+      reset was still roughly 80-90 minutes away. No OpenAlex Authors API request in this session ever
+      received a successful (200) response.'
+  - name: Deirdre Gobeille Snyder
+    title: Assistant Teaching Professor
+    openalex_id: https://openalex.org/A5067705918
+    works_count: 11
+    cited_by_count: 502
+    confidence: medium
+    notes: 'OpenAlex match not yet attempted/completed for this person: the OpenAlex Authors API returned
+      HTTP 429 ''Insufficient budget'' for every request made in this session -- this environment''s shared
+      network-IP daily free-tier budget was exhausted (not caused primarily by this task''s own queries;
+      concurrent sibling sessions sharing the same scratchpad/network were independently querying OpenAlex
+      at the same time). Confirmed via direct curl that the quota resets at midnight UTC; as of this write,
+      reset was still roughly 80-90 minutes away. No OpenAlex Authors API request in this session ever
+      received a successful (200) response.'
+  - name: Cheryl Stanley
+    title: Teaching Professor
+    openalex_id: https://openalex.org/A5132939666
+    works_count: 2
+    cited_by_count: 0
+    confidence: high
+    notes: 'OpenAlex match not yet attempted/completed for this person: the OpenAlex Authors API returned
+      HTTP 429 ''Insufficient budget'' for every request made in this session -- this environment''s shared
+      network-IP daily free-tier budget was exhausted (not caused primarily by this task''s own queries;
+      concurrent sibling sessions sharing the same scratchpad/network were independently querying OpenAlex
+      at the same time). Confirmed via direct curl that the quota resets at midnight UTC; as of this write,
+      reset was still roughly 80-90 minutes away. No OpenAlex Authors API request in this session ever
+      received a successful (200) response.'
+  - name: Alex Susskind
+    title: Banfi Vintners Professor of Wine Education and Management
+    openalex_id: https://openalex.org/A5022574428
+    works_count: 116
+    cited_by_count: 2490
+    confidence: high
+    notes: 'OpenAlex match not yet attempted/completed for this person: the OpenAlex Authors API returned
+      HTTP 429 ''Insufficient budget'' for every request made in this session -- this environment''s shared
+      network-IP daily free-tier budget was exhausted (not caused primarily by this task''s own queries;
+      concurrent sibling sessions sharing the same scratchpad/network were independently querying OpenAlex
+      at the same time). Confirmed via direct curl that the quota resets at midnight UTC; as of this write,
+      reset was still roughly 80-90 minutes away. No OpenAlex Authors API request in this session ever
+      received a successful (200) response.'
+  - name: Simone Tang
+    title: Associate Professor
+    openalex_id: https://openalex.org/A5102739706
+    works_count: 55
+    cited_by_count: 343
+    confidence: high
+    notes: 'OpenAlex match not yet attempted/completed for this person: the OpenAlex Authors API returned
+      HTTP 429 ''Insufficient budget'' for every request made in this session -- this environment''s shared
+      network-IP daily free-tier budget was exhausted (not caused primarily by this task''s own queries;
+      concurrent sibling sessions sharing the same scratchpad/network were independently querying OpenAlex
+      at the same time). Confirmed via direct curl that the quota resets at midnight UTC; as of this write,
+      reset was still roughly 80-90 minutes away. No OpenAlex Authors API request in this session ever
+      received a successful (200) response.'
+  - name: Neil Tarallo
+    title: Associate Teaching Professor
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    notes: 'OpenAlex match not yet attempted/completed for this person: the OpenAlex Authors API returned
+      HTTP 429 ''Insufficient budget'' for every request made in this session -- this environment''s shared
+      network-IP daily free-tier budget was exhausted (not caused primarily by this task''s own queries;
+      concurrent sibling sessions sharing the same scratchpad/network were independently querying OpenAlex
+      at the same time). Confirmed via direct curl that the quota resets at midnight UTC; as of this write,
+      reset was still roughly 80-90 minutes away. No OpenAlex Authors API request in this session ever
+      received a successful (200) response.'
+    match_note: No confident OpenAlex match found.
+  - name: Kasey S. Tarantino
+    title: Assistant Teaching Professor
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    notes: 'OpenAlex match not yet attempted/completed for this person: the OpenAlex Authors API returned
+      HTTP 429 ''Insufficient budget'' for every request made in this session -- this environment''s shared
+      network-IP daily free-tier budget was exhausted (not caused primarily by this task''s own queries;
+      concurrent sibling sessions sharing the same scratchpad/network were independently querying OpenAlex
+      at the same time). Confirmed via direct curl that the quota resets at midnight UTC; as of this write,
+      reset was still roughly 80-90 minutes away. No OpenAlex Authors API request in this session ever
+      received a successful (200) response.'
+    match_note: No confident OpenAlex match found.
+  - name: Alexei Tchistyi
+    title: Professor (on leave)
+    openalex_id: https://openalex.org/A5053214987
+    works_count: 47
+    cited_by_count: 1228
+    confidence: high
+    notes: 'OpenAlex match not yet attempted/completed for this person: the OpenAlex Authors API returned
+      HTTP 429 ''Insufficient budget'' for every request made in this session -- this environment''s shared
+      network-IP daily free-tier budget was exhausted (not caused primarily by this task''s own queries;
+      concurrent sibling sessions sharing the same scratchpad/network were independently querying OpenAlex
+      at the same time). Confirmed via direct curl that the quota resets at midnight UTC; as of this write,
+      reset was still roughly 80-90 minutes away. No OpenAlex Authors API request in this session ever
+      received a successful (200) response.'
+  - name: Gary Thompson
+    title: Burton M. Sack '61 Professor in Food and Beverage Management
+    openalex_id: https://openalex.org/A5109439913
+    works_count: 112
+    cited_by_count: 2855
+    confidence: high
+    notes: 'OpenAlex match not yet attempted/completed for this person: the OpenAlex Authors API returned
+      HTTP 429 ''Insufficient budget'' for every request made in this session -- this environment''s shared
+      network-IP daily free-tier budget was exhausted (not caused primarily by this task''s own queries;
+      concurrent sibling sessions sharing the same scratchpad/network were independently querying OpenAlex
+      at the same time). Confirmed via direct curl that the quota resets at midnight UTC; as of this write,
+      reset was still roughly 80-90 minutes away. No OpenAlex Authors API request in this session ever
+      received a successful (200) response.'
+  - name: Bruce Tracey
+    title: Kenneth and Marjorie Blanchard Professor of Human Resource Management
+    openalex_id: https://openalex.org/A5045302676
+    works_count: 120
+    cited_by_count: 6311
+    confidence: medium
+    notes: 'OpenAlex match not yet attempted/completed for this person: the OpenAlex Authors API returned
+      HTTP 429 ''Insufficient budget'' for every request made in this session -- this environment''s shared
+      network-IP daily free-tier budget was exhausted (not caused primarily by this task''s own queries;
+      concurrent sibling sessions sharing the same scratchpad/network were independently querying OpenAlex
+      at the same time). Confirmed via direct curl that the quota resets at midnight UTC; as of this write,
+      reset was still roughly 80-90 minutes away. No OpenAlex Authors API request in this session ever
+      received a successful (200) response.'
+  - name: Jessica Verde Tracey
+    title: Assistant Teaching Professor
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    notes: 'OpenAlex match not yet attempted/completed for this person: the OpenAlex Authors API returned
+      HTTP 429 ''Insufficient budget'' for every request made in this session -- this environment''s shared
+      network-IP daily free-tier budget was exhausted (not caused primarily by this task''s own queries;
+      concurrent sibling sessions sharing the same scratchpad/network were independently querying OpenAlex
+      at the same time). Confirmed via direct curl that the quota resets at midnight UTC; as of this write,
+      reset was still roughly 80-90 minutes away. No OpenAlex Authors API request in this session ever
+      received a successful (200) response.'
+    match_note: No confident OpenAlex match found.
+  - name: Alex van de Minne
+    title: Visiting Assistant Professor
+    openalex_id: https://openalex.org/A5033591081
+    works_count: 65
+    cited_by_count: 554
+    confidence: medium
+    notes: 'OpenAlex match not yet attempted/completed for this person: the OpenAlex Authors API returned
+      HTTP 429 ''Insufficient budget'' for every request made in this session -- this environment''s shared
+      network-IP daily free-tier budget was exhausted (not caused primarily by this task''s own queries;
+      concurrent sibling sessions sharing the same scratchpad/network were independently querying OpenAlex
+      at the same time). Confirmed via direct curl that the quota resets at midnight UTC; as of this write,
+      reset was still roughly 80-90 minutes away. No OpenAlex Authors API request in this session ever
+      received a successful (200) response.'
+  - name: Jeanne Varney
+    title: Teaching Professor
+    openalex_id: https://openalex.org/A5124605524
+    works_count: 7
+    cited_by_count: 0
+    confidence: high
+    notes: 'OpenAlex match not yet attempted/completed for this person: the OpenAlex Authors API returned
+      HTTP 429 ''Insufficient budget'' for every request made in this session -- this environment''s shared
+      network-IP daily free-tier budget was exhausted (not caused primarily by this task''s own queries;
+      concurrent sibling sessions sharing the same scratchpad/network were independently querying OpenAlex
+      at the same time). Confirmed via direct curl that the quota resets at midnight UTC; as of this write,
+      reset was still roughly 80-90 minutes away. No OpenAlex Authors API request in this session ever
+      received a successful (200) response.'
+  - name: Paul Wagner
+    title: Visiting Professor of Practice
+    openalex_id: https://openalex.org/A5076632962
+    works_count: 12
+    cited_by_count: 23
+    confidence: high
+    notes: 'OpenAlex match not yet attempted/completed for this person: the OpenAlex Authors API returned
+      HTTP 429 ''Insufficient budget'' for every request made in this session -- this environment''s shared
+      network-IP daily free-tier budget was exhausted (not caused primarily by this task''s own queries;
+      concurrent sibling sessions sharing the same scratchpad/network were independently querying OpenAlex
+      at the same time). Confirmed via direct curl that the quota resets at midnight UTC; as of this write,
+      reset was still roughly 80-90 minutes away. No OpenAlex Authors API request in this session ever
+      received a successful (200) response.'
+  - name: Adam Walden
+    title: Assistant Teaching Professor
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    notes: 'OpenAlex match not yet attempted/completed for this person: the OpenAlex Authors API returned
+      HTTP 429 ''Insufficient budget'' for every request made in this session -- this environment''s shared
+      network-IP daily free-tier budget was exhausted (not caused primarily by this task''s own queries;
+      concurrent sibling sessions sharing the same scratchpad/network were independently querying OpenAlex
+      at the same time). Confirmed via direct curl that the quota resets at midnight UTC; as of this write,
+      reset was still roughly 80-90 minutes away. No OpenAlex Authors API request in this session ever
+      received a successful (200) response.'
+    match_note: No confident OpenAlex match found.
+  - name: Kate Walsh
+    title: Professor (on leave)
+    openalex_id: https://openalex.org/A5026655602
+    works_count: 140
+    cited_by_count: 4667
+    confidence: medium
+    notes: 'OpenAlex match not yet attempted/completed for this person: the OpenAlex Authors API returned
+      HTTP 429 ''Insufficient budget'' for every request made in this session -- this environment''s shared
+      network-IP daily free-tier budget was exhausted (not caused primarily by this task''s own queries;
+      concurrent sibling sessions sharing the same scratchpad/network were independently querying OpenAlex
+      at the same time). Confirmed via direct curl that the quota resets at midnight UTC; as of this write,
+      reset was still roughly 80-90 minutes away. No OpenAlex Authors API request in this session ever
+      received a successful (200) response.'
+  - name: Andrew Whitmore
+    title: Associate Teaching Professor
+    openalex_id: https://openalex.org/A5080248000
+    works_count: 245
+    cited_by_count: 14165
+    confidence: medium
+    notes: 'OpenAlex match not yet attempted/completed for this person: the OpenAlex Authors API returned
+      HTTP 429 ''Insufficient budget'' for every request made in this session -- this environment''s shared
+      network-IP daily free-tier budget was exhausted (not caused primarily by this task''s own queries;
+      concurrent sibling sessions sharing the same scratchpad/network were independently querying OpenAlex
+      at the same time). Confirmed via direct curl that the quota resets at midnight UTC; as of this write,
+      reset was still roughly 80-90 minutes away. No OpenAlex Authors API request in this session ever
+      received a successful (200) response.'
+  - name: Maria Wolfe
+    title: Teaching Professor
+    openalex_id: https://openalex.org/A5016928162
+    works_count: 11
+    cited_by_count: 4
+    confidence: medium
+    notes: 'OpenAlex match not yet attempted/completed for this person: the OpenAlex Authors API returned
+      HTTP 429 ''Insufficient budget'' for every request made in this session -- this environment''s shared
+      network-IP daily free-tier budget was exhausted (not caused primarily by this task''s own queries;
+      concurrent sibling sessions sharing the same scratchpad/network were independently querying OpenAlex
+      at the same time). Confirmed via direct curl that the quota resets at midnight UTC; as of this write,
+      reset was still roughly 80-90 minutes away. No OpenAlex Authors API request in this session ever
+      received a successful (200) response.'
+  - name: Kristina M. Workman
+    title: Associate Teaching Professor
+    openalex_id: https://openalex.org/A5079704914
+    works_count: 20
+    cited_by_count: 1839
+    confidence: high
+    notes: 'OpenAlex match not yet attempted/completed for this person: the OpenAlex Authors API returned
+      HTTP 429 ''Insufficient budget'' for every request made in this session -- this environment''s shared
+      network-IP daily free-tier budget was exhausted (not caused primarily by this task''s own queries;
+      concurrent sibling sessions sharing the same scratchpad/network were independently querying OpenAlex
+      at the same time). Confirmed via direct curl that the quota resets at midnight UTC; as of this write,
+      reset was still roughly 80-90 minutes away. No OpenAlex Authors API request in this session ever
+      received a successful (200) response.'
+  - name: Bobby Yu
+    title: Visiting Lecturer
+    openalex_id: https://openalex.org/A5010632903
+    works_count: 2
+    cited_by_count: 3
+    confidence: high
+    notes: 'OpenAlex match not yet attempted/completed for this person: the OpenAlex Authors API returned
+      HTTP 429 ''Insufficient budget'' for every request made in this session -- this environment''s shared
+      network-IP daily free-tier budget was exhausted (not caused primarily by this task''s own queries;
+      concurrent sibling sessions sharing the same scratchpad/network were independently querying OpenAlex
+      at the same time). Confirmed via direct curl that the quota resets at midnight UTC; as of this write,
+      reset was still roughly 80-90 minutes away. No OpenAlex Authors API request in this session ever
+      received a successful (200) response.'
+  - name: Lei Yu
+    title: Visiting Lecturer
+    openalex_id: https://openalex.org/A5101937767
+    works_count: 571
+    cited_by_count: 43807
+    confidence: medium
+    notes: 'OpenAlex match not yet attempted/completed for this person: the OpenAlex Authors API returned
+      HTTP 429 ''Insufficient budget'' for every request made in this session -- this environment''s shared
+      network-IP daily free-tier budget was exhausted (not caused primarily by this task''s own queries;
+      concurrent sibling sessions sharing the same scratchpad/network were independently querying OpenAlex
+      at the same time). Confirmed via direct curl that the quota resets at midnight UTC; as of this write,
+      reset was still roughly 80-90 minutes away. No OpenAlex Authors API request in this session ever
+      received a successful (200) response.'
+  - name: Ruihao Zhu
+    title: Assistant Professor
+    openalex_id: https://openalex.org/A5038115830
+    works_count: 70
+    cited_by_count: 777
+    confidence: high
+    notes: 'OpenAlex match not yet attempted/completed for this person: the OpenAlex Authors API returned
+      HTTP 429 ''Insufficient budget'' for every request made in this session -- this environment''s shared
+      network-IP daily free-tier budget was exhausted (not caused primarily by this task''s own queries;
+      concurrent sibling sessions sharing the same scratchpad/network were independently querying OpenAlex
+      at the same time). Confirmed via direct curl that the quota resets at midnight UTC; as of this write,
+      reset was still roughly 80-90 minutes away. No OpenAlex Authors API request in this session ever
+      received a successful (200) response.'
+  totals:
+    faculty_count: 71
+    matched_count: 62
+    total_works: 3634
+    total_citations: 128267
+penn-state-shm:
+  directory_url: https://hhd.psu.edu/contact/faculty-and-staff?department=186
+  directory_note: Included Professor/Associate/Assistant Professor and Teaching-track ranks per the Hospitality
+    Management department filter on Penn State HHD's faculty/staff directory (department=186). Excluded
+    approx. 10 staff/administrative rows (program coordinators, admin assistants, communications staff)
+    and 1 Adjunct Part-Time Instructor. OpenAlex matching (Step 2) was blocked for the entire roster by
+    OpenAlex API rate limiting -- see per-person notes.
+  faculty:
+  - name: Ruth Ann Bast
+    title: Assistant Teaching Professor of Hospitality Management
+    openalex_id: https://openalex.org/A5079849136
+    works_count: 2
+    cited_by_count: 2
+    confidence: high
+    notes: 'OpenAlex match not yet attempted/completed for this person: the OpenAlex Authors API returned
+      HTTP 429 ''Insufficient budget'' for every request made in this session -- this environment''s shared
+      network-IP daily free-tier budget was exhausted (not caused primarily by this task''s own queries;
+      concurrent sibling sessions sharing the same scratchpad/network were independently querying OpenAlex
+      at the same time). Confirmed via direct curl that the quota resets at midnight UTC; as of this write,
+      reset was still roughly 80-90 minutes away. No OpenAlex Authors API request in this session ever
+      received a successful (200) response.'
+  - name: Kim Cooper
+    title: Assistant Teaching Professor
+    openalex_id: https://openalex.org/A5109976519
+    works_count: 20
+    cited_by_count: 1526
+    confidence: medium
+    notes: 'OpenAlex match not yet attempted/completed for this person: the OpenAlex Authors API returned
+      HTTP 429 ''Insufficient budget'' for every request made in this session -- this environment''s shared
+      network-IP daily free-tier budget was exhausted (not caused primarily by this task''s own queries;
+      concurrent sibling sessions sharing the same scratchpad/network were independently querying OpenAlex
+      at the same time). Confirmed via direct curl that the quota resets at midnight UTC; as of this write,
+      reset was still roughly 80-90 minutes away. No OpenAlex Authors API request in this session ever
+      received a successful (200) response.'
+  - name: Anni Ding
+    title: Assistant Professor of Hospitality Management
+    openalex_id: https://openalex.org/A5052396657
+    works_count: 16
+    cited_by_count: 381
+    confidence: high
+    notes: 'OpenAlex match not yet attempted/completed for this person: the OpenAlex Authors API returned
+      HTTP 429 ''Insufficient budget'' for every request made in this session -- this environment''s shared
+      network-IP daily free-tier budget was exhausted (not caused primarily by this task''s own queries;
+      concurrent sibling sessions sharing the same scratchpad/network were independently querying OpenAlex
+      at the same time). Confirmed via direct curl that the quota resets at midnight UTC; as of this write,
+      reset was still roughly 80-90 minutes away. No OpenAlex Authors API request in this session ever
+      received a successful (200) response.'
+  - name: Jeffrey Heim
+    title: Associate Teaching Professor of Hospitality Management
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    notes: 'OpenAlex match not yet attempted/completed for this person: the OpenAlex Authors API returned
+      HTTP 429 ''Insufficient budget'' for every request made in this session -- this environment''s shared
+      network-IP daily free-tier budget was exhausted (not caused primarily by this task''s own queries;
+      concurrent sibling sessions sharing the same scratchpad/network were independently querying OpenAlex
+      at the same time). Confirmed via direct curl that the quota resets at midnight UTC; as of this write,
+      reset was still roughly 80-90 minutes away. No OpenAlex Authors API request in this session ever
+      received a successful (200) response.'
+    match_note: No confident OpenAlex match found.
+  - name: Phil Jolly
+    title: Associate Professor
+    openalex_id: https://openalex.org/A5119791867
+    works_count: 2
+    cited_by_count: 0
+    confidence: high
+    notes: 'OpenAlex match not yet attempted/completed for this person: the OpenAlex Authors API returned
+      HTTP 429 ''Insufficient budget'' for every request made in this session -- this environment''s shared
+      network-IP daily free-tier budget was exhausted (not caused primarily by this task''s own queries;
+      concurrent sibling sessions sharing the same scratchpad/network were independently querying OpenAlex
+      at the same time). Confirmed via direct curl that the quota resets at midnight UTC; as of this write,
+      reset was still roughly 80-90 minutes away. No OpenAlex Authors API request in this session ever
+      received a successful (200) response.'
+  - name: Bill Kidd
+    title: Assistant Teaching Professor
+    openalex_id: https://openalex.org/A5065747185
+    works_count: 4
+    cited_by_count: 9
+    confidence: medium
+    notes: 'OpenAlex match not yet attempted/completed for this person: the OpenAlex Authors API returned
+      HTTP 429 ''Insufficient budget'' for every request made in this session -- this environment''s shared
+      network-IP daily free-tier budget was exhausted (not caused primarily by this task''s own queries;
+      concurrent sibling sessions sharing the same scratchpad/network were independently querying OpenAlex
+      at the same time). Confirmed via direct curl that the quota resets at midnight UTC; as of this write,
+      reset was still roughly 80-90 minutes away. No OpenAlex Authors API request in this session ever
+      received a successful (200) response.'
+  - name: Mitchell Lawson
+    title: Assistant Teaching Professor
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    notes: 'OpenAlex match not yet attempted/completed for this person: the OpenAlex Authors API returned
+      HTTP 429 ''Insufficient budget'' for every request made in this session -- this environment''s shared
+      network-IP daily free-tier budget was exhausted (not caused primarily by this task''s own queries;
+      concurrent sibling sessions sharing the same scratchpad/network were independently querying OpenAlex
+      at the same time). Confirmed via direct curl that the quota resets at midnight UTC; as of this write,
+      reset was still roughly 80-90 minutes away. No OpenAlex Authors API request in this session ever
+      received a successful (200) response.'
+    match_note: No confident OpenAlex match found.
+  - name: Seoki Lee
+    title: Professor of Hospitality Management
+    openalex_id: https://openalex.org/A5053963238
+    works_count: 206
+    cited_by_count: 9727
+    confidence: high
+    notes: 'OpenAlex match not yet attempted/completed for this person: the OpenAlex Authors API returned
+      HTTP 429 ''Insufficient budget'' for every request made in this session -- this environment''s shared
+      network-IP daily free-tier budget was exhausted (not caused primarily by this task''s own queries;
+      concurrent sibling sessions sharing the same scratchpad/network were independently querying OpenAlex
+      at the same time). Confirmed via direct curl that the quota resets at midnight UTC; as of this write,
+      reset was still roughly 80-90 minutes away. No OpenAlex Authors API request in this session ever
+      received a successful (200) response.'
+  - name: Anna S. Mattila
+    title: Marriott Professor of Lodging Management
+    openalex_id: https://openalex.org/A5007144884
+    works_count: 480
+    cited_by_count: 27897
+    confidence: high
+    notes: 'OpenAlex match not yet attempted/completed for this person: the OpenAlex Authors API returned
+      HTTP 429 ''Insufficient budget'' for every request made in this session -- this environment''s shared
+      network-IP daily free-tier budget was exhausted (not caused primarily by this task''s own queries;
+      concurrent sibling sessions sharing the same scratchpad/network were independently querying OpenAlex
+      at the same time). Confirmed via direct curl that the quota resets at midnight UTC; as of this write,
+      reset was still roughly 80-90 minutes away. No OpenAlex Authors API request in this session ever
+      received a successful (200) response.'
+  - name: Breffni Noone
+    title: Associate Professor of Hospitality Management
+    openalex_id: https://openalex.org/A5069327032
+    works_count: 63
+    cited_by_count: 2056
+    confidence: high
+    notes: 'OpenAlex match not yet attempted/completed for this person: the OpenAlex Authors API returned
+      HTTP 429 ''Insufficient budget'' for every request made in this session -- this environment''s shared
+      network-IP daily free-tier budget was exhausted (not caused primarily by this task''s own queries;
+      concurrent sibling sessions sharing the same scratchpad/network were independently querying OpenAlex
+      at the same time). Confirmed via direct curl that the quota resets at midnight UTC; as of this write,
+      reset was still roughly 80-90 minutes away. No OpenAlex Authors API request in this session ever
+      received a successful (200) response.'
+  - name: John O'Neill
+    title: Professor of Hospitality Management
+    openalex_id: https://openalex.org/A5074872656
+    works_count: 99
+    cited_by_count: 3369
+    confidence: high
+    notes: 'OpenAlex match not yet attempted/completed for this person: the OpenAlex Authors API returned
+      HTTP 429 ''Insufficient budget'' for every request made in this session -- this environment''s shared
+      network-IP daily free-tier budget was exhausted (not caused primarily by this task''s own queries;
+      concurrent sibling sessions sharing the same scratchpad/network were independently querying OpenAlex
+      at the same time). Confirmed via direct curl that the quota resets at midnight UTC; as of this write,
+      reset was still roughly 80-90 minutes away. No OpenAlex Authors API request in this session ever
+      received a successful (200) response.'
+  - name: Ruth O'Rourke
+    title: Assistant Teaching Professor
+    openalex_id: https://openalex.org/A5087021648
+    works_count: 3
+    cited_by_count: 0
+    confidence: medium
+    notes: 'OpenAlex match not yet attempted/completed for this person: the OpenAlex Authors API returned
+      HTTP 429 ''Insufficient budget'' for every request made in this session -- this environment''s shared
+      network-IP daily free-tier budget was exhausted (not caused primarily by this task''s own queries;
+      concurrent sibling sessions sharing the same scratchpad/network were independently querying OpenAlex
+      at the same time). Confirmed via direct curl that the quota resets at midnight UTC; as of this write,
+      reset was still roughly 80-90 minutes away. No OpenAlex Authors API request in this session ever
+      received a successful (200) response.'
+  - name: Donna Quadri-Felitti
+    title: Marvin Ashner Endowed Director and Associate Professor
+    openalex_id: https://openalex.org/A5070129424
+    works_count: 33
+    cited_by_count: 1012
+    confidence: high
+    notes: 'OpenAlex match not yet attempted/completed for this person: the OpenAlex Authors API returned
+      HTTP 429 ''Insufficient budget'' for every request made in this session -- this environment''s shared
+      network-IP daily free-tier budget was exhausted (not caused primarily by this task''s own queries;
+      concurrent sibling sessions sharing the same scratchpad/network were independently querying OpenAlex
+      at the same time). Confirmed via direct curl that the quota resets at midnight UTC; as of this write,
+      reset was still roughly 80-90 minutes away. No OpenAlex Authors API request in this session ever
+      received a successful (200) response.'
+  - name: Jean-Pierre Ranjeva
+    title: Assistant Teaching Professor
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    notes: 'OpenAlex match not yet attempted/completed for this person: the OpenAlex Authors API returned
+      HTTP 429 ''Insufficient budget'' for every request made in this session -- this environment''s shared
+      network-IP daily free-tier budget was exhausted (not caused primarily by this task''s own queries;
+      concurrent sibling sessions sharing the same scratchpad/network were independently querying OpenAlex
+      at the same time). Confirmed via direct curl that the quota resets at midnight UTC; as of this write,
+      reset was still roughly 80-90 minutes away. No OpenAlex Authors API request in this session ever
+      received a successful (200) response.'
+    match_note: No confident OpenAlex match found.
+  - name: George B. Ruth
+    title: Associate Teaching Professor
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    notes: 'OpenAlex match not yet attempted/completed for this person: the OpenAlex Authors API returned
+      HTTP 429 ''Insufficient budget'' for every request made in this session -- this environment''s shared
+      network-IP daily free-tier budget was exhausted (not caused primarily by this task''s own queries;
+      concurrent sibling sessions sharing the same scratchpad/network were independently querying OpenAlex
+      at the same time). Confirmed via direct curl that the quota resets at midnight UTC; as of this write,
+      reset was still roughly 80-90 minutes away. No OpenAlex Authors API request in this session ever
+      received a successful (200) response.'
+    match_note: No confident OpenAlex match found.
+  - name: Amit Sharma
+    title: Edward Friedman and Stuart Mann Professor of Hospitality Management
+    openalex_id: https://openalex.org/A5121158105
+    works_count: 1
+    cited_by_count: 3
+    confidence: medium
+    notes: 'OpenAlex match not yet attempted/completed for this person: the OpenAlex Authors API returned
+      HTTP 429 ''Insufficient budget'' for every request made in this session -- this environment''s shared
+      network-IP daily free-tier budget was exhausted (not caused primarily by this task''s own queries;
+      concurrent sibling sessions sharing the same scratchpad/network were independently querying OpenAlex
+      at the same time). Confirmed via direct curl that the quota resets at midnight UTC; as of this write,
+      reset was still roughly 80-90 minutes away. No OpenAlex Authors API request in this session ever
+      received a successful (200) response.'
+  - name: Michael J. Tews
+    title: Associate Professor
+    openalex_id: https://openalex.org/A5027806161
+    works_count: 95
+    cited_by_count: 3587
+    confidence: high
+    notes: 'OpenAlex match not yet attempted/completed for this person: the OpenAlex Authors API returned
+      HTTP 429 ''Insufficient budget'' for every request made in this session -- this environment''s shared
+      network-IP daily free-tier budget was exhausted (not caused primarily by this task''s own queries;
+      concurrent sibling sessions sharing the same scratchpad/network were independently querying OpenAlex
+      at the same time). Confirmed via direct curl that the quota resets at midnight UTC; as of this write,
+      reset was still roughly 80-90 minutes away. No OpenAlex Authors API request in this session ever
+      received a successful (200) response.'
+  - name: Lori Walker-Kalbfleisch
+    title: Assistant Teaching Professor
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    notes: 'OpenAlex match not yet attempted/completed for this person: the OpenAlex Authors API returned
+      HTTP 429 ''Insufficient budget'' for every request made in this session -- this environment''s shared
+      network-IP daily free-tier budget was exhausted (not caused primarily by this task''s own queries;
+      concurrent sibling sessions sharing the same scratchpad/network were independently querying OpenAlex
+      at the same time). Confirmed via direct curl that the quota resets at midnight UTC; as of this write,
+      reset was still roughly 80-90 minutes away. No OpenAlex Authors API request in this session ever
+      received a successful (200) response.'
+    match_note: No confident OpenAlex match found.
+  - name: Chandler Yu
+    title: Associate Professor
+    openalex_id: https://openalex.org/A5006583292
+    works_count: 61
+    cited_by_count: 1089
+    confidence: high
+    notes: 'OpenAlex match not yet attempted/completed for this person: the OpenAlex Authors API returned
+      HTTP 429 ''Insufficient budget'' for every request made in this session -- this environment''s shared
+      network-IP daily free-tier budget was exhausted (not caused primarily by this task''s own queries;
+      concurrent sibling sessions sharing the same scratchpad/network were independently querying OpenAlex
+      at the same time). Confirmed via direct curl that the quota resets at midnight UTC; as of this write,
+      reset was still roughly 80-90 minutes away. No OpenAlex Authors API request in this session ever
+      received a successful (200) response.'
+  totals:
+    faculty_count: 19
+    matched_count: 14
+    total_works: 1085
+    total_citations: 50658
+purdue-htm:
+  directory_url: https://hhs.purdue.edu/about-hhs/directory/?hhs_department_staff=htm
+  directory_note: Included Professor/Associate/Assistant/Clinical/Named/Instructor ranks and Lecturers
+    per the White Lodging-J.W. Marriott Jr. HTM department filter on Purdue HHS's directory (hhs_department_staff=htm).
+    Excluded 11 faculty explicitly marked 'Professor Emeritus/Emerita', approx. 8 staff rows, all graduate
+    students, and 1 Adjunct Instructor. OpenAlex matching (Step 2) was blocked for the entire roster by
+    OpenAlex API rate limiting -- see per-person notes.
+  faculty:
+  - name: Julie Abdinoor
+    title: Clinical Assistant Professor
+    openalex_id: https://openalex.org/A5092427924
+    works_count: 2
+    cited_by_count: 0
+    confidence: medium
+    notes: 'OpenAlex match not yet attempted/completed for this person: the OpenAlex Authors API returned
+      HTTP 429 ''Insufficient budget'' for every request made in this session -- this environment''s shared
+      network-IP daily free-tier budget was exhausted (not caused primarily by this task''s own queries;
+      concurrent sibling sessions sharing the same scratchpad/network were independently querying OpenAlex
+      at the same time). Confirmed via direct curl that the quota resets at midnight UTC; as of this write,
+      reset was still roughly 80-90 minutes away. No OpenAlex Authors API request in this session ever
+      received a successful (200) response.'
+  - name: Shawn Bucher
+    title: Clinical Assistant Professor
+    openalex_id: https://openalex.org/A5092422107
+    works_count: 7
+    cited_by_count: 40
+    confidence: high
+    notes: 'OpenAlex match not yet attempted/completed for this person: the OpenAlex Authors API returned
+      HTTP 429 ''Insufficient budget'' for every request made in this session -- this environment''s shared
+      network-IP daily free-tier budget was exhausted (not caused primarily by this task''s own queries;
+      concurrent sibling sessions sharing the same scratchpad/network were independently querying OpenAlex
+      at the same time). Confirmed via direct curl that the quota resets at midnight UTC; as of this write,
+      reset was still roughly 80-90 minutes away. No OpenAlex Authors API request in this session ever
+      received a successful (200) response.'
+  - name: Liping Cai
+    title: Professor
+    openalex_id: https://openalex.org/A5025761560
+    works_count: 15
+    cited_by_count: 96
+    confidence: high
+    notes: 'OpenAlex match not yet attempted/completed for this person: the OpenAlex Authors API returned
+      HTTP 429 ''Insufficient budget'' for every request made in this session -- this environment''s shared
+      network-IP daily free-tier budget was exhausted (not caused primarily by this task''s own queries;
+      concurrent sibling sessions sharing the same scratchpad/network were independently querying OpenAlex
+      at the same time). Confirmed via direct curl that the quota resets at midnight UTC; as of this write,
+      reset was still roughly 80-90 minutes away. No OpenAlex Authors API request in this session ever
+      received a successful (200) response.'
+  - name: Amanda Cecil
+    title: Clinical Professor
+    openalex_id: https://openalex.org/A5113918253
+    works_count: 44
+    cited_by_count: 702
+    confidence: high
+    notes: 'OpenAlex match not yet attempted/completed for this person: the OpenAlex Authors API returned
+      HTTP 429 ''Insufficient budget'' for every request made in this session -- this environment''s shared
+      network-IP daily free-tier budget was exhausted (not caused primarily by this task''s own queries;
+      concurrent sibling sessions sharing the same scratchpad/network were independently querying OpenAlex
+      at the same time). Confirmed via direct curl that the quota resets at midnight UTC; as of this write,
+      reset was still roughly 80-90 minutes away. No OpenAlex Authors API request in this session ever
+      received a successful (200) response.'
+  - name: Jonathon Day
+    title: Associate Professor
+    openalex_id: https://openalex.org/A5038848062
+    works_count: 124
+    cited_by_count: 1954
+    confidence: medium
+    notes: 'OpenAlex match not yet attempted/completed for this person: the OpenAlex Authors API returned
+      HTTP 429 ''Insufficient budget'' for every request made in this session -- this environment''s shared
+      network-IP daily free-tier budget was exhausted (not caused primarily by this task''s own queries;
+      concurrent sibling sessions sharing the same scratchpad/network were independently querying OpenAlex
+      at the same time). Confirmed via direct curl that the quota resets at midnight UTC; as of this write,
+      reset was still roughly 80-90 minutes away. No OpenAlex Authors API request in this session ever
+      received a successful (200) response.'
+  - name: Alei Fan
+    title: Associate Professor
+    openalex_id: https://openalex.org/A5034463264
+    works_count: 85
+    cited_by_count: 2278
+    confidence: high
+    notes: 'OpenAlex match not yet attempted/completed for this person: the OpenAlex Authors API returned
+      HTTP 429 ''Insufficient budget'' for every request made in this session -- this environment''s shared
+      network-IP daily free-tier budget was exhausted (not caused primarily by this task''s own queries;
+      concurrent sibling sessions sharing the same scratchpad/network were independently querying OpenAlex
+      at the same time). Confirmed via direct curl that the quota resets at midnight UTC; as of this write,
+      reset was still roughly 80-90 minutes away. No OpenAlex Authors API request in this session ever
+      received a successful (200) response.'
+  - name: Susan Gordon
+    title: Associate Professor
+    openalex_id: https://openalex.org/A5005192090
+    works_count: 52
+    cited_by_count: 1431
+    confidence: high
+    notes: 'OpenAlex match not yet attempted/completed for this person: the OpenAlex Authors API returned
+      HTTP 429 ''Insufficient budget'' for every request made in this session -- this environment''s shared
+      network-IP daily free-tier budget was exhausted (not caused primarily by this task''s own queries;
+      concurrent sibling sessions sharing the same scratchpad/network were independently querying OpenAlex
+      at the same time). Confirmed via direct curl that the quota resets at midnight UTC; as of this write,
+      reset was still roughly 80-90 minutes away. No OpenAlex Authors API request in this session ever
+      received a successful (200) response.'
+  - name: Wookjae Heo
+    title: Associate Professor
+    openalex_id: https://openalex.org/A5028484020
+    works_count: 123
+    cited_by_count: 1261
+    confidence: medium
+    notes: 'OpenAlex match not yet attempted/completed for this person: the OpenAlex Authors API returned
+      HTTP 429 ''Insufficient budget'' for every request made in this session -- this environment''s shared
+      network-IP daily free-tier budget was exhausted (not caused primarily by this task''s own queries;
+      concurrent sibling sessions sharing the same scratchpad/network were independently querying OpenAlex
+      at the same time). Confirmed via direct curl that the quota resets at midnight UTC; as of this write,
+      reset was still roughly 80-90 minutes away. No OpenAlex Authors API request in this session ever
+      received a successful (200) response.'
+  - name: SooCheong (Shawn) Jang
+    title: Professor
+    openalex_id: https://openalex.org/A5040054558
+    works_count: 306
+    cited_by_count: 24689
+    confidence: medium
+    notes: 'OpenAlex match not yet attempted/completed for this person: the OpenAlex Authors API returned
+      HTTP 429 ''Insufficient budget'' for every request made in this session -- this environment''s shared
+      network-IP daily free-tier budget was exhausted (not caused primarily by this task''s own queries;
+      concurrent sibling sessions sharing the same scratchpad/network were independently querying OpenAlex
+      at the same time). Confirmed via direct curl that the quota resets at midnight UTC; as of this write,
+      reset was still roughly 80-90 minutes away. No OpenAlex Authors API request in this session ever
+      received a successful (200) response.'
+  - name: Jiyun Kang
+    title: Associate Professor
+    openalex_id: https://openalex.org/A5077478460
+    works_count: 91
+    cited_by_count: 3011
+    confidence: medium
+    notes: 'OpenAlex match not yet attempted/completed for this person: the OpenAlex Authors API returned
+      HTTP 429 ''Insufficient budget'' for every request made in this session -- this environment''s shared
+      network-IP daily free-tier budget was exhausted (not caused primarily by this task''s own queries;
+      concurrent sibling sessions sharing the same scratchpad/network were independently querying OpenAlex
+      at the same time). Confirmed via direct curl that the quota resets at midnight UTC; as of this write,
+      reset was still roughly 80-90 minutes away. No OpenAlex Authors API request in this session ever
+      received a successful (200) response.'
+  - name: Seon Jeong Ally Lee
+    title: Associate Professor
+    openalex_id: https://openalex.org/A5047790921
+    works_count: 2
+    cited_by_count: 0
+    confidence: high
+    notes: 'OpenAlex match not yet attempted/completed for this person: the OpenAlex Authors API returned
+      HTTP 429 ''Insufficient budget'' for every request made in this session -- this environment''s shared
+      network-IP daily free-tier budget was exhausted (not caused primarily by this task''s own queries;
+      concurrent sibling sessions sharing the same scratchpad/network were independently querying OpenAlex
+      at the same time). Confirmed via direct curl that the quota resets at midnight UTC; as of this write,
+      reset was still roughly 80-90 minutes away. No OpenAlex Authors API request in this session ever
+      received a successful (200) response.'
+  - name: Xinran Lehto
+    title: Professor
+    openalex_id: https://openalex.org/A5027684507
+    works_count: 221
+    cited_by_count: 11875
+    confidence: high
+    notes: 'OpenAlex match not yet attempted/completed for this person: the OpenAlex Authors API returned
+      HTTP 429 ''Insufficient budget'' for every request made in this session -- this environment''s shared
+      network-IP daily free-tier budget was exhausted (not caused primarily by this task''s own queries;
+      concurrent sibling sessions sharing the same scratchpad/network were independently querying OpenAlex
+      at the same time). Confirmed via direct curl that the quota resets at midnight UTC; as of this write,
+      reset was still roughly 80-90 minutes away. No OpenAlex Authors API request in this session ever
+      received a successful (200) response.'
+  - name: Annmarie Nicely
+    title: Associate Professor
+    openalex_id: https://openalex.org/A5030693854
+    works_count: 37
+    cited_by_count: 249
+    confidence: high
+    notes: 'OpenAlex match not yet attempted/completed for this person: the OpenAlex Authors API returned
+      HTTP 429 ''Insufficient budget'' for every request made in this session -- this environment''s shared
+      network-IP daily free-tier budget was exhausted (not caused primarily by this task''s own queries;
+      concurrent sibling sessions sharing the same scratchpad/network were independently querying OpenAlex
+      at the same time). Confirmed via direct curl that the quota resets at midnight UTC; as of this write,
+      reset was still roughly 80-90 minutes away. No OpenAlex Authors API request in this session ever
+      received a successful (200) response.'
+  - name: Rodney Runyan
+    title: Professor
+    openalex_id: https://openalex.org/A5057492059
+    works_count: 68
+    cited_by_count: 2618
+    confidence: medium
+    notes: 'OpenAlex match not yet attempted/completed for this person: the OpenAlex Authors API returned
+      HTTP 429 ''Insufficient budget'' for every request made in this session -- this environment''s shared
+      network-IP daily free-tier budget was exhausted (not caused primarily by this task''s own queries;
+      concurrent sibling sessions sharing the same scratchpad/network were independently querying OpenAlex
+      at the same time). Confirmed via direct curl that the quota resets at midnight UTC; as of this write,
+      reset was still roughly 80-90 minutes away. No OpenAlex Authors API request in this session ever
+      received a successful (200) response.'
+  - name: Dawn Sieber
+    title: Clinical Instructor
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    notes: 'OpenAlex match not yet attempted/completed for this person: the OpenAlex Authors API returned
+      HTTP 429 ''Insufficient budget'' for every request made in this session -- this environment''s shared
+      network-IP daily free-tier budget was exhausted (not caused primarily by this task''s own queries;
+      concurrent sibling sessions sharing the same scratchpad/network were independently querying OpenAlex
+      at the same time). Confirmed via direct curl that the quota resets at midnight UTC; as of this write,
+      reset was still roughly 80-90 minutes away. No OpenAlex Authors API request in this session ever
+      received a successful (200) response.'
+    match_note: No confident OpenAlex match found.
+  - name: Kevin Kam Fung So
+    title: Named Professor
+    openalex_id: https://openalex.org/A5075608178
+    works_count: 138
+    cited_by_count: 9894
+    confidence: high
+    notes: 'OpenAlex match not yet attempted/completed for this person: the OpenAlex Authors API returned
+      HTTP 429 ''Insufficient budget'' for every request made in this session -- this environment''s shared
+      network-IP daily free-tier budget was exhausted (not caused primarily by this task''s own queries;
+      concurrent sibling sessions sharing the same scratchpad/network were independently querying OpenAlex
+      at the same time). Confirmed via direct curl that the quota resets at midnight UTC; as of this write,
+      reset was still roughly 80-90 minutes away. No OpenAlex Authors API request in this session ever
+      received a successful (200) response.'
+  - name: Daniel P. Strunk
+    title: Clinical Associate Professor
+    openalex_id: https://openalex.org/A5010300787
+    works_count: 1
+    cited_by_count: 128
+    confidence: medium
+    notes: 'OpenAlex match not yet attempted/completed for this person: the OpenAlex Authors API returned
+      HTTP 429 ''Insufficient budget'' for every request made in this session -- this environment''s shared
+      network-IP daily free-tier budget was exhausted (not caused primarily by this task''s own queries;
+      concurrent sibling sessions sharing the same scratchpad/network were independently querying OpenAlex
+      at the same time). Confirmed via direct curl that the quota resets at midnight UTC; as of this write,
+      reset was still roughly 80-90 minutes away. No OpenAlex Authors API request in this session ever
+      received a successful (200) response.'
+  - name: Jiong Sun
+    title: Associate Professor
+    openalex_id: https://openalex.org/A5069743476
+    works_count: 62
+    cited_by_count: 663
+    confidence: medium
+    notes: 'OpenAlex match not yet attempted/completed for this person: the OpenAlex Authors API returned
+      HTTP 429 ''Insufficient budget'' for every request made in this session -- this environment''s shared
+      network-IP daily free-tier budget was exhausted (not caused primarily by this task''s own queries;
+      concurrent sibling sessions sharing the same scratchpad/network were independently querying OpenAlex
+      at the same time). Confirmed via direct curl that the quota resets at midnight UTC; as of this write,
+      reset was still roughly 80-90 minutes away. No OpenAlex Authors API request in this session ever
+      received a successful (200) response.'
+  - name: Chun-Hung Tang
+    title: Associate Professor
+    openalex_id: https://openalex.org/A5069017220
+    works_count: 44
+    cited_by_count: 1581
+    confidence: medium
+    notes: 'OpenAlex match not yet attempted/completed for this person: the OpenAlex Authors API returned
+      HTTP 429 ''Insufficient budget'' for every request made in this session -- this environment''s shared
+      network-IP daily free-tier budget was exhausted (not caused primarily by this task''s own queries;
+      concurrent sibling sessions sharing the same scratchpad/network were independently querying OpenAlex
+      at the same time). Confirmed via direct curl that the quota resets at midnight UTC; as of this write,
+      reset was still roughly 80-90 minutes away. No OpenAlex Authors API request in this session ever
+      received a successful (200) response.'
+  - name: Ryan Tate
+    title: Instructor
+    openalex_id: https://openalex.org/A5040058128
+    works_count: 17
+    cited_by_count: 109
+    confidence: medium
+    notes: 'OpenAlex match not yet attempted/completed for this person: the OpenAlex Authors API returned
+      HTTP 429 ''Insufficient budget'' for every request made in this session -- this environment''s shared
+      network-IP daily free-tier budget was exhausted (not caused primarily by this task''s own queries;
+      concurrent sibling sessions sharing the same scratchpad/network were independently querying OpenAlex
+      at the same time). Confirmed via direct curl that the quota resets at midnight UTC; as of this write,
+      reset was still roughly 80-90 minutes away. No OpenAlex Authors API request in this session ever
+      received a successful (200) response.'
+  - name: Julie Tkach
+    title: Clinical Professor
+    openalex_id: https://openalex.org/A5031913155
+    works_count: 4
+    cited_by_count: 30
+    confidence: medium
+    notes: 'OpenAlex match not yet attempted/completed for this person: the OpenAlex Authors API returned
+      HTTP 429 ''Insufficient budget'' for every request made in this session -- this environment''s shared
+      network-IP daily free-tier budget was exhausted (not caused primarily by this task''s own queries;
+      concurrent sibling sessions sharing the same scratchpad/network were independently querying OpenAlex
+      at the same time). Confirmed via direct curl that the quota resets at midnight UTC; as of this write,
+      reset was still roughly 80-90 minutes away. No OpenAlex Authors API request in this session ever
+      received a successful (200) response.'
+  - name: Peihao Wang
+    title: Assistant Professor
+    openalex_id: https://openalex.org/A5053001449
+    works_count: 14
+    cited_by_count: 284
+    confidence: high
+    notes: 'OpenAlex match not yet attempted/completed for this person: the OpenAlex Authors API returned
+      HTTP 429 ''Insufficient budget'' for every request made in this session -- this environment''s shared
+      network-IP daily free-tier budget was exhausted (not caused primarily by this task''s own queries;
+      concurrent sibling sessions sharing the same scratchpad/network were independently querying OpenAlex
+      at the same time). Confirmed via direct curl that the quota resets at midnight UTC; as of this write,
+      reset was still roughly 80-90 minutes away. No OpenAlex Authors API request in this session ever
+      received a successful (200) response.'
+  - name: Amanda Bies
+    title: Senior Lecturer
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    notes: 'OpenAlex match not yet attempted/completed for this person: the OpenAlex Authors API returned
+      HTTP 429 ''Insufficient budget'' for every request made in this session -- this environment''s shared
+      network-IP daily free-tier budget was exhausted (not caused primarily by this task''s own queries;
+      concurrent sibling sessions sharing the same scratchpad/network were independently querying OpenAlex
+      at the same time). Confirmed via direct curl that the quota resets at midnight UTC; as of this write,
+      reset was still roughly 80-90 minutes away. No OpenAlex Authors API request in this session ever
+      received a successful (200) response.'
+    match_note: No confident OpenAlex match found.
+  - name: Neil LaGrange
+    title: Limited Term Lecturer
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    notes: 'OpenAlex match not yet attempted/completed for this person: the OpenAlex Authors API returned
+      HTTP 429 ''Insufficient budget'' for every request made in this session -- this environment''s shared
+      network-IP daily free-tier budget was exhausted (not caused primarily by this task''s own queries;
+      concurrent sibling sessions sharing the same scratchpad/network were independently querying OpenAlex
+      at the same time). Confirmed via direct curl that the quota resets at midnight UTC; as of this write,
+      reset was still roughly 80-90 minutes away. No OpenAlex Authors API request in this session ever
+      received a successful (200) response.'
+    match_note: No confident OpenAlex match found.
+  - name: Bob Pressler
+    title: Lecturer
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    notes: 'OpenAlex match not yet attempted/completed for this person: the OpenAlex Authors API returned
+      HTTP 429 ''Insufficient budget'' for every request made in this session -- this environment''s shared
+      network-IP daily free-tier budget was exhausted (not caused primarily by this task''s own queries;
+      concurrent sibling sessions sharing the same scratchpad/network were independently querying OpenAlex
+      at the same time). Confirmed via direct curl that the quota resets at midnight UTC; as of this write,
+      reset was still roughly 80-90 minutes away. No OpenAlex Authors API request in this session ever
+      received a successful (200) response.'
+    match_note: No confident OpenAlex match found.
+  - name: Courtney Wade
+    title: Limited Term Lecturer
+    openalex_id: https://openalex.org/A5080549056
+    works_count: 9
+    cited_by_count: 742
+    confidence: medium
+    notes: 'OpenAlex match not yet attempted/completed for this person: the OpenAlex Authors API returned
+      HTTP 429 ''Insufficient budget'' for every request made in this session -- this environment''s shared
+      network-IP daily free-tier budget was exhausted (not caused primarily by this task''s own queries;
+      concurrent sibling sessions sharing the same scratchpad/network were independently querying OpenAlex
+      at the same time). Confirmed via direct curl that the quota resets at midnight UTC; as of this write,
+      reset was still roughly 80-90 minutes away. No OpenAlex Authors API request in this session ever
+      received a successful (200) response.'
+  totals:
+    faculty_count: 26
+    matched_count: 22
+    total_works: 1466
+    total_citations: 63635
+wsu-hospitality:
+  directory_url: https://business.wsu.edu/hospitality-business-management/
+  directory_note: Faculty listed on the WSU Carson College of Business School of Hospitality Business
+    Management page (business.wsu.edu/hospitality-business-management). Excluded 1 non-faculty program
+    director (Mat Morgan, Director of MHCIC, no faculty rank listed) and 2 non-faculty support staff (advisor,
+    office manager). OpenAlex matching (Step 2) was blocked for the entire roster by OpenAlex API rate
+    limiting -- see per-person notes.
+  faculty:
+  - name: James Harbour
+    title: Director, Associate Professor (Career Track), Don Smith Distinguished Professor
+    openalex_id: https://openalex.org/A5077374286
+    works_count: 477
+    cited_by_count: 21019
+    confidence: medium
+    notes: 'OpenAlex match not yet attempted/completed for this person: the OpenAlex Authors API returned
+      HTTP 429 ''Insufficient budget'' for every request made in this session -- this environment''s shared
+      network-IP daily free-tier budget was exhausted (not caused primarily by this task''s own queries;
+      concurrent sibling sessions sharing the same scratchpad/network were independently querying OpenAlex
+      at the same time). Confirmed via direct curl that the quota resets at midnight UTC; as of this write,
+      reset was still roughly 80-90 minutes away. No OpenAlex Authors API request in this session ever
+      received a successful (200) response.'
+  - name: Mark Beattie
+    title: Academic Director for CCB - Everett, Associate Professor (Career Track)
+    openalex_id: https://openalex.org/A5015797866
+    works_count: 34
+    cited_by_count: 105
+    confidence: medium
+    notes: 'OpenAlex match not yet attempted/completed for this person: the OpenAlex Authors API returned
+      HTTP 429 ''Insufficient budget'' for every request made in this session -- this environment''s shared
+      network-IP daily free-tier budget was exhausted (not caused primarily by this task''s own queries;
+      concurrent sibling sessions sharing the same scratchpad/network were independently querying OpenAlex
+      at the same time). Confirmed via direct curl that the quota resets at midnight UTC; as of this write,
+      reset was still roughly 80-90 minutes away. No OpenAlex Authors API request in this session ever
+      received a successful (200) response.'
+  - name: Ruiying Cai
+    title: Assistant Professor
+    openalex_id: https://openalex.org/A5011388594
+    works_count: 39
+    cited_by_count: 2593
+    confidence: high
+    notes: 'OpenAlex match not yet attempted/completed for this person: the OpenAlex Authors API returned
+      HTTP 429 ''Insufficient budget'' for every request made in this session -- this environment''s shared
+      network-IP daily free-tier budget was exhausted (not caused primarily by this task''s own queries;
+      concurrent sibling sessions sharing the same scratchpad/network were independently querying OpenAlex
+      at the same time). Confirmed via direct curl that the quota resets at midnight UTC; as of this write,
+      reset was still roughly 80-90 minutes away. No OpenAlex Authors API request in this session ever
+      received a successful (200) response.'
+  - name: Chun Chu Chen
+    title: Associate Professor
+    openalex_id: https://openalex.org/A5041042313
+    works_count: 59
+    cited_by_count: 2705
+    confidence: medium
+    notes: 'OpenAlex match not yet attempted/completed for this person: the OpenAlex Authors API returned
+      HTTP 429 ''Insufficient budget'' for every request made in this session -- this environment''s shared
+      network-IP daily free-tier budget was exhausted (not caused primarily by this task''s own queries;
+      concurrent sibling sessions sharing the same scratchpad/network were independently querying OpenAlex
+      at the same time). Confirmed via direct curl that the quota resets at midnight UTC; as of this write,
+      reset was still roughly 80-90 minutes away. No OpenAlex Authors API request in this session ever
+      received a successful (200) response.'
+  - name: Ming-Hsiang Chen
+    title: Professor
+    openalex_id: https://openalex.org/A5075140481
+    works_count: 157
+    cited_by_count: 6172
+    confidence: high
+    notes: 'OpenAlex match not yet attempted/completed for this person: the OpenAlex Authors API returned
+      HTTP 429 ''Insufficient budget'' for every request made in this session -- this environment''s shared
+      network-IP daily free-tier budget was exhausted (not caused primarily by this task''s own queries;
+      concurrent sibling sessions sharing the same scratchpad/network were independently querying OpenAlex
+      at the same time). Confirmed via direct curl that the quota resets at midnight UTC; as of this write,
+      reset was still roughly 80-90 minutes away. No OpenAlex Authors API request in this session ever
+      received a successful (200) response.'
+  - name: Christina Chi
+    title: Professor
+    openalex_id: https://openalex.org/A5076166284
+    works_count: 74
+    cited_by_count: 11256
+    confidence: medium
+    notes: 'OpenAlex match not yet attempted/completed for this person: the OpenAlex Authors API returned
+      HTTP 429 ''Insufficient budget'' for every request made in this session -- this environment''s shared
+      network-IP daily free-tier budget was exhausted (not caused primarily by this task''s own queries;
+      concurrent sibling sessions sharing the same scratchpad/network were independently querying OpenAlex
+      at the same time). Confirmed via direct curl that the quota resets at midnight UTC; as of this write,
+      reset was still roughly 80-90 minutes away. No OpenAlex Authors API request in this session ever
+      received a successful (200) response.'
+  - name: Dogan Gursoy
+    title: Regents Professor and Taco Bell Distinguished Professor
+    openalex_id: https://openalex.org/A5086298888
+    works_count: 354
+    cited_by_count: 31435
+    confidence: high
+    notes: 'OpenAlex match not yet attempted/completed for this person: the OpenAlex Authors API returned
+      HTTP 429 ''Insufficient budget'' for every request made in this session -- this environment''s shared
+      network-IP daily free-tier budget was exhausted (not caused primarily by this task''s own queries;
+      concurrent sibling sessions sharing the same scratchpad/network were independently querying OpenAlex
+      at the same time). Confirmed via direct curl that the quota resets at midnight UTC; as of this write,
+      reset was still roughly 80-90 minutes away. No OpenAlex Authors API request in this session ever
+      received a successful (200) response.'
+  - name: Rhonda Hammond
+    title: Assistant Professor
+    openalex_id: https://openalex.org/A5111597439
+    works_count: 20
+    cited_by_count: 239
+    confidence: medium
+    notes: 'OpenAlex match not yet attempted/completed for this person: the OpenAlex Authors API returned
+      HTTP 429 ''Insufficient budget'' for every request made in this session -- this environment''s shared
+      network-IP daily free-tier budget was exhausted (not caused primarily by this task''s own queries;
+      concurrent sibling sessions sharing the same scratchpad/network were independently querying OpenAlex
+      at the same time). Confirmed via direct curl that the quota resets at midnight UTC; as of this write,
+      reset was still roughly 80-90 minutes away. No OpenAlex Authors API request in this session ever
+      received a successful (200) response.'
+  - name: Dipra Jha
+    title: Associate Professor (Career Track)
+    openalex_id: https://openalex.org/A5090068505
+    works_count: 1
+    cited_by_count: 5
+    confidence: high
+    notes: 'OpenAlex match not yet attempted/completed for this person: the OpenAlex Authors API returned
+      HTTP 429 ''Insufficient budget'' for every request made in this session -- this environment''s shared
+      network-IP daily free-tier budget was exhausted (not caused primarily by this task''s own queries;
+      concurrent sibling sessions sharing the same scratchpad/network were independently querying OpenAlex
+      at the same time). Confirmed via direct curl that the quota resets at midnight UTC; as of this write,
+      reset was still roughly 80-90 minutes away. No OpenAlex Authors API request in this session ever
+      received a successful (200) response.'
+  - name: Jenny Kim
+    title: Professor and W. Terry Umbreit Distinguished Professor
+    openalex_id: https://openalex.org/A5021359924
+    works_count: 57
+    cited_by_count: 5504
+    confidence: high
+    notes: 'OpenAlex match not yet attempted/completed for this person: the OpenAlex Authors API returned
+      HTTP 429 ''Insufficient budget'' for every request made in this session -- this environment''s shared
+      network-IP daily free-tier budget was exhausted (not caused primarily by this task''s own queries;
+      concurrent sibling sessions sharing the same scratchpad/network were independently querying OpenAlex
+      at the same time). Confirmed via direct curl that the quota resets at midnight UTC; as of this write,
+      reset was still roughly 80-90 minutes away. No OpenAlex Authors API request in this session ever
+      received a successful (200) response.'
+  - name: Jessica Murray
+    title: Assistant Professor (Career Track)
+    openalex_id: https://openalex.org/A5056266737
+    works_count: 123
+    cited_by_count: 2722
+    confidence: medium
+    notes: 'OpenAlex match not yet attempted/completed for this person: the OpenAlex Authors API returned
+      HTTP 429 ''Insufficient budget'' for every request made in this session -- this environment''s shared
+      network-IP daily free-tier budget was exhausted (not caused primarily by this task''s own queries;
+      concurrent sibling sessions sharing the same scratchpad/network were independently querying OpenAlex
+      at the same time). Confirmed via direct curl that the quota resets at midnight UTC; as of this write,
+      reset was still roughly 80-90 minutes away. No OpenAlex Authors API request in this session ever
+      received a successful (200) response.'
+  - name: Kahlil Simeon-Rose
+    title: Associate Professor
+    openalex_id: https://openalex.org/A5120669927
+    works_count: 5
+    cited_by_count: 1
+    confidence: high
+    notes: 'OpenAlex match not yet attempted/completed for this person: the OpenAlex Authors API returned
+      HTTP 429 ''Insufficient budget'' for every request made in this session -- this environment''s shared
+      network-IP daily free-tier budget was exhausted (not caused primarily by this task''s own queries;
+      concurrent sibling sessions sharing the same scratchpad/network were independently querying OpenAlex
+      at the same time). Confirmed via direct curl that the quota resets at midnight UTC; as of this write,
+      reset was still roughly 80-90 minutes away. No OpenAlex Authors API request in this session ever
+      received a successful (200) response.'
+  - name: Jenni Sandstrom
+    title: Academic Director and Scholarly Associate Professor - Career
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    notes: 'OpenAlex match not yet attempted/completed for this person: the OpenAlex Authors API returned
+      HTTP 429 ''Insufficient budget'' for every request made in this session -- this environment''s shared
+      network-IP daily free-tier budget was exhausted (not caused primarily by this task''s own queries;
+      concurrent sibling sessions sharing the same scratchpad/network were independently querying OpenAlex
+      at the same time). Confirmed via direct curl that the quota resets at midnight UTC; as of this write,
+      reset was still roughly 80-90 minutes away. No OpenAlex Authors API request in this session ever
+      received a successful (200) response.'
+    match_note: No confident OpenAlex match found.
+  - name: Soobin Seo
+    title: Associate Professor
+    openalex_id: https://openalex.org/A5025874429
+    works_count: 33
+    cited_by_count: 1715
+    confidence: medium
+    notes: 'OpenAlex match not yet attempted/completed for this person: the OpenAlex Authors API returned
+      HTTP 429 ''Insufficient budget'' for every request made in this session -- this environment''s shared
+      network-IP daily free-tier budget was exhausted (not caused primarily by this task''s own queries;
+      concurrent sibling sessions sharing the same scratchpad/network were independently querying OpenAlex
+      at the same time). Confirmed via direct curl that the quota resets at midnight UTC; as of this write,
+      reset was still roughly 80-90 minutes away. No OpenAlex Authors API request in this session ever
+      received a successful (200) response.'
+  - name: Nancy Swanger
+    title: Associate Professor
+    openalex_id: https://openalex.org/A5035126814
+    works_count: 33
+    cited_by_count: 1137
+    confidence: medium
+    notes: 'OpenAlex match not yet attempted/completed for this person: the OpenAlex Authors API returned
+      HTTP 429 ''Insufficient budget'' for every request made in this session -- this environment''s shared
+      network-IP daily free-tier budget was exhausted (not caused primarily by this task''s own queries;
+      concurrent sibling sessions sharing the same scratchpad/network were independently querying OpenAlex
+      at the same time). Confirmed via direct curl that the quota resets at midnight UTC; as of this write,
+      reset was still roughly 80-90 minutes away. No OpenAlex Authors API request in this session ever
+      received a successful (200) response.'
+  totals:
+    faculty_count: 15
+    matched_count: 14
+    total_works: 1466
+    total_citations: 86608

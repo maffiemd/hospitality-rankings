@@ -57,7 +57,18 @@ import { href } from "../lib/url";
     <strong>Academic research &amp; faculty quality (25%)</strong> mirrors US News's faculty-resources
     and peer-assessment buckets, and QS's academic-reputation and citations-per-faculty categories —
     but weighted lower than QS's combined ~60% research/reputation emphasis, since hospitality is a
-    vocational, apprenticeship-driven field rather than a pure research discipline.
+    vocational, apprenticeship-driven field rather than a pure research discipline. The dominant metric
+    in this category, <code>facultyPubCitationIndex</code>, is a named-faculty citation count: for each
+    program, we compile the current, named faculty roster from the program's own official directory,
+    match each person to an OpenAlex author record (by name and institution, excluding unmatched
+    people from the sum rather than guessing), and total their career citations across every
+    publication — any journal or field, not just hospitality-tagged ones, since a faculty member's
+    broader research record is still evidence of their caliber. This replaced an earlier,
+    institution-level version of the metric (any hospitality-tagged paper by anyone ever affiliated
+    with the host university) that conflated host-university size with the specific program's faculty
+    quality. A handful of programs' totals are still partial — pending a follow-up pass blocked by an
+    external API's daily rate limit — and are flagged as such on their profile pages rather than
+    treated as a completed result.
   </p>
   <p>
     <strong>Academic quality &amp; completion (15%)</strong> is a newer addition, tracking whether

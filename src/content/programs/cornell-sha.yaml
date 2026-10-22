@@ -64,17 +64,17 @@ admissions:
 
 academicResearch:
   facultyPubCitationIndex:
-    value: 918
-    unit: "total citations, OpenAlex-indexed works 2015-2026"
+    value: 128267
+    unit: "total career citations, current named faculty (OpenAlex)"
     source:
-      label: "OpenAlex — works affiliated with this institution tagged 'Hospitality industry', 2015-2026"
-      url: https://openalex.org/works?filter=institutions.id:I205783295,concepts.id:C525551149,publication_year:2015-2026
+      label: "OpenAlex author records matched to this program's current faculty directory"
+      url: https://openalex.org
       publisher: OpenAlex (processed by this project's pipeline — see methodology)
-      asOfDate: "2026-10-21"
-    lastVerified: "2026-10-21"
+      asOfDate: "2026-10-22"
+    lastVerified: "2026-10-22"
     confidence: medium
     notes: >-
-      Sum of cited_by_count across 63 OpenAlex-indexed works (2015-2026) affiliated with this institution and tagged with OpenAlex's "Hospitality industry" concept (id C525551149). Not filtered to current faculty or to this specific school/department — OpenAlex does not track sub-institution academic units, so a large host university's count partly reflects overall size, not just hospitality-specific output. A raw volume+impact proxy, not normalized per faculty; see methodology for the full definition and its limitations. Top journals by work count: Cornell Hospitality Quarterly (20 works, 267 citations); International Journal of Hospitality Management (10 works, 146 citations); International Journal of Contemporary Hospitality Management (4 works, 30 citations); eCommons (Cornell University) (4 works, 18 citations); Service Science (2 works, 142 citations).
+      Sum of career cited_by_count across 62 of 71 current named faculty (sourced from the program's own official directory) matched to an OpenAlex author record by name + institution — covers ALL of each person's publications (any journal/field), not just hospitality-tagged ones, and their full career (not a fixed year window). Unmatched faculty (common names, no OpenAlex presence, etc.) are excluded from the sum, not counted as zero. Top contributors: Lei Yu (43807 citations, 571 works); Andrew Whitmore (14165 citations, 245 works); Tony Simons (8422 citations, 92 works); Bruce Tracey (6311 citations, 120 works); Ceridwyn King (6180 citations, 115 works).
   researchFundingUSD:
     unit: USD/year
     confidence: low

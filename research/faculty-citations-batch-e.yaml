@@ -1,0 +1,670 @@
+fiu-chaplin:
+  directory_url: https://hospitality.fiu.edu/faculty
+  directory_note: 'FIU Chaplin School of Hospitality & Tourism Management faculty directory (live site,
+    fetched 2026-10-21; 99 profile cards on the page). Included: regular full-time professorial ranks
+    (Professor / Associate Professor / Assistant Professor / Research Associate Professor / Clinical Associate
+    Professor), teaching-track titles (Assistant/Associate Teaching Professor), and Lecturers not marked
+    adjunct. Excluded: Adjunct faculty/lecturers/professors; Executive-in-Residence, Industry Fellow,
+    and "Courtesy" appointments; Professor Emeritus/Emerita and "Vice Provost Emeritus"; and pure administrative/staff
+    listings with no faculty rank shown (Dean, Vice Dean, Assistant Dean, program coordinators, directors
+    of non-academic units, advising/marketing/IT/ event-operations staff). Rocco M. Angelo was included
+    because his listed title combines "Associate Dean" with "Alumni E.M. Statler Professor".'
+  faculty:
+  - name: Imran Ahmad
+    title: Research Associate Professor and Director of Research
+    openalex_id: https://openalex.org/A5101953929
+    works_count: 254
+    cited_by_count: 4156
+    confidence: medium
+    note: not yet attempted — blocked on OpenAlex rate limit
+  - name: Rocco M. Angelo
+    title: Associate Dean, Alumni E.M. Statler Professor
+    openalex_id: https://openalex.org/A5044827310
+    works_count: 3
+    cited_by_count: 43
+    confidence: medium
+    note: not yet attempted — blocked on OpenAlex rate limit
+  - name: Badr Badraoui
+    title: Assistant Professor
+    openalex_id: https://openalex.org/A5114280630
+    works_count: 3
+    cited_by_count: 5
+    confidence: high
+    note: not yet attempted — blocked on OpenAlex rate limit
+  - name: Robert Bosselman
+    title: Professor
+    openalex_id: https://openalex.org/A5007075530
+    works_count: 27
+    cited_by_count: 1852
+    confidence: medium
+    note: not yet attempted — blocked on OpenAlex rate limit
+  - name: John Buschman
+    title: Assistant Professor, Director of Assessments and Accreditation, Co-Director Global Sustainable
+      Tourism Program
+    openalex_id: https://openalex.org/A5072008877
+    works_count: 9
+    cited_by_count: 79
+    confidence: high
+    note: not yet attempted — blocked on OpenAlex rate limit
+  - name: Lisa Cain
+    title: Associate Professor
+    openalex_id: https://openalex.org/A5070119347
+    works_count: 95
+    cited_by_count: 1416
+    confidence: medium
+    note: not yet attempted — blocked on OpenAlex rate limit
+  - name: Christopher Christie
+    title: Lecturer
+    openalex_id: https://openalex.org/A5009904689
+    works_count: 2
+    cited_by_count: 15
+    confidence: medium
+    note: not yet attempted — blocked on OpenAlex rate limit
+  - name: Clay B. Dickinson
+    title: Assistant Teaching Professor, Real Estate Management
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: error
+    note: not yet attempted — blocked on OpenAlex rate limit
+    match_note: 'API error: HTTP Error 429: Too Many Requests'
+  - name: Mark D'Alessandro
+    title: Lecturer
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: error
+    note: not yet attempted — blocked on OpenAlex rate limit
+    match_note: 'API error: HTTP Error 429: Too Many Requests'
+  - name: Nathan Dodge
+    title: Associate Teaching Professor
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: error
+    note: not yet attempted — blocked on OpenAlex rate limit
+    match_note: 'API error: HTTP Error 429: Too Many Requests'
+  - name: Robert Donato
+    title: Lecturer
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: error
+    note: not yet attempted — blocked on OpenAlex rate limit
+    match_note: 'API error: HTTP Error 429: Too Many Requests'
+  - name: Luz M. Longsworth
+    title: Professor of Leadership and Workforce Development
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: error
+    note: not yet attempted — blocked on OpenAlex rate limit
+    match_note: 'API error: HTTP Error 429: Too Many Requests'
+  - name: Sandro Formica
+    title: Lecturer
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: error
+    note: not yet attempted — blocked on OpenAlex rate limit
+    match_note: 'API error: HTTP Error 429: Too Many Requests'
+  - name: Dale Gomez
+    title: Associate Teaching Professor, The McKibbon '75 Professorship in Hospitality Technology, Director
+      of Information & Instructional Technology
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: error
+    note: not yet attempted — blocked on OpenAlex rate limit
+    match_note: 'API error: HTTP Error 429: Too Many Requests'
+  - name: Barry Gump
+    title: Harvey R. Chaplin Eminent Scholar Chair in Beverage Management
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: error
+    note: not yet attempted — blocked on OpenAlex rate limit
+    match_note: 'API error: HTTP Error 429: Too Many Requests'
+  - name: Mike Hampton
+    title: Professor
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: error
+    note: not yet attempted — blocked on OpenAlex rate limit
+    match_note: 'API error: HTTP Error 429: Too Many Requests'
+  - name: William "Bill" Hansen
+    title: Lecturer
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: error
+    note: not yet attempted — blocked on OpenAlex rate limit
+    match_note: 'API error: HTTP Error 429: Too Many Requests'
+  - name: Oren Hertz
+    title: Clinical Associate Professor, Faculty Chair, Director of Graduate Programs
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: error
+    note: not yet attempted — blocked on OpenAlex rate limit
+    match_note: 'API error: HTTP Error 429: Too Many Requests'
+  - name: Warren Jahn
+    title: Lecturer
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: error
+    note: not yet attempted — blocked on OpenAlex rate limit
+    match_note: 'API error: HTTP Error 429: Too Many Requests'
+  - name: Jose A. Hernandez-Solaun
+    title: Assistant Professor; International Wine and Food Executive-in-Residence
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: error
+    note: not yet attempted — blocked on OpenAlex rate limit
+    match_note: 'API error: HTTP Error 429: Too Many Requests'
+  - name: Mishko Josifov
+    title: Lecturer
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: error
+    note: not yet attempted — blocked on OpenAlex rate limit
+    match_note: 'API error: HTTP Error 429: Too Many Requests'
+  - name: Matthew Kuscher
+    title: Lecturer
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: error
+    note: not yet attempted — blocked on OpenAlex rate limit
+    match_note: 'API error: HTTP Error 429: Too Many Requests'
+  - name: Carolin Lusby
+    title: Associate Professor and Tourism Lead, Co-Director BA in Global Sustainable Tourism
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: error
+    note: not yet attempted — blocked on OpenAlex rate limit
+    match_note: 'API error: HTTP Error 429: Too Many Requests'
+  - name: Miranda Kitterlin-Lynch
+    title: Professor, Coca-Cola Endowed Professor
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: error
+    note: not yet attempted — blocked on OpenAlex rate limit
+    match_note: 'API error: HTTP Error 429: Too Many Requests'
+  - name: John Noble Masi
+    title: Assistant Teaching Professor and Culinary Lead
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: error
+    note: not yet attempted — blocked on OpenAlex rate limit
+    match_note: 'API error: HTTP Error 429: Too Many Requests'
+  - name: Andrew Moreo
+    title: Associate Professor; Director of Research
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: error
+    note: not yet attempted — blocked on OpenAlex rate limit
+    match_note: 'API error: HTTP Error 429: Too Many Requests'
+  - name: Paul Moore
+    title: Professor
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: error
+    note: not yet attempted — blocked on OpenAlex rate limit
+    match_note: 'API error: HTTP Error 429: Too Many Requests'
+  - name: Patricia Drolet-Sadar
+    title: Lecturer
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: error
+    note: not yet attempted — blocked on OpenAlex rate limit
+    match_note: 'API error: HTTP Error 429: Too Many Requests'
+  - name: Sharifa Wilkinson
+    title: Assistant Teaching Professor and Events Lead
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: error
+    note: not yet attempted — blocked on OpenAlex rate limit
+    match_note: 'API error: HTTP Error 429: Too Many Requests'
+  - name: Fang Shu
+    title: Assistant Professor; Faculty Fellow, Honors College
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: error
+    note: not yet attempted — blocked on OpenAlex rate limit
+    match_note: 'API error: HTTP Error 429: Too Many Requests'
+  - name: Suzanne Markham Bagnera
+    title: Assistant Professor and Program Director of Executive Education
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: error
+    note: not yet attempted — blocked on OpenAlex rate limit
+    match_note: 'API error: HTTP Error 429: Too Many Requests'
+  - name: Jinlin Zhao
+    title: Professor, Director of Graduate Program
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: error
+    note: not yet attempted — blocked on OpenAlex rate limit
+    match_note: 'API error: HTTP Error 429: Too Many Requests'
+  totals:
+    faculty_count: 32
+    matched_count: 7
+    total_works: 393
+    total_citations: 7566
+msu-hospitality:
+  directory_url: https://broad.msu.edu/directory/?q=&expertise=0&program=0&department=5&employment%5B0%5D=1
+  directory_note: 'MSU Eli Broad College of Business directory filtered to "The School of Hospitality
+    Business" (department=5) with the full-time-employment filter applied. The live site requires solving
+    an hCaptcha security challenge, which is a prohibited bot-bypass action, so this was sourced from
+    the Wayback Machine''s most recent available snapshot of that exact filtered directory URL (archived
+    2026-05-10, the closest available snapshot to today 2026-10-21). Includes every listed full-time rank:
+    Professor, Associate Professor, Assistant Professor, and "Fixed-Term Faculty" (MSU''s designation
+    for full-time, non-tenure-track teaching faculty — included per the task''s "teaching faculty" category).
+    No emeritus or adjunct faculty appeared in this filtered view. Because this is a ~5-month-old snapshot
+    rather than a live fetch, a couple of appointments may have changed since (e.g. one or two faculty
+    seen in an older snapshot had left the listing by May 2026, and a new "Director of Real Estate Minor"
+    had been added) — flagged here for awareness, not corrected further since a live re-check wasn''t
+    possible (hCaptcha).'
+  faculty:
+  - name: Ariel Backus
+    title: Fixed-Term Faculty
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: error
+    note: not yet attempted — blocked on OpenAlex rate limit
+    match_note: 'API error: HTTP Error 429: Too Many Requests'
+  - name: Jeff Beck
+    title: Associate Professor
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: error
+    note: not yet attempted — blocked on OpenAlex rate limit
+    match_note: 'API error: HTTP Error 429: Too Many Requests'
+  - name: Michael Behan
+    title: Fixed-Term Faculty
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: error
+    note: not yet attempted — blocked on OpenAlex rate limit
+    match_note: 'API error: HTTP Error 429: Too Many Requests'
+  - name: Jan Brintnall
+    title: Fixed-Term Faculty
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: error
+    note: not yet attempted — blocked on OpenAlex rate limit
+    match_note: 'API error: HTTP Error 429: Too Many Requests'
+  - name: JaeMin Cha
+    title: Associate Professor
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: error
+    note: not yet attempted — blocked on OpenAlex rate limit
+    match_note: 'API error: HTTP Error 429: Too Many Requests'
+  - name: Gregory Denton
+    title: Fixed-Term Faculty, Director of Real Estate Minor
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: error
+    note: not yet attempted — blocked on OpenAlex rate limit
+    match_note: 'API error: HTTP Error 429: Too Many Requests'
+  - name: Jeffery Elsworth
+    title: Associate Professor
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: error
+    note: not yet attempted — blocked on OpenAlex rate limit
+    match_note: 'API error: HTTP Error 429: Too Many Requests'
+  - name: Mi Ran Kim
+    title: Associate Professor
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: error
+    note: not yet attempted — blocked on OpenAlex rate limit
+    match_note: 'API error: HTTP Error 429: Too Many Requests'
+  - name: Seung Hyun Kim
+    title: Associate Professor
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: error
+    note: not yet attempted — blocked on OpenAlex rate limit
+    match_note: 'API error: HTTP Error 429: Too Many Requests'
+  - name: Bonnie Knutson
+    title: Professor
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: error
+    note: not yet attempted — blocked on OpenAlex rate limit
+    match_note: 'API error: HTTP Error 429: Too Many Requests'
+  - name: Michael McCall
+    title: Professor
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: error
+    note: not yet attempted — blocked on OpenAlex rate limit
+    match_note: 'API error: HTTP Error 429: Too Many Requests'
+  - name: Karthik Namasivayam
+    title: Director; John and Becky Duffey Professor of Hospitality Business
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: error
+    note: not yet attempted — blocked on OpenAlex rate limit
+    match_note: 'API error: HTTP Error 429: Too Many Requests'
+  - name: Adam Roy
+    title: Dr. Lewis J. & Mrs. Ruth E. Minor Chef-Professor of Culinary Management (Fixed-Term Faculty)
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: error
+    note: not yet attempted — blocked on OpenAlex rate limit
+    match_note: 'API error: HTTP Error 429: Too Many Requests'
+  - name: William Salem
+    title: Fixed-Term Faculty
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: error
+    note: not yet attempted — blocked on OpenAlex rate limit
+    match_note: 'API error: HTTP Error 429: Too Many Requests'
+  - name: Jade Shi
+    title: Assistant Professor
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: error
+    note: not yet attempted — blocked on OpenAlex rate limit
+    match_note: 'API error: HTTP Error 429: Too Many Requests'
+  - name: James Van Ravensway
+    title: Fixed-Term Faculty
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: error
+    note: not yet attempted — blocked on OpenAlex rate limit
+    match_note: 'API error: HTTP Error 429: Too Many Requests'
+  - name: Eileen Wilson
+    title: Fixed-Term Faculty
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: error
+    note: not yet attempted — blocked on OpenAlex rate limit
+    match_note: 'API error: HTTP Error 429: Too Many Requests'
+  - name: Lu Zhang
+    title: Professor
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: error
+    note: not yet attempted — blocked on OpenAlex rate limit
+    match_note: 'API error: HTTP Error 429: Too Many Requests'
+  totals:
+    faculty_count: 18
+    matched_count: 0
+    total_works: 0
+    total_citations: 0
+jwu-hospitality:
+  directory_url: https://catalog.jwu.edu/aboutjwu/academicdirectories/hospitality-business/providence/providence.pdf
+  directory_note: JWU's current official academic catalog (fetched 2026-10-21) now lists this unit as
+    the "College of Hospitality & Business" (Providence campus), dean Jennifer A. Galipeau — JWU appears
+    to have merged what was previously the separate "College of Hospitality Management" with the College
+    of Business programs under one college/dean since the 2024 dean announcement. The catalog's faculty
+    roster is NOT broken out by hospitality-vs-business program per individual (only the two program chairs
+    — Catherine Davin for "hospitality programs" and Debbie C. Howarth for "business programs" — are separately
+    labeled), so this includes every listed Chairperson and Faculty entry (all of whom carry Professor
+    or Associate Professor rank); some are explicitly business-discipline specialists (e.g. accounting,
+    HR) rather than hospitality-specific, which the source directory does not let us separate out further.
+    JWU's separate "faculty-emeritus" catalog page was excluded entirely. Pure-administration titles with
+    no stated faculty rank (Dean, Associate Dean, program director) were excluded.
+  faculty:
+  - name: Paul Bagdan
+    title: Professor
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: error
+    note: not yet attempted — blocked on OpenAlex rate limit
+    match_note: 'API error: HTTP Error 429: Too Many Requests'
+  - name: Patricia Conn Ryan
+    title: Professor
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: error
+    note: not yet attempted — blocked on OpenAlex rate limit
+    match_note: 'API error: HTTP Error 429: Too Many Requests'
+  - name: Elizabeth Covino
+    title: Associate Professor
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: error
+    note: not yet attempted — blocked on OpenAlex rate limit
+    match_note: 'API error: HTTP Error 429: Too Many Requests'
+  - name: Isaac Damoah
+    title: Associate Professor
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: error
+    note: not yet attempted — blocked on OpenAlex rate limit
+    match_note: 'API error: HTTP Error 429: Too Many Requests'
+  - name: Catherine Davin
+    title: Associate Professor, Chair of Hospitality Programs
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: error
+    note: not yet attempted — blocked on OpenAlex rate limit
+    match_note: 'API error: HTTP Error 429: Too Many Requests'
+  - name: Deborah A. Doonan
+    title: Associate Professor
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: error
+    note: not yet attempted — blocked on OpenAlex rate limit
+    match_note: 'API error: HTTP Error 429: Too Many Requests'
+  - name: Lee A. Esckilsen
+    title: Associate Professor
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: error
+    note: not yet attempted — blocked on OpenAlex rate limit
+    match_note: 'API error: HTTP Error 429: Too Many Requests'
+  - name: Patricia Fisher
+    title: Associate Professor
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: error
+    note: not yet attempted — blocked on OpenAlex rate limit
+    match_note: 'API error: HTTP Error 429: Too Many Requests'
+  - name: Anthony Fruzzetti
+    title: Professor
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: error
+    note: not yet attempted — blocked on OpenAlex rate limit
+    match_note: 'API error: HTTP Error 429: Too Many Requests'
+  - name: James E. Griffin
+    title: Professor
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: error
+    note: not yet attempted — blocked on OpenAlex rate limit
+    match_note: 'API error: HTTP Error 429: Too Many Requests'
+  - name: Debbie C. Howarth
+    title: Professor, Chair of Business Programs
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: error
+    note: not yet attempted — blocked on OpenAlex rate limit
+    match_note: 'API error: HTTP Error 429: Too Many Requests'
+  - name: Timothy Howes
+    title: Associate Professor
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: error
+    note: not yet attempted — blocked on OpenAlex rate limit
+    match_note: 'API error: HTTP Error 429: Too Many Requests'
+  - name: Leslie Kosky
+    title: Associate Professor
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: error
+    note: not yet attempted — blocked on OpenAlex rate limit
+    match_note: 'API error: HTTP Error 429: Too Many Requests'
+  - name: Nihar Kumthekar
+    title: Associate Professor
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: error
+    note: not yet attempted — blocked on OpenAlex rate limit
+    match_note: 'API error: HTTP Error 429: Too Many Requests'
+  - name: Stevan Labush
+    title: Associate Professor
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: error
+    note: not yet attempted — blocked on OpenAlex rate limit
+    match_note: 'API error: HTTP Error 429: Too Many Requests'
+  - name: Bryan J. Lavin
+    title: Associate Professor
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: error
+    note: not yet attempted — blocked on OpenAlex rate limit
+    match_note: 'API error: HTTP Error 429: Too Many Requests'
+  - name: Nicholas Makris
+    title: Associate Professor
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: error
+    note: not yet attempted — blocked on OpenAlex rate limit
+    match_note: 'API error: HTTP Error 429: Too Many Requests'
+  - name: Mansour Moussavi
+    title: Professor
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: error
+    note: not yet attempted — blocked on OpenAlex rate limit
+    match_note: 'API error: HTTP Error 429: Too Many Requests'
+  - name: Matthew Samel
+    title: Professor
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: error
+    note: not yet attempted — blocked on OpenAlex rate limit
+    match_note: 'API error: HTTP Error 429: Too Many Requests'
+  - name: Magnus Thorsson
+    title: Professor
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: error
+    note: not yet attempted — blocked on OpenAlex rate limit
+    match_note: 'API error: HTTP Error 429: Too Many Requests'
+  - name: John D. Varlaro
+    title: Professor
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: error
+    note: not yet attempted — blocked on OpenAlex rate limit
+    match_note: 'API error: HTTP Error 429: Too Many Requests'
+  totals:
+    faculty_count: 21
+    matched_count: 0
+    total_works: 0
+    total_citations: 0
+jcu:
+  directory_url: https://portfolio.jcu.edu.au/researchers?unit=Tourism
+  directory_note: 'James Cook University''s College of Business, Law and Governance does not publish a
+    single dedicated "tourism/hospitality faculty" staff page; the broader CITBA ("Centre for International
+    Trade and Business in Asia") "Our People" listing mixes many unrelated disciplines (finance, computer
+    science, economics, law) across both JCU Australia and JCU Singapore campuses and is not hospitality-specific.
+    Instead, this uses JCU''s live research-portfolio system (portfolio.jcu.edu.au, fetched live 2026-10-21)
+    filtered to its dedicated "Tourism" research unit — distinct from the broader, almost-entirely-adjunct/emeritus
+    "Management & Tourism" unit (6 people: 5 adjunct/emeritus + 1 senior lecturer), which was excluded
+    as not matching the task''s current/non-adjunct criteria. The "Tourism" unit returns exactly the named,
+    current, specialist tourism/hospitality academic staff (confirmed consistent with JCU''s public tourism
+    course pages and the course-handbook subject-coordinator history for TO-prefixed tourism subjects).
+    All 4 are non-adjunct, non-emeritus, currently active.'
+  faculty:
+  - name: Denis Tolkach
+    title: Associate Professor, Tourism and Hospitality Management
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: error
+    note: not yet attempted — blocked on OpenAlex rate limit
+    match_note: 'API error: HTTP Error 429: Too Many Requests'
+  - name: Gianna Moscardo
+    title: Professor of Tourism
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: error
+    note: not yet attempted — blocked on OpenAlex rate limit
+    match_note: 'API error: HTTP Error 429: Too Many Requests'
+  - name: Jenny Panchal
+    title: Senior Lecturer
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: error
+    note: not yet attempted — blocked on OpenAlex rate limit
+    match_note: 'API error: HTTP Error 429: Too Many Requests'
+  - name: Tingzhen Chen
+    title: Senior Lecturer
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: error
+    note: not yet attempted — blocked on OpenAlex rate limit
+    match_note: 'API error: HTTP Error 429: Too Many Requests'
+  totals:
+    faculty_count: 4
+    matched_count: 0
+    total_works: 0
+    total_citations: 0

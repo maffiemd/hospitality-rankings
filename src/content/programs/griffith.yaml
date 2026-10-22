@@ -67,17 +67,17 @@ admissions:
 
 academicResearch:
   facultyPubCitationIndex:
-    value: 5145
-    unit: "total citations, OpenAlex-indexed works 2015-2026"
+    value: 79438
+    unit: "total career citations, current named faculty (OpenAlex)"
     source:
-      label: "OpenAlex — works affiliated with this institution tagged 'Hospitality industry', 2015-2026"
-      url: https://openalex.org/works?filter=institutions.id:I11701301,concepts.id:C525551149,publication_year:2015-2026
+      label: "OpenAlex author records matched to this program's current faculty directory"
+      url: https://openalex.org
       publisher: OpenAlex (processed by this project's pipeline — see methodology)
-      asOfDate: "2026-10-21"
-    lastVerified: "2026-10-21"
+      asOfDate: "2026-10-22"
+    lastVerified: "2026-10-22"
     confidence: medium
     notes: >-
-      Sum of cited_by_count across 123 OpenAlex-indexed works (2015-2026) affiliated with this institution and tagged with OpenAlex's "Hospitality industry" concept (id C525551149). Not filtered to current faculty or to this specific school/department — OpenAlex does not track sub-institution academic units, so a large host university's count partly reflects overall size, not just hospitality-specific output. A raw volume+impact proxy, not normalized per faculty; see methodology for the full definition and its limitations. Top journals by work count: International Journal of Hospitality Management (26 works, 2439 citations); International Journal of Contemporary Hospitality Management (15 works, 740 citations); Journal of Hospitality Marketing & Management (11 works, 643 citations); Journal of Hospitality and Tourism Management (9 works, 213 citations); Journal of Hospitality & Tourism Education (4 works, 126 citations).
+      Sum of career cited_by_count across 33 of 34 current named faculty (sourced from the program's own official directory) matched to an OpenAlex author record by name + institution — covers ALL of each person's publications (any journal/field), not just hospitality-tagged ones, and their full career (not a fixed year window). Unmatched faculty (common names, no OpenAlex presence, etc.) are excluded from the sum, not counted as zero. Top contributors: Susanne Becken (12584 citations, 322 works); James Higham (10038 citations, 260 works); Brent Moyle (6599 citations, 267 works); Basak Denizci Guillet (4797 citations, 129 works); Charles Arcodia (4292 citations, 204 works).
   researchFundingUSD:
     unit: USD/year
     confidence: low

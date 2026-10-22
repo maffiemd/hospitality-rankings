@@ -84,17 +84,17 @@ admissions:
 
 academicResearch:
   facultyPubCitationIndex:
-    value: 8179
-    unit: "total citations, OpenAlex-indexed works 2015-2026"
+    value: 86608
+    unit: "total career citations, current named faculty (OpenAlex)"
     source:
-      label: "OpenAlex — works affiliated with this institution tagged 'Hospitality industry', 2015-2026"
-      url: https://openalex.org/works?filter=institutions.id:I72951846,concepts.id:C525551149,publication_year:2015-2026
+      label: "OpenAlex author records matched to this program's current faculty directory"
+      url: https://openalex.org
       publisher: OpenAlex (processed by this project's pipeline — see methodology)
-      asOfDate: "2026-10-21"
-    lastVerified: "2026-10-21"
+      asOfDate: "2026-10-22"
+    lastVerified: "2026-10-22"
     confidence: medium
     notes: >-
-      Sum of cited_by_count across 105 OpenAlex-indexed works (2015-2026) affiliated with this institution and tagged with OpenAlex's "Hospitality industry" concept (id C525551149). Not filtered to current faculty or to this specific school/department — OpenAlex does not track sub-institution academic units, so a large host university's count partly reflects overall size, not just hospitality-specific output. A raw volume+impact proxy, not normalized per faculty; see methodology for the full definition and its limitations. Top journals by work count: International Journal of Hospitality Management (45 works, 3340 citations); International Journal of Contemporary Hospitality Management (15 works, 657 citations); Journal of Hospitality Marketing & Management (13 works, 2886 citations); Tourism Economics (5 works, 21 citations); Journal of Hospitality & Tourism Education (3 works, 74 citations).
+      Sum of career cited_by_count across 14 of 15 current named faculty (sourced from the program's own official directory) matched to an OpenAlex author record by name + institution — covers ALL of each person's publications (any journal/field), not just hospitality-tagged ones, and their full career (not a fixed year window). Unmatched faculty (common names, no OpenAlex presence, etc.) are excluded from the sum, not counted as zero. Top contributors: Dogan Gursoy (31435 citations, 354 works); James Harbour (21019 citations, 477 works); Christina Chi (11256 citations, 74 works); Ming-Hsiang Chen (6172 citations, 157 works); Jenny Kim (5504 citations, 57 works).
   researchFundingUSD:
     unit: USD/year
     confidence: low

@@ -84,17 +84,10 @@ admissions:
 
 academicResearch:
   facultyPubCitationIndex:
-    value: 1210
-    unit: "total citations, OpenAlex-indexed works 2015-2026"
-    source:
-      label: "OpenAlex — works affiliated with this institution tagged 'Hospitality industry', 2015-2026"
-      url: https://openalex.org/works?filter=institutions.id:I87216513,concepts.id:C525551149,publication_year:2015-2026
-      publisher: OpenAlex (processed by this project's pipeline — see methodology)
-      asOfDate: "2026-10-21"
-    lastVerified: "2026-10-21"
-    confidence: medium
+    unit: "total career citations, current named faculty (OpenAlex)"
+    confidence: low
     notes: >-
-      Sum of cited_by_count across 64 OpenAlex-indexed works (2015-2026) affiliated with this institution and tagged with OpenAlex's "Hospitality industry" concept (id C525551149). Not filtered to current faculty or to this specific school/department — OpenAlex does not track sub-institution academic units, so a large host university's count partly reflects overall size, not just hospitality-specific output. A raw volume+impact proxy, not normalized per faculty; see methodology for the full definition and its limitations. Top journals by work count: International Journal of Hospitality Management (13 works, 332 citations); International Journal of Contemporary Hospitality Management (13 works, 276 citations); Cornell Hospitality Quarterly (6 works, 194 citations); International Journal of Hospitality & Tourism Administration (5 works, 61 citations); Journal of Hospitality & Tourism Research (4 works, 49 citations).
+      Not yet sourced — matching blocked entirely by OpenAlex daily budget exhaustion (shared key hit its $1/day cap) before any of this school\'s 18 current named faculty could be queried. Pending a follow-up pass once the budget resets.
   researchFundingUSD:
     unit: USD/year
     confidence: low

@@ -1,0 +1,1521 @@
+ehl:
+  directory_url: https://www.ehl.edu/en/research
+  directory_note: 'EHL''s main research/faculty listing page (ehl.edu/en/research) lists people in two
+    groups: ''Faculty'' and ''Visiting Faculty'' (the page''s own dynamic card/table rendering was summarized
+    at ~141 and ~35 respectively by our fetch tool, but de-duplicating by name produced 139 unique regular-faculty
+    names used below). We included the regular ''Faculty'' group (full professors, associate/assistant
+    professors, senior lecturers, lecturers, including Practical Arts lecturers who are full-time teaching
+    staff) and excluded everyone explicitly labeled ''Visiting Faculty''/''Visiting Lecturer''/''Visiting
+    Professor''. No one was labeled Emeritus/Emerita. OpenAlex matching was NOT YET ATTEMPTED for this
+    school -- blocked by a shared OpenAlex API rate limit (HTTP 429: ''Insufficient budget... free daily
+    budget shared by everyone on your network''s IP address... resets at midnight UTC'') before any query
+    for this school could be trusted; a direct curl test confirmed every author-search request was being
+    rejected with HTTP 429, so results collected during the run are not reliable and are omitted.'
+  faculty:
+  - name: Darren Allard
+    title: Lecturer (PA)
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Adam Aoun, PhD
+    title: Assistant Professor
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Jelena Arambasic
+    title: Adjunct Lecturer
+    openalex_id: https://openalex.org/A5015049445
+    works_count: 3
+    cited_by_count: 79
+    confidence: medium
+  - name: Bertrand Audrin, PhD
+    title: Assistant Professor
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Omar Ballester, PhD
+    title: Adjunct Professor
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: David Bardolet, PhD
+    title: Associate Dean
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Pierre Baron
+    title: Lecturer (PA)
+    openalex_id: https://openalex.org/A5023620656
+    works_count: 35
+    cited_by_count: 789
+    confidence: medium
+  - name: Roger Baumann
+    title: Senior Lecturer (PA)
+    openalex_id: https://openalex.org/A5005605192
+    works_count: 4
+    cited_by_count: 52
+    confidence: medium
+  - name: Peter Baumgart, PhD
+    title: Senior Lecturer
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Alain Berruex
+    title: Senior Lecturer (PA)
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Roberto Bertinetti
+    title: Lecturer (PA)
+    openalex_id: https://openalex.org/A5091481668
+    works_count: 45
+    cited_by_count: 1
+    confidence: medium
+  - name: Giuliano Bianchi, PhD
+    title: Associate Professor
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: François-Jérôme Bizière
+    title: Senior Lecturer
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Inès Blal, PhD
+    title: Associate Professor
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Isabella Blengini, PhD
+    title: Associate Professor
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Samuel Boissy
+    title: Lecturer (PA)
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Pascal Bordes
+    title: Lecturer (PA)
+    openalex_id: https://openalex.org/A5072203425
+    works_count: 38
+    cited_by_count: 45
+    confidence: medium
+  - name: Roland Borne
+    title: Lecturer (PA)
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Claudia Borrelly
+    title: Lecturer
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Stefano Borzillo, PhD
+    title: Associate Professor
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Thomas Boucourt
+    title: Senior Lecturer (PA)
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Cédric Bourassin
+    title: Lecturer (PA)
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Julien Boutonnet
+    title: Senior Lecturer (PA)
+    openalex_id: https://openalex.org/A5129747811
+    works_count: 1
+    cited_by_count: 2
+    confidence: high
+  - name: Natalia Bovsovers-Carette
+    title: Lecturer
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Virginie Brose Herbinet
+    title: Senior Lecturer (PA)
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Mickael Broust
+    title: Lecturer (PA)
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: João Cabral
+    title: Lecturer (PA)
+    openalex_id: https://openalex.org/A5047686103
+    works_count: 284
+    cited_by_count: 6831
+    confidence: medium
+  - name: Karina Cazar Pacheco
+    title: Adjunct Lecturer
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Priska Cédileau
+    title: Senior Lecturer (PA)
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Alexandre Centeleghe
+    title: Lecturer (PA)
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Meng-Mei (Maggie) Chen, PhD
+    title: Associate Professor
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Yong Chen, PhD
+    title: Associate Professor
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Alexandra Clauss
+    title: Lecturer (PA)
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Valentina Clergue, PhD
+    title: Assistant Professor
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Lisa Conner
+    title: Lecturer
+    openalex_id: https://openalex.org/A5079774551
+    works_count: 6
+    cited_by_count: 136
+    confidence: medium
+  - name: Karin Coyras
+    title: Lecturer
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Margarita Cruz, PhD
+    title: Associate Professor
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Davide Dargenio
+    title: Lecturer (PA)
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Patrice Dartevelle
+    title: Lecturer
+    openalex_id: https://openalex.org/A5110362294
+    works_count: 15
+    cited_by_count: 0
+    confidence: medium
+  - name: Thomas Davoine, PhD
+    title: Assistant Professor
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Michel De Matteis
+    title: Lecturer (PA)
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Frédéric Delley
+    title: Senior Lecturer
+    openalex_id: https://openalex.org/A5090305358
+    works_count: 5
+    cited_by_count: 0
+    confidence: medium
+  - name: Giovanni-Battista Derchi, PhD
+    title: Assistant Professor
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Eric Doerr
+    title: Lecturer (PA)
+    openalex_id: https://openalex.org/A5002907407
+    works_count: 4
+    cited_by_count: 50
+    confidence: medium
+  - name: Inès Douellou
+    title: Lecturer (PA)
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Karen Earl Erpelding
+    title: Senior Lecturer
+    openalex_id: https://openalex.org/A5115573856
+    works_count: 1
+    cited_by_count: 2
+    confidence: high
+  - name: Hedia El May
+    title: Adjunct Lecturer
+    openalex_id: https://openalex.org/A5043290642
+    works_count: 1
+    cited_by_count: 2
+    confidence: medium
+  - name: Reza Etemad-Sajadi, PhD
+    title: Full Professor
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Emmanuelle Faure
+    title: Senior Lecturer
+    openalex_id: https://openalex.org/A5076430230
+    works_count: 21
+    cited_by_count: 4216
+    confidence: medium
+  - name: Thomas Fefin
+    title: Lecturer (PA)
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Sébastien Fernandez, PhD
+    title: Associate Professor
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Romain Fouquet
+    title: Lecturer (PA)
+    openalex_id: https://openalex.org/A5006834223
+    works_count: 19
+    cited_by_count: 457
+    confidence: medium
+  - name: Matthias Fuchs, PhD
+    title: Assistant Professor
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Maya Gharbi
+    title: Senior Lecturer
+    openalex_id: https://openalex.org/A5020519693
+    works_count: 3
+    cited_by_count: 0
+    confidence: medium
+  - name: Florent Girardin, PhD
+    title: Associate Professor
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Frédéric Girodon
+    title: Senior Lecturer (PA)
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Julien Gradoz
+    title: Senior Lecturer (PA)
+    openalex_id: https://openalex.org/A5088702596
+    works_count: 35
+    cited_by_count: 31
+    confidence: medium
+  - name: Thomas Guichard
+    title: Lecturer (PA)
+    openalex_id: https://openalex.org/A5023642130
+    works_count: 2
+    cited_by_count: 12
+    confidence: medium
+  - name: Stefan Güldenberg, PhD
+    title: Full Professor
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Stéphane Haddad
+    title: Associate Dean Executive Education; Senior Lecturer in Finance
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Augusto Hasman, PhD
+    title: Associate Professor
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Jamil Hebali, PhD
+    title: Senior Lecturer
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Kader Hegedüs
+    title: Lecturer
+    openalex_id: https://openalex.org/A5004218225
+    works_count: 2
+    cited_by_count: 1
+    confidence: medium
+  - name: Cindy Heo, PhD
+    title: Associate Professor
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Yohan Hermet
+    title: Lecturer (PA)
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Nicole Hinrichs, PhD
+    title: Full Professor
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Laura Hubschmid
+    title: Lecturer
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Alessandro Inversini, PhD
+    title: Full Professor; Associate Dean Research & Thought Leadership
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Eric Iunker
+    title: Senior Lecturer (PA)
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Manuel Jobin
+    title: Lecturer (PA)
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Clément Julien
+    title: Lecturer (PA)
+    openalex_id: https://openalex.org/A5023133713
+    works_count: 60
+    cited_by_count: 110
+    confidence: medium
+  - name: Sowon Kim Crettex, PhD
+    title: Associate Professor
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Alexandra Kis, PhD
+    title: Lecturer
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Pedro Klingenfuss
+    title: Lecturer (PA)
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Damien Kobel
+    title: Senior Lecturer
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Philippe Launois
+    title: Lecturer (PA)
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Cyrille Lecossois
+    title: Senior Lecturer (PA)
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Gildas L'Hostis
+    title: Senior Lecturer
+    openalex_id: https://openalex.org/A5110042368
+    works_count: 73
+    cited_by_count: 448
+    confidence: medium
+  - name: Sophie L'Hostis
+    title: Senior Lecturer
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Guy Llewellyn, PhD
+    title: Assistant Professor; Academic Director APAC
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Beata Lobertréau
+    title: Senior Lecturer
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Madafi Long Pierre
+    title: Lecturer (PA)
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Michel Magada
+    title: Lecturer (PA)
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Avril (Ching Ha) Man
+    title: Lecturer (PA)
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Aurélien Marcellier
+    title: Lecturer (PA)
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Thomas Marie
+    title: Senior Lecturer (PA)
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Lorence Demian Marienthal
+    title: Lecturer
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Carlos Martin-Rios, PhD
+    title: Associate Professor
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Philippe Masset, PhD
+    title: Associate Professor
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Jasper McWhinney
+    title: Senior Lecturer
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Miguel Menezes
+    title: Lecturer
+    openalex_id: https://openalex.org/A5080851474
+    works_count: 136
+    cited_by_count: 632
+    confidence: medium
+  - name: Ian Millar
+    title: Senior Lecturer
+    openalex_id: https://openalex.org/A5054407796
+    works_count: 262
+    cited_by_count: 7662
+    confidence: medium
+  - name: Nicolas Moret
+    title: Lecturer (PA)
+    openalex_id: https://openalex.org/A5019718049
+    works_count: 11
+    cited_by_count: 101
+    confidence: medium
+  - name: Masaki Mori, PhD
+    title: Associate Professor
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Wang Mouneyrou
+    title: Adjunct Lecturer
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Alain Najar
+    title: Senior Lecturer
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Fernanda Nussbaum, PhD
+    title: Lecturer
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Patrick Ogheard
+    title: Dean, School of Practical Arts
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Célia Omedas-Villar
+    title: Adjunct Lecturer
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Benoît Perrier
+    title: Lecturer
+    openalex_id: https://openalex.org/A5066136134
+    works_count: 15
+    cited_by_count: 1
+    confidence: medium
+  - name: Rosalie Philippin
+    title: Senior Lecturer
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Mélanie Pitteloud
+    title: Lecturer
+    openalex_id: https://openalex.org/A5029448885
+    works_count: 13
+    cited_by_count: 0
+    confidence: medium
+  - name: Cédric Poretti, PhD
+    title: Associate Professor
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Inès Posse
+    title: Lecturer
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Stéphanie Pougnet, PhD
+    title: Assistant Professor
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Thomas Pronnier
+    title: Lecturer (PA)
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Steffen Raub, PhD
+    title: Full Professor
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Rémy Rein
+    title: Senior Lecturer
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Stefano Riboni
+    title: Senior Lecturer
+    openalex_id: https://openalex.org/A5011277236
+    works_count: 2
+    cited_by_count: 4
+    confidence: medium
+  - name: Stéphane Ruchet
+    title: Lecturer
+    openalex_id: https://openalex.org/A5031153943
+    works_count: 2
+    cited_by_count: 0
+    confidence: medium
+  - name: Manuel Rüede
+    title: Lecturer
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Ariana Salazar
+    title: Senior Lecturer
+    openalex_id: https://openalex.org/A5088776374
+    works_count: 8
+    cited_by_count: 38
+    confidence: medium
+  - name: Nicolas Sarver
+    title: Lecturer (PA)
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Lionel Sauvère
+    title: Senior Lecturer (PA)
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Achim Schmitt, PhD
+    title: Dean, EHL Hospitality Business School
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Christophe Schmitt
+    title: Lecturer (PA)
+    openalex_id: https://openalex.org/A5072938192
+    works_count: 133
+    cited_by_count: 9395
+    confidence: medium
+  - name: Nicolas Schweitzer
+    title: Senior Lecturer (PA)
+    openalex_id: https://openalex.org/A5055682693
+    works_count: 1
+    cited_by_count: 2
+    confidence: medium
+  - name: Igor Sekulic
+    title: Lecturer
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Claudio Sfreddo, PhD
+    title: Adjunct Professor
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Julien Simon
+    title: Senior Lecturer
+    openalex_id: https://openalex.org/A5086151708
+    works_count: 23
+    cited_by_count: 175
+    confidence: medium
+  - name: Antonin Soussan
+    title: Lecturer
+    openalex_id: https://openalex.org/A5052912406
+    works_count: 2
+    cited_by_count: 85
+    confidence: high
+  - name: Natthavut Srinara, DBA
+    title: Lecturer
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Marc Stierand, PhD
+    title: Full Professor
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Shirley Tan, PhD
+    title: Adjunct Professor
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Christina Tavares
+    title: Senior Lecturer
+    openalex_id: https://openalex.org/A5100880518
+    works_count: 1
+    cited_by_count: 36
+    confidence: medium
+  - name: Lohyd Terrier, PhD
+    title: Associate Professor
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Françoise Thomas Pahud
+    title: Senior Lecturer
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Luca Triacca, PhD
+    title: Adjunct Lecturer
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Tatyana Tsukanova, PhD
+    title: Assistant Professor
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Peter Varga, PhD
+    title: Assistant Professor
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Luciano Ventolini
+    title: Lecturer (PA)
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Wiltrud Weishaupt
+    title: Senior Lecturer
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Jean-Philippe Weisskopf, PhD
+    title: Associate Professor
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Rafal Wichrowski
+    title: Lecturer (PA)
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: René-Ojas Woltering, PhD
+    title: Associate Professor
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Jie Yu Kerguignas, PhD
+    title: Assistant Professor
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Petar Zivkovic
+    title: Senior Lecturer
+    openalex_id: https://openalex.org/A5032461961
+    works_count: 7
+    cited_by_count: 118
+    confidence: high
+  - name: Laura Zizka, PhD
+    title: Associate Professor
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Daniel Zou
+    title: Senior Lecturer
+    openalex_id: https://openalex.org/A5009624975
+    works_count: 5
+    cited_by_count: 95
+    confidence: medium
+  totals:
+    faculty_count: 139
+    matched_count: 36
+    total_works: 1278
+    total_citations: 31608
+glion:
+  directory_url: https://www.glion.edu/our-faculty/
+  directory_note: 'Glion''s own ''Meet our faculty'' directory (glion.edu/our-faculty) lists 59 named
+    people across 8 subject groupings. We excluded 15 explicitly labeled Visiting Faculty/Visiting Lecturer/Visiting
+    Professor in their displayed title (Ed Schofield, Roohi Khan, Nandita Perret, Matthieu Tran-Van, Dr.
+    Jinju Heo, Frank Schuetzendorf, Dr. Estelle Dinh, Dr. Eleonora Rosati, Daniele Perchiazzi, Dr. Barbara
+    Czyzewska, Naida Culshaw, Christopher Rudolph, John Kawalek, Jean-Marc Levrat, Frederic Toitot), plus
+    one person (Krisztina Soreg) whose profile is tagged Campus: Marbella rather than Switzerland/London,
+    out of scope. No one was labeled Emeritus. This is overwhelmingly a teaching/industry-practitioner
+    faculty with very few PhD-holding, research-active academics -- consistent with the prior finding
+    that Glion has almost no OpenAlex research presence. OpenAlex matching was NOT YET ATTEMPTED for this
+    school -- blocked by the same shared rate limit described for EHL above; a direct curl test against
+    the OpenAlex Authors API returned HTTP 429 (''Insufficient budget... resets at midnight UTC'') for
+    this run.'
+  faculty:
+  - name: Audrey Reynaud
+    title: Dean of Undergraduate Studies
+    openalex_id: https://openalex.org/A5019640189
+    works_count: 25
+    cited_by_count: 144
+    confidence: medium
+  - name: Dr. Joseph Karam
+    title: Dean of Graduate Studies
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Michael Macdonald
+    title: Dean of Digital Education & Academic Quality
+    openalex_id: https://openalex.org/A5006957202
+    works_count: 178
+    cited_by_count: 8973
+    confidence: medium
+  - name: Pia Huh
+    title: Hotel Asset Management and Concept Creation
+    openalex_id: https://openalex.org/A5088458650
+    works_count: 1
+    cited_by_count: 0
+    confidence: high
+  - name: Nicole Philips
+    title: Expert Faculty – Master's in Real Estate, Finance and Hotel Development
+    openalex_id: https://openalex.org/A5045244507
+    works_count: 7
+    cited_by_count: 195
+    confidence: medium
+  - name: Nicholas Northam
+    title: Global Real Estate Markets
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Josephine Underwood-Kaarenmaa
+    title: Hospitality Accounting Essentials
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Edouard Louapre
+    title: Head of International Hotel Development and Finance Specialization
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Michalakis Michael
+    title: Financial Statement Analysis
+    openalex_id: https://openalex.org/A5067620211
+    works_count: 3
+    cited_by_count: 116
+    confidence: medium
+  - name: Dr. Stefano Battaglia
+    title: Leadership and Research
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Christiane Koncilja
+    title: Senior Lecturer – Economics for Hospitality and the Tourism Industry
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Christelle Dézavelle
+    title: Management of Rooms
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Dr. Anna Bloch-Mechkour
+    title: Data Analysis for Decision Maker
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Mikèle Landry
+    title: Luxury and Research
+    openalex_id: https://openalex.org/A5049133381
+    works_count: 10
+    cited_by_count: 96
+    confidence: high
+  - name: Dr. Alessio Delpero
+    title: Associate Professor, Innovation and Research
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Dr. Evrim De Groot
+    title: Luxury Brand Strategy
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Mark Britton Jones
+    title: Marketing and Luxury Brand Strategy
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Mariana Palmeiro
+    title: Business Trends and Ultra-Luxury Travel
+    openalex_id: https://openalex.org/A5034074257
+    works_count: 17
+    cited_by_count: 126
+    confidence: medium
+  - name: Laury I. Chauvin
+    title: Hospitality and Events Operations
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Giovanni Manfredini
+    title: Head of Guest Experience and Event Management Specialization
+    openalex_id: https://openalex.org/A5054118482
+    works_count: 35
+    cited_by_count: 2
+    confidence: medium
+  - name: Dr. Eleonora Cattaneo
+    title: Professor
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Darren Sleeman
+    title: Hospitality Marketing Essentials
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Anu Laukkala
+    title: Hospitality Marketing Essential, Business and Academic Research Methods
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Andi Islami
+    title: Omnichannel Sales Strategy in Luxury Industries
+    openalex_id: https://openalex.org/A5072433957
+    works_count: 21
+    cited_by_count: 5
+    confidence: medium
+  - name: Yves Dominic Lüthi
+    title: Fundraising and Financial Strategies
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Paola Waschbusch
+    title: Luxury Hospitality Consultant
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Jean-Christophe Barth-Coullaré
+    title: Sales & Contract Negotiation and Protecting your Brand & your Business
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Martina Mc Loughlin
+    title: Undergraduate Lecturer, English and Communication
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Naike Demarchi
+    title: Front Office Senior Instructor
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Yoann Lazareth
+    title: Head Bartender Instructor
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Tiago Ferreira
+    title: Rooms Division Instructor
+    openalex_id: https://openalex.org/A5024051510
+    works_count: 605
+    cited_by_count: 6838
+    confidence: medium
+  - name: Cyril Leclerc
+    title: The Wine Universe Instructor
+    openalex_id: https://openalex.org/A5068180898
+    works_count: 12
+    cited_by_count: 11
+    confidence: medium
+  - name: Alexis Henrion
+    title: Kitchen Instructor
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Patrick Abi Nader
+    title: Rooms Division Lecturer
+    openalex_id: https://openalex.org/A5085436175
+    works_count: 42
+    cited_by_count: 1632
+    confidence: medium
+  - name: Dr. Zabin Visram
+    title: Intercultural leadership – Associate Professor
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Sidi Mohamed Beldjilali
+    title: IT and Geopolitics
+    openalex_id: https://openalex.org/A5119200261
+    works_count: 4
+    cited_by_count: 0
+    confidence: high
+  - name: Sandra Chocarro
+    title: Spanish Language
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Pascal Christian
+    title: IT Business Tools
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Michelle Wells
+    title: Hospitality and Events Operations and IT
+    openalex_id: https://openalex.org/A5051847577
+    works_count: 10
+    cited_by_count: 231
+    confidence: medium
+  - name: Maurane Fauster
+    title: French Language
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Mathilde Chevallier
+    title: Head of Languages
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Glenn Carroll
+    title: People Management in a Global Environment
+    openalex_id: https://openalex.org/A5075324044
+    works_count: 318
+    cited_by_count: 19734
+    confidence: medium
+  - name: Dr. Bruno Levasseur
+    title: French
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Eric Mabilon
+    title: Advanced Hotel Operations
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  totals:
+    faculty_count: 44
+    matched_count: 15
+    total_works: 1288
+    total_citations: 38103
+les-roches:
+  directory_url: https://lesroches.edu/meet-les-roches/our-faculty/crans-montana/
+  directory_note: 'Les Roches'' Crans-Montana (Switzerland) campus faculty page lists 37 named profiles.
+    We excluded 14 explicitly labeled Visiting Lecturer/Visiting Professor (Debra Adams, Ewa Mottier-Leszner,
+    Frederic Toitot, Julien Morange, Nancy E. Landrum, Brendan Cronin, Iris Zwissig, Nansy Kouroupi, Marc
+    Checkley, Alexandru Stoinea, Scott Dahl, Michel Grand, Lucie Chmelikova, plus Krisztina Soreg -- whose
+    profile is tagged Campus: Marbella, the separate Spain campus, out of scope), and merged one duplicate
+    listing (Rachel Germanier, shown twice under two role descriptions) into a single entry. No one was
+    labeled Emeritus. OpenAlex matching was NOT YET ATTEMPTED for this school -- blocked by the same shared
+    OpenAlex rate limit described for EHL/Glion above.'
+  faculty:
+  - name: Ivana Nobilo
+    title: Executive Academic Dean
+    openalex_id: https://openalex.org/A5050514983
+    works_count: 6
+    cited_by_count: 2
+    confidence: high
+  - name: Alexandre Gamberoni
+    title: Senior Lecturer
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Frank Gueuning
+    title: EMBA Program Manager
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Vincenzo Aiosi
+    title: Senior Lecturer
+    openalex_id: https://openalex.org/A5148942653
+    works_count: 1
+    cited_by_count: 0
+    confidence: high
+  - name: Matthias Schmidt
+    title: Lecturer
+    openalex_id: https://openalex.org/A5047596078
+    works_count: 264
+    cited_by_count: 6772
+    confidence: medium
+  - name: Bilal Hassan
+    title: Senior Lecturer
+    openalex_id: https://openalex.org/A5001125873
+    works_count: 80
+    cited_by_count: 1508
+    confidence: medium
+  - name: Gretel Qumsieh Mussalam
+    title: Professor
+    openalex_id: https://openalex.org/A5080575965
+    works_count: 7
+    cited_by_count: 137
+    confidence: high
+  - name: Rachel Germanier
+    title: Professor & Head of Faculty Development / Dissertation Coordinator
+    openalex_id: https://openalex.org/A5068298497
+    works_count: 12
+    cited_by_count: 21
+    confidence: high
+  - name: Wolf Gerstkamp
+    title: Assistant Dean of Undergraduate Program and Senior Lecturer
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Sanjay Chib
+    title: Associate Professor and Program Manager
+    openalex_id: https://openalex.org/A5004311172
+    works_count: 3
+    cited_by_count: 4
+    confidence: medium
+  - name: Albian Albrahimi
+    title: Assistant Dean of Graduate Programs and Assistant Professor
+    openalex_id: https://openalex.org/A5040379201
+    works_count: 6
+    cited_by_count: 11
+    confidence: high
+  - name: Javier Del Sol
+    title: Senior Lecturer
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Della Häubi
+    title: Lecturer
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Steven McMath
+    title: Senior Lecturer
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Rui Pinho
+    title: Senior Service Instructor
+    openalex_id: https://openalex.org/A5032661922
+    works_count: 244
+    cited_by_count: 8387
+    confidence: medium
+  - name: Xavier Gonet
+    title: Director of Food & Beverage
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Tim Kohlbecher
+    title: Beverage Manager and Service Instructor
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Taran Patel
+    title: Head of Research and Professor
+    openalex_id: https://openalex.org/A5004085787
+    works_count: 48
+    cited_by_count: 483
+    confidence: medium
+  - name: Christophe Hurter
+    title: Lecturer
+    openalex_id: https://openalex.org/A5058678073
+    works_count: 322
+    cited_by_count: 3979
+    confidence: medium
+  - name: Andreea Antonescu
+    title: Associate Professor
+    openalex_id: https://openalex.org/A5038894503
+    works_count: 20
+    cited_by_count: 286
+    confidence: medium
+  - name: Léa Ladrange
+    title: Restaurant Manager and Service Instructor
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Nina Vyslouzilova
+    title: Senior Lecturer
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  totals:
+    faculty_count: 22
+    matched_count: 12
+    total_works: 1013
+    total_citations: 21590
+oxford-brookes:
+  directory_url: https://www.brookes.ac.uk/about-brookes/structure-and-governance/faculties-and-schools/business/about/staff
+  directory_note: Oxford Brookes Business School's full staff directory lists roughly 180 people across
+    all business disciplines; we narrowed to the 11 staff whose listed title explicitly names Hospitality,
+    Tourism, or Events (the Hospitality, Tourism and Events Management subject area within the Business
+    School), rather than including the whole Business School, per the task's instruction to narrow as
+    far as possible. No one was labeled Emeritus among these 11 (two Emeritus professors exist elsewhere
+    in the School, in Accounting and Economics, and were excluded as out of scope/not hospitality). OpenAlex
+    matching was NOT YET ATTEMPTED for this school -- blocked by the same shared OpenAlex rate limit described
+    above.
+  faculty:
+  - name: Dr Zaid Alrawadieh
+    title: Senior Lecturer in Hospitality and Tourism Operations
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Dr Julian Ayeh
+    title: Senior Lecturer in Hospitality Management
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Dr Rosa Codina
+    title: Senior Lecturer in Tourism and Events
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Dr Greg Kapuscinski
+    title: Senior Lecturer in Tourism and Hospitality Management
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Professor Peter Lugosi
+    title: Professor of Culture and Organisation & Research Lead for the Hospitality, Tourism and Events
+      Subject Area
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Dr Claudia Macaveiu
+    title: Lecturer in Tourism, Hospitality and Events
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Dr Kate Mingjie Ji
+    title: Senior Lecturer in Hospitality Finance and Revenue Management
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Dr Giulia Rossetti
+    title: Senior Lecturer in Events Management
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Dr Hugues Séraphin
+    title: Associate Professor and People Lead for Tourism, Hospitality and Events Management
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Dr Gordon Yan
+    title: Associate Professor and Programme Director for Tourism, Hospitality and Events
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Dr Nathan Zhang
+    title: Senior Lecturer in Hospitality and Tourism Management
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  totals:
+    faculty_count: 11
+    matched_count: 0
+    total_works: 0
+    total_citations: 0

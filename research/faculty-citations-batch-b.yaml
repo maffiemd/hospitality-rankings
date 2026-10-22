@@ -1,0 +1,755 @@
+udel-hrim:
+  directory_url: https://lerner.udel.edu/faculty-staff-directory/groups/hospitality-and-sport-business-management
+  directory_note: Included the department's tenure-track/clinical/teaching faculty (professors, associate/assistant
+    professors, chef instructors) and the chair; excluded 2 faculty marked Emeritus (Fred J. DeMicco,
+    Ali Poorani), 3 professional staff (non-faculty), and the Visiting and Adjunct Faculty group (10 adjunct/visiting
+    instructors plus 1 instructor-director listed under that heading). OpenAlex matching was NOT YET ATTEMPTED
+    for this school -- blocked by a shared OpenAlex API rate limit before any query for this school ran.
+  faculty:
+  - name: Markus Schuckert
+    title: Professor of Hospitality, Chairperson
+    openalex_id: https://openalex.org/A5011181033
+    works_count: 129
+    cited_by_count: 4324
+    confidence: medium
+  - name: Timothy DeSchriver
+    title: Associate Professor of Sport Management, Associate Chair
+    openalex_id: https://openalex.org/A5059744394
+    works_count: 24
+    cited_by_count: 473
+    confidence: high
+  - name: John Allgood II
+    title: Instructor of Sports Management
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Srikanth Beldona
+    title: Professor of Hospitality Business Management
+    openalex_id: https://openalex.org/A5005795347
+    works_count: 68
+    cited_by_count: 2470
+    confidence: medium
+  - name: Nataliya Bredikhina
+    title: Assistant Professor of Sport Management
+    openalex_id: https://openalex.org/A5072289348
+    works_count: 17
+    cited_by_count: 128
+    confidence: high
+  - name: Hong Soon Kim
+    title: Assistant Professor of Hospitality Business Management
+    openalex_id: https://openalex.org/A5036294576
+    works_count: 55
+    cited_by_count: 634
+    confidence: high
+  - name: Sheryl F. Kline
+    title: Aramark Chaired Professor
+    openalex_id: https://openalex.org/A5090705738
+    works_count: 50
+    cited_by_count: 1592
+    confidence: high
+  - name: Francis Kwansa
+    title: Associate Professor of Hospitality Business Management
+    openalex_id: https://openalex.org/A5029903352
+    works_count: 67
+    cited_by_count: 615
+    confidence: high
+  - name: Alison Rainis
+    title: Chef Instructor
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Matthew Robinson
+    title: Professor of Sport Management
+    openalex_id: https://openalex.org/A5110061985
+    works_count: 105
+    cited_by_count: 5207
+    confidence: medium
+  - name: Zvi Schwartz
+    title: Professor of Hospitality Business Management
+    openalex_id: https://openalex.org/A5077767228
+    works_count: 104
+    cited_by_count: 3455
+    confidence: medium
+  - name: Gretchen Sianni
+    title: Chef Instructor
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Iuliana Theis
+    title: Assistant Professor of Hospitality Business Management
+    openalex_id: https://openalex.org/A5119720727
+    works_count: 2
+    cited_by_count: 6
+    confidence: medium
+  - name: Timothy Webb
+    title: Associate Professor of Hospitality Business Management
+    openalex_id: https://openalex.org/A5012856784
+    works_count: 30
+    cited_by_count: 374
+    confidence: high
+  - name: Joanne Jung-Eun Yoo
+    title: Professor of Hospitality Business Management
+    openalex_id: https://openalex.org/A5078877398
+    works_count: 4
+    cited_by_count: 130
+    confidence: high
+  totals:
+    faculty_count: 15
+    matched_count: 12
+    total_works: 655
+    total_citations: 19408
+uh-hilton:
+  directory_url: https://www.uh.edu/hilton-college/about/our-faculty/
+  directory_note: Included professors, associate/assistant professors, instructional (clinical) professors,
+    lecturers, and professors of practice; excluded 10 people explicitly labeled Adjunct Faculty, 7 doctoral
+    students/graduate teaching fellows, and separately-listed professors emeriti (not on this page). OpenAlex
+    matching was NOT YET ATTEMPTED for this school -- blocked by a shared OpenAlex API rate limit before
+    any query for this school ran.
+  faculty:
+  - name: Dennis Reynolds
+    title: Dean, Professor, Barron Hilton Distinguished Chair
+    openalex_id: https://openalex.org/A5015885788
+    works_count: 86
+    cited_by_count: 2855
+    confidence: high
+  - name: Ki-Joon Back
+    title: Senior Associate Dean of Research & Graduate Studies, Moores Chair Professor
+    openalex_id: https://openalex.org/A5031944649
+    works_count: 132
+    cited_by_count: 7053
+    confidence: high
+  - name: Mary Dawson
+    title: Senior Associate Dean of Faculty Affairs, Eric Hilton Distinguished Chair Professor
+    openalex_id: https://openalex.org/A5033763714
+    works_count: 99
+    cited_by_count: 1950
+    confidence: high
+  - name: Cristian Morosan
+    title: Associate Dean of Student Affairs, Donald H. Hubbs Professor
+    openalex_id: https://openalex.org/A5076550339
+    works_count: 78
+    cited_by_count: 3679
+    confidence: high
+  - name: JeAnna Abbott
+    title: Professor, Spec's Charitable Foundation Professor
+    openalex_id: https://openalex.org/A5027330786
+    works_count: 46
+    cited_by_count: 1779
+    confidence: medium
+  - name: Dohyung Bang
+    title: Assistant Professor
+    openalex_id: https://openalex.org/A5015405666
+    works_count: 8
+    cited_by_count: 81
+    confidence: medium
+  - name: Stephen Barth
+    title: Professor, Attorney
+    openalex_id: https://openalex.org/A5029772978
+    works_count: 3
+    cited_by_count: 139
+    confidence: medium
+  - name: Carl A. Boger Jr.
+    title: Professor, Clinton L. Rappole Distinguished Chair
+    openalex_id: https://openalex.org/A5081358462
+    works_count: 52
+    cited_by_count: 670
+    confidence: high
+  - name: Cathy Cheatham
+    title: Instructional Associate Professor & Hotel Manager
+    openalex_id: https://openalex.org/A5116859066
+    works_count: 1
+    cited_by_count: 1
+    confidence: high
+  - name: Aaron Corsi
+    title: Instructional Assistant Professor
+    openalex_id: https://openalex.org/A5057318705
+    works_count: 7
+    cited_by_count: 24
+    confidence: high
+  - name: Agnes L. DeFranco
+    title: Professor, Conrad N. Hilton Distinguished Chair
+    openalex_id: https://openalex.org/A5058142284
+    works_count: 132
+    cited_by_count: 2685
+    confidence: high
+  - name: Simone P. Doudna
+    title: Instructional Associate Professor
+    openalex_id: https://openalex.org/A5137669686
+    works_count: 1
+    cited_by_count: 0
+    confidence: high
+  - name: Jason Draper
+    title: Professor
+    openalex_id: https://openalex.org/A5064414819
+    works_count: 41
+    cited_by_count: 744
+    confidence: high
+  - name: Madeleine Garcia
+    title: Lecturer
+    openalex_id: https://openalex.org/A5108458115
+    works_count: 18
+    cited_by_count: 305
+    confidence: medium
+  - name: Katie Ginapp
+    title: Lecturer
+    openalex_id: https://openalex.org/A5093613683
+    works_count: 1
+    cited_by_count: 0
+    confidence: high
+  - name: Priyanko Guchait
+    title: Professor, Director of Doctorate in Global Hospitality Leadership
+    openalex_id: https://openalex.org/A5031424528
+    works_count: 98
+    cited_by_count: 3823
+    confidence: high
+  - name: Reba Haskell
+    title: Lecturer & Executive Director of Gourmet Night
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Kyle Hight
+    title: Assistant Professor
+    openalex_id: https://openalex.org/A5042590952
+    works_count: 20
+    cited_by_count: 616
+    confidence: high
+  - name: Jaewook Kim
+    title: Associate Professor
+    openalex_id: https://openalex.org/A5040371042
+    works_count: 13
+    cited_by_count: 434
+    confidence: high
+  - name: Erin Kenyan
+    title: Instructional Associate Professor
+    openalex_id: https://openalex.org/A5148377274
+    works_count: 1
+    cited_by_count: 0
+    confidence: high
+  - name: Yoon Koh
+    title: Professor
+    openalex_id: https://openalex.org/A5033828603
+    works_count: 53
+    cited_by_count: 1584
+    confidence: high
+  - name: Tiffany Legendre
+    title: Associate Professor
+    openalex_id: https://openalex.org/A5074486697
+    works_count: 66
+    cited_by_count: 1019
+    confidence: high
+  - name: Minwoo Lee
+    title: Associate Professor, Director of Hospitality Analytics and Innovation Lab
+    openalex_id: https://openalex.org/A5100359267
+    works_count: 198
+    cited_by_count: 3838
+    confidence: medium
+  - name: Ningqiao Li
+    title: Assistant Professor
+    openalex_id: https://openalex.org/A5016874706
+    works_count: 13
+    cited_by_count: 144
+    confidence: high
+  - name: Juan M. Madera
+    title: Professor, Curtis L. Carlson Endowed Professor
+    openalex_id: https://openalex.org/A5038396004
+    works_count: 184
+    cited_by_count: 5564
+    confidence: high
+  - name: Dustin Maneethai
+    title: Assistant Professor
+    openalex_id: https://openalex.org/A5050326343
+    works_count: 26
+    cited_by_count: 202
+    confidence: high
+  - name: Mohamed E. Mohamed
+    title: Assistant Professor
+    openalex_id: https://openalex.org/A5102817864
+    works_count: 46
+    cited_by_count: 462
+    confidence: medium
+  - name: Jay Neal
+    title: Associate Professor
+    openalex_id: https://openalex.org/A5077646148
+    works_count: 12
+    cited_by_count: 296
+    confidence: high
+  - name: Yoko M. Negoro
+    title: Assistant Professor
+    openalex_id: https://openalex.org/A5062053338
+    works_count: 5
+    cited_by_count: 12
+    confidence: high
+  - name: Minjung Shin
+    title: Associate Professor
+    openalex_id: https://openalex.org/A5050112486
+    works_count: 57
+    cited_by_count: 773
+    confidence: medium
+  - name: Sujata Sirsat
+    title: Associate Professor
+    openalex_id: https://openalex.org/A5077345443
+    works_count: 55
+    cited_by_count: 849
+    confidence: high
+  - name: D. Christopher Taylor
+    title: Professor, Director of Beverage Management Program
+    openalex_id: https://openalex.org/A5068788830
+    works_count: 56
+    cited_by_count: 1420
+    confidence: medium
+  - name: Mark E. Young
+    title: Archivist, Historian & Professor of Practice
+    openalex_id: https://openalex.org/A5008977052
+    works_count: 38
+    cited_by_count: 1034
+    confidence: medium
+  totals:
+    faculty_count: 33
+    matched_count: 32
+    total_works: 1646
+    total_citations: 44035
+vt-htm:
+  directory_url: https://htm.pamplin.vt.edu/directory.html
+  directory_note: Included full-time ranked faculty (professors, associate/assistant professors, and Professor/Associate/Assistant
+    Professor of Practice) from the department's People/Directory page; excluded 1 faculty marked Emeritus
+    Faculty (Richard R. Perdue), 8 people explicitly labeled Adjunct Professor/Adjunct Faculty, 11 Ph.D.
+    students/graduate teaching fellows, and 4 staff with non-academic titles (Graduate Program Assistant,
+    Office Manager, MSBA-HTM Graduate Program Coordinator, and 2 people with no title shown on their bio
+    page). OpenAlex matching was NOT YET ATTEMPTED for this school -- blocked by a shared OpenAlex API
+    rate limit before any query for this school ran.
+  faculty:
+  - name: Elizabeth Allen
+    title: Assistant Professor
+    openalex_id: https://openalex.org/A5128637171
+    works_count: 1
+    cited_by_count: 0
+    confidence: high
+  - name: Shaniel Bernard
+    title: Assistant Professor
+    openalex_id: https://openalex.org/A5011404027
+    works_count: 28
+    cited_by_count: 690
+    confidence: high
+  - name: Tom Duetsch
+    title: Professor of Practice
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Stuart Feigenbaum
+    title: Professor of Practice
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Candace Fitch
+    title: Feiertag Professor of Practice
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Mahmood Khan
+    title: Professor and Graduate Faculty
+    openalex_id: https://openalex.org/A5038619526
+    works_count: 233
+    cited_by_count: 2284
+    confidence: medium
+  - name: Eojina Kim
+    title: Associate Professor, Director of Ph.D. Program
+    openalex_id: https://openalex.org/A5048799736
+    works_count: 50
+    cited_by_count: 1715
+    confidence: medium
+  - name: Kristin Lamoureux
+    title: Collegiate Professor, Director MSBA-HTM Program
+    openalex_id: https://openalex.org/A5085414598
+    works_count: 11
+    cited_by_count: 229
+    confidence: medium
+  - name: Nancy G. McGehee
+    title: R.B. Pamplin Professor of Hospitality and Tourism Management
+    openalex_id: https://openalex.org/A5032877941
+    works_count: 115
+    cited_by_count: 7188
+    confidence: high
+  - name: Juan Luis Nicolau
+    title: J. Willard and Alice S. Marriott Professor of Revenue Management
+    openalex_id: https://openalex.org/A5023917386
+    works_count: 310
+    cited_by_count: 8039
+    confidence: high
+  - name: Manisha Singal
+    title: Professor
+    openalex_id: https://openalex.org/A5025109528
+    works_count: 109
+    cited_by_count: 3174
+    confidence: high
+  - name: Tarah Warner
+    title: Assistant Professor of Practice
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Zheng Xiang
+    title: Department Head, Professor
+    openalex_id: https://openalex.org/A5084195072
+    works_count: 132
+    cited_by_count: 15713
+    confidence: medium
+  - name: David Yanisko
+    title: Associate Professor of Practice
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Florian Zach
+    title: Associate Professor
+    openalex_id: https://openalex.org/A5048502967
+    works_count: 93
+    cited_by_count: 2448
+    confidence: high
+  totals:
+    faculty_count: 15
+    matched_count: 10
+    total_works: 1082
+    total_citations: 41480
+unlv-harrah:
+  directory_url: https://www.unlv.edu/hospitality/contact/all-facultystaff
+  directory_note: Included all ranked/lecturer/in-residence/librarian faculty from the Harrah College
+    all-faculty/staff directory plus the Dean; excluded the 1 person explicitly labeled Adjunct Professor,
+    32 Part-Time Instructors, 7 doctoral students/graduate teaching fellows, 1 postdoctoral scholar, 1
+    purely-administrative title (Associate Director), and all non-faculty staff/administrator listings.
+    No one on this page was labeled Emeritus/Emerita or retired. OpenAlex matching was NOT YET ATTEMPTED
+    for this school -- blocked by a shared OpenAlex API rate limit before any query for this school ran.
+  faculty:
+  - name: Suhaib Aamir
+    title: Assistant Professor in Residence
+    openalex_id: https://openalex.org/A5080356840
+    works_count: 18
+    cited_by_count: 159
+    confidence: high
+  - name: Brett Abarbanel
+    title: Associate Professor
+    openalex_id: https://openalex.org/A5042605038
+    works_count: 139
+    cited_by_count: 1136
+    confidence: high
+  - name: Kweisi Ausar
+    title: Professor in Residence
+    openalex_id: https://openalex.org/A5097570663
+    works_count: 7
+    cited_by_count: 418
+    confidence: medium
+  - name: Mohsen Azizsoltani
+    title: Lecturer
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Billy Bai
+    title: Professor
+    openalex_id: https://openalex.org/A5051361485
+    works_count: 123
+    cited_by_count: 6793
+    confidence: high
+  - name: Seyhmus Baloglu
+    title: Professor and Associate Dean
+    openalex_id: https://openalex.org/A5090258769
+    works_count: 132
+    cited_by_count: 15404
+    confidence: high
+  - name: Bobbie Barnes
+    title: Professor in Residence
+    openalex_id: https://openalex.org/A5111069815
+    works_count: 1
+    cited_by_count: 0
+    confidence: high
+  - name: Amanda Belarmino
+    title: Associate Professor
+    openalex_id: https://openalex.org/A5031664193
+    works_count: 46
+    cited_by_count: 829
+    confidence: high
+  - name: Christine Bergman
+    title: Professor
+    openalex_id: https://openalex.org/A5090623476
+    works_count: 92
+    cited_by_count: 4039
+    confidence: high
+  - name: Bo Bernhard
+    title: Professor
+    openalex_id: https://openalex.org/A5008953547
+    works_count: 81
+    cited_by_count: 1484
+    confidence: medium
+  - name: Laura Book
+    title: Professor in Residence
+    openalex_id: https://openalex.org/A5064516937
+    works_count: 15
+    cited_by_count: 516
+    confidence: high
+  - name: David Cardenas
+    title: Dean
+    openalex_id: https://openalex.org/A5060812049
+    works_count: 49
+    cited_by_count: 1053
+    confidence: high
+  - name: Chih-Chien Chen
+    title: Professor, Department Chair
+    openalex_id: https://openalex.org/A5011519521
+    works_count: 52
+    cited_by_count: 1694
+    confidence: medium
+  - name: Patty Coaley
+    title: Assistant Professor in Residence
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Dana Cotham
+    title: Professor in Residence
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Finley Cotrone
+    title: Professor in Residence
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Michelle Calica Coyner
+    title: Assistant Professor in Residence
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Vince Eade
+    title: Professor in Residence
+    openalex_id: https://openalex.org/A5035195944
+    works_count: 11
+    cited_by_count: 81
+    confidence: medium
+  - name: Mehmet Erdem
+    title: Professor, Department Chair
+    openalex_id: https://openalex.org/A5040412217
+    works_count: 78
+    cited_by_count: 1625
+    confidence: high
+  - name: Michael Gebhart
+    title: Professor in Residence
+    openalex_id: https://openalex.org/A5034968443
+    works_count: 75
+    cited_by_count: 1144
+    confidence: medium
+  - name: Lateka Grays
+    title: Hospitality Librarian & Professor
+    openalex_id: https://openalex.org/A5029529251
+    works_count: 378
+    cited_by_count: 20
+    confidence: medium
+  - name: Renata Fernandes Guzzo
+    title: Assistant Professor
+    openalex_id: https://openalex.org/A5048643222
+    works_count: 32
+    cited_by_count: 540
+    confidence: high
+  - name: Tony L. Henthorne
+    title: Professor, Department Chair
+    openalex_id: https://openalex.org/A5036886041
+    works_count: 107
+    cited_by_count: 2031
+    confidence: medium
+  - name: Koco Heo
+    title: Lecturer
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Araceli Hernandez
+    title: Assistant Professor
+    openalex_id: null
+    works_count: null
+    cited_by_count: null
+    confidence: unmatched
+    match_note: No confident OpenAlex match found.
+  - name: Eun Min Hwang
+    title: Assistant Professor
+    openalex_id: https://openalex.org/A5031888343
+    works_count: 12
+    cited_by_count: 243
+    confidence: high
+  - name: Soyeon Jung
+    title: Associate Professor
+    openalex_id: https://openalex.org/A5044760118
+    works_count: 18
+    cited_by_count: 123
+    confidence: medium
+  - name: Hyelin Kim
+    title: Associate Professor
+    openalex_id: https://openalex.org/A5012474022
+    works_count: 59
+    cited_by_count: 4724
+    confidence: medium
+  - name: Jungsun Kim
+    title: Professor
+    openalex_id: https://openalex.org/A5123285545
+    works_count: 6
+    cited_by_count: 4
+    confidence: high
+  - name: Yen-Soon Kim
+    title: Associate Professor, Chair
+    openalex_id: https://openalex.org/A5023046940
+    works_count: 30
+    cited_by_count: 1271
+    confidence: medium
+  - name: Junghoon Lee
+    title: Lecturer/Assistant Director
+    openalex_id: https://openalex.org/A5122995742
+    works_count: 4
+    cited_by_count: 1
+    confidence: high
+  - name: Minkyo Lee
+    title: Associate Professor
+    openalex_id: https://openalex.org/A5011132836
+    works_count: 27
+    cited_by_count: 160
+    confidence: high
+  - name: Samuel Lee
+    title: Assistant Professor in Residence
+    openalex_id: https://openalex.org/A5090139338
+    works_count: 5
+    cited_by_count: 98
+    confidence: high
+  - name: Joseph Lema
+    title: Professor
+    openalex_id: https://openalex.org/A5072111313
+    works_count: 55
+    cited_by_count: 382
+    confidence: high
+  - name: Chris Lindsay
+    title: Lecturer/Chef Instructor
+    openalex_id: https://openalex.org/A5102160358
+    works_count: 24
+    cited_by_count: 1178
+    confidence: medium
+  - name: Nancy Lough
+    title: Professor
+    openalex_id: https://openalex.org/A5018340180
+    works_count: 108
+    cited_by_count: 976
+    confidence: high
+  - name: Anthony Lucas
+    title: Professor
+    openalex_id: https://openalex.org/A5077366690
+    works_count: 69
+    cited_by_count: 1338
+    confidence: high
+  - name: Zihui Ma
+    title: Associate Professor in Residence
+    openalex_id: https://openalex.org/A5119814113
+    works_count: 1
+    cited_by_count: 0
+    confidence: high
+  - name: Rhonda Montgomery
+    title: Associate Professor
+    openalex_id: https://openalex.org/A5110906834
+    works_count: 87
+    cited_by_count: 4536
+    confidence: medium
+  - name: Scott Morrow
+    title: Lecturer
+    openalex_id: https://openalex.org/A5082399694
+    works_count: 17
+    cited_by_count: 601
+    confidence: medium
+  - name: Ozgur Ozdemir
+    title: Associate Professor
+    openalex_id: https://openalex.org/A5057113231
+    works_count: 54
+    cited_by_count: 1955
+    confidence: high
+  - name: Carola Raab
+    title: Professor
+    openalex_id: https://openalex.org/A5033399438
+    works_count: 95
+    cited_by_count: 2634
+    confidence: high
+  - name: Stowe Shoemaker
+    title: Professor
+    openalex_id: https://openalex.org/A5057697356
+    works_count: 72
+    cited_by_count: 3727
+    confidence: high
+  - name: Cass Shum
+    title: Associate Professor
+    openalex_id: https://openalex.org/A5034290905
+    works_count: 57
+    cited_by_count: 1316
+    confidence: high
+  - name: Ashok Singh
+    title: Professor
+    openalex_id: https://openalex.org/A5038611325
+    works_count: 5
+    cited_by_count: 26
+    confidence: medium
+  - name: Marta Soligo
+    title: Assistant Professor
+    openalex_id: https://openalex.org/A5083233827
+    works_count: 31
+    cited_by_count: 82
+    confidence: high
+  - name: Bill Werner
+    title: Associate Professor
+    openalex_id: https://openalex.org/A5010082855
+    works_count: 1
+    cited_by_count: 13
+    confidence: medium
+  - name: Kim Williams
+    title: Associate Dean, Professor
+    openalex_id: https://openalex.org/A5054076191
+    works_count: 73
+    cited_by_count: 1023
+    confidence: medium
+  - name: Tiange Xu
+    title: Assistant Professor-in-Residence
+    openalex_id: https://openalex.org/A5053560845
+    works_count: 15
+    cited_by_count: 118
+    confidence: medium
+  - name: Bonhak Koo
+    title: Assistant Professor
+    openalex_id: https://openalex.org/A5073700662
+    works_count: 96
+    cited_by_count: 916
+    confidence: medium
+  - name: Juliana Tkatch
+    title: Assistant Professor in Residence
+    openalex_id: https://openalex.org/A5116316626
+    works_count: 17
+    cited_by_count: 23
+    confidence: high
+  totals:
+    faculty_count: 51
+    matched_count: 44
+    total_works: 2474
+    total_citations: 66434

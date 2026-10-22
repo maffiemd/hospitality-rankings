@@ -69,17 +69,17 @@ admissions:
 
 academicResearch:
   facultyPubCitationIndex:
-    value: 1718
-    unit: "total citations, OpenAlex-indexed works 2015-2026"
+    value: 7566
+    unit: "total career citations, current named faculty (OpenAlex)"
     source:
-      label: "OpenAlex — works affiliated with this institution tagged 'Hospitality industry', 2015-2026"
-      url: https://openalex.org/works?filter=institutions.id:I19700959,concepts.id:C525551149,publication_year:2015-2026
+      label: "OpenAlex author records matched to this program's current faculty directory"
+      url: https://openalex.org
       publisher: OpenAlex (processed by this project's pipeline — see methodology)
-      asOfDate: "2026-10-21"
-    lastVerified: "2026-10-21"
-    confidence: medium
+      asOfDate: "2026-10-22"
+    lastVerified: "2026-10-22"
+    confidence: low
     notes: >-
-      Sum of cited_by_count across 65 OpenAlex-indexed works (2015-2026) affiliated with this institution and tagged with OpenAlex's "Hospitality industry" concept (id C525551149). Not filtered to current faculty or to this specific school/department — OpenAlex does not track sub-institution academic units, so a large host university's count partly reflects overall size, not just hospitality-specific output. A raw volume+impact proxy, not normalized per faculty; see methodology for the full definition and its limitations. Top journals by work count: International Journal of Hospitality Management (7 works, 355 citations); International Journal of Contemporary Hospitality Management (7 works, 210 citations); Journal of Hospitality & Tourism Research (5 works, 379 citations); Journal of Human Resources in Hospitality & Tourism (5 works, 129 citations); Journal of Hospitality and Tourism Technology (3 works, 150 citations).
+      Sum of career cited_by_count across 7 of 32 current named faculty (sourced from the program's own official directory) matched to an OpenAlex author record by name + institution — covers ALL of each person's publications (any journal/field), not just hospitality-tagged ones, and their full career (not a fixed year window). Unmatched faculty (common names, no OpenAlex presence, etc.) are excluded from the sum, not counted as zero. Top contributors: Imran Ahmad (4156 citations, 254 works); Robert Bosselman (1852 citations, 27 works); Lisa Cain (1416 citations, 95 works); John Buschman (79 citations, 9 works); Rocco M. Angelo (43 citations, 3 works). NOTE: 25 of 32 faculty could not be queried due to OpenAlex daily budget exhaustion during this pass (marked confidence=error in the underlying research file, not genuinely unmatched) — this total is a partial/undercount pending a follow-up pass.
   researchFundingUSD:
     unit: USD/year
     confidence: low
