@@ -2,7 +2,7 @@
 import Layout from "../layouts/Layout.astro";
 import rankingsData from "../../data/generated/rankings.json";
 import type { RankingsOutput } from "../lib/types";
-import { MIN_COMPLETENESS_FOR_RANK } from "../config/weights";
+import { CATEGORIES, MIN_COMPLETENESS_FOR_RANK } from "../config/weights";
 import { href } from "../lib/url";
 
 const data = rankingsData as RankingsOutput;
@@ -27,6 +27,38 @@ const generated = new Date(data.generatedAt);
 
   <p class="cta"><a class="btn-outline" href={href("/methodology/")}>How it's scored</a></p>
 
+  <section class="customize" id="customize">
+    <h2><span class="marker">&#9656;</span> Build your own ranking</h2>
+    <p class="subhead">
+      Drag any slider to weight that category more or less heavily — the table below re-sorts live.
+      Weights don't need to add up to 100%; they're normalized automatically against each other. This
+      only reorders the {ranked.length} already-ranked programs below; it can't promote a program out
+      of <a href="#unranked">not yet ranked</a>, since that's about missing data, not what you value.
+    </p>
+    <div class="sliders" role="group" aria-label="Category weights">
+      {
+        CATEGORIES.map((c) => (
+          <div class="slider-row">
+            <div class="slider-label">
+              <label for={`weight-${c.key}`}>{c.label}</label>
+              <span class="slider-value" id={`value-${c.key}`}>{Math.round(c.weight * 100)}%</span>
+            </div>
+            <input
+              type="range"
+              id={`weight-${c.key}`}
+              data-category={c.key}
+              min="0"
+              max="100"
+              step="5"
+              value={Math.round(c.weight * 100)}
+            />
+          </div>
+        ))
+      }
+    </div>
+    <button type="button" class="btn-outline" id="reset-weights">Reset to default weights</button>
+  </section>
+
   <table id="rankings-table">
     <thead>
       <tr>
@@ -35,6 +67,7 @@ const generated = new Date(data.generatedAt);
         <th data-key="composite">Composite Score</th>
         <th data-key="outcomes" class="mobile-hide">Outcomes</th>
         <th data-key="academicResearch" class="mobile-hide">Research</th>
+        <th data-key="academicQuality" class="mobile-hide">Academic Quality</th>
         <th data-key="admissions" class="mobile-hide">Admissions</th>
         <th data-key="placement" class="mobile-hide">Placement</th>
         <th data-key="completeness" class="mobile-hide">Data Completeness</th>
@@ -50,6 +83,7 @@ const generated = new Date(data.generatedAt);
               data-composite={r.compositeScore ?? ""}
               data-outcomes={cat("outcomes") ?? ""}
               data-academicresearch={cat("academicResearch") ?? ""}
+              data-academicquality={cat("academicQuality") ?? ""}
               data-admissions={cat("admissions") ?? ""}
               data-placement={cat("placement") ?? ""}
               data-completeness={r.dataCompleteness}
@@ -62,6 +96,7 @@ const generated = new Date(data.generatedAt);
               <td class="score">{r.compositeScore?.toFixed(1) ?? "—"}</td>
               <td class="mobile-hide">{cat("outcomes")?.toFixed(0) ?? "—"}</td>
               <td class="mobile-hide">{cat("academicResearch")?.toFixed(0) ?? "—"}</td>
+              <td class="mobile-hide">{cat("academicQuality")?.toFixed(0) ?? "—"}</td>
               <td class="mobile-hide">{cat("admissions")?.toFixed(0) ?? "—"}</td>
               <td class="mobile-hide">{cat("placement")?.toFixed(0) ?? "—"}</td>
               <td class="mobile-hide">{Math.round(r.dataCompleteness * 100)}%</td>
@@ -74,7 +109,7 @@ const generated = new Date(data.generatedAt);
 
   {
     unranked.length > 0 && (
-      <section class="unranked">
+      <section class="unranked" id="unranked">
         <h2><span class="marker">&#9656;</span> Not yet ranked — insufficient data</h2>
         <p class="subhead">
           These programs have fewer than {Math.round(MIN_COMPLETENESS_FOR_RANK * 100)}% of tracked metrics sourced, which isn't enough
@@ -106,20 +141,25 @@ const generated = new Date(data.generatedAt);
 </Layout>
 
 <script>
+  import { weightedAverage } from "../lib/normalize";
+
   const table = document.getElementById("rankings-table") as HTMLTableElement;
   const headers = table.querySelectorAll<HTMLTableCellElement>("th[data-key]");
   const tbody = table.querySelector("tbody")!;
+  const rows = Array.from(tbody.querySelectorAll<HTMLTableRowElement>("tr"));
 
   const columnToAttr: Record<string, string> = {
     rank: "data-rank",
     composite: "data-composite",
     outcomes: "data-outcomes",
     academicResearch: "data-academicresearch",
+    academicQuality: "data-academicquality",
     admissions: "data-admissions",
     placement: "data-placement",
     completeness: "data-completeness",
   };
 
+  // ---- Column sort (clicking a header) ----
   let currentKey = "rank";
   let ascending = true;
 
@@ -129,7 +169,6 @@ const generated = new Date(data.generatedAt);
     ascending = key === currentKey ? !ascending : true;
     currentKey = key;
 
-    const rows = Array.from(tbody.querySelectorAll("tr"));
     rows.sort((a, b) => {
       const av = parseFloat(a.getAttribute(attr) ?? "");
       const bv = parseFloat(b.getAttribute(attr) ?? "");
@@ -151,6 +190,102 @@ const generated = new Date(data.generatedAt);
     h.style.cursor = "pointer";
     h.addEventListener("click", () => sortBy(h.dataset.key!));
   });
+
+  // ---- Build-your-own-ranking sliders ----
+  const sliders = Array.from(document.querySelectorAll<HTMLInputElement>("#customize input[type=range]"));
+  const resetButton = document.getElementById("reset-weights") as HTMLButtonElement;
+  const defaultWeights = new Map(sliders.map((s) => [s.dataset.category!, Number(s.value)]));
+
+  const CATEGORY_KEYS = sliders.map((s) => s.dataset.category!);
+
+  function readWeights(): Record<string, number> {
+    const weights: Record<string, number> = {};
+    for (const s of sliders) weights[s.dataset.category!] = Number(s.value);
+    return weights;
+  }
+
+  function updateSliderLabels(weights: Record<string, number>) {
+    const sum = CATEGORY_KEYS.reduce((t, k) => t + weights[k], 0);
+    for (const key of CATEGORY_KEYS) {
+      const label = document.getElementById(`value-${key}`);
+      if (!label) continue;
+      const pct = sum === 0 ? 0 : (weights[key] / sum) * 100;
+      label.textContent = `${Math.round(pct)}%`;
+    }
+  }
+
+  function recompute() {
+    const weights = readWeights();
+    updateSliderLabels(weights);
+
+    for (const row of rows) {
+      const pairs = CATEGORY_KEYS.map((key) => {
+        const attr = columnToAttr[key];
+        const raw = row.getAttribute(attr);
+        const value = raw === null || raw === "" ? null : Number(raw);
+        return { value, weight: weights[key] };
+      });
+      const composite = weightedAverage(pairs);
+      row.setAttribute("data-composite", composite === null ? "" : String(composite));
+      const scoreCell = row.querySelector("td.score");
+      if (scoreCell) scoreCell.textContent = composite === null ? "—" : composite.toFixed(1);
+    }
+
+    // Re-sort by the freshly-recomputed composite and renumber ranks sequentially.
+    rows.sort((a, b) => {
+      const av = parseFloat(a.getAttribute("data-composite") ?? "");
+      const bv = parseFloat(b.getAttribute("data-composite") ?? "");
+      const aMissing = Number.isNaN(av);
+      const bMissing = Number.isNaN(bv);
+      if (aMissing && bMissing) return 0;
+      if (aMissing) return 1;
+      if (bMissing) return -1;
+      return bv - av;
+    });
+    rows.forEach((row, i) => {
+      row.setAttribute("data-rank", String(i + 1));
+      const rankCell = row.querySelector("td:first-child");
+      if (rankCell) rankCell.textContent = String(i + 1);
+      tbody.appendChild(row);
+    });
+
+    currentKey = "composite";
+    ascending = false;
+    headers.forEach((h) => h.removeAttribute("aria-sort"));
+    table.querySelector('th[data-key="composite"]')?.setAttribute("aria-sort", "descending");
+
+    syncUrl(weights);
+  }
+
+  function syncUrl(weights: Record<string, number>) {
+    const params = new URLSearchParams(location.search);
+    const isDefault = CATEGORY_KEYS.every((k) => weights[k] === defaultWeights.get(k));
+    if (isDefault) {
+      params.delete("w");
+    } else {
+      params.set("w", CATEGORY_KEYS.map((k) => weights[k]).join(","));
+    }
+    const query = params.toString();
+    history.replaceState(null, "", query ? `?${query}` : location.pathname);
+  }
+
+  function applyFromUrl() {
+    const params = new URLSearchParams(location.search);
+    const w = params.get("w");
+    if (!w) return;
+    const values = w.split(",").map(Number);
+    if (values.length !== sliders.length || values.some((v) => Number.isNaN(v))) return;
+    sliders.forEach((s, i) => (s.value = String(values[i])));
+  }
+
+  sliders.forEach((s) => s.addEventListener("input", recompute));
+  resetButton.addEventListener("click", () => {
+    sliders.forEach((s) => s.value = String(defaultWeights.get(s.dataset.category!)));
+    recompute();
+  });
+
+  applyFromUrl();
+  recompute();
 </script>
 
 <style>
@@ -235,6 +370,60 @@ const generated = new Date(data.generatedAt);
     display: inline-block;
   }
 
+  .customize {
+    margin-top: 3rem;
+    padding: 1.5rem;
+    background: var(--accent-bg);
+    border-left: 3px solid var(--accent);
+  }
+
+  .customize h2 {
+    font-size: 1.25rem;
+    margin: 0 0 0.5rem;
+  }
+
+  .customize .subhead {
+    margin-top: 0;
+    max-width: none;
+  }
+
+  .sliders {
+    display: grid;
+    gap: 1.1rem;
+    margin: 1.5rem 0;
+  }
+
+  .slider-row {
+    display: grid;
+    gap: 0.3rem;
+  }
+
+  .slider-label {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-size: 0.85rem;
+  }
+
+  .slider-label label {
+    font-weight: 600;
+  }
+
+  .slider-value {
+    font-family: var(--font-serif);
+    font-size: 1.1rem;
+    color: var(--accent);
+    min-width: 3ch;
+    text-align: right;
+  }
+
+  .sliders input[type="range"] {
+    width: 100%;
+    accent-color: var(--accent);
+    cursor: pointer;
+    height: 1.25rem;
+  }
+
   @media (max-width: 640px) {
     .mobile-hide {
       display: none;
@@ -247,6 +436,12 @@ const generated = new Date(data.generatedAt);
     th,
     td {
       padding: 0.5rem 0.4rem;
+    }
+
+    .customize {
+      padding: 1.1rem;
+      margin-left: -1rem;
+      margin-right: -1rem;
     }
   }
 </style>
