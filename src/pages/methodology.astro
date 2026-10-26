@@ -8,11 +8,18 @@ import { href } from "../lib/url";
   <span class="eyebrow">How the comparison is built</span>
   <h1 class="display">The <em>methodology</em></h1>
 
+  <p class="prototype-note">
+    This tool is a prototype, and the methodology below is still being refined. The categories, their
+    weights, and the individual metrics are all subject to change as more data gets sourced, verified,
+    or corrected, so treat every score and rank as a snapshot of today's pipeline run rather than a
+    fixed or final number.
+  </p>
+
   <p>
     This tool combines five categories into a single fit score (0-100) per program. Every weight
     below lives in one config file in the source code
-    (<code>src/config/weights.ts</code>), so it can be retuned without touching any scoring logic —
-    and this page is generated from that same file, so it never drifts out of sync with what was
+    (<code>src/config/weights.ts</code>), so it can be retuned without touching any scoring logic.
+    This page is generated from that same file, so it never drifts out of sync with what was
     actually computed. These weights aren't shown by default; the <a href={href("/#customize")}>comparison page</a> asks
     you to set your own priorities with live sliders before showing any results at all.
   </p>
@@ -49,7 +56,7 @@ import { href } from "../lib/url";
               <ul>
                 {c.metrics.map((m) => (
                   <li>
-                    {m.label} ({m.path}) — {Math.round(m.weight * 100)}%
+                    {m.label} ({m.path}): {Math.round(m.weight * 100)}%
                     {m.direction === "lowerIsBetter" ? " (lower is better)" : ""}
                   </li>
                 ))}
@@ -70,44 +77,40 @@ import { href } from "../lib/url";
   </p>
   <p>
     <strong>Academic research (25%)</strong> mirrors US News's faculty-resources
-    and peer-assessment buckets, and QS's academic-reputation and citations-per-faculty categories —
+    and peer-assessment buckets, and QS's academic-reputation and citations-per-faculty categories,
     but weighted lower than QS's combined ~60% research/reputation emphasis, since hospitality is a
     vocational, apprenticeship-driven field rather than a pure research discipline. The dominant metric
     in this category, <code>facultyPubCitationIndex</code>, is a named-faculty citation count: for each
     program, we compile the current, named faculty roster from the program's own official directory,
     match each person to an OpenAlex author record (by name and institution, excluding unmatched
     people from the sum rather than guessing), and total their career citations across every
-    publication — any journal or field, not just hospitality-tagged ones, since a faculty member's
-    broader research record is still evidence of their caliber. This replaced an earlier,
-    institution-level version of the metric (any hospitality-tagged paper by anyone ever affiliated
-    with the host university) that conflated host-university size with the specific program's faculty
-    quality. A handful of programs' totals are still partial — pending a follow-up pass blocked by an
-    external API's daily rate limit — and are flagged as such on their profile pages rather than
-    treated as a completed result.
+    publication. This covers any journal or field, not just hospitality-tagged ones, since a faculty
+    member's broader research record is still evidence of their caliber, and counts a faculty member's
+    whole career rather than a fixed recent window. A handful of programs' totals are still partial,
+    pending a follow-up pass blocked by an external API's daily rate limit, and are flagged as such on
+    their profile pages rather than treated as a completed result.
   </p>
   <p>
-    <strong>Academic quality &amp; completion (15%)</strong> is a newer addition, tracking whether
-    students who enroll actually finish: six-year graduation rate, first-to-second-year retention, and
-    faculty-student ratio. This is the single largest factor in US News's own undergraduate
-    methodology (graduation and retention together typically run 17-20% there) — a program can have
-    excellent outcomes for the students who make it to graduation while still losing a large share of
-    its cohort along the way, which outcomes and admissions data alone wouldn't surface. For now this
-    data comes from IPEDS/College Navigator and is university-wide rather than program-specific (the
-    federal data doesn't break completion out by major) — flagged on every program's profile page.
+    <strong>Academic quality &amp; completion (15%)</strong> tracks whether students who enroll
+    actually finish: six-year graduation rate, first-to-second-year retention, and faculty-student
+    ratio. This is the single largest factor in US News's own undergraduate methodology (graduation
+    and retention together typically run 17-20% there): a program can have excellent outcomes for the
+    students who make it to graduation while still losing a large share of its cohort along the way,
+    which outcomes and admissions data alone wouldn't surface. This data comes from IPEDS/College
+    Navigator and is university-wide rather than program-specific, since the federal data doesn't
+    break completion out by major; that's flagged on every program's profile page.
   </p>
   <p>
     <strong>Admissions selectivity (15%)</strong> is deliberately modest, echoing US News's own recent
     de-emphasis of test-score-driven selectivity in its undergraduate methodology. Its test-score metric
     <code>satActEquivalent</code> compares programs on each one's percentile within its own country's
-    test-taking cohort rather than a raw score — US schools' SAT composites are converted via the College
-    Board's own published "SAT Nationally Representative Percentiles" table, and Australian ATAR values are
-    already a percentile by definition (recorded directly, no conversion needed). Earlier versions of this
-    metric recorded raw scores on incompatible scales side by side — an Australian ATAR (0-99.95) and a
-    Hong Kong JUPAS admission score (~150-170) were both min-max normalized directly against US SAT
-    composites (~1000-1600) — which let the scale a country happens to use drive the comparison rather than
-    actual selectivity. No equivalent official percentile distribution exists yet for the UK's UCAS Tariff
-    or Hong Kong's JUPAS/HKDSE composite, so programs using those systems are left unscored on this metric
-    rather than estimated, per this project's sourcing standard.
+    test-taking cohort rather than a raw score, so a program using one country's test doesn't get
+    compared on a different, incompatible numeric scale than a program using another's. US schools' SAT
+    composites are converted via the College Board's own published "SAT Nationally Representative
+    Percentiles" table; Australian ATAR values are already a percentile by definition, so they're
+    recorded directly with no conversion needed. No equivalent official percentile distribution exists
+    for the UK's UCAS Tariff or Hong Kong's JUPAS/HKDSE composite, so programs using those systems are
+    left unscored on this metric rather than estimated, per this project's sourcing standard.
   </p>
   <p>
     <strong>Internship / placement pipeline (15%)</strong> has no direct analog in US News or QS. It is
@@ -119,13 +122,13 @@ import { href } from "../lib/url";
   <h2><span class="marker">&#9656;</span> Normalization</h2>
   <p>
     Every raw metric (dollars, percentages, ratios, counts) is converted to a 0-100 scale via
-    min-max normalization <em>against the current set of ranked programs</em> — so scores are always
+    min-max normalization <em>against the current set of ranked programs</em>, so scores are always
     relative to the active field, not fixed thresholds, and are recomputed every time the pipeline
     runs. Metrics where lower is better (like acceptance rate) are inverted before averaging.
   </p>
   <p>
     When a program is missing a metric, that metric is excluded and the remaining metrics in its
-    category are re-weighted proportionally — a program is never penalized to a worst-possible score
+    category are re-weighted proportionally, so a program is never penalized to a worst-possible score
     just because one data point hasn't been sourced yet. Instead, each program's profile page and the
     rankings table show a <strong>data completeness</strong> percentage, so readers can see how much
     of a program's score rests on verified data versus how much is still outstanding.
@@ -134,11 +137,11 @@ import { href } from "../lib/url";
   <h2><span class="marker">&#9656;</span> Minimum data to be ranked</h2>
   <p>
     A composite score computed from one or two sourced metrics isn't a meaningful comparison against
-    a program with a dozen verified data points — but the re-weighting rule above means a sparse
+    a program with a dozen verified data points, but the re-weighting rule above means a sparse
     program's one strong metric can otherwise dominate its (nearly empty) composite score. To prevent
     data sparsity itself from producing a misleadingly high rank, a program needs at least {Math.round(MIN_COMPLETENESS_FOR_RANK * 100)}%
     of tracked metrics sourced to receive a numeric rank. Programs below that threshold are still
-    scored and shown — nothing is hidden — but listed separately as <a href={href("/")}>not yet ranked</a> rather
+    scored and shown, and nothing is hidden, but they're listed separately as <a href={href("/")}>not yet ranked</a> rather
     than competing against better-documented programs.
   </p>
 
@@ -148,7 +151,7 @@ import { href } from "../lib/url";
     methodology is reputation/survey-weighted and does not disclose per-metric, per-program sourcing.
     This project's explicit goal is the opposite: every number behind every score is individually
     cited and dated, visible on each program's profile page and aggregated on the <a href={href("/sources/")}>sources page</a>. Where a reliable public source doesn't yet exist for a
-    metric — recruiter reputation is the clearest example — that gap is stated outright rather than
+    metric (recruiter reputation is the clearest example), that gap is stated outright rather than
     filled with an estimate.
   </p>
 </Layout>
@@ -197,5 +200,13 @@ import { href } from "../lib/url";
     background: var(--accent-bg);
     padding: 0.1rem 0.3rem;
     border-radius: 3px;
+  }
+
+  .prototype-note {
+    background: var(--accent-bg);
+    border-left: 3px solid var(--accent);
+    padding: 0.9rem 1rem;
+    font-size: 0.9rem;
+    margin: 1.5rem 0;
   }
 </style>
