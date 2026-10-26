@@ -48,9 +48,6 @@ function metricNormalized(r: RankingsOutput["rankings"][number], path: string): 
       until you set your own priorities — drag what you care about, leave the rest at zero. Weights
       don't need to add up to 100%; they're normalized against each other automatically.
     </p>
-    <p class="cta advanced-toggle">
-      <button type="button" class="btn-outline" id="toggle-advanced" aria-expanded="false">Advanced weighting</button>
-    </p>
     <div class="sliders" role="group" aria-label="Category weights">
       {
         CATEGORIES.map((c) => (
@@ -91,6 +88,7 @@ function metricNormalized(r: RankingsOutput["rankings"][number], path: string): 
       }
     </div>
     <div class="customize-actions">
+      <button type="button" class="btn-outline advanced-toggle" id="toggle-advanced" aria-expanded="false">Advanced</button>
       <button type="button" class="btn-solid" id="build-ranking" disabled>
         Build my shortlist
       </button>
@@ -274,7 +272,7 @@ function metricNormalized(r: RankingsOutput["rankings"][number], path: string): 
     advancedMode = on;
     subweightLists.forEach((el) => (el.hidden = !on));
     advancedToggle.setAttribute("aria-expanded", String(on));
-    advancedToggle.textContent = on ? "Hide advanced weighting" : "Advanced weighting";
+    advancedToggle.textContent = on ? "Hide advanced" : "Advanced";
   }
 
   function readWeights(): Record<string, number> {
@@ -603,10 +601,6 @@ function metricNormalized(r: RankingsOutput["rankings"][number], path: string): 
   }
 
   .advanced-toggle {
-    margin: 0 0 1rem;
-  }
-
-  .advanced-toggle .btn-outline {
     font-size: 0.72rem;
     padding: 0.45rem 0.8rem;
   }

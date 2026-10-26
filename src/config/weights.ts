@@ -52,7 +52,7 @@ export const CATEGORIES: CategoryConfig[] = [
   },
   {
     key: "academicResearch",
-    label: "Academic Research & Faculty Quality",
+    label: "Academic Research",
     weight: 0.25,
     metrics: [
       {
