@@ -63,26 +63,21 @@ admissions:
       of 75 (2024), 55 (2025), and 43 (2026), but does not publish total Band-A/B/C applicant volume
       needed to compute a comparable acceptance rate.
   satActEquivalent:
-    value: 163.5
-    unit: "JUPAS admission score, Best 5 HKDSE subjects with subject weighting (not SAT-equivalent; recorded as the local admission metric)"
-    source:
-      label: "JS3310 — Bachelor of Science (Honours) Scheme in Hotel and Tourism Management — JUPAS admission score"
-      url: https://www.polyu.edu.hk/study/ug/jupas/2026/js3310
-      publisher: The Hong Kong Polytechnic University
-      asOfDate: "2026-01-01"
-    lastVerified: "2026-10-05"
-    confidence: medium
+    unit: "percentile, national test-taking cohort"
+    confidence: low
     notes: >
       Hong Kong undergraduate admission does not use the SAT/ACT; local applicants are admitted through
-      JUPAS based on HKDSE (Hong Kong Diploma of Secondary Education) subject-level scores aggregated
-      into a JUPAS composite admission score, with non-local/international applicants assessed via their
-      own qualifications (A-Levels, IB, etc.) on a case-by-case basis. PolyU's own JS3310 JUPAS page lists
-      an average admission score of 163.5 (2026/27 entry, Any Best 5 Subjects with subject weighting);
-      third-party aggregation of JUPAS's own published scores separately shows a median of 160.5 / lower
-      quartile 155.5 for 2024 entry and median 166.5 / lower quartile 163.0 for 2025 entry, so the figure
-      fluctuates year to year and by statistic (average vs. median). Recorded as the JUPAS admission score
-      itself rather than a false SAT-equivalent conversion, per project convention. Confidence set to
-      medium given the year-to-year volatility of this figure.
+      JUPAS based on a Best-5-subjects HKDSE composite score (PolyU's JS3310 lists an average admission
+      score of 163.5 for 2026/27 entry). This project previously recorded that raw JUPAS score directly in
+      this field, but it has been removed: the scoring pipeline min-max normalizes every program's raw
+      value for this metric against each other (see normalize.ts), so a ~150-170-scale JUPAS score sitting
+      in the same pool as SAT composites (~1000-1600) or an ATAR (0-99.95) would be compared on scale, not
+      on actual selectivity. Unlike the SAT (College Board's published percentile table) and the ATAR (a
+      percentile by definition), no official population-level percentile distribution for the JUPAS/HKDSE
+      Best-5 composite was found after a dedicated search — HKEAA's published statistics report level
+      distributions per individual subject, not a joint distribution of weighted five-subject composites,
+      so building one would mean modeling an estimate rather than citing a source. Left blank rather than
+      estimating one; see methodology.
 
 academicResearch:
   facultyPubCitationIndex:

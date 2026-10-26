@@ -30,9 +30,9 @@ admissions:
     confidence: low
     notes: Not publicly disclosed per-course by Oxford Brookes or UCAS; UK universities generally do not publish programme-level acceptance rates. Left blank.
   satActEquivalent:
-    unit: SAT-equivalent composite
+    unit: "percentile, national test-taking cohort"
     confidence: low
-    notes: Oxford Brookes uses the UK UCAS Tariff system, not SAT/ACT. The standard offer for this course is 112 UCAS Tariff Points (BBC at A-Level, 27 IB points, or DMM at BTEC), plus GCSE Maths and English at grade 4+, per the official course page. Left blank rather than inventing a false SAT-equivalent conversion.
+    notes: Oxford Brookes uses the UK UCAS Tariff system, not SAT/ACT. The standard offer for this course is 112 UCAS Tariff Points (BBC at A-Level, 27 IB points, or DMM at BTEC), plus GCSE Maths and English at grade 4+, per the official course page. This project converts other systems' admission scores to a percentile of the national cohort where an official source for that conversion exists (SAT via the College Board, ATAR by definition); no equivalent official percentile distribution of UCAS Tariff points among accepted applicants was found (UCAS's End of Cycle reports publish acceptances by institution tariff tier, not a population percentile by Tariff-point score). Left blank rather than estimating one; see methodology.
 
 academicResearch:
   facultyPubCitationIndex:

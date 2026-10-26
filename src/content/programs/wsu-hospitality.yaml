@@ -68,19 +68,22 @@ admissions:
       selective-admission process — students declare the major after meeting course and GPA
       prerequisites rather than through a separate application.
   satActEquivalent:
-    value: 1115
-    unit: SAT-equivalent composite
+    value: 69.5
+    unit: "percentile, national test-taking cohort (SAT Nationally Representative table, College Board)"
     source:
       label: "Washington State University SAT score trends"
       url: https://www.collegetuitioncompare.com/trends/washington-state-university/sat-act-scores/
       publisher: "CollegeTuitionCompare (secondary aggregator of WSU Common Data Set)"
       asOfDate: "2021-01-01"
-    lastVerified: "2026-10-05"
+    lastVerified: "2026-10-26"
     confidence: low
     notes: >
-      Midpoint of the most recently available university-wide SAT middle-50% range (1020-1210, 2020-21
-      cycle). WSU is test-optional and does not consider scores in admission, so more recent Common Data
-      Sets do not report this figure, and it is not program-specific.
+      Raw SAT composite was the midpoint of the most recently available university-wide SAT middle-50%
+      range (1020-1210, 2020-21 cycle). WSU is test-optional and does not consider scores in admission, so
+      more recent Common Data Sets do not report this figure, and it is not program-specific. Converted to
+      a percentile via the College Board's official "SAT Nationally Representative Percentiles" table; the
+      table lists 1110 at the 69th percentile and 1120 at the 70th, linearly interpolated to 69.5 for a
+      composite of 1115 — see methodology.
 
 academicResearch:
   facultyPubCitationIndex:

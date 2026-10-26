@@ -49,21 +49,24 @@ admissions:
       an acceptance-rate figure for this program.
   satActEquivalent:
     value: 63.00
-    unit: "ATAR (not SAT-equivalent; recorded as the local admission metric)"
+    unit: "percentile, national test-taking cohort (ATAR, Australia)"
     source:
       label: "Bachelor of International Tourism and Hotel Management — entry requirements"
       url: https://www.qtac.edu.au/courses/listing/bachelor-of-international-tourism-and-hotel-management-272025/
       publisher: Queensland Tertiary Admissions Centre (QTAC)
       asOfDate: "2025-01-01"
-    lastVerified: "2026-10-05"
+    lastVerified: "2026-10-26"
     confidence: medium
     notes: >
       Australian admission does not use the SAT/ACT. Entry is based on the ATAR (Australian Tertiary
       Admission Rank); the minimum ATAR/rank for this program is 63.00 per Griffith's official program
       page and QTAC, the Queensland Tertiary Admissions Centre, independently corroborated by the Good
-      Universities Guide's course listing (ATAR requirement: 63, all campuses). Recorded as the ATAR
-      itself rather than a false SAT-equivalent conversion, per project convention (same approach used for
-      jcu.yaml's satActEquivalent).
+      Universities Guide's course listing (ATAR requirement: 63, all campuses). An ATAR is already
+      expressed as a percentile rank by definition — UAC's official "ATAR Essentials" guide
+      (uac.edu.au/assets/documents/atar-essentials.pdf) states, for example, that an ATAR of 80.00 places a
+      student in the top 20% of their age cohort — so this project records it directly as the percentile
+      value, consistent with the SAT-derived percentiles used for US schools; see methodology. (Same
+      approach used for jcu.yaml's satActEquivalent.)
 
 academicResearch:
   facultyPubCitationIndex:

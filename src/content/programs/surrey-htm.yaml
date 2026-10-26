@@ -44,9 +44,9 @@ admissions:
     confidence: low
     notes: Not publicly disclosed per-course by Surrey or UCAS; UK universities generally do not publish programme-level acceptance rates. Left blank.
   satActEquivalent:
-    unit: SAT-equivalent composite
+    unit: "percentile, national test-taking cohort"
     confidence: low
-    notes: Surrey uses the UK A-Level/GCSE system rather than SAT/ACT. The typical offer for this course is BCC-CCC at A-Level plus GCSE English and Maths at grade 4+ (the UCAS Tariff itself is not accepted as a formal entry route for this course). Left blank rather than inventing a false SAT-equivalent conversion.
+    notes: Surrey uses the UK A-Level/GCSE system rather than SAT/ACT. The typical offer for this course is BCC-CCC at A-Level plus GCSE English and Maths at grade 4+ (the UCAS Tariff itself is not accepted as a formal entry route for this course). This project converts other systems' admission scores to a percentile of the national cohort where an official source for that conversion exists (SAT via the College Board, ATAR by definition); no equivalent official percentile distribution exists for A-Level grades or UCAS Tariff points among accepted applicants. Left blank rather than estimating one; see methodology.
 
 academicResearch:
   facultyPubCitationIndex:

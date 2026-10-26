@@ -64,21 +64,23 @@ admissions:
       the HTM department do not publish a separate department-level acceptance rate; students are
       admitted to the university and declare/compete for the major afterward.
   satActEquivalent:
-    value: 1365
-    unit: SAT-equivalent composite
+    value: 95.5
+    unit: "percentile, national test-taking cohort (SAT Nationally Representative table, College Board)"
     source:
       label: "Virginia Tech Common Data Set, 2025-26 cycle"
       url: https://www.collegedata.fyi/schools/virginia-tech
       publisher: CollegeData.fyi (secondary aggregator of Virginia Tech's Common Data Set)
       asOfDate: "2025-09-01"
-    lastVerified: "2026-10-05"
+    lastVerified: "2026-10-26"
     confidence: low
     notes: >
-      Virginia Tech's 2025-26 Common Data Set does not publish a composite SAT range; this value
-      sums the reported IPEDS section midpoints (Evidence-Based Reading & Writing 640-710, Math
-      640-740). Other secondary aggregators report composite ranges anywhere from 1210-1410 to
+      Virginia Tech's 2025-26 Common Data Set does not publish a composite SAT range; the raw composite
+      used here sums the reported IPEDS section midpoints (Evidence-Based Reading & Writing 640-710, Math
+      640-740) to 1365. Other secondary aggregators report composite ranges anywhere from 1210-1410 to
       1280-1450 depending on the cycle cited, so flagged low confidence. University-wide, not
-      program-specific.
+      program-specific. Converted to a percentile via the College Board's official "SAT Nationally
+      Representative Percentiles" table; the table lists 1360 at the 95th percentile and 1370 at the 96th,
+      linearly interpolated to 95.5 for a composite of 1365 — see methodology.
 
 academicResearch:
   facultyPubCitationIndex:

@@ -51,16 +51,16 @@ admissions:
     confidence: medium
     notes: Program-specific (Class of 2024) rate from a secondary aggregator, not Cornell's own Common Data Set, which does not break out acceptance rate by college. Flagged medium confidence pending a primary-source replacement.
   satActEquivalent:
-    value: 1520
-    unit: SAT-equivalent composite
+    value: 99
+    unit: "percentile, national test-taking cohort (SAT Nationally Representative table, College Board)"
     source:
       label: "Cornell University Common Data Set 2025-26"
       url: https://irp.cornell.edu/wp-content/uploads/2026/09/Cornell-Common-Data-Set-2025-26.pdf
       publisher: Cornell Institutional Research and Planning
       asOfDate: "2025-09-01"
-    lastVerified: "2026-10-05"
+    lastVerified: "2026-10-26"
     confidence: low
-    notes: Midpoint of the university-wide SAT middle-50% range (1490-1550) for the entering class covered by the 2025-26 CDS; not SHA-specific, since Cornell does not publish per-college test score ranges.
+    notes: Raw SAT composite was the midpoint of the university-wide SAT middle-50% range (1490-1550) for the entering class covered by the 2025-26 CDS; not SHA-specific, since Cornell does not publish per-college test score ranges. Converted to a percentile via the College Board's official "SAT Nationally Representative Percentiles" table (research.collegeboard.org/reports/sat-suite/understanding-scores/sat), which reports composite scores of 1510+ as "99+"; recorded as 99, the table's effective ceiling. This project compares admissions selectivity across all programs on a common percentile-of-national-cohort scale rather than mixing raw score systems (SAT points, ATAR, UCAS Tariff, etc.) — see methodology.
 
 academicResearch:
   facultyPubCitationIndex:

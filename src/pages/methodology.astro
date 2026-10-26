@@ -97,7 +97,17 @@ import { href } from "../lib/url";
   </p>
   <p>
     <strong>Admissions selectivity (15%)</strong> is deliberately modest, echoing US News's own recent
-    de-emphasis of test-score-driven selectivity in its undergraduate methodology.
+    de-emphasis of test-score-driven selectivity in its undergraduate methodology. Its test-score metric
+    <code>satActEquivalent</code> compares programs on each one's percentile within its own country's
+    test-taking cohort rather than a raw score — US schools' SAT composites are converted via the College
+    Board's own published "SAT Nationally Representative Percentiles" table, and Australian ATAR values are
+    already a percentile by definition (recorded directly, no conversion needed). Earlier versions of this
+    metric recorded raw scores on incompatible scales side by side — an Australian ATAR (0-99.95) and a
+    Hong Kong JUPAS admission score (~150-170) were both min-max normalized directly against US SAT
+    composites (~1000-1600) — which let the scale a country happens to use drive the comparison rather than
+    actual selectivity. No equivalent official percentile distribution exists yet for the UK's UCAS Tariff
+    or Hong Kong's JUPAS/HKDSE composite, so programs using those systems are left unscored on this metric
+    rather than estimated, per this project's sourcing standard.
   </p>
   <p>
     <strong>Internship / placement pipeline (15%)</strong> has no direct analog in US News or QS. It is

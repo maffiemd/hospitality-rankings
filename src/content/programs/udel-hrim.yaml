@@ -61,16 +61,16 @@ admissions:
       directly to the Hospitality and Event Business Management major, so no major-specific
       acceptance rate is published.
   satActEquivalent:
-    value: 1280
-    unit: SAT-equivalent composite
+    value: 89
+    unit: "percentile, national test-taking cohort (SAT Nationally Representative table, College Board)"
     source:
       label: "University of Delaware Acceptance Rate and SAT Scores, 2024-25 admission cycle"
       url: https://www.collegetuitioncompare.com/edu/130943/university-of-delaware/admission/
       publisher: College Tuition Compare (secondary aggregator of UD's IPEDS/Common Data Set figures)
       asOfDate: "2024-09-01"
-    lastVerified: "2026-10-05"
+    lastVerified: "2026-10-26"
     confidence: low
-    notes: Midpoint of the university-wide SAT middle-50% range (1190-1370); not program-specific, and UD considers but does not require test scores.
+    notes: Raw SAT composite was the midpoint of the university-wide SAT middle-50% range (1190-1370); not program-specific, and UD considers but does not require test scores. Converted to a percentile via the College Board's official "SAT Nationally Representative Percentiles" table, which lists a 1280 composite at the 89th percentile — see methodology.
 
 academicResearch:
   facultyPubCitationIndex:

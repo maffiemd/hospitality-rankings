@@ -48,16 +48,16 @@ admissions:
     confidence: medium
     notes: University Park campus-wide rate; Penn State does not publish a hospitality-management-specific acceptance rate since admission is to the university, not directly to SHM.
   satActEquivalent:
-    value: 1345
-    unit: SAT-equivalent composite
+    value: 94
+    unit: "percentile, national test-taking cohort (SAT Nationally Representative table, College Board)"
     source:
       label: "Penn State University Park Common Data Set, 2024-25 cycle"
       url: https://www.collegetransitions.com/blog/penn-state-university-park-inside-the-numbers/
       publisher: College Transitions (secondary aggregator of Penn State CDS)
       asOfDate: "2024-09-01"
-    lastVerified: "2026-10-05"
+    lastVerified: "2026-10-26"
     confidence: low
-    notes: Midpoint of the university-wide SAT middle-50% range (1280-1410); university-wide, not program-specific, and Penn State remains test-optional.
+    notes: Raw SAT composite was the midpoint of the university-wide SAT middle-50% range (1280-1410); university-wide, not program-specific, and Penn State remains test-optional. Converted to a percentile via the College Board's official "SAT Nationally Representative Percentiles" table; the table lists both 1340 and 1350 at the 94th percentile, so 1345 falls at 94 — see methodology.
 
 academicResearch:
   facultyPubCitationIndex:

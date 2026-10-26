@@ -38,9 +38,9 @@ admissions:
     confidence: low
     notes: Not publicly disclosed by EHL. Third-party aggregators cite conflicting, unverified figures (30%, 34%, 45%, 90% have all appeared) with no traceable link to an EHL or Swiss accreditor primary source. Left blank rather than picking one of the conflicting estimates.
   satActEquivalent:
-    unit: SAT-equivalent composite
+    unit: "percentile, national test-taking cohort"
     confidence: low
-    notes: EHL does not publish an SAT-equivalent composite score for its admitted class. Its bachelor admission requirements list a minimum SAT of 1000+ as one of several accepted alternative qualifications (alongside ATAR 75+, IELTS 7+, TOEFL 80+, or Duolingo 130+), but this is a minimum eligibility threshold, not a cohort average, so it was not used to construct an SAT-equivalent value.
+    notes: EHL does not publish an SAT-equivalent composite score for its admitted class. Its bachelor admission requirements list a minimum SAT of 1000+ as one of several accepted alternative qualifications (alongside ATAR 75+, IELTS 7+, TOEFL 80+, or Duolingo 130+), but this is a minimum eligibility threshold, not a cohort average, so it was not used to construct a percentile value.
 
 academicResearch:
   facultyPubCitationIndex:

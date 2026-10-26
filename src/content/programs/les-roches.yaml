@@ -38,9 +38,9 @@ admissions:
     confidence: low
     notes: Not publicly disclosed by Les Roches. A single third-party aggregator (gotouniversity.com) cites approximately 90% with no verifiable link to an institutional source. Left blank rather than citing an unverified aggregator figure.
   satActEquivalent:
-    unit: SAT-equivalent composite
+    unit: "percentile, national test-taking cohort"
     confidence: low
-    notes: Les Roches bachelor admissions are based on secondary-school transcripts (minimum ~50% academic achievement), English proficiency (IELTS 6.0+, no component below 5.5), and an aptitude/motivation assessment rather than SAT/ACT scores. No SAT-equivalent composite is published for the admitted cohort, so left blank.
+    notes: Les Roches bachelor admissions are based on secondary-school transcripts (minimum ~50% academic achievement), English proficiency (IELTS 6.0+, no component below 5.5), and an aptitude/motivation assessment rather than SAT/ACT scores. No standardized test score (and so no percentile) is published for the admitted cohort, so left blank.
 
 academicResearch:
   facultyPubCitationIndex:

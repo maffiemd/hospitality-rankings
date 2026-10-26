@@ -69,18 +69,20 @@ admissions:
       University-wide rate; MSU does not publish a Hospitality-Business-specific acceptance rate since
       admission is to the university/Broad College rather than directly to the School.
   satActEquivalent:
-    value: 1270
-    unit: SAT-equivalent composite
+    value: 88
+    unit: "percentile, national test-taking cohort (SAT Nationally Representative table, College Board)"
     source:
       label: "Michigan State University admission profile (2024-25 cycle)"
       url: https://www.collegetuitioncompare.com/edu/171100/michigan-state-university/admission/
       publisher: "CollegeTuitionCompare (secondary aggregator of MSU Common Data Set)"
       asOfDate: "2024-12-11"
-    lastVerified: "2026-10-05"
+    lastVerified: "2026-10-26"
     confidence: low
     notes: >
-      Midpoint of the university-wide SAT middle-50% range (1180-1360). MSU is test-optional and only
-      about 52% of enrolled students submit SAT scores; not program-specific.
+      Raw SAT composite was the midpoint of the university-wide SAT middle-50% range (1180-1360). MSU is
+      test-optional and only about 52% of enrolled students submit SAT scores; not program-specific.
+      Converted to a percentile via the College Board's official "SAT Nationally Representative
+      Percentiles" table, which lists a 1270 composite at the 88th percentile — see methodology.
 
 academicResearch:
   facultyPubCitationIndex:

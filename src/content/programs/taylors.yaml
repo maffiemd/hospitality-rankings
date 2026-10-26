@@ -42,13 +42,14 @@ admissions:
     confidence: low
     notes: Not publicly disclosed. As a private Malaysian university, Taylor's does not publish a US-style applicant-to-admit acceptance rate for this program.
   satActEquivalent:
-    unit: SAT-equivalent composite
+    unit: "percentile, national test-taking cohort"
     confidence: low
     notes: >
       Malaysian admission does not use the SAT/ACT. Local entry is via Taylor's own Foundation/Diploma
       pathway (min. CGPA 2.00), STPM (min. CC, CGPA 2.00), or UEC (min. 5 B's); other accepted
       qualifications include A-Levels (min. DD), IB (min. 24 points), and — for applicants holding it —
-      ATAR (min. 55). No SAT-equivalent conversion is recorded here per project convention.
+      ATAR (min. 55). Intake is heterogeneous across these pathways with no single standardized score, so
+      no percentile conversion is recorded here per project convention.
     source:
       label: "Bachelor of Culinary Management (Honours) — Entry Requirements"
       url: https://university.taylors.edu.my/en/study/explore-all-programmes/taylors-culinary-institute/undergraduate/bachelor-of-culinary-management.html

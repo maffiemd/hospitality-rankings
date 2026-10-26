@@ -36,20 +36,23 @@ admissions:
     notes: Not publicly disclosed. Australian undergraduate admission operates on a minimum ATAR/rank threshold rather than a US-style applicant-to-admit acceptance rate.
   satActEquivalent:
     value: 59.4
-    unit: ATAR (not SAT-equivalent; recorded as the local admission metric)
+    unit: "percentile, national test-taking cohort (ATAR, Australia)"
     source:
       label: "Bachelor of Tourism, Hospitality and Events — entry requirements (secondary aggregator)"
       url: https://www.bachelorsportal.com/studies/327797/tourism-hospitality-and-events.html
       publisher: Bachelorsportal (secondary aggregator of JCU entry requirements)
       asOfDate: "2025-01-01"
-    lastVerified: "2026-10-05"
+    lastVerified: "2026-10-26"
     confidence: low
     notes: >
       Australian admission does not use the SAT/ACT; entry is based on the ATAR (Australian Tertiary
       Admission Rank), with a minimum ATAR/rank of 59.4 for this program per multiple secondary
       aggregators (not confirmed against JCU's own course page in this pass, which returned an access
-      error). Recorded as the ATAR itself rather than a false SAT-equivalent conversion, per project
-      convention; flagged low confidence pending a primary JCU source.
+      error). An ATAR is already expressed as a percentile rank by definition (see griffith.yaml's
+      satActEquivalent note and UAC's official "ATAR Essentials" guide,
+      uac.edu.au/assets/documents/atar-essentials.pdf), so this project records it directly as the
+      percentile value, consistent with the SAT-derived percentiles used for US schools — see methodology.
+      Flagged low confidence pending a primary JCU source for the underlying ATAR figure.
 
 academicResearch:
   facultyPubCitationIndex:

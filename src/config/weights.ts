@@ -98,7 +98,7 @@ export const CATEGORIES: CategoryConfig[] = [
       { path: "admissions.acceptanceRate", label: "Acceptance Rate", weight: 10 / 20, direction: "lowerIsBetter" },
       {
         path: "admissions.satActEquivalent",
-        label: "SAT/ACT Equivalent",
+        label: "Selectivity Percentile",
         weight: 10 / 20,
         direction: "higherIsBetter",
       },

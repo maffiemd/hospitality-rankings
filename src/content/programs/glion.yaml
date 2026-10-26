@@ -38,9 +38,9 @@ admissions:
     confidence: low
     notes: Not publicly disclosed by Glion. A single third-party aggregator (gotouniversity.com) cites 85% with no verifiable link to an institutional source. Left blank rather than citing an unverified aggregator figure.
   satActEquivalent:
-    unit: SAT-equivalent composite
+    unit: "percentile, national test-taking cohort"
     confidence: low
-    notes: Glion's bachelor admissions are holistic rather than SAT/ACT-based — direct entry requires a vocational baccalaureate or a secondary diploma plus relevant work experience, assessed alongside motivation and an English-proficiency threshold (IELTS 5.5+). No SAT-equivalent composite is published for the admitted cohort, so left blank.
+    notes: Glion's bachelor admissions are holistic rather than SAT/ACT-based — direct entry requires a vocational baccalaureate or a secondary diploma plus relevant work experience, assessed alongside motivation and an English-proficiency threshold (IELTS 5.5+). No standardized test score (and so no percentile) is published for the admitted cohort, so left blank.
 
 academicResearch:
   facultyPubCitationIndex:

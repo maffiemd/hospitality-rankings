@@ -56,16 +56,16 @@ admissions:
       programs admit through the standard university application process rather than a separate
       selective review by the Chaplin School.
   satActEquivalent:
-    value: 1165
-    unit: SAT-equivalent composite
+    value: 76.5
+    unit: "percentile, national test-taking cohort (SAT Nationally Representative table, College Board)"
     source:
       label: "Florida International University admission profile (2024-25 cycle)"
       url: https://www.collegetuitioncompare.com/edu/133951/florida-international-university/admission/
       publisher: "CollegeTuitionCompare (secondary aggregator of FIU Common Data Set)"
       asOfDate: "2024-12-11"
-    lastVerified: "2026-10-05"
+    lastVerified: "2026-10-26"
     confidence: low
-    notes: Midpoint of the university-wide SAT middle-50% range (1070-1260) for the 2024-25 cycle; not program-specific.
+    notes: Raw SAT composite was the midpoint of the university-wide SAT middle-50% range (1070-1260) for the 2024-25 cycle; not program-specific. Converted to a percentile via the College Board's official "SAT Nationally Representative Percentiles" table; the table lists 1160 at the 76th percentile and 1170 at the 77th, linearly interpolated to 76.5 for a composite of 1165 — see methodology for why this project uses a common percentile scale across all programs.
 
 academicResearch:
   facultyPubCitationIndex:

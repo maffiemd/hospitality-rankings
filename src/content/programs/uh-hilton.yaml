@@ -66,16 +66,16 @@ admissions:
       admission plus an internal minimum 2.85 cumulative UH GPA to formally declare the major,
       rather than a separate college-level acceptance rate.
   satActEquivalent:
-    value: 1250
-    unit: SAT-equivalent composite
+    value: 86
+    unit: "percentile, national test-taking cohort (SAT Nationally Representative table, College Board)"
     source:
       label: "University of Houston Acceptance Rate and SAT Scores, 2024-25 admission cycle"
       url: https://www.collegetuitioncompare.com/edu/225511/university-of-houston/admission/
       publisher: College Tuition Compare (secondary aggregator of UH's IPEDS/Common Data Set figures)
       asOfDate: "2024-09-01"
-    lastVerified: "2026-10-05"
+    lastVerified: "2026-10-26"
     confidence: low
-    notes: Midpoint of the university-wide SAT middle-50% range (1160-1340); not Hilton-College-specific, and UH is test-optional.
+    notes: Raw SAT composite was the midpoint of the university-wide SAT middle-50% range (1160-1340); not Hilton-College-specific, and UH is test-optional. Converted to a percentile via the College Board's official "SAT Nationally Representative Percentiles" table, which lists a 1250 composite at the 86th percentile — see methodology.
 
 academicResearch:
   facultyPubCitationIndex:

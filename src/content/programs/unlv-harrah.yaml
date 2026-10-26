@@ -53,16 +53,16 @@ admissions:
     confidence: medium
     notes: University-wide rate; other secondary sources cite figures as high as 96% depending on applicant-pool definition. Not Harrah-College-specific.
   satActEquivalent:
-    value: 1120
-    unit: SAT-equivalent composite
+    value: 70
+    unit: "percentile, national test-taking cohort (SAT Nationally Representative table, College Board)"
     source:
       label: "UNLV admissions profile"
       url: https://www.univstats.com/colleges/university-of-nevada-las-vegas/admission/
       publisher: Univstats (secondary aggregator of UNLV CDS)
       asOfDate: "2024-09-01"
-    lastVerified: "2026-10-05"
+    lastVerified: "2026-10-26"
     confidence: low
-    notes: Average SAT of enrolled students, university-wide; UNLV is test-optional and not program-specific.
+    notes: Raw SAT composite was the average SAT of enrolled students, university-wide; UNLV is test-optional and not program-specific. Converted to a percentile via the College Board's official "SAT Nationally Representative Percentiles" table, which lists a 1120 composite at the 70th percentile — see methodology.
 
 academicResearch:
   facultyPubCitationIndex:

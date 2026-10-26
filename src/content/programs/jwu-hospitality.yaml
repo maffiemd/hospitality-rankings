@@ -61,18 +61,21 @@ admissions:
       University-wide (Providence campus) rate; JWU's College of Hospitality Management does not run a
       separate selective-admission process from the university.
   satActEquivalent:
-    value: 1025
-    unit: SAT-equivalent composite
+    value: 53
+    unit: "percentile, national test-taking cohort (SAT Nationally Representative table, College Board)"
     source:
       label: "Johnson & Wales University-Providence admission profile (2024-25 cycle)"
       url: https://www.collegetuitioncompare.com/edu/217235/johnson-and-wales-university-providence/admission/
       publisher: "CollegeTuitionCompare (secondary aggregator of JWU Common Data Set)"
       asOfDate: "2024-12-11"
-    lastVerified: "2026-10-05"
+    lastVerified: "2026-10-26"
     confidence: low
     notes: >
-      Midpoint of the university-wide SAT middle-50% range (890-1160); JWU uses holistic, largely
-      test-optional review, and the figure is not program-specific.
+      Raw SAT composite was the midpoint of the university-wide SAT middle-50% range (890-1160); JWU uses
+      holistic, largely test-optional review, and the figure is not program-specific. Converted to a
+      percentile via the College Board's official "SAT Nationally Representative Percentiles" table; the
+      table lists 1020 at the 52nd percentile and 1030 at the 54th, linearly interpolated to 53 for a
+      composite of 1025 — see methodology.
 
 academicResearch:
   facultyPubCitationIndex:
