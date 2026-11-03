@@ -17,6 +17,11 @@ outcomes:
       Australia-wide aggregate across all universities in the field, not a Griffith- or
       program-specific figure, so it is not recorded as this program's value. Left blank pending a
       Griffith-reported or QILT institution-level breakout.
+      Checked 2026-11-03: griffith.edu.au (course page, fees pages, and PDF annual reports) returns
+      HTTP 403 to automated fetch across the whole domain, so nothing further could be read directly
+      from Griffith. The Good Universities Guide's course-detail page for this program shows no salary
+      figure (fields come back blank/N/A on that page type). No additional program- or
+      institution-specific salary source found this pass.
   employmentRate:
     unit: "%"
     confidence: low
@@ -26,6 +31,9 @@ outcomes:
       comparison tool, but that grouping is broader than International Tourism and Hotel Management
       specifically and the tool is JS-rendered and could not be queried for a narrower breakout in this
       pass. Left blank rather than recording a broader-grouping figure as this program's own.
+      Checked 2026-11-03: Good Universities Guide's own course-detail page for this program shows no
+      employment-rate figure (N/A); griffith.edu.au blocks automated fetch site-wide (HTTP 403). No
+      additional source found beyond the QILT course-grouping figure already noted above.
   recruiterReputationScore:
     value: 47
     unit: "0-100"
@@ -45,7 +53,12 @@ outcomes:
   internshipPlacementRate:
     unit: "%"
     confidence: low
-    notes: Program includes work-integrated learning/industry placement components, but no disclosed completion or placement-rate percentage was found for v1.
+    notes: >-
+      Program includes work-integrated learning/industry placement components, but no disclosed
+      completion or placement-rate percentage was found for v1. Checked 2026-11-03: no placement-
+      completion percentage found via Good Universities Guide or any other accessible secondary
+      source; griffith.edu.au, which would be the authoritative source for program-specific
+      work-integrated-learning outcomes, blocks automated fetch (HTTP 403) site-wide.
 
 admissions:
   acceptanceRate:
@@ -92,7 +105,19 @@ academicResearch:
   researchFundingUSD:
     unit: USD/year
     confidence: low
-    notes: Not yet sourced for v1.
+    notes: >-
+      Not yet sourced for v1. Checked 2026-11-03: Griffith's 2025 annual report would carry a
+      university-wide research-income figure (same kind of proxy this project already uses for
+      IPEDS graduation rates elsewhere), but griffith.edu.au blocks automated fetch of both the
+      course pages and the PDF annual reports (HTTP 403) across the whole domain. The Department of
+      Education's Higher Education Research Data Collection time series, which publishes exactly
+      this figure by institution (education.gov.au/resources/research-block-grants and
+      education.gov.au/download/18822/2025-research-block-grant-allocations/39960/document/pdf),
+      timed out on every automated fetch attempt — likely too large/slow for this tool; a human with
+      a browser should open it directly and look up Griffith's row. News coverage (futurecampus.com.au's
+      2025 Queensland-universities financial roundup) gives Griffith's total revenue (~AUD 1.22bn,
+      2025) but does not break out research income specifically, so it wasn't used. See report's
+      "please look at this yourself" list.
   hasPhDProgram:
     value: 1
     unit: boolean (1=yes, 0=no)
@@ -115,11 +140,19 @@ academicQuality:
   sixYearGraduationRate:
     unit: "%"
     confidence: low
-    notes: Not yet sourced for v1.
+    notes: >-
+      Not yet sourced for v1. Checked 2026-11-03: no Griffith- or program-specific graduation-rate
+      figure found; Good Universities Guide's course-detail page for this program shows no
+      completion-rate percentage (N/A); QILT already confirmed to have no data for this program (per
+      task brief, small-sample suppression); griffith.edu.au blocks automated fetch (HTTP 403).
   retentionRate:
     unit: "%"
     confidence: low
-    notes: Not yet sourced for v1.
+    notes: >-
+      Not yet sourced for v1. Checked 2026-11-03: same result as sixYearGraduationRate above — no
+      Griffith- or program-specific retention figure found via Good Universities Guide or any other
+      accessible source; griffith.edu.au blocks automated fetch (HTTP 403); QILT already confirmed to
+      have no data for this program.
   facultyStudentRatio:
     value: 28.1
     unit: students per faculty
@@ -136,4 +169,21 @@ costOfAttendance:
   totalCost:
     unit: USD/year
     confidence: low
-    notes: Not yet sourced for v1. NCES/IPEDS doesn't cover non-US institutions; Griffith's own published international tuition + estimated living costs would need to be sourced directly.
+    notes: >-
+      Not yet sourced for v1. NCES/IPEDS doesn't cover non-US institutions; Griffith's own published
+      international tuition + estimated living costs would need to be sourced directly. Checked
+      2026-11-03: griffith.edu.au (course page, fees pages, and annual-report PDFs) returns HTTP 403
+      to automated fetch across the whole domain, so Griffith's own published fee could not be read
+      directly. Secondary aggregators conflict too widely to use as a substitute: TheUniGuide gives
+      AUD 28,500/year, HotCoursesAbroad gives AUD 38,000/year (for the "Hotel and Hospitality" major
+      variant of this same program, 2027 intake, and flagged by the source itself as "indicative —
+      check with institution"), and QTAC's own listing (qtac.edu.au/courses/listing/28891/) only shows
+      the domestic CSP first-year contribution (AUD 18,000), not an international fee. Study
+      Australia's government course-listing pages for this program
+      (search.studyaustralia.gov.au/course/bachelor-of-international-tourism-and-hotel-management/...)
+      returned either an empty placeholder or a server error on every attempt, unlike the equivalent
+      JCU page (see jcu.yaml) which worked cleanly, so no government-aggregator figure could be
+      substituted either. The Dept of Home Affairs living-cost component (AUD 29,710/year) used for
+      jcu.yaml's totalCost would apply equally here, but pairing it with an unverified, wildly
+      conflicting tuition figure isn't a usable total — left blank rather than picking among them. See
+      report's "please look at this yourself" list.

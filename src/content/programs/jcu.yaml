@@ -15,11 +15,20 @@ outcomes:
       graduate salary among international-student graduates per the QILT Graduate Outcomes Survey
       2020-2022, but that is a university-wide, international-cohort statistic (and a ranking rather
       than a disclosed dollar figure), not specific to this program or to domestic/overall graduates,
-      so it is not recorded as a value here.
+      so it is not recorded as a value here. Checked 2026-11-03: jcu.edu.au (course page and course
+      handbook pages) returns HTTP 403 to automated fetch across the whole domain; Good Universities
+      Guide's course-detail page for this program shows no salary figure (field is "N/A"). No
+      additional program- or institution-specific salary source found this pass.
   employmentRate:
     unit: "%"
     confidence: low
-    notes: Not yet sourced for v1 — no program-specific employment-rate figure found; secondary coverage cites JCU as #1 in Queensland for full-time graduate employment outcomes (Good Universities Guide 2023), but that is university-wide, not isolated to this degree.
+    notes: >-
+      Not yet sourced for v1 — no program-specific employment-rate figure found; secondary coverage
+      cites JCU as #1 in Queensland for full-time graduate employment outcomes (Good Universities
+      Guide 2023), but that is university-wide, not isolated to this degree. Checked 2026-11-03:
+      Good Universities Guide's own course-detail page for this program shows no employment-rate
+      figure (N/A); jcu.edu.au blocks automated fetch site-wide (HTTP 403). No additional source
+      found.
   recruiterReputationScore:
     value: 37.4
     unit: "0-100"
@@ -34,7 +43,12 @@ outcomes:
   internshipPlacementRate:
     unit: "%"
     confidence: low
-    notes: Program requires 400 hours of work experience/industry-based placement (including real-world placements with five-star industry partners), but no disclosed completion-rate percentage was found for v1.
+    notes: >-
+      Program requires 400 hours of work experience/industry-based placement (including real-world
+      placements with five-star industry partners), but no disclosed completion-rate percentage was
+      found for v1. Checked 2026-11-03: Good Universities Guide's course-detail page confirms the 400
+      work-experience hours but gives no completion-rate percentage; jcu.edu.au blocks automated fetch
+      (HTTP 403) site-wide. No additional source found.
 
 admissions:
   acceptanceRate:
@@ -59,7 +73,13 @@ admissions:
       satActEquivalent note and UAC's official "ATAR Essentials" guide,
       uac.edu.au/assets/documents/atar-essentials.pdf), so this project records it directly as the
       percentile value, consistent with the SAT-derived percentiles used for US schools — see methodology.
-      Flagged low confidence pending a primary JCU source for the underlying ATAR figure.
+      Flagged low confidence pending a primary JCU source for the underlying ATAR figure. Checked
+      2026-11-03: looked for a QTAC listing or JCU's own course page to corroborate/replace this
+      figure — jcu.edu.au (including the course-and-subject-handbook pages) returns HTTP 403 to
+      automated fetch; no QTAC listing was found specifically for this degree (QTAC results surfaced
+      only JCU's other Business-major-variant degrees); Good Universities Guide's own course-detail
+      page shows ATAR as "N/A". No corroboration found either way — confidence left at low pending a
+      human checking jcu.edu.au directly.
 
 academicResearch:
   facultyPubCitationIndex:
@@ -67,10 +87,32 @@ academicResearch:
     confidence: low
     notes: >-
       Not yet sourced — matching blocked entirely by OpenAlex daily budget exhaustion (shared key hit its $1/day cap) before any of this school\'s 4 current named faculty could be queried. Pending a follow-up pass once the budget resets.
+      Checked 2026-11-03: still blocked, and now for a second, independent reason — jcu.edu.au (the
+      program's own staff directory, which would be needed to re-derive the "4 current named faculty"
+      list for OpenAlex matching) returns HTTP 403 to automated fetch site-wide, so this pass couldn't
+      even get as far as re-attempting the OpenAlex lookups. A search snippet surfaced one JCU-affiliated
+      academic, Dr Zilmiyah Kamble (Senior Lecturer, Business — Hospitality & Tourism Management), but
+      she's listed on the JCU Singapore campus staff page, not confirmed as one of this program's "4
+      current named faculty," so not used. Needs a human to open JCU's own program-level staff directory
+      directly and, separately, confirm the OpenAlex budget has reset.
   researchFundingUSD:
     unit: USD/year
     confidence: low
-    notes: Not yet sourced for v1.
+    notes: >-
+      Not yet sourced for v1. Checked 2026-11-03: JCU's 2025 annual report
+      (jcu.edu.au/__data/assets/pdf_file/0019/2332252/2025-JCU-Annual-Report_FINAL.PDF) would carry a
+      university-wide research-income figure (same kind of proxy this project already uses for IPEDS
+      graduation rates elsewhere), but jcu.edu.au blocks automated fetch of this PDF and the course
+      pages (HTTP 403/500, inconsistent but consistently blocked) across the whole domain. The
+      Department of Education's Higher Education Research Data Collection time series, which
+      publishes exactly this figure by institution (education.gov.au/resources/research-block-grants
+      and education.gov.au/download/18822/2025-research-block-grant-allocations/39960/document/pdf),
+      timed out on every automated fetch attempt — likely too large/slow for this tool; a human with a
+      browser should open it directly and look up JCU's row. News coverage (futurecampus.com.au's 2025
+      Queensland-universities financial roundup) gives JCU's total income (~AUD 725m, 2025) and
+      Commonwealth grants (~AUD 233.8m) but doesn't break out research income specifically, and an
+      undated job-board figure ("$67.4 million total research income") couldn't be tied to a year or
+      verified, so neither was used. See report's "please look at this yourself" list.
   hasPhDProgram:
     value: 1
     unit: boolean (1=yes, 0=no)
@@ -92,11 +134,19 @@ academicQuality:
   sixYearGraduationRate:
     unit: "%"
     confidence: low
-    notes: Not yet sourced for v1.
+    notes: >-
+      Not yet sourced for v1. Checked 2026-11-03: no JCU- or program-specific graduation-rate figure
+      found; Good Universities Guide's course-detail page for this program shows no completion-rate
+      percentage (N/A); QILT already confirmed to have no data for this program (per task brief,
+      small-sample suppression); jcu.edu.au blocks automated fetch (HTTP 403).
   retentionRate:
     unit: "%"
     confidence: low
-    notes: Not yet sourced for v1.
+    notes: >-
+      Not yet sourced for v1. Checked 2026-11-03: same result as sixYearGraduationRate above — no
+      JCU- or program-specific retention figure found via Good Universities Guide or any other
+      accessible source; jcu.edu.au blocks automated fetch (HTTP 403); QILT already confirmed to have
+      no data for this program.
   facultyStudentRatio:
     value: 16.2
     unit: students per faculty
@@ -111,6 +161,31 @@ academicQuality:
 
 costOfAttendance:
   totalCost:
+    value: 43296
     unit: USD/year
+    source:
+      label: "Study Australia (Australian Government) — course listing, Bachelor of Tourism, Hospitality and Events, JCU Brisbane"
+      url: https://search.studyaustralia.gov.au/course/bachelor-of-tourism-hospitality-and-events/250d10731040168a067fb8ef3968693a
+      publisher: Australian Government — Study Australia
+      asOfDate: "2026-11-03"
+    lastVerified: "2026-11-03"
     confidence: low
-    notes: Not yet sourced for v1. NCES/IPEDS doesn't cover non-US institutions; JCU's own published international tuition + estimated living costs would need to be sourced directly.
+    notes: >-
+      NCES/IPEDS doesn't cover non-US institutions, so this is built from two Australian sources
+      instead. Tuition: Study Australia's official government course-listing page gives total tuition
+      of AUD $110,697 for this course at JCU Brisbane (3 years full-time) = AUD 36,899/year — this
+      matches text seen for JCU's own international course page in search results ("$36,899+", intakes
+      Feb/May/Sept), though jcu.edu.au itself returns HTTP 403 to automated fetch so that page couldn't
+      be read directly here; a different, uncorroborated aggregator figure (~AUD 34,120/year, vintage
+      unclear) also surfaced and was not used. Living costs: added the Dept of Home Affairs' published
+      minimum living-cost amount for a Student visa (subclass 500) primary applicant, AUD 29,710/year
+      (in effect since 10 May 2024, reported as still current as of 3 July 2026) — immi.homeaffairs.gov.au
+      itself also returns HTTP 403 to automated fetch, so this was read via a secondary source (an
+      Australian migration-law firm's article that quotes and links the Department's own page) rather
+      than the primary page directly; this is the same Home Affairs figure that would apply to
+      griffith.yaml's totalCost if Griffith's tuition could be confirmed (see that file's note).
+      Total: AUD 36,899 + AUD 29,710 = AUD 66,609/year, converted to USD at an approximate rate of 0.65
+      USD/AUD (within the ~0.64-0.66 range stated as current for 2026) = USD 43,296/year. Confidence
+      kept at low because neither the tuition figure nor the living-cost figure could be verified
+      against its own primary government page directly (both domains block automated fetch), and
+      because it excludes OSHC health cover, airfare, and visa fees.
