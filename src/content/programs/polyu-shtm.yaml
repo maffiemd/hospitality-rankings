@@ -18,7 +18,12 @@ outcomes:
       SHTM. A Hong Kong Standard article on Q1 2026 graduate hiring cites a HK$20,000/month median
       starting salary for the broader "tourism" hiring category, but that is an economy-wide sector
       stat, not SHTM-program-specific, so it is also excluded. Left blank pending SHTM's own
-      program-level outcomes report.
+      program-level outcomes report. Checked 2026-11-03: PolyU's GES2023 Survey Summary PDF (cited
+      above for employmentRate) breaks salary out only by employment sector and university-wide
+      ($24,017/month overall for 2023), not by school, so it doesn't fill this gap either. A
+      third-party-cited "HK$19,031, School of Hotel and Tourism Management, 2022" figure (apparently
+      from GES2022) could not be independently verified — that PDF exceeds this pass's fetch size
+      limit — so it was not used.
   employmentRate:
     value: 99.4
     unit: "%"
@@ -59,7 +64,12 @@ outcomes:
   internshipPlacementRate:
     unit: "%"
     confidence: low
-    notes: Not yet sourced for v1. The BSc scheme includes industry placement components, but no disclosed placement-completion-rate percentage was found.
+    notes: >-
+      Not yet sourced for v1. The BSc scheme includes a mandatory Work-Integrated Education (WIE)
+      industrial placement component (SHTM's WIE page confirms all Hotel Management students
+      undertake placement at Hotel ICON, local hotels, or SHTM-approved overseas hospitality
+      organisations), but no disclosed placement-completion-rate percentage was found as of
+      2026-11-03, including in PolyU's WIE handbook/booklet pages.
 
 admissions:
   acceptanceRate:
@@ -70,7 +80,10 @@ admissions:
       intake and offer counts rather than an applicant-to-offer acceptance rate; PolyU's JS3310 (Hotel
       and Tourism Management) JUPAS page lists a first-year intake of 74 places and Band-A offer counts
       of 75 (2024), 55 (2025), and 43 (2026), but does not publish total Band-A/B/C applicant volume
-      needed to compute a comparable acceptance rate.
+      needed to compute a comparable acceptance rate. Checked again 2026-11-03: PolyU's JS3310 SNDAS
+      document is admission *requirements* for a specific direct-nomination pathway, not applicant/offer
+      statistics, and the live JUPAS programme page (polyu.edu.hk/study/ug/jupas/2026/js3310) returned
+      HTTP 403 to automated fetch — would need a logged-in/interactive browser session to check.
   satActEquivalent:
     unit: "percentile, national test-taking cohort"
     confidence: low
@@ -102,9 +115,23 @@ academicResearch:
     notes: >-
       Sum of career cited_by_count across 77 of 85 current named faculty (sourced from the program's own official directory) matched to an OpenAlex author record by name + institution — covers ALL of each person's publications (any journal/field), not just hospitality-tagged ones, and their full career (not a fixed year window). Unmatched faculty (common names, no OpenAlex presence, etc.) are excluded from the sum, not counted as zero. Top contributors: Haiyan Song (19417 citations, 349 works); Sam Kim (16887 citations, 450 works); Ying Wang (14398 citations, 797 works); Cathy Hsu (12299 citations, 303 works); Jinsoo Lee (11607 citations, 350 works). (One initial match, "Yitong Yu" -> OpenAlex author A5100633632, was removed after manual verification found that author ID is actually registered as "Yue Wang" and spans ~94 unrelated institutions -- a name-disambiguation merge, not this person; see research/faculty-citations-batch-c.yaml for detail.)
   researchFundingUSD:
+    value: 987000
     unit: USD/year
+    source:
+      label: "SHTM Update newsletter, July 2026 (Vol. 27, Issue 3) — Research Grants Council GRF/ECS funding announcement"
+      url: https://www.polyu.edu.hk/shtm/docdrive/shtmupdate/v27i3/news/news_jul_vol27_1b.html
+      publisher: PolyU School of Hotel and Tourism Management
+      asOfDate: "2026-07-01"
+    lastVerified: "2026-11-03"
     confidence: low
-    notes: Not yet sourced for v1.
+    notes: >-
+      A secondary source (the School's own newsletter, not an official annual report or RGC's own
+      database): "14 SHTM projects will be funded in 2026/27 to a total of HK$7.7 million" under the
+      Research Grants Council's General Research Fund and Early Career Scheme. Converted at the
+      HKD/USD peg (~7.80) to ~US$987,000. This covers GRF+ECS competitive grants only, not the
+      School's total research funding (which would also include UGC block-grant allocations,
+      industry/consultancy funding, and other RGC schemes), and the newsletter describes these as
+      awards "to be funded" in 2026/27, not funds already disbursed.
   hasPhDProgram:
     value: 1
     unit: boolean (1=yes, 0=no)
@@ -121,11 +148,19 @@ academicQuality:
   sixYearGraduationRate:
     unit: "%"
     confidence: low
-    notes: Not yet sourced for v1.
+    notes: >-
+      Not yet sourced for v1. Checked 2026-11-03: Hong Kong's UGC doesn't appear to publish a
+      cohort-based graduation/completion rate the way IPEDS does for US institutions — UGC's
+      data.gov.hk datasets give annual graduate and first-year-enrollment headcounts by institution,
+      not matched cohort tracking, so a rate can't be computed from them without assuming a cohort
+      correspondence the data doesn't actually establish. No PolyU-published institutional graduation
+      rate was found either.
   retentionRate:
     unit: "%"
     confidence: low
-    notes: Not yet sourced for v1.
+    notes: >-
+      Not yet sourced for v1. Checked 2026-11-03, same search as sixYearGraduationRate above — no
+      UGC or PolyU-published first-to-second-year retention rate was found.
   facultyStudentRatio:
     value: 16.2
     unit: students per faculty
@@ -140,6 +175,19 @@ academicQuality:
 
 costOfAttendance:
   totalCost:
+    value: 42343
     unit: USD/year
-    confidence: low
-    notes: Not yet sourced for v1. NCES/IPEDS doesn't cover non-US institutions; PolyU's own published non-local-student tuition + estimated living costs would need to be sourced directly.
+    source:
+      label: "PolyU — Undergraduate Fees and Scholarships (non-local student tuition and expenses)"
+      url: https://polyu.edu.hk/study/ug/fees-and-scholarships/fees-ug
+      publisher: The Hong Kong Polytechnic University
+      asOfDate: "2026-01-01"
+    lastVerified: "2026-11-03"
+    confidence: medium
+    notes: >-
+      PolyU's own published total for non-local students — tuition (HK$240,000) + university-managed
+      accommodation (HK$18,515, first-year only; 2026/27 rate) + basic campus meal charges (HK$53,040)
+      + personal expenses (HK$18,717) — summing to HK$330,272/year, which the page itself converts to
+      "~USD42,343." Not all components are tied to the same stated year (only the accommodation figure
+      explicitly says 2026/27), and from year two students must arrange their own housing off-campus,
+      so actual cost may differ after year one.
