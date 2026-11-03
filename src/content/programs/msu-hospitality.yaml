@@ -96,11 +96,30 @@ academicResearch:
     unit: "total career citations, current named faculty (OpenAlex)"
     confidence: low
     notes: >-
-      Not yet sourced — matching blocked entirely by OpenAlex daily budget exhaustion (shared key hit its $1/day cap) before any of this school\'s 18 current named faculty could be queried. Pending a follow-up pass once the budget resets.
+      Still not sourced. A prior pass was blocked by OpenAlex daily budget exhaustion before any of this school's faculty could be queried. This pass:
+      the School's own faculty directory (broad.msu.edu/hospitality-business/ and its individual broad.msu.edu/profile/ pages) sits behind an
+      Incapsula bot-protection check that requires solving an hCaptcha, which blocks automated/scripted access — did not attempt to bypass it, so no
+      reliable, complete, current-as-of-2026 named-faculty list could be confirmed and the OpenAlex matching step was not run. Secondary sources
+      (Wikipedia's school article, search-engine-cached snippets of individual broad.msu.edu profile pages, and a Fall 2024 "At a Glance" one-pager at
+      broad.msu.edu/app/uploads/2025/01/Fall-24-One-Pager_Dept-HB.pdf) give a partial and inconsistent picture: the one-pager states 12 full-time
+      faculty as of fall 2024 (2 endowed; 10 in the tenure system — 3 professors, 6 associate professors, 1 assistant professor) but no names, a 2021
+      job posting cited 11 tenure-stream faculty, and sources disagree on the current director (Karthik Namasivayam vs. a dated page naming Carl
+      Borchgrevink) — not a reliable basis for this project's name-matching method. Needs a human to open the directory directly (clearing the
+      CAPTCHA) and either supply the current named-faculty list or complete the OpenAlex match.
   researchFundingUSD:
+    value: 844076000
     unit: USD/year
-    confidence: low
-    notes: Not yet sourced for v1.
+    source:
+      label: "Table 7 — Total and Federally Financed Higher Education R&D Expenditures at Higher Education Institutions, Ranked by FY 2023 Total R&D Expenditures: FYs 2020-23 (NSF 25-314)"
+      url: https://ncses.nsf.gov/pubs/nsf25314/assets/data-tables/tables/nsf25314-tab007.pdf
+      publisher: National Center for Science and Engineering Statistics (NCSES), National Science Foundation — Higher Education Research and Development (HERD) Survey
+      asOfDate: "2023-01-01"
+    lastVerified: "2026-11-03"
+    confidence: medium
+    notes: >-
+      University-wide total R&D expenditure for FY2023, not School-of-Hospitality-Business-specific — same caveat as this file's IPEDS-sourced
+      metrics. Reported by NSF simply as "Michigan State University" (East Lansing campus). Ranked 41st nationally in FY2023 total R&D expenditure;
+      matches the "$844 million" figure MSU's own research office announced for its FY2023 HERD submission (research.msu.edu/research-update-spring-24).
   hasPhDProgram:
     value: 0
     unit: boolean (1=yes, 0=no)

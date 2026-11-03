@@ -51,7 +51,12 @@ outcomes:
   internshipPlacementRate:
     unit: "%"
     confidence: low
-    notes: SHM requires a supervised work experience for graduation, but no disclosed completion-rate figure was found for v1.
+    notes: >-
+      SHM requires a minimum of 1,000 hours of documented hospitality professional work experience for graduation (not necessarily a single formal
+      internship — a Penn State SHM page states a formal internship is not required as part of this hour requirement). Checked the SHM Career Center
+      and Industry & Careers pages (hhd.psu.edu/shm/undergraduate/career-opportunities/career-center, hhd.psu.edu/shm/industry-and-careers) — neither
+      discloses a completion or placement percentage specific to internships/work experience; only the "90-95 percent" full-time employment placement
+      figure already used for employmentRate is reported. Left unsourced for v1.
 
 admissions:
   acceptanceRate:
@@ -91,9 +96,21 @@ academicResearch:
     notes: >-
       Sum of career cited_by_count across 14 of 19 current named faculty (sourced from the program's own official directory) matched to an OpenAlex author record by name + institution — covers ALL of each person's publications (any journal/field), not just hospitality-tagged ones, and their full career (not a fixed year window). Unmatched faculty (common names, no OpenAlex presence, etc.) are excluded from the sum, not counted as zero. Top contributors: Anna S. Mattila (27897 citations, 480 works); Seoki Lee (9727 citations, 206 works); Michael J. Tews (3587 citations, 95 works); John O'Neill (3369 citations, 99 works); Breffni Noone (2056 citations, 63 works).
   researchFundingUSD:
+    value: 1206793000
     unit: USD/year
-    confidence: low
-    notes: Not yet sourced for v1.
+    source:
+      label: "Table 7 — Total and Federally Financed Higher Education R&D Expenditures at Higher Education Institutions, Ranked by FY 2023 Total R&D Expenditures: FYs 2020-23 (NSF 25-314)"
+      url: https://ncses.nsf.gov/pubs/nsf25314/assets/data-tables/tables/nsf25314-tab007.pdf
+      publisher: National Center for Science and Engineering Statistics (NCSES), National Science Foundation — Higher Education Research and Development (HERD) Survey
+      asOfDate: "2023-01-01"
+    lastVerified: "2026-11-03"
+    confidence: medium
+    notes: >-
+      University-wide total R&D expenditure for FY2023, not SHM-specific — same caveat as this file's IPEDS-sourced metrics. NSF's HERD Survey reports
+      Penn State as a single combined reporting unit, "Pennsylvania State University, University Park and Hershey Medical Center" (so this figure
+      includes the Milton S. Hershey Medical Center/College of Medicine's R&D spending alongside University Park, not University Park alone). Ranked
+      26th nationally in FY2023 total R&D expenditure (also appears as $1,207M, rounded, in NSF 25-313 Table 4), up 18.3% from FY2022 — the largest
+      year-over-year percentage increase among the leading 30 institutions that year.
   hasPhDProgram:
     value: 1
     unit: boolean (1=yes, 0=no)

@@ -43,7 +43,11 @@ outcomes:
   internshipPlacementRate:
     unit: "%"
     confidence: low
-    notes: Not yet sourced for v1.
+    notes: >-
+      Checked the Nolan School's own career-outcomes and landing pages (business.cornell.edu/admissions/undergraduate/bs-hotel-administration/career-outcomes/
+      and business.cornell.edu/nolan/, plus the employment-statistics page, which redirects to the career-outcomes page). SHA requires 800 hours of practical
+      experience through work/internship placements for graduation, but none of these pages (nor the Class of 2025 figures they report) discloses a completion
+      or placement percentage specific to internships — only the overall full-time employment rate (91%) is reported. Left unsourced for v1.
 
 admissions:
   acceptanceRate:
@@ -83,9 +87,20 @@ academicResearch:
     notes: >-
       Sum of career cited_by_count across 62 of 71 current named faculty (sourced from the program's own official directory) matched to an OpenAlex author record by name + institution — covers ALL of each person's publications (any journal/field), not just hospitality-tagged ones, and their full career (not a fixed year window). Unmatched faculty (common names, no OpenAlex presence, etc.) are excluded from the sum, not counted as zero. Top contributors: Lei Yu (43807 citations, 571 works); Andrew Whitmore (14165 citations, 245 works); Tony Simons (8422 citations, 92 works); Bruce Tracey (6311 citations, 120 works); Ceridwyn King (6180 citations, 115 works).
   researchFundingUSD:
+    value: 1451971000
     unit: USD/year
-    confidence: low
-    notes: Not yet sourced for v1.
+    source:
+      label: "Table 7 — Total and Federally Financed Higher Education R&D Expenditures at Higher Education Institutions, Ranked by FY 2023 Total R&D Expenditures: FYs 2020-23 (NSF 25-314)"
+      url: https://ncses.nsf.gov/pubs/nsf25314/assets/data-tables/tables/nsf25314-tab007.pdf
+      publisher: National Center for Science and Engineering Statistics (NCSES), National Science Foundation — Higher Education Research and Development (HERD) Survey
+      asOfDate: "2023-01-01"
+    lastVerified: "2026-11-03"
+    confidence: medium
+    notes: >-
+      University-wide total R&D expenditure for FY2023 (government fiscal year), not Nolan School/SHA-specific — the NSF HERD Survey does not report R&D
+      expenditure broken out by individual school or department, the same caveat already applied to this file's IPEDS-sourced metrics (graduation rate,
+      retention, faculty:student ratio, cost of attendance). Cornell ranked 13th among all U.S. institutions in FY2023 HERD-reported total R&D expenditure
+      (also appears as $1,452M, rounded, in the FY2023 HERD InfoBrief's top-30 table, NSF 25-313 Table 4), up 11.7% from FY2022.
   hasPhDProgram:
     value: 1
     unit: boolean (1=yes, 0=no)
