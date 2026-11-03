@@ -38,7 +38,7 @@ export const CATEGORIES: CategoryConfig[] = [
   {
     key: "outcomes",
     label: "Career Outcomes & Industry Reputation",
-    weight: 0.3,
+    weight: 0.27,
     metrics: [
       { path: "outcomes.startingSalary", label: "Starting Salary", weight: 15 / 35, direction: "higherIsBetter" },
       { path: "outcomes.employmentRate", label: "Employment Rate", weight: 10 / 35, direction: "higherIsBetter" },
@@ -53,7 +53,7 @@ export const CATEGORIES: CategoryConfig[] = [
   {
     key: "academicResearch",
     label: "Academic Research",
-    weight: 0.25,
+    weight: 0.225,
     metrics: [
       {
         path: "academicResearch.facultyPubCitationIndex",
@@ -73,7 +73,7 @@ export const CATEGORIES: CategoryConfig[] = [
   {
     key: "academicQuality",
     label: "Academic Quality & Completion",
-    weight: 0.15,
+    weight: 0.135,
     metrics: [
       {
         path: "academicQuality.sixYearGraduationRate",
@@ -93,7 +93,7 @@ export const CATEGORIES: CategoryConfig[] = [
   {
     key: "admissions",
     label: "Admissions Selectivity",
-    weight: 0.15,
+    weight: 0.135,
     metrics: [
       { path: "admissions.acceptanceRate", label: "Acceptance Rate", weight: 10 / 20, direction: "lowerIsBetter" },
       {
@@ -107,13 +107,26 @@ export const CATEGORIES: CategoryConfig[] = [
   {
     key: "placement",
     label: "Internship / Placement Pipeline",
-    weight: 0.15,
+    weight: 0.135,
     metrics: [
       {
         path: "outcomes.internshipPlacementRate",
         label: "Internship Placement Rate",
         weight: 1,
         direction: "higherIsBetter",
+      },
+    ],
+  },
+  {
+    key: "costOfAttendance",
+    label: "Cost of Attendance",
+    weight: 0.1,
+    metrics: [
+      {
+        path: "costOfAttendance.totalCost",
+        label: "Total Cost of Attendance",
+        weight: 1,
+        direction: "lowerIsBetter",
       },
     ],
   },

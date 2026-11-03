@@ -43,6 +43,10 @@ export const academicQualityMetrics = z.object({
   facultyStudentRatio: metric, // students per faculty (lower is better) — moved here from academicResearch
 });
 
+export const costOfAttendanceMetrics = z.object({
+  totalCost: metric, // USD/year, lower is better — published sticker price (tuition + fees + room & board)
+});
+
 export const programSchema = z.object({
   slug: z.string(),
   name: z.string(),
@@ -56,6 +60,7 @@ export const programSchema = z.object({
   admissions: admissionsMetrics,
   academicResearch: academicResearchMetrics,
   academicQuality: academicQualityMetrics,
+  costOfAttendance: costOfAttendanceMetrics,
 });
 
 export type Metric = z.infer<typeof metric>;

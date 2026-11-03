@@ -16,7 +16,7 @@ import { href } from "../lib/url";
   </p>
 
   <p>
-    This tool combines five categories into a single fit score (0-100) per program. Every weight
+    This tool combines six categories into a single fit score (0-100) per program. Every weight
     below lives in one config file in the source code
     (<code>src/config/weights.ts</code>), so it can be retuned without touching any scoring logic.
     This page is generated from that same file, so it never drifts out of sync with what was
@@ -70,13 +70,13 @@ import { href } from "../lib/url";
 
   <h2><span class="marker">&#9656;</span> Why this split</h2>
   <p>
-    <strong>Career outcomes &amp; industry reputation (30%)</strong> is the largest single bucket,
+    <strong>Career outcomes &amp; industry reputation (27%)</strong> is the largest single bucket,
     echoing how US News weights undergraduate outcomes most heavily in its own methodology: for a
     professional degree like hospitality administration, what happens to graduates is the most
     direct signal of program quality.
   </p>
   <p>
-    <strong>Academic research (25%)</strong> mirrors US News's faculty-resources
+    <strong>Academic research (22.5%)</strong> mirrors US News's faculty-resources
     and peer-assessment buckets, and QS's academic-reputation and citations-per-faculty categories,
     but weighted lower than QS's combined ~60% research/reputation emphasis, since hospitality is a
     vocational, apprenticeship-driven field rather than a pure research discipline. The dominant metric
@@ -91,7 +91,7 @@ import { href } from "../lib/url";
     their profile pages rather than treated as a completed result.
   </p>
   <p>
-    <strong>Academic quality &amp; completion (15%)</strong> tracks whether students who enroll
+    <strong>Academic quality &amp; completion (13.5%)</strong> tracks whether students who enroll
     actually finish: six-year graduation rate, first-to-second-year retention, and faculty-student
     ratio. This is the single largest factor in US News's own undergraduate methodology (graduation
     and retention together typically run 17-20% there): a program can have excellent outcomes for the
@@ -101,7 +101,7 @@ import { href } from "../lib/url";
     break completion out by major; that's flagged on every program's profile page.
   </p>
   <p>
-    <strong>Admissions selectivity (15%)</strong> is deliberately modest, echoing US News's own recent
+    <strong>Admissions selectivity (13.5%)</strong> is deliberately modest, echoing US News's own recent
     de-emphasis of test-score-driven selectivity in its undergraduate methodology. Its test-score metric
     <code>satActEquivalent</code> compares programs on each one's percentile within its own country's
     test-taking cohort rather than a raw score, so a program using one country's test doesn't get
@@ -113,10 +113,24 @@ import { href } from "../lib/url";
     left unscored on this metric rather than estimated, per this project's sourcing standard.
   </p>
   <p>
-    <strong>Internship / placement pipeline (15%)</strong> has no direct analog in US News or QS. It is
+    <strong>Internship / placement pipeline (13.5%)</strong> has no direct analog in US News or QS. It is
     included because hospitality education is built around supervised work experience, and
     hospitality-specific rankings (e.g. CEOWORLD's) treat placement-pipeline strength as a
     first-order signal distinct from the outcomes it eventually produces.
+  </p>
+  <p>
+    <strong>Cost of attendance (10%)</strong> is the newest category, added because what a program
+    costs is a decision input in its own right, not just a footnote to its outcomes. The metric is
+    each school's published total cost of attendance (tuition, fees, books, and food &amp; housing)
+    for one year, lower is better. For the 11 US programs this comes from IPEDS/College Navigator —
+    the in-state, on-campus figure for public universities, matching NCES's own primary net-price
+    convention, since out-of-state students would pay more. IPEDS doesn't cover institutions outside
+    the US, so the 9 international programs aren't yet scored on this metric; each one's own
+    published tuition and estimated living costs still need to be sourced directly, flagged as such
+    on their profile pages rather than left unstated. Given this gap, this category's weight was
+    deliberately kept modest (and the other five categories' weights trimmed proportionally to make
+    room for it) rather than given outsized influence while a third of the roster can't yet be scored
+    on it.
   </p>
 
   <h2><span class="marker">&#9656;</span> Normalization</h2>
