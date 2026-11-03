@@ -10,7 +10,20 @@ outcomes:
   startingSalary:
     unit: USD/year
     confidence: low
-    notes: Not yet sourced for v1 — no RM or USD starting-salary figure disclosed on Taylor's program page or in the 2025 MOHE (Ministry of Higher Education) Graduate Tracer Study coverage found in this pass.
+    notes: >-
+      Still not sourced for v1. Re-checked Taylor's own program page — no RM/USD starting-salary
+      figure anywhere on it. Also read the actual 2025 MOHE "Statistik Pendidikan Tinggi" publication's
+      Graduate Tracer Study (SKPG) chapter directly
+      (https://mohe.gov.my/en/download/statistics/2025-1-1/1845-bab-7-skpg-2025-pdf/file, Table 7.3,
+      "Number and Percentage of Malaysian Graduates based on Graduate Employment by Field of Studies,
+      2025") — it gives national employment/unemployment counts by broad field (hospitality/culinary
+      would fall under its aggregate "Services" category, 15,130 graduates, 90.2% employed — not
+      Taylor's-specific and not broken out further) but contains zero salary/income figures anywhere
+      in the chapter (no RM amount, no "gaji"/"pendapatan" table). So the same tracer-study source
+      material already cited for employmentRate has no companion salary figure for this or any
+      specific cohort. General DOSM/market benchmarks for Malaysian fresh-graduate pay exist (roughly
+      RM2,800-3,200/month) but are not field-specific, let alone culinary/hospitality- or
+      Taylor's-specific, so not usable here.
   employmentRate:
     value: 100
     unit: "%"
@@ -19,9 +32,19 @@ outcomes:
       url: https://university.taylors.edu.my/en/study/explore-all-programmes/taylors-culinary-institute/undergraduate/bachelor-of-culinary-management.html
       publisher: Taylor's University (citing the 2025 MOHE Graduate Tracer Study)
       asOfDate: "2025-01-01"
-    lastVerified: "2026-10-05"
+    lastVerified: "2026-11-03"
     confidence: low
-    notes: Taylor's cites a "100% graduate employment rate (2025 MOHE Graduate Tracer Study)" on this program's own page, but the underlying Graduate Tracer Study figure is Taylor's University-wide, not broken out specifically for the Culinary Management cohort. Flagged low confidence pending a program-specific figure.
+    notes: >-
+      Taylor's cites a "100% graduate employment rate (2025 MOHE Graduate Tracer Study)" on this
+      program's own page, but the underlying Graduate Tracer Study figure is Taylor's University-wide,
+      not broken out specifically for the Culinary Management cohort. Re-checked specifically for a
+      more specific figure — searched for a Taylor's Culinary Institute / School of Hospitality,
+      Tourism and Events-specific employment rate; none found. Other university-wide figures surface
+      elsewhere on Taylor's own site and are inconsistent with each other (one third-party aggregator
+      cites Taylor's career-services copy at 99%; a separate Taylor's page attributes 99.5% to the
+      2024 MOHE Graduate Tracer Study) — none is more program-specific than the 100%/2025-MOHE figure
+      already recorded here, and the inconsistency across Taylor's own pages is itself a reason to
+      keep this at low confidence pending a true program-level breakout.
   recruiterReputationScore:
     value: 49.1
     unit: "0-100"
@@ -41,13 +64,31 @@ outcomes:
   internshipPlacementRate:
     unit: "%"
     confidence: low
-    notes: Program places students with industry partners (e.g., Hilton, Shangri-La, Mandarin Oriental, Westin, InterContinental, Accor) as part of its curriculum, but no disclosed placement-completion-rate percentage was found for v1.
+    notes: >-
+      Program places students with industry partners (e.g., Hilton, Shangri-La, Mandarin Oriental,
+      Westin, InterContinental, Accor) as part of its curriculum, but no disclosed
+      placement-completion-rate percentage was found for v1. Checked further per task instruction:
+      Taylor's Culinary Institute's own landing page
+      (https://university.taylors.edu.my/en/study/explore-all-programmes/taylors-culinary-institute.html)
+      and its international-internships page
+      (https://university.taylors.edu.my/en/study/explore-all-programmes/taylors-culinary-institute/international-internships.html)
+      were both read directly — neither states a placement rate or percentage; both only describe the
+      internship structure and partner venues. Also found a Hilton Worldwide-Taylor's "Student
+      Employment Programme" MoU (Hilton "adopts" a cohort of students pursuing Bachelor of
+      International Hospitality Management, Bachelor of Tourism Management, and Bachelor of Culinary
+      Arts and Foodservice Management for training during their degree) but again no placement-rate
+      percentage disclosed. Still no disclosed figure for v1.
 
 admissions:
   acceptanceRate:
     unit: "%"
     confidence: low
-    notes: Not publicly disclosed. As a private Malaysian university, Taylor's does not publish a US-style applicant-to-admit acceptance rate for this program.
+    notes: >-
+      Not publicly disclosed. As a private Malaysian university, Taylor's does not publish a US-style
+      applicant-to-admit acceptance rate for this program. Re-checked per task instruction: third-party
+      aggregators (Collegedunia, HotCoursesAbroad, EduRank) give rough estimates in the 60-75% range,
+      but each explicitly describes its own number as a circumstantial/calculated estimate, not an
+      official Taylor's figure, so none is usable here. Confirms the existing note.
   satActEquivalent:
     unit: "percentile, national test-taking cohort"
     confidence: low
@@ -79,7 +120,20 @@ academicResearch:
   researchFundingUSD:
     unit: USD/year
     confidence: low
-    notes: Not yet sourced for v1.
+    notes: >-
+      Checked Taylor's own "Research and Enterprise" page
+      (https://university.taylors.edu.my/en/research-and-enterprise.html) directly — it states several
+      different RM figures, all university-wide (not Taylor's Culinary Institute-specific and not
+      broken out by school): "over RM130 million into research and enterprise" as a forward-looking
+      5-year investment plan (no base year given); "more than RM8.5 million in external research funds
+      won" (no date/period attached to this headline figure); "over RM24 million" in external research
+      grants, cumulative 2017-2025; MYR 699,918.00 in FRGS and PRGS for the year 2025; MYR 997,798.00 in
+      FRGS alone for the year 2024. None of these is specific to the Culinary Institute, hospitality, or
+      this program, and they aren't even mutually consistent as a single "total annual research
+      funding" figure (different grant schemes, different time windows). Using any of them here would
+      misattribute a university-wide number — almost certainly dominated by Taylor's much larger
+      engineering/business/science faculties — to this undergraduate culinary program, so none was
+      used. Not yet sourced for v1.
   hasPhDProgram:
     value: 1
     unit: boolean (1=yes, 0=no)
@@ -96,11 +150,22 @@ academicQuality:
   sixYearGraduationRate:
     unit: "%"
     confidence: low
-    notes: Not yet sourced for v1.
+    notes: >-
+      Checked per task instruction — no graduation-rate figure found for Taylor's University, Malaysia
+      (this program's parent institution). Search results are dominated by an unrelated US institution
+      of a similar name, Taylor University in Upland, Indiana (which does publish a roughly 74-77%
+      six-year graduation rate via Data USA/College Factual/IPEDS) — explicitly a different school, not
+      used. IPEDS/NCES doesn't cover Malaysian institutions, and no Malaysian-government or Taylor's-own
+      equivalent disclosure was found. Not yet sourced for v1.
   retentionRate:
     unit: "%"
     confidence: low
-    notes: Not yet sourced for v1.
+    notes: >-
+      Checked per task instruction — same result as sixYearGraduationRate: no retention-rate figure
+      for Taylor's University, Malaysia; search results again surfaced the unrelated Taylor University
+      (Upland, Indiana — roughly 89-91% first-to-second-year retention per Data USA and its own press
+      release), a different institution, not used. No Malaysian equivalent found. Not yet sourced for
+      v1.
   facultyStudentRatio:
     unit: students per faculty
     confidence: low
@@ -108,6 +173,35 @@ academicQuality:
 
 costOfAttendance:
   totalCost:
+    value: 13119
     unit: USD/year
+    source:
+      label: "Bachelor of Culinary Management (Honours) program page — Programme Information for 2026 (Fees)"
+      url: https://university.taylors.edu.my/en/study/explore-all-programmes/taylors-culinary-institute/undergraduate/bachelor-of-culinary-management.html
+      publisher: Taylor's University
+      asOfDate: "2026-01-01"
+    lastVerified: "2026-11-03"
     confidence: low
-    notes: Not yet sourced for v1. NCES/IPEDS doesn't cover non-US institutions; Taylor's own published tuition + estimated living costs would need to be sourced directly.
+    notes: >-
+      Taylor's own program page lists "Fees: USD 39,356 (International)" alongside "Duration: 3-year"
+      under "Programme Information for 2026," with no explicit "total" or "per year" label next to
+      either figure. Treated here as the TOTAL 3-year international-student programme fee (tuition
+      only — the page gives no room & board or other living-cost breakdown), based on close agreement
+      with several independent third-party aggregators describing the parallel local-rate figure's
+      3-year total in the MYR 105,000-119,000 range (UniEnrol: ~MYR 113,210 including a registration
+      fee; EduAdvisor: MYR 111,396; an Education Malaysia / Taylor's x NAMA Foundation scholarship
+      page: MYR 105,348 pre-scholarship tuition) — consistent with fees "reviewed annually" rising
+      from those slightly older figures to this 2026 schedule. Divided by 3 for a per-year figure:
+      USD 13,119/year. Used the INTERNATIONAL rate rather than the page's parallel "MYR 119,246
+      (Local)" figure (≈USD 8,745/year at ~0.22 USD/MYR), to stay consistent with every other non-US
+      program in this dataset (PolyU, Glion, Les Roches), which are all recorded at their
+      international/non-local tuition rate — the rate actually relevant to a prospective student using
+      this tool, since this project's "in-state" convention for US public schools addresses the
+      US-specific in-state/out-of-state distinction (see methodology.astro's cost-of-attendance
+      section) and was never meant to extend to "home-country-citizen" rates for schools outside the
+      US, where that rate wouldn't be available to the vast majority of this tool's prospective
+      readers anyway. Does not include accommodation, food, or other living costs (no breakdown found
+      on Taylor's site, unlike e.g. PolyU's page, which provided one) — likely
+      understates true total cost of attendance. Flagged low confidence both for that reason and
+      because the total-vs-per-year reading, while well corroborated by independent third parties, is
+      an inference rather than an explicit label on Taylor's own page.
