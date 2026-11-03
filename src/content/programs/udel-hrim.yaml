@@ -39,11 +39,27 @@ outcomes:
   recruiterReputationScore:
     unit: "0-100"
     confidence: low
-    notes: Not yet sourced for v1.
+    notes: >-
+      Checked 2026-11-03 per this project's established method: QS World University Rankings by
+      Subject 2026, Hospitality & Leisure Management table (same source used for FIU/UH, at
+      topuniversities.com/university-subject-rankings/hospitality-leisure-management). The official
+      QS page returned HTTP 403 to automated fetching on every attempt, so it could not be read
+      directly — flagged for a human/browser check. As a secondary check, a third-party mirror of the
+      same 2026 edition (xuanxiao.org/en/rankings/qs/subject/hospitality-leisure-management, pages 1-3,
+      covering all 174 ranked institutions) does not list University of Delaware at all, consistent
+      with UDel not appearing in this subject table. Left unsourced for v1 pending the blocked primary
+      source being confirmed by a human.
   internshipPlacementRate:
     unit: "%"
     confidence: low
-    notes: Not yet sourced for v1 — no disclosed internship-completion or placement-rate percentage found.
+    notes: >-
+      Not yet sourced for v1 — no disclosed internship-completion or placement-rate percentage found.
+      Re-checked 2026-11-03 directly on the program's own career-outcomes page
+      (lerner.udel.edu/programs/undergraduate-programs/majors/hospitality-and-event-business-management-bs/):
+      it states the Class of 2025's 94% employed-or-continuing-education rate and $59,723 mean
+      starting salary (both already recorded above, unchanged) and a "450 hours of paid
+      hospitality-related work experience" graduation requirement, but no internship completion or
+      placement percentage.
 
 admissions:
   acceptanceRate:
@@ -86,9 +102,22 @@ academicResearch:
     notes: >-
       Sum of career cited_by_count across 12 of 15 current named faculty (sourced from the program's own official directory) matched to an OpenAlex author record by name + institution — covers ALL of each person's publications (any journal/field), not just hospitality-tagged ones, and their full career (not a fixed year window). Unmatched faculty (common names, no OpenAlex presence, etc.) are excluded from the sum, not counted as zero. Top contributors: Matthew Robinson (5207 citations, 105 works); Markus Schuckert (4324 citations, 129 works); Zvi Schwartz (3455 citations, 104 works); Srikanth Beldona (2470 citations, 68 works); Sheryl F. Kline (1592 citations, 50 works).
   researchFundingUSD:
+    value: 428128000
     unit: USD/year
-    confidence: low
-    notes: Not yet sourced for v1.
+    source:
+      label: "Table 21: Higher education R&D expenditures, ranked by FY 2023 R&D expenditures (FYs 2010-23) — Higher Education Research and Development (HERD) Survey, Fiscal Year 2023 (NSF 25-314)"
+      url: https://ncses.nsf.gov/pubs/nsf25314/assets/data-tables/tables/nsf25314-tab021.pdf
+      publisher: National Center for Science and Engineering Statistics (NCSES), National Science Foundation
+      asOfDate: "2023-06-30"
+    lastVerified: "2026-11-03"
+    confidence: medium
+    notes: >-
+      University-wide total R&D expenditures for FY2023 (all fields, all funding sources,
+      institution-wide — not HEBM-department-specific; the HERD survey does not break out R&D
+      spending by individual school or department), per NSF's official HERD Survey Table 21 (ranked
+      by FY2023 total R&D expenditures). UD ranked 77th of 664 surveyed institutions nationally, with
+      $428,128 thousand in FY2023 R&D expenditures (up sharply from $231,532 thousand in FY2022 —
+      matches UD's own reporting of a jump in HERD rankings around this period).
   hasPhDProgram:
     value: 1
     unit: boolean (1=yes, 0=no)

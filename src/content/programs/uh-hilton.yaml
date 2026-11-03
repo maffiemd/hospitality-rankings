@@ -56,6 +56,13 @@ outcomes:
     notes: >
       Hilton College requires a minimum of 1,000 clock hours of hospitality-industry work experience
       for graduation, but no disclosed completion or placement-rate percentage was found for v1.
+      Re-checked 2026-11-03: the About page, the career-services landing page
+      (uh.edu/hilton-college/student-resources/career-services/), and the placement-reports listing
+      page have no internship-specific rate. Opened the Fall 2019 Placement Report PDF itself (already
+      this program's startingSalary source) — it does contain a "Placement Rate Upon Graduation" stat
+      (91% domestic / 77% international undergraduates employed or accepted to graduate school), but
+      that is an overall post-graduation job/further-education placement rate, not an
+      internship-completion or internship-placement rate, so it doesn't fill this field either.
 
 admissions:
   acceptanceRate:
@@ -98,9 +105,21 @@ academicResearch:
     notes: >-
       Sum of career cited_by_count across 32 of 33 current named faculty (sourced from the program's own official directory) matched to an OpenAlex author record by name + institution — covers ALL of each person's publications (any journal/field), not just hospitality-tagged ones, and their full career (not a fixed year window). Unmatched faculty (common names, no OpenAlex presence, etc.) are excluded from the sum, not counted as zero. Top contributors: Ki-Joon Back (7053 citations, 132 works); Juan M. Madera (5564 citations, 184 works); Minwoo Lee (3838 citations, 198 works); Priyanko Guchait (3823 citations, 98 works); Cristian Morosan (3679 citations, 78 works).
   researchFundingUSD:
+    value: 231942000
     unit: USD/year
-    confidence: low
-    notes: Not yet sourced for v1.
+    source:
+      label: "Table 21: Higher education R&D expenditures, ranked by FY 2023 R&D expenditures (FYs 2010-23) — Higher Education Research and Development (HERD) Survey, Fiscal Year 2023 (NSF 25-314)"
+      url: https://ncses.nsf.gov/pubs/nsf25314/assets/data-tables/tables/nsf25314-tab021.pdf
+      publisher: National Center for Science and Engineering Statistics (NCSES), National Science Foundation
+      asOfDate: "2023-06-30"
+    lastVerified: "2026-11-03"
+    confidence: medium
+    notes: >-
+      University-wide total R&D expenditures for FY2023 (all fields, all funding sources,
+      institution-wide — not Hilton-College-specific; the HERD survey does not break out R&D spending
+      by individual school or department), per NSF's official HERD Survey Table 21 (ranked by FY2023
+      total R&D expenditures). UH ranked 126th of 664 surveyed institutions nationally, with
+      $231,942 thousand in FY2023 R&D expenditures (down slightly from $240,126 thousand in FY2022).
   hasPhDProgram:
     value: 1
     unit: boolean (1=yes, 0=no)

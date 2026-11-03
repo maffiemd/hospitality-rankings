@@ -28,7 +28,12 @@ outcomes:
     notes: >
       No disclosed employment-rate or offer-acceptance percentage was found on the Chaplin School's
       Career Development page or elsewhere for v1; the page reports counts (250+ employers visiting,
-      500+ internship positions filled) rather than a rate.
+      500+ internship positions filled) rather than a rate. Re-checked 2026-11-03: also checked
+      hospitality.fiu.edu/career/employers (counts only — "nearly 200 students" per career fair, no
+      rate) and the Dean's 2025 Year in Review page (hospitality.fiu.edu/about/deans-2025-year-in-review/,
+      which gives a 75.4% AY21-22 figure but that is a graduation rate, not employment), plus a search
+      for an FIU-wide Career and Talent Development / First Destination Survey result — none found
+      publicly. Still unsourced for v1.
   recruiterReputationScore:
     value: 55.1
     unit: "0-100"
@@ -45,7 +50,9 @@ outcomes:
     confidence: low
     notes: >
       The Chaplin School cites "500+ internship positions filled by students" — a count, not a
-      percentage/rate — so no internship-placement-rate figure is recorded for v1.
+      percentage/rate — so no internship-placement-rate figure is recorded for v1. Re-checked
+      2026-11-03 on hospitality.fiu.edu/career/ and hospitality.fiu.edu/career/employers — same
+      counts-only pattern, still no stated percentage.
 
 admissions:
   acceptanceRate:
@@ -101,9 +108,21 @@ academicResearch:
       composition than the prior "32," not a clean continuation of it. Flagged low confidence pending
       a pass that can isolate full-time research faculty specifically.
   researchFundingUSD:
+    value: 306434000
     unit: USD/year
-    confidence: low
-    notes: Not yet sourced for v1.
+    source:
+      label: "Table 21: Higher education R&D expenditures, ranked by FY 2023 R&D expenditures (FYs 2010-23) — Higher Education Research and Development (HERD) Survey, Fiscal Year 2023 (NSF 25-314)"
+      url: https://ncses.nsf.gov/pubs/nsf25314/assets/data-tables/tables/nsf25314-tab021.pdf
+      publisher: National Center for Science and Engineering Statistics (NCSES), National Science Foundation
+      asOfDate: "2023-06-30"
+    lastVerified: "2026-11-03"
+    confidence: medium
+    notes: >-
+      University-wide total R&D expenditures for FY2023 (all fields, all funding sources,
+      institution-wide — not Chaplin-School-specific; the HERD survey does not break out R&D
+      spending by individual school or department), per NSF's official HERD Survey Table 21 (ranked
+      by FY2023 total R&D expenditures). FIU ranked 104th of 664 surveyed institutions nationally,
+      with $306,434 thousand in FY2023 R&D expenditures (up from $281,665 thousand in FY2022).
   hasPhDProgram:
     value: 0
     unit: boolean (1=yes, 0=no)
