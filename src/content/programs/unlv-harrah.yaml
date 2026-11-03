@@ -26,7 +26,15 @@ outcomes:
   employmentRate:
     unit: "%"
     confidence: low
-    notes: Not yet sourced for v1 — no disclosed employment-rate figure found on the college's career-services pages.
+    notes: >-
+      Checked the college's own careers page (unlv.edu/hospitality/careers) and Work Experience &
+      Internships page (unlv.edu/hospitality/bbcsc/wei) — neither discloses an employment-rate
+      percentage. Also checked UNLV's AY26 Alumni Pulse Survey announcement
+      (unlv.edu/news/unlvtoday/unlv-alumni-pulse-survey-ay26-results-available), which lists "First
+      Destination" as one of 22 surveyed concepts but publishes no results publicly (available only
+      on request via survey@unlv.edu). No UNLV First Destination Survey report or
+      institutional-research dashboard with a college-level employment rate was found publicly
+      posted. Still not sourced for v1.
   recruiterReputationScore:
     value: 74.1
     unit: "0-100"
@@ -46,7 +54,12 @@ outcomes:
   internshipPlacementRate:
     unit: "%"
     confidence: low
-    notes: Harrah College requires 1,000 hours of work experience per student, but no disclosed placement-rate percentage was found for v1.
+    notes: >-
+      Harrah College requires 1,000 hours of work experience per student; the college's own Work
+      Experience & Internships page (unlv.edu/hospitality/bbcsc/wei) and careers page
+      (unlv.edu/hospitality/careers) report internship volume only (about 600 student internship
+      placements per year), with no completion- or placement-rate percentage disclosed. No disclosed
+      internship placement-rate percentage found for v1.
 
 admissions:
   acceptanceRate:
@@ -86,9 +99,22 @@ academicResearch:
     notes: >-
       Sum of career cited_by_count across 44 of 51 current named faculty (sourced from the program's own official directory) matched to an OpenAlex author record by name + institution — covers ALL of each person's publications (any journal/field), not just hospitality-tagged ones, and their full career (not a fixed year window). Unmatched faculty (common names, no OpenAlex presence, etc.) are excluded from the sum, not counted as zero. Top contributors: Seyhmus Baloglu (15404 citations, 132 works); Billy Bai (6793 citations, 123 works); Hyelin Kim (4724 citations, 59 works); Rhonda Montgomery (4536 citations, 87 works); Christine Bergman (4039 citations, 92 works).
   researchFundingUSD:
+    value: 98751000
     unit: USD/year
-    confidence: low
-    notes: Not yet sourced for v1.
+    source:
+      label: "Higher Education Research and Development (HERD) Survey, FY 2023 — Table 23, Higher education R&D expenditures, ranked by all R&D expenditures, by R&D field"
+      url: https://ncses.nsf.gov/pubs/nsf25314/assets/data-tables/tables/nsf25314-tab023.pdf
+      publisher: National Center for Science and Engineering Statistics (NCSES), U.S. National Science Foundation
+      asOfDate: "2023-01-01"
+    lastVerified: "2026-11-03"
+    confidence: medium
+    notes: >-
+      University-wide total R&D expenditures (all funding sources combined — federal, state/local,
+      institutional, business, nonprofit), FY2023, per NSF NCSES's Higher Education Research and
+      Development (HERD) Survey, Table 23 — UNLV ranked 178th of 925 reporting institutions
+      nationally ($98,751,000). NCSES's HERD survey reports R&D spending at the institution level
+      only; it does not break expenditures out by individual school or department, so this is a
+      university-wide proxy, not Harrah-College-specific.
   hasPhDProgram:
     value: 1
     unit: boolean (1=yes, 0=no)

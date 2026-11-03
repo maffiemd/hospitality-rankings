@@ -53,7 +53,17 @@ outcomes:
   internshipPlacementRate:
     unit: "%"
     confidence: low
-    notes: Not yet sourced for v1 — no disclosed internship-completion or placement-rate percentage found.
+    notes: >-
+      Checked the department's own careers page (htm.pamplin.vt.edu/careers.html), which states an
+      85-90% general job-placement rate for graduates (not internship-specific — see
+      outcomes.employmentRate) but no internship completion/placement percentage. Also checked
+      Pamplin's Class of 2023 Post-Graduation Report and the HTM undergraduate catalog entry
+      (undergradcatalog.registrar.vt.edu/2122/htm.html), both of which describe the required field
+      study/internship experience but report no completion or placement rate. An undated archived HTM
+      announcement page separately cites a "97% job placement rate," but it is about general job
+      placement (not internships specifically), carries no visible date, and could not be
+      corroborated against a current report, so it was not used. No disclosed internship-specific
+      placement-rate percentage found for v1.
 
 admissions:
   acceptanceRate:
@@ -103,9 +113,22 @@ academicResearch:
     notes: >-
       Sum of career cited_by_count across 10 of 15 current named faculty (sourced from the program's own official directory) matched to an OpenAlex author record by name + institution — covers ALL of each person's publications (any journal/field), not just hospitality-tagged ones, and their full career (not a fixed year window). Unmatched faculty (common names, no OpenAlex presence, etc.) are excluded from the sum, not counted as zero. Top contributors: Zheng Xiang (15713 citations, 132 works); Juan Luis Nicolau (8039 citations, 310 works); Nancy G. McGehee (7188 citations, 115 works); Manisha Singal (3174 citations, 109 works); Florian Zach (2448 citations, 93 works).
   researchFundingUSD:
+    value: 598113000
     unit: USD/year
-    confidence: low
-    notes: Not yet sourced for v1.
+    source:
+      label: "Higher Education Research and Development (HERD) Survey, FY 2023 — Table 23, Higher education R&D expenditures, ranked by all R&D expenditures, by R&D field"
+      url: https://ncses.nsf.gov/pubs/nsf25314/assets/data-tables/tables/nsf25314-tab023.pdf
+      publisher: National Center for Science and Engineering Statistics (NCSES), U.S. National Science Foundation
+      asOfDate: "2023-01-01"
+    lastVerified: "2026-11-03"
+    confidence: medium
+    notes: >-
+      University-wide total R&D expenditures (all funding sources combined — federal, state/local,
+      institutional, business, nonprofit), FY2023, per NSF NCSES's Higher Education Research and
+      Development (HERD) Survey, Table 23 — Virginia Tech ranked 57th of 925 reporting institutions
+      nationally ($598,113,000). NCSES's HERD survey reports R&D spending at the institution level
+      only; it does not break expenditures out by individual school or department, so this is a
+      university-wide proxy, not HTM-specific.
   hasPhDProgram:
     value: 1
     unit: boolean (1=yes, 0=no)

@@ -56,8 +56,14 @@ outcomes:
     unit: "%"
     confidence: low
     notes: >
-      The major requires 1,000 hours of paid industry work for graduation, but no disclosed
-      completion- or placement-rate percentage was found for v1.
+      The major requires 1,000 hours of paid industry work for graduation
+      (business.wsu.edu/departments/hospitality/industry-experience/, catalog.wsu.edu), with an
+      employer-evaluation-score threshold (80%+) applied to that work — not a placement-rate
+      percentage. Checked Carson College's careers/job-statistics page
+      (business.wsu.edu/next-carson-coug/careers/job-statistics), which has no SHBM-specific
+      breakout. An older, undated (pre-Carson-College-naming) WSU news article says the program's
+      internship placement rate "grew sharply" over the prior year but gives no exact figure. No
+      disclosed completion- or placement-rate percentage was found for v1.
 
 admissions:
   acceptanceRate:
@@ -106,9 +112,24 @@ academicResearch:
     notes: >-
       Sum of career cited_by_count across 14 of 15 current named faculty (sourced from the program's own official directory) matched to an OpenAlex author record by name + institution — covers ALL of each person's publications (any journal/field), not just hospitality-tagged ones, and their full career (not a fixed year window). Unmatched faculty (common names, no OpenAlex presence, etc.) are excluded from the sum, not counted as zero. Top contributors: Dogan Gursoy (31435 citations, 354 works); James Harbour (21019 citations, 477 works); Christina Chi (11256 citations, 74 works); Ming-Hsiang Chen (6172 citations, 157 works); Jenny Kim (5504 citations, 57 works).
   researchFundingUSD:
+    value: 378744000
     unit: USD/year
-    confidence: low
-    notes: Not yet sourced for v1.
+    source:
+      label: "Higher Education Research and Development (HERD) Survey, FY 2023 — Table 23, Higher education R&D expenditures, ranked by all R&D expenditures, by R&D field"
+      url: https://ncses.nsf.gov/pubs/nsf25314/assets/data-tables/tables/nsf25314-tab023.pdf
+      publisher: National Center for Science and Engineering Statistics (NCSES), U.S. National Science Foundation
+      asOfDate: "2023-01-01"
+    lastVerified: "2026-11-03"
+    confidence: medium
+    notes: >-
+      University-wide total R&D expenditures (all funding sources combined — federal, state/local,
+      institutional, business, nonprofit), FY2023, per NSF NCSES's Higher Education Research and
+      Development (HERD) Survey, Table 23 — WSU ranked 84th of 925 reporting institutions nationally
+      ($378,744,000), consistent with WSU's own public announcement of "$378 million" in FY2023 R&D
+      expenditures (news.wsu.edu/news/2025/02/19/total-rd-expenditures-grow-for-third-consecutive-year/).
+      NCSES's HERD survey reports R&D spending at the institution level only; it does not break
+      expenditures out by individual school or department, so this is a university-wide proxy, not
+      SHBM-specific.
   hasPhDProgram:
     value: 1
     unit: boolean (1=yes, 0=no)
