@@ -43,7 +43,14 @@ outcomes:
   internshipPlacementRate:
     unit: "%"
     confidence: low
-    notes: Surrey's hospitality programmes include an optional professional training/placement year, but no specific internship or placement "rate" percentage is disclosed. Left blank.
+    notes: >-
+      Discover Uni's course-details block for this specific course lists "Placement year:
+      Compulsory" (and "Year abroad: Optional") — correcting this note's prior characterization of
+      the placement as optional, which described Surrey's hospitality programmes generally rather
+      than this specific BSc. Still, no placement/internship take-up rate percentage is disclosed
+      anywhere checked (Discover Uni, Surrey's own course and placement-team pages) — a compulsory
+      placement structurally implies a rate near 100% of continuing students, but this project does
+      not substitute a structural inference for a published percentage. Left blank.
 
 admissions:
   acceptanceRate:
@@ -69,9 +76,23 @@ academicResearch:
     notes: >-
       Sum of career cited_by_count across 32 of 34 current named faculty (sourced from the program's own official directory) matched to an OpenAlex author record by name + institution — covers ALL of each person's publications (any journal/field), not just hospitality-tagged ones, and their full career (not a fixed year window). Unmatched faculty (common names, no OpenAlex presence, etc.) are excluded from the sum, not counted as zero. Top contributors: Karen Kelly (21066 citations, 659 works); Iis Tussyadiah (14364 citations, 172 works); Gang Li (10512 citations, 305 works); Xavier Font (10231 citations, 198 works); Mark Ashton (8678 citations, 215 works).
   researchFundingUSD:
+    value: 60304680
     unit: USD/year
-    confidence: low
-    notes: Not yet sourced for v1.
+    source:
+      label: "University of Surrey Annual Report and Financial Statements 2024/25 — Consolidated and University statement of comprehensive income, Note 4 (Research grants and contracts)"
+      url: https://www.surrey.ac.uk/sites/default/files/2025-12/UoS-Annual-Report-2425.pdf
+      publisher: University of Surrey
+      asOfDate: "2025-07-31"
+    lastVerified: "2026-11-03"
+    confidence: medium
+    notes: >-
+      "Research grants and contracts" income from the audited Consolidated and University statement
+      of comprehensive income, year ended 31 July 2025: £47,484,000 (prior year 2023-24 was
+      £45,644,000). University-wide figure, not broken out for the hospitality/tourism school
+      specifically — same caveat as this file's facultyStudentRatio entry. The report's own narrative
+      separately describes this as "£48 million in research income" (rounded). Converted to USD at
+      an approximate rate of £1 = $1.27 (as of 2026, consistent with the rate used elsewhere in this
+      project): £47,484,000 × 1.27 ≈ $60,304,680.
   hasPhDProgram:
     value: 1
     unit: boolean (1=yes, 0=no)
@@ -88,7 +109,22 @@ academicQuality:
   sixYearGraduationRate:
     unit: "%"
     confidence: low
-    notes: Not yet sourced for v1.
+    notes: >-
+      Checked Discover Uni's course page again specifically for this: it publishes only the "after 1
+      year on the course" continuation measure already used for this file's retentionRate entry
+      (95%, 2023-24 entrant cohort, n=20) — no separate completion/graduation-rate metric exists on
+      that page. Also checked, then rejected, a figure that search results initially mislabeled as a
+      "University of Surrey Higher Education Annual Review" (93% continuation / 95% completion,
+      2023-24): reading the actual PDF directly showed it is Farnborough College of Technology's own
+      "Annual Review Report (ARR) from Associated and Accredited Institutions" — i.e. Farnborough's
+      own figures for its ~412 students on Surrey-validated degree programmes (Business Management,
+      Computing, Therapeutic Counselling, etc. — not this BSc, and not Surrey's own on-campus student
+      body). Using it here would have been a misattribution. The genuine UK equivalent — the Office
+      for Students' own "completion" measure (part of its B3 Outcomes dataset) — sits behind an
+      embedded Tableau dashboard
+      (https://www.officeforstudents.org.uk/data-and-analysis/student-outcomes-data-dashboard/data-dashboard/
+      or https://public.tableau.com/views/B32025/provider) with no figures readable outside a real
+      browser. Flagged for human follow-up rather than guessed. Left blank.
   retentionRate:
     value: 95
     unit: "%"
@@ -120,6 +156,28 @@ academicQuality:
 
 costOfAttendance:
   totalCost:
+    value: 43611
     unit: USD/year
+    source:
+      label: "International Hospitality Management — Fees"
+      url: https://www.surrey.ac.uk/undergraduate/international-hospitality-management
+      publisher: University of Surrey
+      asOfDate: "2027-09-01"
+    lastVerified: "2026-11-03"
     confidence: low
-    notes: Not yet sourced for v1. NCES/IPEDS doesn't cover non-US institutions; Surrey's own published international tuition + estimated living costs would need to be sourced directly.
+    notes: >-
+      Composite, not a single published total. Tuition: Surrey's own course page's fees section no
+      longer shows a 2026/27 figure at all — the only figure live on the page is "Fees for the
+      2027-28 academic year": £23,800/year international/overseas (Surrey's general fee-schedule
+      pages for 2026 entry have likewise already been superseded by 2027-entry pages, with no 2026/27
+      figure found anywhere on the live site). Living costs: no official university page gives a
+      specific living-cost total — Surrey's own budgeting page just points to "the minimum funding
+      required" for the student visa without stating it — so this uses the UK Home Office's own
+      Student visa minimum maintenance/funding figure directly from
+      https://www.gov.uk/student-visa/money (read 2026-11-03): £1,171/month for up to 9 months
+      outside London (Guildford counts as outside London), i.e. £10,539/year. That figure is a
+      regulatory minimum for visa approval, not an estimate of typical/average living costs, so this
+      total likely understates real cost of attendance. £23,800 + £10,539 = £34,339, converted to
+      USD at an approximate rate of £1 = $1.27 (as of 2026) ≈ $43,611. Because the tuition figure is
+      explicitly for 2027-28 entry (one year ahead of this file's other 2026/27-dated figures), treat
+      this value as a near-term estimate rather than this year's actual rate.

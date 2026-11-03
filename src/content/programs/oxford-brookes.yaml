@@ -43,21 +43,50 @@ admissions:
 
 academicResearch:
   facultyPubCitationIndex:
-    value: 0
+    value: 12389
     unit: "total career citations, current named faculty (OpenAlex)"
     source:
       label: "OpenAlex author records matched to this program's current faculty directory"
       url: https://openalex.org
       publisher: OpenAlex (processed by this project's pipeline — see methodology)
-      asOfDate: "2026-10-22"
-    lastVerified: "2026-10-22"
-    confidence: low
+      asOfDate: "2026-11-03"
+    lastVerified: "2026-11-03"
+    confidence: medium
     notes: >-
-      Queried all 11 current faculty by name against OpenAlex (institution-filtered, with unfiltered fallback); none produced a confident match. This may reflect genuinely low indexed research output among this program's teaching-focused faculty, or OpenAlex coverage gaps — not a data-gathering failure.
+      Fresh attempt. Faculty list sourced from Oxford Brookes Business School's own staff directory
+      pages (https://www.brookes.ac.uk/business/about/staff/ and
+      https://www.brookes.ac.uk/business/research/staff/), filtered to the 11 names whose listed role
+      names hospitality, tourism, or events. Matched 10 of 11 to an OpenAlex author record by name +
+      institution (Oxford Brookes University, OpenAlex institution id I124261462), summing career
+      cited_by_count across ALL of each person's publications (any field, full career, not a fixed
+      year window) — same methodology this file's Surrey counterpart uses. The one unmatched name
+      (Gordon Yan) is excluded from the sum, not counted as zero. Top contributors: Peter Lugosi
+      (3,684 citations, 120 works); Hugues Séraphin (2,668 citations, 198 works); Julian Kwabena Ayeh
+      (2,225 citations, 32 works); Zaid Alrawadieh (1,795 citations, 58 works); Rosa Codina (1,221
+      citations, 69 works); Grzegorz "Greg" Kapuściński (407 citations, 12 works); Giulia Rossetti
+      (186 citations, 27 works); Nathan Zhang (72 citations, 4 works); Kate Mingjie Ji (88 citations,
+      26 works); Claudia Macaveiu (43 citations, 8 works). Replaces the prior low-confidence value of
+      0 (logged 2026-10-22, also against all 11 current faculty, zero confident matches) — this
+      attempt's higher match rate querying OpenAlex's API directly by name + Oxford Brookes
+      institution filter. The cause of that discrepancy (different query method, a transient API
+      issue, or a difference in exactly which 11 names were queried) was not independently diagnosed.
   researchFundingUSD:
+    value: 9535160
     unit: USD/year
-    confidence: low
-    notes: Not yet sourced for v1.
+    source:
+      label: "Oxford Brookes University Financial Statements 2024/25 — Consolidated and University statement of comprehensive income and expenditure, Note 3 (Research grants and contracts)"
+      url: https://www.brookes.ac.uk/getmedia/adc77f18-7873-408f-b3b8-74acf08d7d2d/2024-25-final-digital.pdf
+      publisher: Oxford Brookes University
+      asOfDate: "2025-07-31"
+    lastVerified: "2026-11-03"
+    confidence: medium
+    notes: >-
+      "Research grants and contracts" income from the audited Consolidated and University statement
+      of comprehensive income and expenditure, year ended 31 July 2025: £7,508,000 (both Consolidated
+      and University columns; prior year 2023/24, restated, was £8,267,000). University-wide figure,
+      not broken out for the hospitality/tourism program specifically — same caveat as this file's
+      facultyStudentRatio entry. Converted to USD at an approximate rate of £1 = $1.27 (as of 2026,
+      consistent with the rate used elsewhere in this project): £7,508,000 × 1.27 ≈ $9,535,160.
   hasPhDProgram:
     value: 1
     unit: boolean (1=yes, 0=no)
@@ -74,7 +103,20 @@ academicQuality:
   sixYearGraduationRate:
     unit: "%"
     confidence: low
-    notes: Not yet sourced for v1.
+    notes: >-
+      Checked Discover Uni's course page again specifically for this: it publishes only the "after 1
+      year on the course" continuation measure already used for this file's retentionRate entry (90%,
+      pooled 2022-24 cohort) — no separate completion/graduation-rate metric exists on that page, so
+      reusing it here would just duplicate the retentionRate value under a materially different
+      definition (this field is meant as the UK equivalent of IPEDS's "150% of normal time"
+      completion rate, per this project's schema comment). The genuine UK equivalent is the Office
+      for Students' own "completion" measure (part of its B3 Outcomes dataset, projecting completion
+      over ~4-6 years) — but its data dashboard
+      (https://www.officeforstudents.org.uk/data-and-analysis/student-outcomes-data-dashboard/data-dashboard/)
+      is an embedded Tableau tool with no figures readable in the page itself; getting Oxford
+      Brookes's provider-level figure needs that dashboard (or Wonkhe's Tableau Public mirror,
+      https://public.tableau.com/views/B32025/provider) opened in a real browser. Flagged for human
+      follow-up rather than guessed. Left blank.
   retentionRate:
     value: 90
     unit: "%"
@@ -106,6 +148,23 @@ academicQuality:
 
 costOfAttendance:
   totalCost:
+    value: 35737
     unit: USD/year
+    source:
+      label: "International Hospitality and Tourism Management — Fees"
+      url: https://brookes.ac.uk/courses/undergraduate/international-hospitality-and-tourism-management
+      publisher: Oxford Brookes University
+      asOfDate: "2026-09-01"
+    lastVerified: "2026-11-03"
     confidence: low
-    notes: Not yet sourced for v1. NCES/IPEDS doesn't cover non-US institutions; Oxford Brookes' own published international tuition + estimated living costs would need to be sourced directly.
+    notes: >-
+      Composite, not a single published total. Tuition: Oxford Brookes's own course page states the
+      international/overseas fee for 2026/27 as £17,600/year (rising to £18,500 for 2027/28; the page
+      warns fees may increase for continuing international students too). Living costs: no official
+      university page gives a specific living-cost total, so this uses the UK Home Office's own
+      Student visa minimum maintenance/funding figure — £1,171/month for up to 9 months outside
+      London (Oxford counts as outside London for this purpose), i.e. £10,539/year, read directly
+      from https://www.gov.uk/student-visa/money on 2026-11-03. That figure is a regulatory minimum
+      for visa approval, not an estimate of typical/average living costs, so this total likely
+      understates real cost of attendance. £17,600 + £10,539 = £28,139, converted to USD at an
+      approximate rate of £1 = $1.27 (as of 2026) ≈ $35,737.
