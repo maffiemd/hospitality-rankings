@@ -30,9 +30,16 @@ outcomes:
     confidence: medium
     notes: "90% of graduates were in work and/or further study 15 months after completing the course (HESA Graduate Outcomes survey, 2023-24 graduating cohort, 25 respondents / 60% response rate). Surrey's own marketing page separately cites a broader \"96% of hospitality and tourism management graduates\" figure across the whole department/multiple courses; the course-specific Discover Uni figure was used instead for program-level accuracy."
   recruiterReputationScore:
+    value: 48.5
     unit: "0-100"
-    confidence: low
-    notes: Not yet sourced for v1.
+    source:
+      label: "QS World University Rankings by Subject 2026 — Hospitality & Leisure Management, Employer Reputation indicator"
+      url: https://www.topuniversities.com/university-subject-rankings/hospitality-leisure-management
+      publisher: QS Quacquarelli Symonds
+      asOfDate: "2026-03-25"
+    lastVerified: "2026-11-02"
+    confidence: medium
+    notes: QS's Employer Reputation indicator score (not the composite subject rank) for the 2026 Hospitality & Leisure Management subject table, where Surrey ranked No. 18 worldwide (overall score 62.9).
   internshipPlacementRate:
     unit: "%"
     confidence: low
@@ -83,10 +90,29 @@ academicQuality:
     confidence: low
     notes: Not yet sourced for v1.
   retentionRate:
+    value: 95
     unit: "%"
-    confidence: low
-    notes: Not yet sourced for v1.
+    source:
+      label: "International Hospitality Management BSc (Hons) — course data"
+      url: https://www.discoveruni.gov.uk/course-details/10007160/UKA10S0002U/FullTime/
+      publisher: Discover Uni (Office for Students / HESA)
+      asOfDate: "2025-01-01"
+    lastVerified: "2026-11-02"
+    confidence: medium
+    notes: >-
+      Discover Uni's "After 1 year on the course" continuation measure: 95% of students were still
+      on the course or had completed it (95% still studying + 0% completed), for the 2023-24 entrant
+      cohort (n=20). Closest UK equivalent to the US first-to-second-year retention rate used for
+      other schools in this dataset, though it measures continuation after 1 year generally rather
+      than specifically year-1-to-year-2 re-enrollment; treat as directionally comparable, not an
+      identical definition.
   facultyStudentRatio:
     unit: students per faculty
     confidence: low
     notes: Not yet sourced for v1.
+
+costOfAttendance:
+  totalCost:
+    unit: USD/year
+    confidence: low
+    notes: Not yet sourced for v1. NCES/IPEDS doesn't cover non-US institutions; Surrey's own published international tuition + estimated living costs would need to be sourced directly.

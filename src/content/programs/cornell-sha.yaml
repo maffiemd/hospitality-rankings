@@ -30,9 +30,16 @@ outcomes:
     confidence: high
     notes: 91% of the class received full-time offers and 91% accepted within 4 months of graduation; figure covers the 170 of 221 graduates who sought full-time employment.
   recruiterReputationScore:
+    value: 57.1
     unit: "0-100"
-    confidence: low
-    notes: Not yet sourced — no disclosed recruiting-partner-breadth dataset found for v1. Left blank rather than estimated.
+    source:
+      label: "QS World University Rankings by Subject 2026 — Hospitality & Leisure Management, Employer Reputation indicator"
+      url: https://www.topuniversities.com/university-subject-rankings/hospitality-leisure-management
+      publisher: QS Quacquarelli Symonds
+      asOfDate: "2026-03-25"
+    lastVerified: "2026-11-02"
+    confidence: medium
+    notes: QS's Employer Reputation indicator score (not the composite subject rank) for the 2026 Hospitality & Leisure Management subject table, where Cornell ranked No. 16 worldwide (overall score 65.5).
   internshipPlacementRate:
     unit: "%"
     confidence: low
@@ -125,3 +132,16 @@ academicQuality:
     lastVerified: "2026-10-21"
     confidence: medium
     notes: University-wide ratio; IPEDS/College Navigator does not report this broken out by individual school or department.
+
+costOfAttendance:
+  totalCost:
+    value: 92150
+    unit: USD/year
+    source:
+      label: "College Navigator — institution profile (NCES UnitID 190415)"
+      url: https://nces.ed.gov/collegenavigator/?id=190415
+      publisher: National Center for Education Statistics (NCES), U.S. Department of Education
+      asOfDate: "2024-01-01"
+    lastVerified: "2026-11-02"
+    confidence: medium
+    notes: Published on-campus total cost of attendance (tuition, fees, books, food & housing, other expenses) for the 2024-2025 academic year, per IPEDS/College Navigator; private institution, so there's no in-state/out-of-state distinction. University-wide, not SHA-specific.

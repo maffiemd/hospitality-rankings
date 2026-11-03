@@ -24,9 +24,25 @@ outcomes:
     confidence: high
     notes: This is EHL's own NECHE-mandated public disclosure figure for the "active graduates" rate (employed, in a management trainee scheme, running their own business, or continuing study) among the 2022 graduating cohort, surveyed roughly 1 year after graduation. EHL's marketing pages separately advertise "96% securing jobs within 6 months," but that figure does not state a cohort year, so the dated official disclosure report was used instead as the more verifiable primary source.
   recruiterReputationScore:
+    value: 100
     unit: "0-100"
-    confidence: low
-    notes: Not yet sourced for v1.
+    source:
+      label: "EHL Group — Rankings (QS World University Rankings by Subject 2026, Hospitality & Leisure Management)"
+      url: https://ehlgroup.com/en/about-ehl/rankings
+      publisher: EHL Group
+      asOfDate: "2026-03-26"
+    lastVerified: "2026-11-02"
+    confidence: medium
+    notes: >-
+      QS's Employer Reputation indicator score (not the composite subject rank) for the 2026 Hospitality
+      & Leisure Management subject table, where EHL ranked No. 1 worldwide with a 98.3 overall score.
+      EHL has self-reported a perfect 100/100 on this specific indicator across multiple consecutive QS
+      editions (institution press releases cite 100 for 2022, 2025, and 2026 alike). The figure comes
+      from EHL's own rankings page, not an independent read of QS's raw public table (indicator-level
+      breakdowns were not otherwise accessible), so treat this as institution-reported rather than
+      primary-verified. Still a provisional proxy per this project's schema: it reflects aggregate
+      employer-survey sentiment toward the institution's subject area, not a direct measure of this
+      specific program's recruiter relationships.
   internshipPlacementRate:
     unit: "%"
     confidence: low
@@ -84,3 +100,9 @@ academicQuality:
     unit: students per faculty
     confidence: low
     notes: Not yet sourced for v1.
+
+costOfAttendance:
+  totalCost:
+    unit: USD/year
+    confidence: low
+    notes: Not yet sourced for v1. NCES/IPEDS doesn't cover non-US institutions; EHL's own published tuition + estimated living costs would need to be sourced directly.

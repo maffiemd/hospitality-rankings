@@ -16,9 +16,16 @@ outcomes:
     confidence: low
     notes: Discover Uni shows no published Graduate Outcomes (15 months after course) data for this specific course, citing small course size / insufficient survey responses. A broader "Business and management" subject aggregate for Oxford Brookes reports about 87% in work/study after 15 months, but that figure is not specific to this hospitality program, so it was not used here. Left blank.
   recruiterReputationScore:
+    value: 55.8
     unit: "0-100"
-    confidence: low
-    notes: Not yet sourced for v1.
+    source:
+      label: "QS World University Rankings by Subject 2026 — Hospitality & Leisure Management, Employer Reputation indicator"
+      url: https://www.topuniversities.com/university-subject-rankings/hospitality-leisure-management
+      publisher: QS Quacquarelli Symonds
+      asOfDate: "2026-03-25"
+    lastVerified: "2026-11-02"
+    confidence: medium
+    notes: QS's Employer Reputation indicator score (not the composite subject rank) for the 2026 Hospitality & Leisure Management subject table, where Oxford Brookes ranked No. 29 worldwide (overall score 57.3).
   internshipPlacementRate:
     unit: "%"
     confidence: low
@@ -69,10 +76,29 @@ academicQuality:
     confidence: low
     notes: Not yet sourced for v1.
   retentionRate:
+    value: 90
     unit: "%"
-    confidence: low
-    notes: Not yet sourced for v1.
+    source:
+      label: "BSc (Hons) International Hospitality and Tourism Management — course data"
+      url: https://www.discoveruni.gov.uk/course-details/10004930/BSCH-HM/FullTime/
+      publisher: Discover Uni (Office for Students / HESA)
+      asOfDate: "2025-01-01"
+    lastVerified: "2026-11-02"
+    confidence: medium
+    notes: >-
+      Discover Uni's "After 1 year on the course" continuation measure: 90% of students were still
+      on the course or had completed it (85% still studying + 5% completed), for the pooled 2022-24
+      entrant cohort (n=45) — Discover Uni pools two entry years for this course because of its small
+      size. Closest UK equivalent to the US first-to-second-year retention rate used for other schools
+      in this dataset, though it measures continuation after 1 year generally rather than specifically
+      year-1-to-year-2 re-enrollment; treat as directionally comparable, not an identical definition.
   facultyStudentRatio:
     unit: students per faculty
     confidence: low
     notes: Not yet sourced for v1.
+
+costOfAttendance:
+  totalCost:
+    unit: USD/year
+    confidence: low
+    notes: Not yet sourced for v1. NCES/IPEDS doesn't cover non-US institutions; Oxford Brookes' own published international tuition + estimated living costs would need to be sourced directly.

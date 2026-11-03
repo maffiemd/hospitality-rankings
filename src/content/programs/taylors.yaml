@@ -23,14 +23,21 @@ outcomes:
     confidence: low
     notes: Taylor's cites a "100% graduate employment rate (2025 MOHE Graduate Tracer Study)" on this program's own page, but the underlying Graduate Tracer Study figure is Taylor's University-wide, not broken out specifically for the Culinary Management cohort. Flagged low confidence pending a program-specific figure.
   recruiterReputationScore:
+    value: 49.1
     unit: "0-100"
-    confidence: low
-    notes: >
-      Not scored for v1. Noted for context only: Taylor's Culinary Institute is ranked world No. 26 and
-      No. 1 in Southeast Asia for Hospitality & Leisure Management in the QS World University Rankings
-      by Subject 2026, and Taylor's University ranked #16 globally for Graduate Employment Rate in the
-      QS Graduate Employability Rankings 2022. Neither discloses a raw, program-comparable
-      recruiter-reputation score.
+    source:
+      label: "QS World University Rankings by Subject 2026 — Hospitality & Leisure Management, Employer Reputation indicator"
+      url: https://www.topuniversities.com/university-subject-rankings/hospitality-leisure-management
+      publisher: QS Quacquarelli Symonds
+      asOfDate: "2026-03-25"
+    lastVerified: "2026-11-02"
+    confidence: medium
+    notes: >-
+      QS's Employer Reputation indicator score (not the composite subject rank) for the 2026
+      Hospitality & Leisure Management subject table, where Taylor's ranked No. 26 worldwide (overall
+      score 57.9), confirming the overall-rank figure already noted here. Taylor's University
+      separately ranked #16 globally for Graduate Employment Rate in the QS Graduate Employability
+      Rankings 2022, noted here for context only since that's a different ranking and metric.
   internshipPlacementRate:
     unit: "%"
     confidence: low
@@ -98,3 +105,9 @@ academicQuality:
     unit: students per faculty
     confidence: low
     notes: Not yet sourced for v1.
+
+costOfAttendance:
+  totalCost:
+    unit: USD/year
+    confidence: low
+    notes: Not yet sourced for v1. NCES/IPEDS doesn't cover non-US institutions; Taylor's own published tuition + estimated living costs would need to be sourced directly.

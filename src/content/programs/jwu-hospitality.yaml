@@ -8,12 +8,27 @@ degreeName: B.S. Hospitality Management
 
 outcomes:
   startingSalary:
+    value: 55790
     unit: USD/year
-    confidence: low
-    notes: >
-      No JWU-specific or College-of-Hospitality-Management-specific starting-salary figure was found
-      for v1; JWU's public Career Outcomes reporting discloses an outcomes rate (employed, continuing
-      education, or in service/military) rather than a salary figure.
+    source:
+      label: "Gainful Employment earnings-test data, CIP 52.09 Hospitality Administration/Management, Bachelor's (institution-level extract)"
+      url: https://www.theheagroup.com/blog/earnings-test-data
+      publisher: "The HEA Group, from U.S. Department of Education Gainful Employment (OBBBA) earnings-test data"
+      asOfDate: "2024-01-01"
+    lastVerified: "2026-11-02"
+    confidence: medium
+    notes: >-
+      Not a starting-salary figure like most other schools in this dataset — this is median earnings
+      four years after completion for the Johnson & Wales University-Providence Hospitality
+      Administration/Management bachelor's completers (pooled 2017-18/2018-19 completer cohorts,
+      earnings measured in CY2022-CY2023, inflation-adjusted to 2024 dollars), from the federal
+      Gainful Employment earnings test, via The HEA Group's compiled extract. Used here because no
+      JWU-specific or College-of-Hospitality-Management-specific starting-salary figure was otherwise
+      found (JWU's public Career Outcomes reporting discloses only an outcomes rate, not a salary) —
+      treat as a different metric vintage/definition than schools with a self-reported starting-salary
+      figure, not a directly comparable number. Figure is for the Providence campus, where this
+      program's Hospitality Administration/Management CIP code is reported; JWU's College of
+      Hospitality Management is administered from Providence.
   employmentRate:
     value: 92.3
     unit: "%"
@@ -137,3 +152,16 @@ academicQuality:
     lastVerified: "2026-10-21"
     confidence: medium
     notes: University-wide ratio; IPEDS/College Navigator does not report this broken out by individual school or department.
+
+costOfAttendance:
+  totalCost:
+    value: 65377
+    unit: USD/year
+    source:
+      label: "College Navigator — institution profile (NCES UnitID 217235)"
+      url: https://nces.ed.gov/collegenavigator/?id=217235
+      publisher: National Center for Education Statistics (NCES), U.S. Department of Education
+      asOfDate: "2024-01-01"
+    lastVerified: "2026-11-02"
+    confidence: medium
+    notes: Published on-campus total cost of attendance (tuition, fees, books, food & housing, other expenses) for the 2024-2025 academic year, per IPEDS/College Navigator; private institution, so there's no in-state/out-of-state distinction. University-wide (Providence campus), not College-of-Hospitality-Management-specific.

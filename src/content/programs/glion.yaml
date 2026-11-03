@@ -24,9 +24,24 @@ outcomes:
     confidence: medium
     notes: '"98% of job-seeking students have one or more job offers upon graduation" per Glion''s own site. This is a job-offer rate at graduation, not a post-graduation employment survey result like EHL''s, and Glion''s page does not state a specific graduating cohort or survey year — the figure is treated as current as of the QS 2026 rankings cycle referenced on the same page.'
   recruiterReputationScore:
+    value: 93.5
     unit: "0-100"
-    confidence: low
-    notes: Not yet sourced for v1.
+    source:
+      label: "Glion ranked No. 3 worldwide in QS 2026"
+      url: https://www.glion.edu/ranking/
+      publisher: Glion Institute of Higher Education
+      asOfDate: "2026-03-26"
+    lastVerified: "2026-11-02"
+    confidence: medium
+    notes: >-
+      QS's Employer Reputation indicator score (not the composite subject rank) for the 2026
+      Hospitality & Leisure Management subject table — Glion ranked No. 3 worldwide overall and also
+      No. 3 worldwide specifically on this indicator, with Academic Reputation reported at 89.9/100 in
+      the same release. The figure comes from Glion's own rankings page, not an independent read of
+      QS's raw public table (indicator-level breakdowns were not otherwise accessible), so treat this
+      as institution-reported rather than primary-verified. Still a provisional proxy per this
+      project's schema: it reflects aggregate employer-survey sentiment toward the institution's
+      subject area, not a direct measure of this specific program's recruiter relationships.
   internshipPlacementRate:
     unit: "%"
     confidence: low
@@ -84,3 +99,9 @@ academicQuality:
     unit: students per faculty
     confidence: low
     notes: Not yet sourced for v1.
+
+costOfAttendance:
+  totalCost:
+    unit: USD/year
+    confidence: low
+    notes: Not yet sourced for v1. NCES/IPEDS doesn't cover non-US institutions; Glion's own published tuition + estimated living costs would need to be sourced directly.

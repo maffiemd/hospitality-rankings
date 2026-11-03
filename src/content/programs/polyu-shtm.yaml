@@ -39,14 +39,23 @@ outcomes:
       Flagged medium confidence because this is a maintainer calculation from raw published counts rather
       than a rate PolyU itself discloses pre-computed for SHTM.
   recruiterReputationScore:
+    value: 57.3
     unit: "0-100"
-    confidence: low
-    notes: >
-      Not scored for v1. Noted for context only, not used as an input: SHTM is ranked No. 1 globally in
-      "Hospitality and Tourism Management" by ShanghaiRanking's Global Ranking of Academic Subjects for
-      multiple consecutive years, and No. 2 globally in Hospitality and Leisure Management by QS World
-      University Rankings by Subject 2026. Neither ranking discloses a raw, program-comparable
-      recruiter-reputation score.
+    source:
+      label: "QS World University Rankings by Subject 2026 — Hospitality & Leisure Management, Employer Reputation indicator"
+      url: https://www.topuniversities.com/university-subject-rankings/hospitality-leisure-management
+      publisher: QS Quacquarelli Symonds
+      asOfDate: "2026-03-25"
+    lastVerified: "2026-11-02"
+    confidence: medium
+    notes: >-
+      QS's Employer Reputation indicator score (not the composite subject rank) for the 2026
+      Hospitality & Leisure Management subject table, where PolyU ranked No. 15 worldwide (overall
+      score 69.2) — correcting an earlier note in this file that cited "No. 2 globally" for this same
+      2026 QS table, which doesn't match the live table as verified on 2026-11-02. PolyU is also
+      ranked No. 1 globally in "Hospitality and Tourism Management" by ShanghaiRanking's Global
+      Ranking of Academic Subjects for multiple consecutive years, noted here for context only since
+      that ranking doesn't disclose a raw, program-comparable score.
   internshipPlacementRate:
     unit: "%"
     confidence: low
@@ -121,3 +130,9 @@ academicQuality:
     unit: students per faculty
     confidence: low
     notes: Not yet sourced for v1.
+
+costOfAttendance:
+  totalCost:
+    unit: USD/year
+    confidence: low
+    notes: Not yet sourced for v1. NCES/IPEDS doesn't cover non-US institutions; PolyU's own published non-local-student tuition + estimated living costs would need to be sourced directly.

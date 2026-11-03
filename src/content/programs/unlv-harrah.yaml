@@ -28,13 +28,21 @@ outcomes:
     confidence: low
     notes: Not yet sourced for v1 — no disclosed employment-rate figure found on the college's career-services pages.
   recruiterReputationScore:
+    value: 74.1
     unit: "0-100"
-    confidence: low
-    notes: >
-      Not scored for v1. UNLV was separately ranked #1 globally for Hospitality & Hotel Management by
-      CEOWORLD Magazine and #1 in the US for Hospitality & Leisure Management by QS World University
-      Rankings by Subject 2026 — noted here for context only, not used as an input, since neither
-      ranking discloses a raw, program-comparable recruiter-reputation score.
+    source:
+      label: "QS World University Rankings by Subject 2026 — Hospitality & Leisure Management, Employer Reputation indicator"
+      url: https://www.topuniversities.com/university-subject-rankings/hospitality-leisure-management
+      publisher: QS Quacquarelli Symonds
+      asOfDate: "2026-03-25"
+    lastVerified: "2026-11-02"
+    confidence: medium
+    notes: >-
+      QS's Employer Reputation indicator score (not the composite subject rank) for the 2026
+      Hospitality & Leisure Management subject table, where UNLV ranked No. 6 worldwide (overall
+      score 82.9) — the highest of any US institution in this subject table. UNLV was also separately
+      ranked #1 globally for Hospitality & Hotel Management by CEOWORLD Magazine, noted here for
+      context only since that ranking doesn't disclose a raw, program-comparable score of its own.
   internshipPlacementRate:
     unit: "%"
     confidence: low
@@ -127,3 +135,16 @@ academicQuality:
     lastVerified: "2026-10-21"
     confidence: medium
     notes: University-wide ratio; IPEDS/College Navigator does not report this broken out by individual school or department.
+
+costOfAttendance:
+  totalCost:
+    value: 27988
+    unit: USD/year
+    source:
+      label: "College Navigator — institution profile (NCES UnitID 182281)"
+      url: https://nces.ed.gov/collegenavigator/?id=182281
+      publisher: National Center for Education Statistics (NCES), U.S. Department of Education
+      asOfDate: "2024-01-01"
+    lastVerified: "2026-11-02"
+    confidence: medium
+    notes: In-state, on-campus total cost of attendance (tuition, fees, books, food & housing, other expenses) for the 2024-2025 academic year, per IPEDS/College Navigator. Public institution — this project uses the in-state figure, matching NCES's own primary net-price convention; out-of-state students would pay more. University-wide, not Harrah-College-specific.
