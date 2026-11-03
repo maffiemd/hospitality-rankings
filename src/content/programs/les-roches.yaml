@@ -96,9 +96,16 @@ academicQuality:
     confidence: low
     notes: Not yet sourced for v1.
   facultyStudentRatio:
+    value: 16
     unit: students per faculty
-    confidence: low
-    notes: Not yet sourced for v1.
+    source:
+      label: "Les Roches — About (\"Student to faculty ratio\" stat)"
+      url: https://www.lesroches.edu/about
+      publisher: Les Roches Global Hospitality Education
+      asOfDate: "2026-10-29"
+    lastVerified: "2026-11-03"
+    confidence: medium
+    notes: Les Roches' own published "Student to faculty ratio" marketing statistic, on a page last updated 2026-10-29; no academic year or methodology is given.
 
 costOfAttendance:
   totalCost:

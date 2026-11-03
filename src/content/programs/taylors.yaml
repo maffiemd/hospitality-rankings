@@ -104,7 +104,7 @@ academicQuality:
   facultyStudentRatio:
     unit: students per faculty
     confidence: low
-    notes: Not yet sourced for v1.
+    notes: Not yet sourced for v1 — no ratio found on Taylor's own site (about-us, QS rankings page) or readable on THE's Taylor's University profile (key stats appear to be JavaScript-rendered and didn't come through on fetch); only an unverified third-party estimate (16:1, university-wide) was found.
 
 costOfAttendance:
   totalCost:

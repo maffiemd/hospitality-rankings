@@ -99,7 +99,7 @@ academicQuality:
   facultyStudentRatio:
     unit: students per faculty
     confidence: low
-    notes: Not yet sourced for v1.
+    notes: Not yet sourced for v1 — checked EHL's own "Why EHL" and "EHL by the Numbers" pages, neither states a ratio in readable text (a marketing claim of 12:1 circulates on third-party sites but isn't confirmed on ehl.edu itself, and conflicts with headcount-derived estimates from those same sites).
 
 costOfAttendance:
   totalCost:

@@ -93,9 +93,16 @@ academicQuality:
       in this dataset, though it measures continuation after 1 year generally rather than specifically
       year-1-to-year-2 re-enrollment; treat as directionally comparable, not an identical definition.
   facultyStudentRatio:
+    value: 17.6
     unit: students per faculty
-    confidence: low
-    notes: Not yet sourced for v1.
+    source:
+      label: "Times Higher Education — World University Rankings 2027, Oxford Brookes University profile ('Students per staff')"
+      url: https://www.timeshighereducation.com/world-university-rankings/oxford-brookes-university
+      publisher: Times Higher Education
+      asOfDate: "2026-01-01"
+    lastVerified: "2026-11-03"
+    confidence: medium
+    notes: University-wide figure (THE World University Rankings 2027 edition), not broken out for the hospitality/tourism program specifically. Discover Uni's course page does not publish a staff ratio for this course.
 
 costOfAttendance:
   totalCost:

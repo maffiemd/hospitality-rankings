@@ -127,9 +127,16 @@ academicQuality:
     confidence: low
     notes: Not yet sourced for v1.
   facultyStudentRatio:
+    value: 16.2
     unit: students per faculty
-    confidence: low
-    notes: Not yet sourced for v1.
+    source:
+      label: "Times Higher Education — School of Hotel and Tourism Management profile ('No. of students per staff')"
+      url: https://www.timeshighereducation.com/world-university-rankings/hong-kong-polytechnic-university-school-hotel-and-tourism-management
+      publisher: Times Higher Education
+      asOfDate: "2026-01-01"
+    lastVerified: "2026-11-03"
+    confidence: medium
+    notes: School-specific figure (not university-wide) — THE's dedicated SHTM profile page, alongside an FTE student count of 1,040; no reporting year is stated on the page beyond the profile itself.
 
 costOfAttendance:
   totalCost:

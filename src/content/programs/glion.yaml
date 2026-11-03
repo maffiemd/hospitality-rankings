@@ -96,9 +96,16 @@ academicQuality:
     confidence: low
     notes: Not yet sourced for v1.
   facultyStudentRatio:
+    value: 15
     unit: students per faculty
-    confidence: low
-    notes: Not yet sourced for v1.
+    source:
+      label: "Glion — About Us (\"Our statistics\" / \"Student to Faculty Ratio\")"
+      url: https://www.glion.edu/about-us/
+      publisher: Glion Institute of Higher Education
+      asOfDate: "2026-11-03"
+    lastVerified: "2026-11-03"
+    confidence: medium
+    notes: Glion's own published "Student to Faculty Ratio" marketing statistic (also shown on glion.edu's homepage); no academic year or methodology is given, and no independent faculty/student headcount data was found to cross-check it against.
 
 costOfAttendance:
   totalCost:
