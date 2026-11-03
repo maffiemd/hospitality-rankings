@@ -11,7 +11,7 @@ outcomes:
   startingSalary:
     unit: USD/year
     confidence: low
-    notes: No official EHL starting-salary disclosure was found. Only crowd-sourced aggregator data (Glassdoor/Emolument alumni self-reports) exists, ranging roughly $61,000-$105,000/year depending on role and degree classification, which is too inconsistent and unverifiable to cite as a figure. Left blank rather than averaging unreliable third-party data.
+    notes: No official EHL starting-salary disclosure was found. Only crowd-sourced aggregator data (Glassdoor/Emolument alumni self-reports) exists, ranging roughly $61,000-$105,000/year depending on role and degree classification, which is too inconsistent and unverifiable to cite as a figure. Left blank rather than averaging unreliable third-party data. Checked 2026-11-03 — EHL's own "Why EHL" page (ehl.edu) and EHL Group's "Key Facts" page (ehlgroup.com/en/about-ehl/media-center) were read directly — neither states a salary figure, only the existing 96%-employed-within-6-months stat. No EHL career-services salary report was found. Still left blank.
   employmentRate:
     value: 90.74
     unit: "%"
@@ -46,13 +46,13 @@ outcomes:
   internshipPlacementRate:
     unit: "%"
     confidence: low
-    notes: EHL's bachelor curriculum includes mandatory paid internships, but no specific "placement rate" percentage is independently disclosed by the school. Left blank rather than inferring a figure from the fact that internships are a curriculum requirement.
+    notes: EHL's bachelor curriculum includes mandatory paid internships, but no specific "placement rate" percentage is independently disclosed by the school. Left blank rather than inferring a figure from the fact that internships are a curriculum requirement. Checked 2026-11-03 — EHL's Lausanne and Passugg "careers/internships" pages (ehl.edu) describe program structure (24-week minimum windows, a ~1,500-student recruitment event) but state no placement percentage. Still left blank.
 
 admissions:
   acceptanceRate:
     unit: "%"
     confidence: low
-    notes: Not publicly disclosed by EHL. Third-party aggregators cite conflicting, unverified figures (30%, 34%, 45%, 90% have all appeared) with no traceable link to an EHL or Swiss accreditor primary source. Left blank rather than picking one of the conflicting estimates.
+    notes: Not publicly disclosed by EHL. Third-party aggregators cite conflicting, unverified figures (30%, 34%, 45%, 90% have all appeared) with no traceable link to an EHL or Swiss accreditor primary source. Left blank rather than picking one of the conflicting estimates. Checked 2026-11-03 — same conflicting aggregator figures still surface (now also a "45.35%, Class of 2026" figure from findmyorbit, itself a US-style automated data pull with no EHL citation); EHL's own admissions and accreditation pages disclose no rate. Still left blank.
   satActEquivalent:
     unit: "percentile, national test-taking cohort"
     confidence: low
@@ -74,7 +74,7 @@ academicResearch:
   researchFundingUSD:
     unit: USD/year
     confidence: low
-    notes: Not yet sourced for v1.
+    notes: Not yet sourced for v1. Checked 2026-11-03 — EHL Research microsite (research.ehl.edu) and EHL Group pages describe a sponsorship-funded research-institute model (40+ research associates and industry experts, several sponsored labs e.g. the Institute of Business Creativity) but disclose no budget or funding total, confirming this is a reasonable search-effort case per this project's guidance for small teaching-focused schools. Left blank.
   hasPhDProgram:
     value: 1
     unit: boolean (1=yes, 0=no)
@@ -91,15 +91,15 @@ academicQuality:
   sixYearGraduationRate:
     unit: "%"
     confidence: low
-    notes: Not yet sourced for v1.
+    notes: Not yet sourced for v1. Checked 2026-11-03 — no EHL-published graduation rate found despite NECHE accreditation (which nominally tracks student achievement) — EHL's NECHE accreditation-status letter (ehl.edu/hubfs/NECHE-EHL.doc.pdf) is just a one-page accreditation-confirmation letter from NECHE with no data, and no separate EHL public-disclosure-of-student-achievement page was found (unlike the sister-school "in numbers" infographic page that worked for Glion — EHL has no equivalent page with this data). Left blank.
   retentionRate:
     unit: "%"
     confidence: low
-    notes: Not yet sourced for v1.
+    notes: Not yet sourced for v1. Checked 2026-11-03 — same search as sixYearGraduationRate above — no EHL-published first-to-second-year retention rate found. Left blank.
   facultyStudentRatio:
     unit: students per faculty
     confidence: low
-    notes: Not yet sourced for v1 — checked EHL's own "Why EHL" and "EHL by the Numbers" pages, neither states a ratio in readable text (a marketing claim of 12:1 circulates on third-party sites but isn't confirmed on ehl.edu itself, and conflicts with headcount-derived estimates from those same sites).
+    notes: Not yet sourced for v1 — checked EHL's own "Why EHL" and "EHL by the Numbers" pages, neither states a ratio in readable text (a marketing claim of 12:1 circulates on third-party sites but isn't confirmed on ehl.edu itself, and conflicts with headcount-derived estimates from those same sites). Checked 2026-11-03 — EHL Group's "Key Facts" page (ehlgroup.com/en/about-ehl/media-center) gives 4,000 enrolled students and "+750 Staff & Faculty members" institution-wide, but that figure conflates administrative staff with teaching faculty (unlike Glion/Les Roches's own clean "Student to faculty ratio" marketing stat), so it wasn't used to compute a ratio. Still left blank.
 
 costOfAttendance:
   totalCost:

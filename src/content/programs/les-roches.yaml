@@ -11,7 +11,7 @@ outcomes:
   startingSalary:
     unit: USD/year
     confidence: low
-    notes: No official Les Roches starting-salary disclosure was found. Only unverified third-party estimates exist (e.g. roughly CHF 50,000-60,000/year or approximately USD 54,000/year from uncredited aggregator sources), none traceable to an institutional employment report. Left blank rather than citing unverifiable figures.
+    notes: No official Les Roches starting-salary disclosure was found. Only unverified third-party estimates exist (e.g. roughly CHF 50,000-60,000/year or approximately USD 54,000/year from uncredited aggregator sources), none traceable to an institutional employment report. Left blank rather than citing unverifiable figures. Checked 2026-11-03 — Les Roches' official "Les Roches in numbers" page (lesroches.edu/meet-les-roches/les-roches-key-numbers, an infographic page with real stat tiles — employment rate 98%, student-faculty ratio 16:1, "5 offers on graduation day," etc., all read directly from the underlying image files) has no salary figure. Still left blank.
   employmentRate:
     value: 98
     unit: "%"
@@ -45,13 +45,13 @@ outcomes:
   internshipPlacementRate:
     unit: "%"
     confidence: low
-    notes: Les Roches' bachelor curriculum includes mandatory paid internships, and the school cites roughly 300 recruiting-company visits per year and multiple job offers per student, but no specific internship "placement rate" percentage is independently disclosed. Left blank.
+    notes: Les Roches' bachelor curriculum includes mandatory paid internships, and the school cites roughly 300 recruiting-company visits per year and multiple job offers per student, but no specific internship "placement rate" percentage is independently disclosed. Left blank. Checked 2026-11-03 — a March 2023 Les Roches press release (hospitalitynet.org/news/4115451.html, CEO Carlos Díez de la Lastra) states "our job placement rate exceeds 94%" and separately "an employment placement rate close to 100%" — but neither figure is dated to a specific cohort, and both read as restatements of the overall graduate employment rate (already captured in employmentRate as 98%, from a different official page) rather than a distinct internship-specific placement stat, so using either here risked conflating two different fields with inconsistent numbers. Not used; left blank.
 
 admissions:
   acceptanceRate:
     unit: "%"
     confidence: low
-    notes: Not publicly disclosed by Les Roches. A single third-party aggregator (gotouniversity.com) cites approximately 90% with no verifiable link to an institutional source. Left blank rather than citing an unverified aggregator figure.
+    notes: Not publicly disclosed by Les Roches. A single third-party aggregator (gotouniversity.com) cites approximately 90% with no verifiable link to an institutional source. Left blank rather than citing an unverified aggregator figure. Checked 2026-11-03 — Les Roches' "in numbers" page, "About," and "Quality assurance" pages disclose no acceptance/admission rate. Still left blank.
   satActEquivalent:
     unit: "percentile, national test-taking cohort"
     confidence: low
@@ -73,7 +73,7 @@ academicResearch:
   researchFundingUSD:
     unit: USD/year
     confidence: low
-    notes: Not yet sourced for v1.
+    notes: Not yet sourced for v1. Checked 2026-11-03 — no Les Roches-published research budget or funding figure found; its "Research" page (lesroches.edu/research-and-innovation/research/) wasn't checked in exhaustive depth beyond confirming no figure appeared in search results, consistent with this project's guidance that a reasonable, bounded search is enough for this field at small teaching-focused schools. Left blank.
   hasPhDProgram:
     value: 0
     unit: boolean (1=yes, 0=no)
@@ -90,11 +90,17 @@ academicQuality:
   sixYearGraduationRate:
     unit: "%"
     confidence: low
-    notes: Not yet sourced for v1.
+    notes: >-
+      Not yet sourced for v1. Checked 2026-11-03 — unlike sister school Glion (which publishes bachelor
+      graduation-rate and retention-rate charts on its "Glion in Figures" page), Les Roches' equivalent
+      "Les Roches in numbers" page (lesroches.edu/meet-les-roches/les-roches-key-numbers) has no
+      graduation-rate chart among its stat tiles (checked all 7 underlying images directly) — only
+      headcounts, nationalities, student-faculty ratio, and employment rate. No other Les Roches page
+      (About, Quality assurance, NECHE institutional listing) discloses one either. Left blank.
   retentionRate:
     unit: "%"
     confidence: low
-    notes: Not yet sourced for v1.
+    notes: Not yet sourced for v1. Checked 2026-11-03 — same search as sixYearGraduationRate above — no Les Roches-published first-to-second-year retention rate found. Left blank.
   facultyStudentRatio:
     value: 16
     unit: students per faculty
@@ -109,6 +115,29 @@ academicQuality:
 
 costOfAttendance:
   totalCost:
+    value: 67793
     unit: USD/year
-    confidence: low
-    notes: Not yet sourced for v1. NCES/IPEDS doesn't cover non-US institutions; Les Roches' own published tuition + estimated living costs would need to be sourced directly.
+    source:
+      label: "Les Roches — Crans-Montana (Switzerland) campus Bachelor's tuition & other fees schedule, international students (valid for programs starting Spring/Fall 2027)"
+      url: https://sommet-education.papirfly.app/original/gallery/39472/files/original/1d9ea547-a93a-4cfb-b917-1e4dbaf02f9b.pdf
+      publisher: Les Roches Global Hospitality Education
+      asOfDate: "2026-11-03"
+    lastVerified: "2026-11-03"
+    confidence: medium
+    notes: >-
+      Les Roches' own current official fee schedule PDF (linked from brochure.lesroches.edu/toolkit/
+      bachelor) for the Crans-Montana (Switzerland) BSc in Global Hospitality Management, international
+      students. Same program shape as sister school Glion: 1 Experiential Year + 3 BSc years (4 years
+      total), alternating on-campus semesters with unpaid-tuition internship semesters. Computed as:
+      (CHF 183,425 "Total Compulsory Academic Expenses" [tuition + academic resources/career
+      support/admin fees + health & accident insurance] + CHF 42,550 "Total Compulsory Living Expenses"
+      [residential board + on-campus double room, both only charged for the on-campus semesters]) / 4
+      years = CHF 56,493.75/year, converted to USD at an approximate ~1.20 USD/CHF rate (stated
+      explicitly here, per this project's convention for non-USD currencies) = ~US$67,793/year.
+      Excludes the one-time CHF 275 application fee, the refundable CHF 1,000 damage deposit, and
+      optional extras (single-room upgrade, car parking, board upgrade) — matching this project's
+      "tuition + fees + room & board" sticker-price convention. Same caveat as Glion's figure (see
+      glion.yaml): this is a 4-year average across an uneven on-campus/internship schedule, not a
+      single uniform "per year" sticker price the way US schools publish one. The ~US$69,570/year
+      figure computed the same way for sister school Glion is a reasonable consistency check, given
+      the near-identical fee structure.

@@ -11,7 +11,7 @@ outcomes:
   startingSalary:
     unit: USD/year
     confidence: low
-    notes: No official Glion starting-salary disclosure was found. Only crowd-sourced aggregator data (Glassdoor, Emolument) exists, with large unexplained variance by role and degree classification (e.g. a BSc sample of $40,000/year vs. a "Bachelor (Other)" sample of $112,000/year from the same aggregator) — too inconsistent to treat as a reliable figure. Left blank.
+    notes: No official Glion starting-salary disclosure was found. Only crowd-sourced aggregator data (Glassdoor, Emolument) exists, with large unexplained variance by role and degree classification (e.g. a BSc sample of $40,000/year vs. a "Bachelor (Other)" sample of $112,000/year from the same aggregator) — too inconsistent to treat as a reliable figure. Left blank. Checked 2026-11-03 — Glion's official "About Us," "Glion in Figures" (glion.edu/glion-in-figures/, an infographic page with several real cohort-data charts — see sixYearGraduationRate/retentionRate below), and careers pages were all read directly; none states a salary figure. Still left blank.
   employmentRate:
     value: 98
     unit: "%"
@@ -45,13 +45,13 @@ outcomes:
   internshipPlacementRate:
     unit: "%"
     confidence: low
-    notes: Glion's bachelor curriculum includes two mandatory 6-month paid internships, and the school cites an average of multiple internship offers per student per semester, but no specific internship "placement rate" percentage is disclosed. Left blank rather than inferring one from curriculum structure.
+    notes: Glion's bachelor curriculum includes two mandatory 6-month paid internships, and the school cites an average of multiple internship offers per student per semester, but no specific internship "placement rate" percentage is disclosed. Left blank rather than inferring one from curriculum structure. Checked 2026-11-03 — Glion's "Glion in Figures" page (glion.edu/glion-in-figures/) has real charts for "Students on internship per industry sector" and "per region," and a chart of total students-plus-internship headcount by year (2024 figure 1,633) — all headcounts/distributions, not a placement-rate percentage. Still left blank.
 
 admissions:
   acceptanceRate:
     unit: "%"
     confidence: low
-    notes: Not publicly disclosed by Glion. A single third-party aggregator (gotouniversity.com) cites 85% with no verifiable link to an institutional source. Left blank rather than citing an unverified aggregator figure.
+    notes: Not publicly disclosed by Glion. A single third-party aggregator (gotouniversity.com) cites 85% with no verifiable link to an institutional source. Left blank rather than citing an unverified aggregator figure. Checked 2026-11-03 — Glion's "About Us" and "Glion in Figures" pages (which do disclose other real cohort data — see sixYearGraduationRate/retentionRate below) have no admissions/acceptance chart. Still left blank.
   satActEquivalent:
     unit: "percentile, national test-taking cohort"
     confidence: low
@@ -73,7 +73,7 @@ academicResearch:
   researchFundingUSD:
     unit: USD/year
     confidence: low
-    notes: Not yet sourced for v1.
+    notes: Not yet sourced for v1. Checked 2026-11-03 — no Glion-published research budget or funding figure found — Glion is a teaching-focused institution with no dedicated research institute comparable to EHL's, consistent with the project's guidance that a reasonable, bounded search is enough here. Left blank.
   hasPhDProgram:
     value: 0
     unit: boolean (1=yes, 0=no)
@@ -88,13 +88,49 @@ academicResearch:
 
 academicQuality:
   sixYearGraduationRate:
+    value: 77
     unit: "%"
-    confidence: low
-    notes: Not yet sourced for v1.
+    source:
+      label: "Glion in Figures — \"Bachelor graduation rates\" chart (2019-2024)"
+      url: https://www.glion.edu/glion-in-figures/
+      publisher: Glion Institute of Higher Education
+      asOfDate: "2024-01-01"
+    lastVerified: "2026-11-03"
+    confidence: medium
+    notes: >-
+      Glion's own published "Bachelor graduation rates" chart on its "Glion in Figures" page gives a
+      bachelor graduation rate by year from 2019-2024: 76%, 80%, 79%, 72%, 73%, 77%. Used the most
+      recent year (2024: 77%). Important caveat: this is Glion's own disclosed metric, not confirmed
+      to be the US IPEDS "150% of normal time" (6-year) cohort-completion rate this schema field is
+      modeled on — Glion's bachelor program is nominally a 1-year Experiential Year + 3-year BSc (4
+      years total, not the 4-year-normal-time US baseline IPEDS assumes), and the chart's methodology
+      (which entering cohort each year's bar tracks, and over what window) isn't stated. Filled anyway
+      since it's real, current, official per-cohort data directly on point for "graduation rate," with
+      this mismatch flagged per this project's precedent for institution-reported proxies (e.g. the
+      QS-based recruiterReputationScore above). The chart's data was only extractable by downloading
+      the underlying chart image directly (wp-headless.elca-cloud.com/glion/.../Graduation_rates_
+      bachelor_2019-2024.png) and reading it visually — the page's text itself has no readable figures,
+      only images.
   retentionRate:
+    value: 89
     unit: "%"
-    confidence: low
-    notes: Not yet sourced for v1.
+    source:
+      label: "Glion in Figures — \"Bachelor retention rates\" chart (2019-2024)"
+      url: https://www.glion.edu/glion-in-figures/
+      publisher: Glion Institute of Higher Education
+      asOfDate: "2024-01-01"
+    lastVerified: "2026-11-03"
+    confidence: medium
+    notes: >-
+      Glion's own published "Bachelor retention rates" chart on its "Glion in Figures" page gives two
+      series per entering-cohort year, 2019-2024: "% returning year 2" (95%, 91%, 93%, 94%, 96%, 89%)
+      and "% returning year 3" (95%, 93%, 97%, 96%, 96%, 90%). Used the most recent cohort's "%
+      returning year 2" figure (2024: 89%) as the closer match to this schema field's first-to-second-
+      year retention definition (see schema.ts comment); "% returning year 3" was not used. Same
+      image-only-chart caveat as sixYearGraduationRate above (downloaded Retention_rates_bachelor_
+      2019-2024.png directly from wp-headless.elca-cloud.com to read it) and same methodology caveat
+      (cohort-tracking window not stated by Glion). The chart's first x-axis label renders as
+      "2019.2," which looks like a rendering artifact for "2019," not a separate data point.
   facultyStudentRatio:
     value: 15
     unit: students per faculty
@@ -109,6 +145,30 @@ academicQuality:
 
 costOfAttendance:
   totalCost:
+    value: 69570
     unit: USD/year
-    confidence: low
-    notes: Not yet sourced for v1. NCES/IPEDS doesn't cover non-US institutions; Glion's own published tuition + estimated living costs would need to be sourced directly.
+    source:
+      label: "Glion — Switzerland campus Bachelor's tuition & other fees schedule (valid for students starting Spring/Fall 2027)"
+      url: https://app.papirfly.com/original/gallery/39472/files/original/8fcdc77c-6935-48d4-a352-e2e32d2ebf2d.pdf
+      publisher: Glion Institute of Higher Education
+      asOfDate: "2026-11-03"
+    lastVerified: "2026-11-03"
+    confidence: medium
+    notes: >-
+      Glion's own current official fee schedule PDF (linked from glion.edu/apply-to-glion/tuition-fees/)
+      for the Switzerland-campus BSc in International Hospitality Business, international students. The
+      program runs 1 Experiential Year + 3 BSc years (4 years total, mixing on-campus semesters with
+      unpaid-tuition internship semesters). Computed as: (CHF 190,100 "Total academic compulsory fees"
+      [tuition + resources/services] + CHF 6,800 total health/accident insurance + CHF 16,100 total
+      food & beverage prepaid + CHF 18,900 total lodging [double superior room, charged only for 3 of
+      the 5 on-campus semesters per the schedule]) / 4 years = CHF 57,975/year, converted to USD at an
+      approximate ~1.20 USD/CHF rate (stated explicitly here, per this project's convention for
+      non-USD currencies) = ~US$69,570/year. Excludes the one-time CHF 275 application fee, the
+      refundable CHF 1,250 damage deposit, and optional extras (single-room upgrade, car parking) —
+      matching this project's "tuition + fees + room & board" sticker-price convention, not a full
+      personal-expenses cost-of-living estimate. Because the program alternates paid-tuition and
+      internship semesters rather than having a uniform annual rate, this is a 4-year average, not a
+      single posted "per year" sticker price the way US schools publish one; treat it as broadly
+      comparable to the other programs' figures but not perfectly like-for-like. Sister-school Les
+      Roches's equivalent calculation (see les-roches.yaml) comes out to ~US$67,793/year using the same
+      methodology and FX rate, a reasonable consistency check given the similar fee structures.
