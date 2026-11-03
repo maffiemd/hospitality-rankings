@@ -8,22 +8,29 @@ degreeName: BSc (Hons) in Hotel and Tourism Management
 
 outcomes:
   startingSalary:
+    value: 29278
     unit: USD/year
-    confidence: low
-    notes: >
-      No SHTM-specific starting-salary figure found for v1. A PolyU SPEED (School of Professional
-      Education and Executive Development) BBA (Hons) in Hospitality Management page cites an average
-      starting salary of HK$16,709/month (2024), but SPEED is a separate self-financed teaching unit
-      from SHTM's UGC-funded BSc scheme, so that figure is not used here to avoid misattributing it to
-      SHTM. A Hong Kong Standard article on Q1 2026 graduate hiring cites a HK$20,000/month median
-      starting salary for the broader "tourism" hiring category, but that is an economy-wide sector
-      stat, not SHTM-program-specific, so it is also excluded. Left blank pending SHTM's own
-      program-level outcomes report. Checked 2026-11-03: PolyU's GES2023 Survey Summary PDF (cited
-      above for employmentRate) breaks salary out only by employment sector and university-wide
-      ($24,017/month overall for 2023), not by school, so it doesn't fill this gap either. A
-      third-party-cited "HK$19,031, School of Hotel and Tourism Management, 2022" figure (apparently
-      from GES2022) could not be independently verified — that PDF exceeds this pass's fetch size
-      limit — so it was not used.
+    source:
+      label: "Graduate Employment Survey 2022 (Degree Programmes) — Salary Analysis by Faculty/School & Department"
+      url: https://www.polyu.edu.hk/sao/docdrive/cps/GES2022_Survey_Summary.pdf
+      publisher: PolyU Student Affairs Office, Careers and Placement Section
+      asOfDate: "2022-01-01"
+    lastVerified: "2026-11-03"
+    confidence: medium
+    notes: >-
+      School of Hotel & Tourism Management's average starting salary in GES2022's own school-level
+      breakdown: HK$19,031/month (161 graduates), up 11.9% from HK$17,004/month (154 graduates) in
+      2021 — the same table also lists SHTM's 2022 employment destination counts (161 employed, 12
+      temp/part-time, 13 further studies, 2 unemployed, 26 other; 214 respondents, 79.0% response
+      rate), which differ slightly from the GES2023 counts cited for employmentRate above since
+      they're a different survey year. Annualized (×12) and converted at the HKD/USD peg (~7.80):
+      HK$228,372/year ≈ US$29,278/year. This is real SHTM-specific data, but from the 2022 cohort —
+      three years older than most other programs' startingSalary figures in this file — and the PDF's
+      more recent editions (2023+) stopped publishing the school-level salary breakdown, only
+      school-level employment counts, so a newer like-for-like figure wasn't available as of this
+      check. The PolyU SPEED BBA (Hons) in Hospitality Management figure (HK$16,709/month, 2024) was
+      considered and excluded, since SPEED is a separate self-financed teaching unit from SHTM's
+      UGC-funded BSc scheme, not the same program.
   employmentRate:
     value: 99.4
     unit: "%"
