@@ -11,7 +11,23 @@ outcomes:
   startingSalary:
     unit: USD/year
     confidence: low
-    notes: No official EHL starting-salary disclosure was found. Only crowd-sourced aggregator data (Glassdoor/Emolument alumni self-reports) exists, ranging roughly $61,000-$105,000/year depending on role and degree classification, which is too inconsistent and unverifiable to cite as a figure. Left blank rather than averaging unreliable third-party data. Checked 2026-11-03 — EHL's own "Why EHL" page (ehl.edu) and EHL Group's "Key Facts" page (ehlgroup.com/en/about-ehl/media-center) were read directly — neither states a salary figure, only the existing 96%-employed-within-6-months stat. No EHL career-services salary report was found. Still left blank.
+    notes: >-
+      No official EHL starting-salary disclosure was found. Only crowd-sourced aggregator data
+      (Glassdoor/Emolument alumni self-reports) exists, ranging roughly $61,000-$105,000/year depending
+      on role and degree classification, which is too inconsistent and unverifiable to cite as a
+      figure. Left blank rather than averaging unreliable third-party data. Checked 2026-11-03 — EHL's
+      own "Why EHL" page (ehl.edu) and EHL Group's "Key Facts" page (ehlgroup.com/en/about-ehl/media-center)
+      were read directly — neither states a salary figure, only the existing 96%-employed-within-6-months
+      stat. No EHL career-services salary report was found. Still left blank. Checked 2026-11-04 via
+      sub-agent research on further angles: EHL's NECHE-mandated "Consumer Information Disclosure" PDF
+      (ehl.edu/hubfs/web/docs/fafsa/Consumer_Information.pdf) turns out to be a generic Title IV/FAFSA
+      compliance checklist (institutional info, FERPA, loan disclosures) with zero earnings data; the
+      "EHL by the Numbers" page (ehl.edu/en/about-ehl/ehl-by-the-numbers) and "Be Ready for Your Career"
+      infosheet cover only enrollment/alumni/staff counts, no salary; no companion salary PDF exists
+      alongside the Graduate Outcomes employment-rate PDF already cited; no HotellerieSuisse/GastroSuisse
+      industry salary survey citing EHL graduates specifically was found (only generic Swiss L-GAV wage
+      floors, CHF 3,600-4,400/month, not EHL-specific); no EHL Alumni Association public salary report
+      exists. Confirmed genuinely absent.
   employmentRate:
     value: 90.74
     unit: "%"
@@ -46,17 +62,53 @@ outcomes:
   internshipPlacementRate:
     unit: "%"
     confidence: low
-    notes: EHL's bachelor curriculum includes mandatory paid internships, but no specific "placement rate" percentage is independently disclosed by the school. Left blank rather than inferring a figure from the fact that internships are a curriculum requirement. Checked 2026-11-03 — EHL's Lausanne and Passugg "careers/internships" pages (ehl.edu) describe program structure (24-week minimum windows, a ~1,500-student recruitment event) but state no placement percentage. Still left blank.
+    notes: >-
+      EHL's bachelor curriculum includes mandatory paid internships, but no specific "placement rate"
+      percentage is independently disclosed by the school. Left blank rather than inferring a figure
+      from the fact that internships are a curriculum requirement. Checked 2026-11-03 — EHL's Lausanne
+      and Passugg "careers/internships" pages (ehl.edu) describe program structure (24-week minimum
+      windows, a ~1,500-student recruitment event) but state no placement percentage. Still left blank.
+      Checked 2026-11-04 via sub-agent research: the NECHE Consumer Information PDF and "EHL by the
+      Numbers" page (both checked fresh for this field too) say nothing about internship completion;
+      the "Career Path for Graduates" page (ehl.edu/en/study/bachelor-degree-in-hospitality/career-path-for-graduates)
+      states "2+ internship offers per student on average" — an offer count, not a placement/completion
+      rate, so not usable — and otherwise repeats the already-recorded 96%-jobs-in-6-months employment
+      figure. No press/news coverage of the recruitment event ties a percentage to its outcomes.
+      Confirmed genuinely absent.
 
 admissions:
   acceptanceRate:
     unit: "%"
     confidence: low
-    notes: Not publicly disclosed by EHL. Third-party aggregators cite conflicting, unverified figures (30%, 34%, 45%, 90% have all appeared) with no traceable link to an EHL or Swiss accreditor primary source. Left blank rather than picking one of the conflicting estimates. Checked 2026-11-03 — same conflicting aggregator figures still surface (now also a "45.35%, Class of 2026" figure from findmyorbit, itself a US-style automated data pull with no EHL citation); EHL's own admissions and accreditation pages disclose no rate. Still left blank.
+    notes: >-
+      Not publicly disclosed by EHL. Third-party aggregators cite conflicting, unverified figures (30%,
+      34%, 45%, 90% have all appeared) with no traceable link to an EHL or Swiss accreditor primary
+      source. Left blank rather than picking one of the conflicting estimates. Checked 2026-11-03 —
+      same conflicting aggregator figures still surface (now also a "45.35%, Class of 2026" figure from
+      findmyorbit, itself a US-style automated data pull with no EHL citation); EHL's own admissions and
+      accreditation pages disclose no rate. Still left blank. Checked 2026-11-04 via sub-agent research:
+      EHL's NECHE-mandated Consumer Information PDF (ehl.edu/hubfs/web/docs/fafsa/Consumer_Information.pdf)
+      is a Title IV/FAFSA compliance document (34 CFR 668.41-43), not a Student Achievement disclosure —
+      no admissions data in it, and no separate "Student Achievement"/"Fast Facts" page exists on
+      ehl.edu (confirmed via site-restricted search); NECHE's own institutional directory and blog
+      pages for EHL (neche.org) disclose no admission rate either; EHL Group's "Key Facts" gives only
+      current enrollment, no applicant/admit counts; Switzerland's BFS/OFS federal statistics don't
+      cover EHL, which is a private foundation outside HES-SO's integrated reporting perimeter. One
+      stale data point found but NOT used: a 2013 Hospitality Net trade-press article citing "990
+      candidates, 36% admission rate, 300 accepted" — 13 years old, third-party, same category as the
+      aggregator estimates already rejected. Confirmed genuinely unpublished.
   satActEquivalent:
     unit: "percentile, national test-taking cohort"
     confidence: low
-    notes: EHL does not publish an SAT-equivalent composite score for its admitted class. Its bachelor admission requirements list a minimum SAT of 1000+ as one of several accepted alternative qualifications (alongside ATAR 75+, IELTS 7+, TOEFL 80+, or Duolingo 130+), but this is a minimum eligibility threshold, not a cohort average, so it was not used to construct a percentile value.
+    notes: >-
+      EHL does not publish an SAT-equivalent composite score for its admitted class. Its bachelor
+      admission requirements list a minimum SAT of 1000+ as one of several accepted alternative
+      qualifications (alongside ATAR 75+, IELTS 7+, TOEFL 80+, or Duolingo 130+), but this is a minimum
+      eligibility threshold, not a cohort average, so it was not used to construct a percentile value.
+      Re-confirmed 2026-11-04 as a deliberate exclusion: EHL's Singapore-specific admissions page states
+      a different threshold (SAT≥1200/ACT≥24), but this is still a minimum-eligibility bar, not a cohort
+      average — no EHL-published average/median admitted-class score exists anywhere. Field remains
+      intentionally blank.
 
 academicResearch:
   facultyPubCitationIndex:
@@ -74,7 +126,30 @@ academicResearch:
   researchFundingUSD:
     unit: USD/year
     confidence: low
-    notes: Not yet sourced for v1. Checked 2026-11-03 — EHL Research microsite (research.ehl.edu) and EHL Group pages describe a sponsorship-funded research-institute model (40+ research associates and industry experts, several sponsored labs e.g. the Institute of Business Creativity) but disclose no budget or funding total, confirming this is a reasonable search-effort case per this project's guidance for small teaching-focused schools. Left blank.
+    notes: >-
+      Not yet sourced for v1. Checked 2026-11-03 — EHL Research microsite (research.ehl.edu) and EHL
+      Group pages describe a sponsorship-funded research-institute model (40+ research associates and
+      industry experts, several sponsored labs e.g. the Institute of Business Creativity) but disclose
+      no budget or funding total, confirming this is a reasonable search-effort case per this project's
+      guidance for small teaching-focused schools. Left blank. Checked 2026-11-04 via sub-agent
+      research, this time explicitly looking for an institution-wide annual total (which this project's
+      convention accepts when flagged as such — see griffith.yaml, jcu.yaml, surrey-htm.yaml,
+      msu-hospitality.yaml, taylors.yaml): EHL is not a registered Swiss National Science Foundation
+      (SNSF/FNS) grantee institution at all (zero matches searching data.snf.ch for "EHL" or "hotel" as
+      a research institution, confirmed the search tool itself works via a "Lausanne" control query);
+      EHL is not a fully integrated HES-SO member school but one of three "hautes écoles conventionnées"
+      (associated schools, alongside Changins and La Manufacture) tied to HES-SO only by a renewable
+      performance-mandate convention, so it falls outside HES-SO's own per-school research-funding
+      statistics entirely (core HES-SO member schools do report figures, e.g. HES-SO Genève CHF 24.4M
+      in 2024, but no EHL line exists anywhere in HES-SO's reporting); no published EHL Group/EHL
+      Holding SA annual report or financial statements exist publicly (only a bare Swiss
+      company-registry extract with no income statement); Switzerland's Federal Statistical Office
+      (BFS/OFS) R&D survey publishes only sector-level totals, no institution-level breakdown naming
+      EHL. Unlike every other non-US school in this dataset, EHL appears to have no public,
+      attributable institution-wide research-funding total in any government, accreditor, or financial
+      disclosure — its private-foundation, HES-SO-associated (not integrated) status puts it outside
+      every reporting mechanism used elsewhere in this project. Confirmed genuinely unavailable, not
+      just unsearched.
   hasPhDProgram:
     value: 1
     unit: boolean (1=yes, 0=no)
@@ -91,18 +166,94 @@ academicQuality:
   sixYearGraduationRate:
     unit: "%"
     confidence: low
-    notes: Not yet sourced for v1. Checked 2026-11-03 — no EHL-published graduation rate found despite NECHE accreditation (which nominally tracks student achievement) — EHL's NECHE accreditation-status letter (ehl.edu/hubfs/NECHE-EHL.doc.pdf) is just a one-page accreditation-confirmation letter from NECHE with no data, and no separate EHL public-disclosure-of-student-achievement page was found (unlike the sister-school "in numbers" infographic page that worked for Glion — EHL has no equivalent page with this data). Left blank.
+    notes: >-
+      Not yet sourced for v1. Checked 2026-11-03 — no EHL-published graduation rate found despite
+      NECHE accreditation (which nominally tracks student achievement) — EHL's NECHE
+      accreditation-status letter (ehl.edu/hubfs/NECHE-EHL.doc.pdf) is just a one-page
+      accreditation-confirmation letter from NECHE with no data, and no separate EHL
+      public-disclosure-of-student-achievement page was found (unlike the sister-school "in numbers"
+      infographic page that worked for Glion — EHL has no equivalent page with this data). Left blank.
+      Checked 2026-11-04 via sub-agent research on the specific lead that NECHE-accredited schools
+      typically host a required "Student Achievement" disclosure page: NECHE's own EHL institution page
+      (neche.org/institutions/ehl-hospitality-business-school) lists only accreditation dates, no
+      student-achievement data, no link to a self-study/disclosure page; a guessed
+      ehl.edu/en/student-achievement URL 404s; the Consumer Information PDF (the actual
+      federally-mandated disclosure document, re-checked specifically for a completion-rate figure)
+      contains none — it only links out to other EHL pages for "evidence," none of which state a rate;
+      the financial-aid and Student Success Center pages were also checked with no result. Confirmed:
+      no public EHL graduation rate exists anywhere.
   retentionRate:
     unit: "%"
     confidence: low
-    notes: Not yet sourced for v1. Checked 2026-11-03 — same search as sixYearGraduationRate above — no EHL-published first-to-second-year retention rate found. Left blank.
+    notes: >-
+      Not yet sourced for v1. Checked 2026-11-03 — same search as sixYearGraduationRate above — no
+      EHL-published first-to-second-year retention rate found. Left blank. Checked 2026-11-04 via
+      sub-agent research against the same NECHE Student Achievement angle checked for
+      sixYearGraduationRate above — same result, no retention figure found anywhere. Confirmed
+      genuinely absent.
   facultyStudentRatio:
+    value: 19.4
     unit: students per faculty
+    source:
+      label: "EHL Hospitality Business School profile — Students & Staff panel"
+      url: https://www.topuniversities.com/universities/ehl-ecole-hoteliere-de-lausanne
+      publisher: QS Quacquarelli Symonds
+      asOfDate: "2026-11-04"
+    lastVerified: "2026-11-04"
     confidence: low
-    notes: Not yet sourced for v1 — checked EHL's own "Why EHL" and "EHL by the Numbers" pages, neither states a ratio in readable text (a marketing claim of 12:1 circulates on third-party sites but isn't confirmed on ehl.edu itself, and conflicts with headcount-derived estimates from those same sites). Checked 2026-11-03 — EHL Group's "Key Facts" page (ehlgroup.com/en/about-ehl/media-center) gives 4,000 enrolled students and "+750 Staff & Faculty members" institution-wide, but that figure conflates administrative staff with teaching faculty (unlike Glion/Les Roches's own clean "Student to faculty ratio" marketing stat), so it wasn't used to compute a ratio. Still left blank.
+    notes: >-
+      Not yet sourced for v1 — checked EHL's own "Why EHL" and "EHL by the Numbers" pages, neither
+      states a ratio in readable text (a marketing claim of 12:1 circulates on third-party sites but
+      isn't confirmed on ehl.edu itself, and conflicts with headcount-derived estimates from those same
+      sites). Checked 2026-11-03 — EHL Group's "Key Facts" page (ehlgroup.com/en/about-ehl/media-center)
+      gives 4,000 enrolled students and "+750 Staff & Faculty members" institution-wide, but that figure
+      conflates administrative staff with teaching faculty (unlike Glion/Les Roches's own clean "Student
+      to faculty ratio" marketing stat), so it wasn't used to compute a ratio. Checked 2026-11-04 via
+      sub-agent research: QS's topuniversities.com institution profile (not the subject-table page) has
+      a "Students & Staff" panel stating "Total students: 2,388" and "Total faculty staff: 123" —
+      2,388/123 ≈ 19.4, independently re-confirmed with a second read after a full page reload before
+      being recorded. THE's EHL institution profile has no "students per staff" stat at all (EHL only
+      appears in THE's Sustainability Impact Ratings, not the main World University Rankings table, same
+      pattern seen for taylors.yaml). Flagged at LOW rather than medium confidence because QS's
+      "2,388 students" figure is notably smaller than EHL's own "4,000+ students" claim shown elsewhere
+      on the very same QS page and on EHL's own Key Facts page — likely a narrower QS-submission scope
+      (e.g. Bachelor's-only or single-campus) rather than full-institution enrollment, so this ratio may
+      not be apples-to-apples with other schools' institution-wide facultyStudentRatio entries in this
+      dataset. Recorded as the best available figure, not a confirmed institutional fact.
 
 costOfAttendance:
   totalCost:
+    value: 67369
     unit: USD/year
+    source:
+      label: "Tuition Fees — Bachelor of Science in International Hospitality Management, September 2027 & February 2028 intakes (Version 1.9)"
+      url: https://info.ehl.edu/hubfs/DL_Docs/Tuition_Fees_BOS_EN.pdf
+      publisher: EHL Hospitality Business School
+      asOfDate: "2026-01-01"
+    lastVerified: "2026-11-04"
     confidence: low
-    notes: Not yet sourced for v1. NCES/IPEDS doesn't cover non-US institutions; EHL's own published tuition + estimated living costs would need to be sourced directly.
+    notes: >-
+      Not yet sourced for v1. NCES/IPEDS doesn't cover non-US institutions; EHL's own published tuition
+      + estimated living costs would need to be sourced directly. Sourced 2026-11-04 via sub-agent
+      research, following this project's established non-US convention (tuition at the international
+      rate + an official government minimum living-cost figure, summed and converted to USD). Tuition:
+      EHL's own published fee schedule (Lausanne campus, international-student rate) lists CHF 24,898
+      (Prep Year) / 40,045 (Year 1) / 24,352 (Year 2) / 34,507 (Year 3) — not flat per-year, varying
+      substantially by year (likely due to internship semesters) — totaling CHF 123,802 across the
+      4-year program; averaged here to CHF 30,950.50/year. The PDF carries a standard disclaimer
+      ("non-contractual document... amounts are indicative and subject to modification"). The
+      Swiss/A-HES-eligible local rate (CHF 1,400/yr) was not used, per this dataset's international-rate
+      convention. Living costs: no single Swiss federal figure exists (Art. 27 LEI requires only
+      "sufficient means," set cantonally) — used Canton Vaud's own Service de la population (SPOP)
+      official checklist for student residence permits (dated 2019-01-01, still cited as current by a
+      third-party guide updated Oct 2026): "Les moyens financiers sont réputés être suffisants lorsque
+      l'étudiant... dispose d'environ CHF 2'000.-- par mois, frais de logement en plus" — i.e. ~CHF
+      2,000/month deemed sufficient, EXCLUDING housing = CHF 24,000/year. Unlike the UK/Australia
+      living-cost figures used elsewhere in this dataset, this Vaud figure explicitly excludes housing;
+      EHL's own tuition PDF separately lists compulsory on-campus housing at CHF 5,850-8,474/semester,
+      not included in this total. Total: CHF 30,950.50 + CHF 24,000 = CHF 54,950.50/year, converted to
+      USD at 1.226 USD/CHF (XE.com mid-market rate, 2026-11-04) ≈ USD 67,369/year. Confidence kept at
+      low because of several stacked caveats: the per-year tuition average is a simplification of an
+      uneven schedule, the cantonal living-cost document is seven years old (though reportedly still
+      current), housing is excluded from the living-cost half (likely understating true cost), and
+      EHL's own tuition figures are explicitly labeled indicative/non-contractual.
