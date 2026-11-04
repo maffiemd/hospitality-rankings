@@ -174,8 +174,8 @@ costOfAttendance:
       url: https://search.studyaustralia.gov.au/course/bachelor-of-tourism-hospitality-and-events/250d10731040168a067fb8ef3968693a
       publisher: Australian Government — Study Australia
       asOfDate: "2026-11-03"
-    lastVerified: "2026-11-03"
-    confidence: low
+    lastVerified: "2026-11-04"
+    confidence: medium
     notes: >-
       NCES/IPEDS doesn't cover non-US institutions, so this is built from two Australian sources
       instead. Tuition: Study Australia's official government course-listing page gives total tuition
@@ -185,13 +185,19 @@ costOfAttendance:
       be read directly here; a different, uncorroborated aggregator figure (~AUD 34,120/year, vintage
       unclear) also surfaced and was not used. Living costs: added the Dept of Home Affairs' published
       minimum living-cost amount for a Student visa (subclass 500) primary applicant, AUD 29,710/year
-      (in effect since 10 May 2024, reported as still current as of 3 July 2026) — immi.homeaffairs.gov.au
-      itself also returns HTTP 403 to automated fetch, so this was read via a secondary source (an
-      Australian migration-law firm's article that quotes and links the Department's own page) rather
-      than the primary page directly; this is the same Home Affairs figure that would apply to
-      griffith.yaml's totalCost if Griffith's tuition could be confirmed (see that file's note).
-      Total: AUD 36,899 + AUD 29,710 = AUD 66,609/year, converted to USD at an approximate rate of 0.65
-      USD/AUD (within the ~0.64-0.66 range stated as current for 2026) = USD 43,296/year. Confidence
-      kept at low because neither the tuition figure nor the living-cost figure could be verified
-      against its own primary government page directly (both domains block automated fetch), and
-      because it excludes OSHC health cover, airfare, and visa fees.
+      (in effect since 10 May 2024, reported as still current as of 3 July 2026). Re-checked 2026-11-04
+      directly against the governing legislative instrument (immi.homeaffairs.gov.au itself remains
+      HTTP 403 to automated fetch, and its Document Checklist Tool is reCAPTCHA-gated, so this bypasses
+      both): Migration (LIN 19/198: Evidence of financial capacity — Subclass 500 Visa and Subclass 590
+      Visa) Instrument 2019, Compilation No. 2 (F2024C00445, compiled 10 May 2024, incorporating
+      amendment F2024L00529), clause 9(2)(b)(ii)(A) on legislation.gov.au (Federal Register of
+      Legislation) — "if the primary applicant intends to stay in Australia for a period of 12 months
+      or more — AUD29,710 (primary applicant annual living costs)" — confirming AUD 29,710 directly
+      from the primary legal source rather than the secondary migration-law-firm article previously
+      relied on. In force as of this check, no later compilation found; this is the same Home Affairs
+      figure used for griffith.yaml's totalCost. Total: AUD 36,899 + AUD 29,710 = AUD 66,609/year,
+      converted to USD at an approximate rate of 0.65 USD/AUD (within the ~0.64-0.66 range stated as
+      current for 2026) = USD 43,296/year. Confidence raised from low to medium now that the living-cost
+      half is confirmed against primary legislation; the tuition figure still rests on a government
+      aggregator rather than jcu.edu.au directly (HTTP 403 site-wide, not yet re-checked via a real
+      browser session), and the total excludes OSHC health cover, airfare, and visa fees.

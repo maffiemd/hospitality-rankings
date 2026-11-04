@@ -183,7 +183,7 @@ costOfAttendance:
       url: https://www.griffith.edu.au/study/degrees/bachelor-of-international-tourism-and-hotel-management-1408
       publisher: Griffith University
       asOfDate: "2027-01-01"
-    lastVerified: "2026-11-03"
+    lastVerified: "2026-11-04"
     confidence: medium
     notes: >-
       Retrieved via a real browser session 2026-11-03 — griffith.edu.au returns HTTP 403 to automated
@@ -194,8 +194,17 @@ costOfAttendance:
       28,500, HotCoursesAbroad AUD 38,000) previously logged here. Living costs: no specific figure on
       Griffith's own page, so added the Dept of Home Affairs' published minimum living-cost amount for
       a Student visa (subclass 500) primary applicant, AUD 29,710/year — the same figure used for
-      jcu.yaml's totalCost, for consistency. Total: AUD 39,500 + AUD 29,710 = AUD 69,210/year,
-      converted to USD at an approximate rate of 0.65 USD/AUD (consistent with jcu.yaml) = USD
-      44,987/year. Confidence kept at medium rather than high because the living-cost half of the
-      total is still a visa-minimum floor rather than an institution-published figure, and it excludes
+      jcu.yaml's totalCost, for consistency. Re-checked 2026-11-04 directly against the governing
+      legislative instrument (immi.homeaffairs.gov.au itself remains HTTP 403 to automated fetch, and
+      its Document Checklist Tool is reCAPTCHA-gated, so this bypasses both): Migration (LIN 19/198:
+      Evidence of financial capacity — Subclass 500 Visa and Subclass 590 Visa) Instrument 2019,
+      Compilation No. 2 (F2024C00445, compiled 10 May 2024, incorporating amendment F2024L00529),
+      clause 9(2)(b)(ii)(A) on legislation.gov.au (Federal Register of Legislation) — "if the primary
+      applicant intends to stay in Australia for a period of 12 months or more — AUD29,710 (primary
+      applicant annual living costs)" — confirming AUD 29,710 directly from the primary legal source
+      rather than the secondary migration-law-firm article previously relied on. In force as of this
+      check, no later compilation found. Total: AUD 39,500 + AUD 29,710 = AUD 69,210/year, converted
+      to USD at an approximate rate of 0.65 USD/AUD (consistent with jcu.yaml) = USD 44,987/year.
+      Confidence kept at medium rather than high because the living-cost half of the total is still a
+      visa-minimum floor rather than an institution-published typical-expense figure, and it excludes
       OSHC health cover, airfare, and visa fees — likely understates true total cost of attendance.
