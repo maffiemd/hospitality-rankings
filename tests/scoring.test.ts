@@ -61,6 +61,14 @@ describe("scorePrograms", () => {
         employmentRate: 90,
         recruiterReputationScore: 70,
         internshipPlacementRate: 80,
+        acceptanceRate: 40,
+        satActEquivalent: 1200,
+        facultyPubCitationIndex: 50,
+        researchFundingUSD: 500000,
+        hasPhDProgram: 1,
+        sixYearGraduationRate: 80,
+        retentionRate: 85,
+        facultyStudentRatio: 12,
       }),
     ];
     const { rankings } = scorePrograms(programs);
@@ -111,28 +119,24 @@ describe("scorePrograms", () => {
   });
 
   it("assigns the same rank to tied composite scores", () => {
+    const tiedOverrides = {
+      startingSalary: 50000,
+      employmentRate: 90,
+      recruiterReputationScore: 70,
+      internshipPlacementRate: 80,
+      acceptanceRate: 40,
+      satActEquivalent: 1200,
+      facultyPubCitationIndex: 50,
+      researchFundingUSD: 500000,
+      hasPhDProgram: 1,
+      sixYearGraduationRate: 80,
+      retentionRate: 85,
+      facultyStudentRatio: 12,
+    };
     const programs = [
-      makeProgram({
-        slug: "a",
-        startingSalary: 50000,
-        employmentRate: 90,
-        recruiterReputationScore: 70,
-        internshipPlacementRate: 80,
-      }),
-      makeProgram({
-        slug: "b",
-        startingSalary: 50000,
-        employmentRate: 90,
-        recruiterReputationScore: 70,
-        internshipPlacementRate: 80,
-      }),
-      makeProgram({
-        slug: "c",
-        startingSalary: 70000,
-        employmentRate: 90,
-        recruiterReputationScore: 70,
-        internshipPlacementRate: 80,
-      }),
+      makeProgram({ slug: "a", ...tiedOverrides }),
+      makeProgram({ slug: "b", ...tiedOverrides }),
+      makeProgram({ slug: "c", ...tiedOverrides, startingSalary: 70000 }),
     ];
     const { rankings } = scorePrograms(programs);
     const a = rankings.find((r) => r.program.slug === "a")!;

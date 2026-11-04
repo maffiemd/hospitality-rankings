@@ -32,7 +32,7 @@ export interface CategoryConfig {
  * unranked pending more data, rather than letting data sparsity itself
  * produce a misleadingly high rank.
  */
-export const MIN_COMPLETENESS_FOR_RANK = 0.3;
+export const MIN_COMPLETENESS_FOR_RANK = 0.5;
 
 export const CATEGORIES: CategoryConfig[] = [
   {
