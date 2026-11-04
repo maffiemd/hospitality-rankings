@@ -101,22 +101,24 @@ academicResearch:
 
 academicQuality:
   sixYearGraduationRate:
+    value: 92
     unit: "%"
-    confidence: low
+    source:
+      label: "Student outcomes data dashboard — Completion outcomes by mode and level of study, Office for Students (OfS) B3 Outcomes measure"
+      url: https://www.officeforstudents.org.uk/data-and-analysis/student-outcomes-data-dashboard/data-dashboard/
+      publisher: Office for Students (OfS)
+      asOfDate: "2026-08-06"
+    lastVerified: "2026-11-03"
+    confidence: medium
     notes: >-
-      Checked Discover Uni's course page again specifically for this: it publishes only the "after 1
-      year on the course" continuation measure already used for this file's retentionRate entry (90%,
-      pooled 2022-24 cohort) — no separate completion/graduation-rate metric exists on that page, so
-      reusing it here would just duplicate the retentionRate value under a materially different
-      definition (this field is meant as the UK equivalent of IPEDS's "150% of normal time"
-      completion rate, per this project's schema comment). The genuine UK equivalent is the Office
-      for Students' own "completion" measure (part of its B3 Outcomes dataset, projecting completion
-      over ~4-6 years) — but its data dashboard
-      (https://www.officeforstudents.org.uk/data-and-analysis/student-outcomes-data-dashboard/data-dashboard/)
-      is an embedded Tableau tool with no figures readable in the page itself; getting Oxford
-      Brookes's provider-level figure needs that dashboard (or Wonkhe's Tableau Public mirror,
-      https://public.tableau.com/views/B32025/provider) opened in a real browser. Flagged for human
-      follow-up rather than guessed. Left blank.
+      Retrieved via a real browser session 2026-11-03 — this is an embedded Tableau dashboard with no
+      data readable by automated fetch, so it needed a human-equivalent browser check. Full-time,
+      First degree completion indicator for Oxford Brookes University, 2016-17 to 2019-20 entrant
+      cohort (n=14,220): 92% (numerical threshold 75%). This is the genuine UK equivalent of IPEDS's
+      150%-of-normal-time completion rate — the OfS's own B3 Outcomes "completion" measure, projecting
+      completion over an extended window — rather than the 1-year continuation measure already used
+      for this file's retentionRate entry. Dashboard "last updated" date used as asOfDate since the
+      measure itself spans a multi-year cohort window rather than a single as-of date.
   retentionRate:
     value: 90
     unit: "%"

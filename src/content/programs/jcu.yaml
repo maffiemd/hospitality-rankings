@@ -96,23 +96,29 @@ academicResearch:
       current named faculty," so not used. Needs a human to open JCU's own program-level staff directory
       directly and, separately, confirm the OpenAlex budget has reset.
   researchFundingUSD:
+    value: 40346698
     unit: USD/year
-    confidence: low
+    source:
+      label: "Research and development income time series (1992-2024), Table 1: Summary by Category — Higher Education Research Data Collection (HERDC)"
+      url: https://www.education.gov.au/research-block-grants/resources/research-income-time-series
+      publisher: Department of Education, Australian Government
+      asOfDate: "2024-12-31"
+    lastVerified: "2026-11-03"
+    confidence: medium
     notes: >-
-      Not yet sourced for v1. Checked 2026-11-03: JCU's 2025 annual report
-      (jcu.edu.au/__data/assets/pdf_file/0019/2332252/2025-JCU-Annual-Report_FINAL.PDF) would carry a
-      university-wide research-income figure (same kind of proxy this project already uses for IPEDS
-      graduation rates elsewhere), but jcu.edu.au blocks automated fetch of this PDF and the course
-      pages (HTTP 403/500, inconsistent but consistently blocked) across the whole domain. The
-      Department of Education's Higher Education Research Data Collection time series, which
-      publishes exactly this figure by institution (education.gov.au/resources/research-block-grants
-      and education.gov.au/download/18822/2025-research-block-grant-allocations/39960/document/pdf),
-      timed out on every automated fetch attempt — likely too large/slow for this tool; a human with a
-      browser should open it directly and look up JCU's row. News coverage (futurecampus.com.au's 2025
-      Queensland-universities financial roundup) gives JCU's total income (~AUD 725m, 2025) and
-      Commonwealth grants (~AUD 233.8m) but doesn't break out research income specifically, and an
-      undated job-board figure ("$67.4 million total research income") couldn't be tied to a year or
-      verified, so neither was used. See report's "please look at this yourself" list.
+      jcu.edu.au and the Dept of Education's research-block-grants PDF both block automated fetch,
+      but the underlying dataset turned out to be a separate, small (1.62MB) XLSX file rather than
+      the giant PDF that had been timing out; downloaded directly and parsed 2026-11-03. University-
+      wide total R&D income for 2024 (all four HERDC categories — Australian Competitive Grants +
+      other Public Sector Research Funding + Industry and other Funding + Cooperative Research Centre
+      Funding summed): AUD 62,071,843, converted to USD at an approximate rate of 0.65 USD/AUD
+      (consistent with this file's totalCost figure) = ~US$40,346,698. Not broken out for the tourism/
+      hospitality/events program specifically. Three-year trend from the same dataset, for context:
+      AUD 41.8m (2021) -> 53.9m (2022) -> 59.0m (2023) -> 62.1m (2024), a steady upward trend —
+      roughly consistent with (though not identical to) the previously-unverified undated job-board
+      figure of "$67.4 million total research income" logged here earlier, which is now superseded.
+      futurecampus.com.au's 2025 Queensland-universities financial roundup (JCU total income ~AUD
+      725m, Commonwealth grants ~AUD 233.8m) remains unused since it isn't research-income-specific.
   hasPhDProgram:
     value: 1
     unit: boolean (1=yes, 0=no)

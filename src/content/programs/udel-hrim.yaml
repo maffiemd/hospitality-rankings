@@ -40,15 +40,13 @@ outcomes:
     unit: "0-100"
     confidence: low
     notes: >-
-      Checked 2026-11-03 per this project's established method: QS World University Rankings by
-      Subject 2026, Hospitality & Leisure Management table (same source used for FIU/UH, at
-      topuniversities.com/university-subject-rankings/hospitality-leisure-management). The official
-      QS page returned HTTP 403 to automated fetching on every attempt, so it could not be read
-      directly — flagged for a human/browser check. As a secondary check, a third-party mirror of the
-      same 2026 edition (xuanxiao.org/en/rankings/qs/subject/hospitality-leisure-management, pages 1-3,
-      covering all 174 ranked institutions) does not list University of Delaware at all, consistent
-      with UDel not appearing in this subject table. Left unsourced for v1 pending the blocked primary
-      source being confirmed by a human.
+      Confirmed via a real browser session 2026-11-03 (the live QS page returns HTTP 403 to automated
+      fetch, so this needed a human-equivalent browser check): paged through all 173 ranked
+      institutions in the QS World University Rankings by Subject 2026, Hospitality & Leisure
+      Management table (topuniversities.com/university-subject-rankings/hospitality-leisure-management)
+      end to end. University of Delaware does not appear anywhere in the table — this is now a
+      confirmed absence, not a blocked-source gap. Left blank; there is no Employer Reputation score to
+      record.
   internshipPlacementRate:
     unit: "%"
     confidence: low

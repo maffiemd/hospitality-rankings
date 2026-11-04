@@ -107,24 +107,29 @@ academicResearch:
 
 academicQuality:
   sixYearGraduationRate:
+    value: 93.4
     unit: "%"
-    confidence: low
+    source:
+      label: "Student outcomes data dashboard — Completion outcomes by mode and level of study, Office for Students (OfS) B3 Outcomes measure"
+      url: https://www.officeforstudents.org.uk/data-and-analysis/student-outcomes-data-dashboard/data-dashboard/
+      publisher: Office for Students (OfS)
+      asOfDate: "2026-08-06"
+    lastVerified: "2026-11-03"
+    confidence: medium
     notes: >-
-      Checked Discover Uni's course page again specifically for this: it publishes only the "after 1
-      year on the course" continuation measure already used for this file's retentionRate entry
-      (95%, 2023-24 entrant cohort, n=20) — no separate completion/graduation-rate metric exists on
-      that page. Also checked, then rejected, a figure that search results initially mislabeled as a
-      "University of Surrey Higher Education Annual Review" (93% continuation / 95% completion,
-      2023-24): reading the actual PDF directly showed it is Farnborough College of Technology's own
-      "Annual Review Report (ARR) from Associated and Accredited Institutions" — i.e. Farnborough's
-      own figures for its ~412 students on Surrey-validated degree programmes (Business Management,
-      Computing, Therapeutic Counselling, etc. — not this BSc, and not Surrey's own on-campus student
-      body). Using it here would have been a misattribution. The genuine UK equivalent — the Office
-      for Students' own "completion" measure (part of its B3 Outcomes dataset) — sits behind an
-      embedded Tableau dashboard
-      (https://www.officeforstudents.org.uk/data-and-analysis/student-outcomes-data-dashboard/data-dashboard/
-      or https://public.tableau.com/views/B32025/provider) with no figures readable outside a real
-      browser. Flagged for human follow-up rather than guessed. Left blank.
+      Retrieved via a real browser session 2026-11-03 — this is an embedded Tableau dashboard with no
+      data readable by automated fetch, so it needed a human-equivalent browser check. Full-time,
+      First degree completion indicator for The University of Surrey, 2016-17 to 2019-20 entrant
+      cohort (n=14,010): 93.4% (numerical threshold 75%). This is the genuine UK equivalent of IPEDS's
+      150%-of-normal-time completion rate — the OfS's own B3 Outcomes "completion" measure, projecting
+      completion over an extended window — rather than the 1-year continuation measure already used
+      for this file's retentionRate entry. Also confirms this file's earlier rejection of a
+      "University of Surrey Higher Education Annual Review" figure (93% continuation / 95% completion)
+      as a misattribution of Farnborough College of Technology's own figures was correct — this
+      dashboard's real Surrey-specific completion figure (93.4%) is close but not identical to that
+      rejected figure, underscoring they weren't the same measure. Dashboard "last updated" date used
+      as asOfDate since the measure itself spans a multi-year cohort window rather than a single
+      as-of date.
   retentionRate:
     value: 95
     unit: "%"

@@ -55,10 +55,12 @@ outcomes:
     confidence: low
     notes: >-
       Program includes work-integrated learning/industry placement components, but no disclosed
-      completion or placement-rate percentage was found for v1. Checked 2026-11-03: no placement-
-      completion percentage found via Good Universities Guide or any other accessible secondary
-      source; griffith.edu.au, which would be the authoritative source for program-specific
-      work-integrated-learning outcomes, blocks automated fetch (HTTP 403) site-wide.
+      completion or placement-rate percentage was found for v1. Re-checked 2026-11-03 via a real
+      browser session (griffith.edu.au blocks automated fetch site-wide with HTTP 403, but loads
+      normally in a real browser, so this is now a confirmed absence rather than a blocked-source
+      gap): the program's own page states "All students will have the opportunity to undertake a
+      work-integrated learning activity in this degree program," confirming the opportunity exists
+      for every student, but discloses no completion or placement-rate percentage. Left blank.
 
 admissions:
   acceptanceRate:
@@ -103,21 +105,28 @@ academicResearch:
     notes: >-
       Sum of career cited_by_count across 33 of 34 current named faculty (sourced from the program's own official directory) matched to an OpenAlex author record by name + institution — covers ALL of each person's publications (any journal/field), not just hospitality-tagged ones, and their full career (not a fixed year window). Unmatched faculty (common names, no OpenAlex presence, etc.) are excluded from the sum, not counted as zero. Top contributors: Susanne Becken (12584 citations, 322 works); James Higham (10038 citations, 260 works); Brent Moyle (6599 citations, 267 works); Basak Denizci Guillet (4797 citations, 129 works); Charles Arcodia (4292 citations, 204 works).
   researchFundingUSD:
+    value: 83261270
     unit: USD/year
-    confidence: low
+    source:
+      label: "Research and development income time series (1992-2024), Table 1: Summary by Category — Higher Education Research Data Collection (HERDC)"
+      url: https://www.education.gov.au/research-block-grants/resources/research-income-time-series
+      publisher: Department of Education, Australian Government
+      asOfDate: "2024-12-31"
+    lastVerified: "2026-11-03"
+    confidence: medium
     notes: >-
-      Not yet sourced for v1. Checked 2026-11-03: Griffith's 2025 annual report would carry a
-      university-wide research-income figure (same kind of proxy this project already uses for
-      IPEDS graduation rates elsewhere), but griffith.edu.au blocks automated fetch of both the
-      course pages and the PDF annual reports (HTTP 403) across the whole domain. The Department of
-      Education's Higher Education Research Data Collection time series, which publishes exactly
-      this figure by institution (education.gov.au/resources/research-block-grants and
-      education.gov.au/download/18822/2025-research-block-grant-allocations/39960/document/pdf),
-      timed out on every automated fetch attempt — likely too large/slow for this tool; a human with
-      a browser should open it directly and look up Griffith's row. News coverage (futurecampus.com.au's
-      2025 Queensland-universities financial roundup) gives Griffith's total revenue (~AUD 1.22bn,
-      2025) but does not break out research income specifically, so it wasn't used. See report's
-      "please look at this yourself" list.
+      griffith.edu.au and the Dept of Education's research-block-grants PDF both block automated
+      fetch, but the underlying dataset turned out to be a separate, small (1.62MB) XLSX file rather
+      than the giant PDF that had been timing out; downloaded directly and parsed 2026-11-03.
+      University-wide total R&D income for 2024 (all four HERDC categories — Australian Competitive
+      Grants + other Public Sector Research Funding + Industry and other Funding + Cooperative
+      Research Centre Funding summed): AUD 128,094,261, converted to USD at an approximate rate of
+      0.65 USD/AUD (consistent with jcu.yaml) = ~US$83,261,270. Not broken out for the tourism/
+      hospitality program specifically. Five-year trend from the same dataset, for context: AUD
+      86.6m (2020) -> 94.4m (2021) -> 101.8m (2022) -> 115.0m (2023) -> 128.1m (2024), a steady
+      upward trend. Supersedes the earlier unused news-coverage figure (futurecampus.com.au's 2025
+      Queensland-universities financial roundup, ~AUD 1.22bn total revenue, not research-specific)
+      previously logged here.
   hasPhDProgram:
     value: 1
     unit: boolean (1=yes, 0=no)
@@ -167,23 +176,26 @@ academicQuality:
 
 costOfAttendance:
   totalCost:
+    value: 44987
     unit: USD/year
-    confidence: low
+    source:
+      label: "Bachelor of International Tourism and Hotel Management — 1408, Fees (international students)"
+      url: https://www.griffith.edu.au/study/degrees/bachelor-of-international-tourism-and-hotel-management-1408
+      publisher: Griffith University
+      asOfDate: "2027-01-01"
+    lastVerified: "2026-11-03"
+    confidence: medium
     notes: >-
-      Not yet sourced for v1. NCES/IPEDS doesn't cover non-US institutions; Griffith's own published
-      international tuition + estimated living costs would need to be sourced directly. Checked
-      2026-11-03: griffith.edu.au (course page, fees pages, and annual-report PDFs) returns HTTP 403
-      to automated fetch across the whole domain, so Griffith's own published fee could not be read
-      directly. Secondary aggregators conflict too widely to use as a substitute: TheUniGuide gives
-      AUD 28,500/year, HotCoursesAbroad gives AUD 38,000/year (for the "Hotel and Hospitality" major
-      variant of this same program, 2027 intake, and flagged by the source itself as "indicative —
-      check with institution"), and QTAC's own listing (qtac.edu.au/courses/listing/28891/) only shows
-      the domestic CSP first-year contribution (AUD 18,000), not an international fee. Study
-      Australia's government course-listing pages for this program
-      (search.studyaustralia.gov.au/course/bachelor-of-international-tourism-and-hotel-management/...)
-      returned either an empty placeholder or a server error on every attempt, unlike the equivalent
-      JCU page (see jcu.yaml) which worked cleanly, so no government-aggregator figure could be
-      substituted either. The Dept of Home Affairs living-cost component (AUD 29,710/year) used for
-      jcu.yaml's totalCost would apply equally here, but pairing it with an unverified, wildly
-      conflicting tuition figure isn't a usable total — left blank rather than picking among them. See
-      report's "please look at this yourself" list.
+      Retrieved via a real browser session 2026-11-03 — griffith.edu.au returns HTTP 403 to automated
+      fetch across the whole domain, but loads normally in a real browser, resolving the tuition
+      figure this field was previously blocked on. Griffith's own course page states the indicative
+      annual international tuition fee as AUD 39,500 (80 credit points, 2027 fee band) — up from AUD
+      38,000 for 2026 — superseding the conflicting third-party aggregator figures (TheUniGuide AUD
+      28,500, HotCoursesAbroad AUD 38,000) previously logged here. Living costs: no specific figure on
+      Griffith's own page, so added the Dept of Home Affairs' published minimum living-cost amount for
+      a Student visa (subclass 500) primary applicant, AUD 29,710/year — the same figure used for
+      jcu.yaml's totalCost, for consistency. Total: AUD 39,500 + AUD 29,710 = AUD 69,210/year,
+      converted to USD at an approximate rate of 0.65 USD/AUD (consistent with jcu.yaml) = USD
+      44,987/year. Confidence kept at medium rather than high because the living-cost half of the
+      total is still a visa-minimum floor rather than an institution-published figure, and it excludes
+      OSHC health cover, airfare, and visa fees — likely understates true total cost of attendance.

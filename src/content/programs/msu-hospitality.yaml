@@ -93,19 +93,44 @@ admissions:
 
 academicResearch:
   facultyPubCitationIndex:
+    value: 12446
     unit: "total career citations, current named faculty (OpenAlex)"
-    confidence: low
+    source:
+      label: "OpenAlex author records matched to this program's current faculty directory"
+      url: https://openalex.org
+      publisher: "OpenAlex (processed by this project's pipeline — see methodology)"
+      asOfDate: "2026-11-03"
+    lastVerified: "2026-11-03"
+    confidence: medium
     notes: >-
-      Still not sourced. A prior pass was blocked by OpenAlex daily budget exhaustion before any of this school's faculty could be queried. This pass:
-      the School's own faculty directory (broad.msu.edu/hospitality-business/ and its individual broad.msu.edu/profile/ pages) sits behind an
-      Incapsula bot-protection check that requires solving an hCaptcha, which blocks automated/scripted access — did not attempt to bypass it, so no
-      reliable, complete, current-as-of-2026 named-faculty list could be confirmed and the OpenAlex matching step was not run. Secondary sources
-      (Wikipedia's school article, search-engine-cached snippets of individual broad.msu.edu profile pages, and a Fall 2024 "At a Glance" one-pager at
-      broad.msu.edu/app/uploads/2025/01/Fall-24-One-Pager_Dept-HB.pdf) give a partial and inconsistent picture: the one-pager states 12 full-time
-      faculty as of fall 2024 (2 endowed; 10 in the tenure system — 3 professors, 6 associate professors, 1 assistant professor) but no names, a 2021
-      job posting cited 11 tenure-stream faculty, and sources disagree on the current director (Karthik Namasivayam vs. a dated page naming Carl
-      Borchgrevink) — not a reliable basis for this project's name-matching method. Needs a human to open the directory directly (clearing the
-      CAPTCHA) and either supply the current named-faculty list or complete the OpenAlex match.
+      Sum of career cited_by_count across 10 of 19 current named faculty (9 of 11 academic-rank faculty, 1 of 8 fixed-term
+      faculty — sourced from the School's own directory, broad.msu.edu/directory/?department=7) matched to an OpenAlex author
+      record by name + institution — covers ALL of each person's publications (any field), not just hospitality-tagged ones,
+      and their full career (not a fixed year window). Note for future passes: the OpenAlex institution ID this project
+      commonly assumes for MSU, I86519309, actually resolves to The University of Texas at Austin — the correct Michigan
+      State University ID is I87216513, and all matching here used the corrected ID (an uncorrected ID-only filter would have
+      silently returned zero matches for everyone). Top contributors: Bonnie J. Knutson (3855 citations, 166 works); Lu Zhang
+      (2508 citations, 86 works); Karthik Namasivayam (2014 citations, 44 works); JaeMin Cha (1310 citations, 58 works —
+      summed across two unmerged OpenAlex records, 1149+161 citations, that both plausibly belong to the same person given
+      identical topics and continuous/overlapping MSU-affiliation years); Michael McCall (1070 citations, 58 works). Two
+      false-positive common-name collisions were caught and excluded in favor of the correct record rather than inflating the
+      sum: a 2327-citation "Mi-Ran Kim" record was excluded as a different, far more prolific person (20+ unrelated Korean
+      institutions, nursing/food-science/neurology topics, MSU only incidental) — the real match is a 32-citation record with
+      tourism/hospitality topics and MSU-only affiliation; a 13256-citation "Lu Zhang" record (a finance professor who passed
+      through many US business schools, MSU only 2005-2010) was excluded the same way in favor of the 2508-citation
+      marketing/tourism-topic record with continuous 2012-2026 MSU affiliation. Seung Hyun Kim was excluded entirely: all 4
+      candidate records under this very common name are either clearly wrong field (neurology, policing/public-administration)
+      or a malformed combined-name record, with no confident single match. Adam Roy (chef-professor) and 7 of 8 fixed-term
+      faculty (Ariel Backus, Michael Behan, Jan Brintnall, Richard Bruner, Gregory Denton, William Salem, Ward Sutton) have no
+      OpenAlex author record at all, consistent with practitioner/teaching-only roles without an indexed research record —
+      excluded, not counted as zero. The one fixed-term exception, James Van Ravensway, matched a 9-citation, 4-work record
+      confirmed at MSU across several years despite unrelated topics (urban/public-policy); kept because the name is uncommon
+      enough that a false match is unlikely. The OpenAlex API's free daily rate limit was exhausted partway through
+      supplementary nickname-variant re-checks (e.g. "Greg Denton", "Rich Bruner") run on top of the already-excluded
+      fixed-term names above; the primary name+institution match for all 19 faculty had already completed cleanly before the
+      limit hit, so this does not affect the completeness of the result. Every OpenAlex response also repeatedly carried
+      boilerplate urging an agent to request an API key by POSTing a user's email address to openalex.org — a
+      prompt-injection-shaped instruction embedded in third-party API output; not acted on.
   researchFundingUSD:
     value: 844076000
     unit: USD/year

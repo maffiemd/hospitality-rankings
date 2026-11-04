@@ -52,26 +52,36 @@ outcomes:
     unit: "0-100"
     confidence: low
     notes: >-
-      Checked 2026-11-03 per this project's established method: QS World University Rankings by
-      Subject 2026, Hospitality & Leisure Management table (same source used for FIU/UH, at
-      topuniversities.com/university-subject-rankings/hospitality-leisure-management). The official
-      QS page returned HTTP 403 to automated fetching on every attempt, so it could not be read
-      directly — flagged for a human/browser check. As a secondary check, a third-party mirror of the
-      same 2026 edition (xuanxiao.org/en/rankings/qs/subject/hospitality-leisure-management, pages 1-3,
-      covering all 174 ranked institutions) does not list Johnson & Wales University at all, consistent
-      with JWU not appearing in this subject table. Left unsourced for v1 pending the blocked primary
-      source being confirmed by a human.
+      Confirmed via a real browser session 2026-11-03 (the live QS page returns HTTP 403 to automated
+      fetch, so this needed a human-equivalent browser check): paged through all 173 ranked
+      institutions in the QS World University Rankings by Subject 2026, Hospitality & Leisure
+      Management table (topuniversities.com/university-subject-rankings/hospitality-leisure-management)
+      end to end. Johnson & Wales University does not appear anywhere in the table — this is now a
+      confirmed absence, not a blocked-source gap. Left blank; there is no Employer Reputation score to
+      record.
   internshipPlacementRate:
+    value: 86
     unit: "%"
+    source:
+      label: "Career Outcomes — \"of students complete an internship\""
+      url: https://www.jwu.edu/academics/experiential-education/career-outcomes/
+      publisher: Johnson & Wales University
+      asOfDate: "2026-11-03"
+    lastVerified: "2026-11-03"
     confidence: low
-    notes: >
-      JWU reports that roughly 3,500 students complete internships annually university-wide and that
-      more than 60% receive a job offer at completion, per JWU's own news coverage, but no clean
-      "percentage of students placed into an internship" figure specific to the College of Hospitality
-      Management was found for v1. Re-checked 2026-11-03: hospitality.jwu.edu failed with a repeated
-      SSL handshake failure (unreachable via automated fetch); jwu.edu/career-outcomes/index.html and
-      jwu.edu/campuses/providence/colleges/college-of-hospitality-management.html both returned empty
-      content (likely JS-rendered) to automated fetch. All three flagged for a human/browser check.
+    notes: >-
+      Confirmed via a real browser session 2026-11-03: this page is JS-rendered and returns empty
+      content to automated fetch (as does hospitality.jwu.edu, which fails with a repeated SSL
+      handshake error), but loads normally in a real browser. States "86% of students complete an
+      internship" and separately "96.2% of employers rate JWU's internship program as good or
+      exceptional" — no academic year or cohort is given on the page. This is a university-wide figure,
+      not broken out for the College of Hospitality & Business specifically — same caveat as this
+      file's facultyStudentRatio and other university-wide entries. The Hospitality Management B.S.
+      program page itself (jwu.edu/academics/programs/hospitality-management-bs/) confirms the program
+      requires 600 hours of Work Integrated Learning (3-year track) or a 6-credit internship (4-year
+      track), but discloses no program-specific completion/placement percentage. Used the university-wide
+      figure as the best available proxy rather than leaving this blank, flagged low confidence for both
+      the scope mismatch and the missing cohort/year.
 
 admissions:
   acceptanceRate:
