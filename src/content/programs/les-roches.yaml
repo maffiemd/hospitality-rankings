@@ -11,7 +11,22 @@ outcomes:
   startingSalary:
     unit: USD/year
     confidence: low
-    notes: No official Les Roches starting-salary disclosure was found. Only unverified third-party estimates exist (e.g. roughly CHF 50,000-60,000/year or approximately USD 54,000/year from uncredited aggregator sources), none traceable to an institutional employment report. Left blank rather than citing unverifiable figures. Checked 2026-11-03 — Les Roches' official "Les Roches in numbers" page (lesroches.edu/meet-les-roches/les-roches-key-numbers, an infographic page with real stat tiles — employment rate 98%, student-faculty ratio 16:1, "5 offers on graduation day," etc., all read directly from the underlying image files) has no salary figure. Still left blank.
+    notes: >-
+      No official Les Roches starting-salary disclosure was found. Only unverified third-party
+      estimates exist (e.g. roughly CHF 50,000-60,000/year or approximately USD 54,000/year from
+      uncredited aggregator sources), none traceable to an institutional employment report. Left blank
+      rather than citing unverifiable figures. Checked 2026-11-03 — Les Roches' official "Les Roches in
+      numbers" page (lesroches.edu/meet-les-roches/les-roches-key-numbers, an infographic page with
+      real stat tiles — employment rate 98%, student-faculty ratio 16:1, "5 offers on graduation day,"
+      etc., all read directly from the underlying image files) has no salary figure. Still left blank.
+      Checked 2026-11-04 via sub-agent research: unlike EHL (also in this dataset), Les Roches has no
+      NECHE "Consumer Information Disclosure" document at all — the EHL-parallel URL pattern 404s, and
+      Les Roches' own scholarships page states FAFSA doesn't apply to it due to its international
+      status, meaning it isn't a US Title IV participant, which plausibly explains why this document
+      type doesn't exist here (EHL does participate in Title IV aid). A joint Sommet Education/DLG
+      "Luxury & Hospitality Career Index" study (n=451 Glion+Les Roches grads, Oct 2026) covers career
+      mobility and management-role percentages but explicitly no salary figure. No HotellerieSuisse/
+      GastroSuisse survey or alumni-association report found either. Confirmed genuinely absent.
   employmentRate:
     value: 98
     unit: "%"
@@ -45,17 +60,58 @@ outcomes:
   internshipPlacementRate:
     unit: "%"
     confidence: low
-    notes: Les Roches' bachelor curriculum includes mandatory paid internships, and the school cites roughly 300 recruiting-company visits per year and multiple job offers per student, but no specific internship "placement rate" percentage is independently disclosed. Left blank. Checked 2026-11-03 — a March 2023 Les Roches press release (hospitalitynet.org/news/4115451.html, CEO Carlos Díez de la Lastra) states "our job placement rate exceeds 94%" and separately "an employment placement rate close to 100%" — but neither figure is dated to a specific cohort, and both read as restatements of the overall graduate employment rate (already captured in employmentRate as 98%, from a different official page) rather than a distinct internship-specific placement stat, so using either here risked conflating two different fields with inconsistent numbers. Not used; left blank.
+    notes: >-
+      Les Roches' bachelor curriculum includes mandatory paid internships, and the school cites roughly
+      300 recruiting-company visits per year and multiple job offers per student, but no specific
+      internship "placement rate" percentage is independently disclosed. Left blank. Checked 2026-11-03
+      — a March 2023 Les Roches press release (hospitalitynet.org/news/4115451.html, CEO Carlos Díez de
+      la Lastra) states "our job placement rate exceeds 94%" and separately "an employment placement
+      rate close to 100%" — but neither figure is dated to a specific cohort, and both read as
+      restatements of the overall graduate employment rate (already captured in employmentRate as 98%,
+      from a different official page) rather than a distinct internship-specific placement stat, so
+      using either here risked conflating two different fields with inconsistent numbers. Not used;
+      left blank. Checked 2026-11-04 via sub-agent research: Les Roches' official bachelor careers page
+      (brochure.lesroches.edu/bachelor/navigating-your-path-to-success) gives only the same two figures
+      already rejected above (98% employed on graduation day, 94% with ≥1 offer) — no distinct
+      internship-specific stat; no NECHE disclosure document exists to check (see startingSalary note);
+      the Sommet Education career-index study has no internship-specific figure either; no post-2023
+      press release with a differently-dated stat was found. Confirmed genuinely absent.
 
 admissions:
   acceptanceRate:
     unit: "%"
     confidence: low
-    notes: Not publicly disclosed by Les Roches. A single third-party aggregator (gotouniversity.com) cites approximately 90% with no verifiable link to an institutional source. Left blank rather than citing an unverified aggregator figure. Checked 2026-11-03 — Les Roches' "in numbers" page, "About," and "Quality assurance" pages disclose no acceptance/admission rate. Still left blank.
+    notes: >-
+      Not publicly disclosed by Les Roches. A single third-party aggregator (gotouniversity.com) cites
+      approximately 90% with no verifiable link to an institutional source. Left blank rather than
+      citing an unverified aggregator figure. Checked 2026-11-03 — Les Roches' "in numbers" page,
+      "About," and "Quality assurance" pages disclose no acceptance/admission rate. Still left blank.
+      Checked 2026-11-04 via sub-agent research: NECHE's own institutional profile for Les Roches
+      (neche.org/institution/les-roches-global-hospitality-education/) lists only accreditation history
+      and branch campuses (Abu Dhabi, Marbella) — no admissions data, and (per startingSalary's note)
+      no Consumer Information/Student Achievement disclosure document exists for Les Roches at all.
+      QS's and THE's institution profile pages (checked via Chrome, not just subject tables) have
+      tuition/rankings/employability stats but no acceptance rate (THE's page is essentially an empty
+      unranked stub). Confirmed Swiss federal statistics (BFS/OFS) genuinely don't apply: this program's
+      institution (Les Roches Global Hospitality Education, Crans-Montana, Swiss Accreditation Council
+      status) is distinct from a separately-accredited sister entity, "Les Roches-Gruyère University of
+      Applied Sciences" (Bulle campus, HES-SO-recognized 2008, appears to have operated only
+      2008-2016) — a different legal entity and campus, so federal higher-ed statistics don't cover the
+      Crans-Montana program tracked in this file. Sommet Education has no public annual report with
+      application/admission counts. Confirmed genuinely unpublished. Side note for the supervisor,
+      unrelated to this field: NECHE's institutional page shows Les Roches was "Placed on Program of
+      Special Monitoring" in April 2026 — not something this dataset tracks, but worth knowing.
   satActEquivalent:
     unit: "percentile, national test-taking cohort"
     confidence: low
-    notes: Les Roches bachelor admissions are based on secondary-school transcripts (minimum ~50% academic achievement), English proficiency (IELTS 6.0+, no component below 5.5), and an aptitude/motivation assessment rather than SAT/ACT scores. No standardized test score (and so no percentile) is published for the admitted cohort, so left blank.
+    notes: >-
+      Les Roches bachelor admissions are based on secondary-school transcripts (minimum ~50% academic
+      achievement), English proficiency (IELTS 6.0+, no component below 5.5), and an aptitude/motivation
+      assessment rather than SAT/ACT scores. No standardized test score (and so no percentile) is
+      published for the admitted cohort, so left blank. Re-confirmed 2026-11-04: QS's own institution
+      profile independently confirms admissions criteria are English-proficiency tests (IELTS/TOEFL/
+      Duolingo/Cambridge) plus GPA, not SAT/ACT — no standardized-test percentile found anywhere. Field
+      remains intentionally blank.
 
 academicResearch:
   facultyPubCitationIndex:
@@ -73,7 +129,25 @@ academicResearch:
   researchFundingUSD:
     unit: USD/year
     confidence: low
-    notes: Not yet sourced for v1. Checked 2026-11-03 — no Les Roches-published research budget or funding figure found; its "Research" page (lesroches.edu/research-and-innovation/research/) wasn't checked in exhaustive depth beyond confirming no figure appeared in search results, consistent with this project's guidance that a reasonable, bounded search is enough for this field at small teaching-focused schools. Left blank.
+    notes: >-
+      Not yet sourced for v1. Checked 2026-11-03 — no Les Roches-published research budget or funding
+      figure found; its "Research" page (lesroches.edu/research-and-innovation/research/) wasn't checked
+      in exhaustive depth beyond confirming no figure appeared in search results, consistent with this
+      project's guidance that a reasonable, bounded search is enough for this field at small
+      teaching-focused schools. Left blank. Checked 2026-11-04 via sub-agent research, following up on
+      ehl.yaml's prior finding that EHL has no attributable institution-wide research-funding figure:
+      Les Roches is not a registered SNSF/FNS grantee (zero matches via the live grants portal's
+      institution-name filter for "Roches," "Gruyère," "Les Roches"). Unlike EHL (which is "associated"
+      with HES-SO via a performance-mandate convention), Les Roches Global Hospitality Education
+      (Crans-Montana) is explicitly NOT "conventionnée HES-SO" at all, so it sits outside HES-SO's
+      research-funding reporting on different grounds than EHL. No public Sommet Education group annual
+      report or financial statements exist; the only public filing found is a small UK subsidiary
+      (Sommet Education UK Limited, ~£1.07M shareholders' funds at Companies House) — not group-wide,
+      not research-relevant, no credit rating found. Switzerland's BFS/OFS R&D survey publishes only
+      sector/institution-type aggregates, no Les Roches-specific line. Les Roches' own "Research" page
+      (lesroches.edu/research-and-innovation/research/) was read in full this time — describes the Les
+      Roches Research Committee's governance and focus areas, zero currency figures anywhere. Confirmed
+      genuinely unavailable, for reasons structurally different from (even stricter than) EHL's case.
   hasPhDProgram:
     value: 0
     unit: boolean (1=yes, 0=no)
@@ -96,11 +170,28 @@ academicQuality:
       "Les Roches in numbers" page (lesroches.edu/meet-les-roches/les-roches-key-numbers) has no
       graduation-rate chart among its stat tiles (checked all 7 underlying images directly) — only
       headcounts, nationalities, student-faculty ratio, and employment rate. No other Les Roches page
-      (About, Quality assurance, NECHE institutional listing) discloses one either. Left blank.
+      (About, Quality assurance, NECHE institutional listing) discloses one either. Left blank. Checked
+      2026-11-04 via sub-agent research: no NECHE "Student Achievement" disclosure document exists for
+      Les Roches (confirmed 404 on the EHL-parallel URL pattern — Les Roches uses a different CMS
+      platform, Papirfly, not HubSpot like EHL — and its scholarships page confirms it isn't a US Title
+      IV participant, the likely reason this document type doesn't exist here at all); NECHE's own
+      institutional directory page was read in full — accreditation-status history only, no
+      student-achievement data or linked self-study/report. Also checked whether sister school Glion's
+      own published figures could serve as a cross-referenceable source for Les Roches (same Sommet
+      Education group): Glion's "Glion in Figures" charts are image-only with no OCR'd numbers
+      available via fetch, and its own text states the methodology is purely internal/self-calculated
+      ("students still within the academic program in their 3rd and 6th semesters") with no NECHE,
+      IPEDS, or other external source cited — a dead end, since there's no shared external dataset that
+      would also cover Les Roches. Confirmed genuinely absent.
   retentionRate:
     unit: "%"
     confidence: low
-    notes: Not yet sourced for v1. Checked 2026-11-03 — same search as sixYearGraduationRate above — no Les Roches-published first-to-second-year retention rate found. Left blank.
+    notes: >-
+      Not yet sourced for v1. Checked 2026-11-03 — same search as sixYearGraduationRate above — no Les
+      Roches-published first-to-second-year retention rate found. Left blank. Checked 2026-11-04 via
+      sub-agent research against the same angles checked for sixYearGraduationRate above (NECHE
+      disclosure document, NECHE institutional directory, Glion cross-reference check) — same result,
+      no retention figure found anywhere. Confirmed genuinely absent.
   facultyStudentRatio:
     value: 16
     unit: students per faculty
