@@ -23,7 +23,13 @@ outcomes:
       material already cited for employmentRate has no companion salary figure for this or any
       specific cohort. General DOSM/market benchmarks for Malaysian fresh-graduate pay exist (roughly
       RM2,800-3,200/month) but are not field-specific, let alone culinary/hospitality- or
-      Taylor's-specific, so not usable here.
+      Taylor's-specific, so not usable here. Checked 2026-11-04 via sub-agent research covering further
+      angles: Taylor's Career Planning and Internships / Career Services Centre pages, the School of
+      Hospitality, Tourism and Events (SHTE) landing page, QS Stars and QS Graduate Employability
+      Rankings press releases (2019-2024), StudyMalaysia.com, EduAdvisor.my, EasyUni, Afterschool.my,
+      and UniEnrol — none contain any RM/USD salary figure; all either repeat the same 100%
+      employment-rate banner or list only tuition/intake/curriculum data. No Taylor's annual or impact
+      report with graduate-outcome figures was locatable either. Confirmed genuinely absent.
   employmentRate:
     value: 100
     unit: "%"
@@ -44,7 +50,13 @@ outcomes:
       cites Taylor's career-services copy at 99%; a separate Taylor's page attributes 99.5% to the
       2024 MOHE Graduate Tracer Study) — none is more program-specific than the 100%/2025-MOHE figure
       already recorded here, and the inconsistency across Taylor's own pages is itself a reason to
-      keep this at low confidence pending a true program-level breakout.
+      keep this at low confidence pending a true program-level breakout. Checked 2026-11-04: directly
+      queried the live Malaysian Qualifications Register (MQR) search form
+      (www2.mqa.gov.my/mqr/english/ecarianakr.cfm) for "Culinary Management" at "Taylor's" — returned
+      "No such record of the information in the database," meaning this programme isn't in MQA's Full
+      Accreditation database and has no programme-level employability KPI to disclose there. The
+      Culinary Institute, SHTE, and hospitality-undergraduate landing pages were also re-checked
+      directly and show only the same university-wide 100% banner, no school/program breakout.
   recruiterReputationScore:
     value: 49.1
     unit: "0-100"
@@ -77,7 +89,16 @@ outcomes:
       Employment Programme" MoU (Hilton "adopts" a cohort of students pursuing Bachelor of
       International Hospitality Management, Bachelor of Tourism Management, and Bachelor of Culinary
       Arts and Foodservice Management for training during their degree) but again no placement-rate
-      percentage disclosed. Still no disclosed figure for v1.
+      percentage disclosed. Still no disclosed figure for v1. Checked 2026-11-04 via sub-agent
+      research: the MQA/MQR register (www2.mqa.gov.my/mqr) could not be queried — its legacy ColdFusion
+      frameset returned an empty shell over WebFetch and repeatedly closed/invalidated the browser tab
+      over several Chrome attempts, so this source is genuinely inaccessible with available tooling,
+      not confirmed clean. Press/news coverage surfaced only absolute counts, not rates (e.g. "over 356
+      students" placed in Michelin-starred-restaurant internships since 2010, no cohort-size
+      denominator given, so no rate is derivable; internship duration itself is inconsistently stated
+      across Taylor's own pages as 10 weeks, 3 months, or 6 months). QS Stars documentation confirms a
+      5-Star Employability rating but doesn't break this out into a placement percentage. No new figure
+      found; recommend leaving blank.
 
 admissions:
   acceptanceRate:
@@ -88,7 +109,15 @@ admissions:
       applicant-to-admit acceptance rate for this program. Re-checked per task instruction: third-party
       aggregators (Collegedunia, HotCoursesAbroad, EduRank) give rough estimates in the 60-75% range,
       but each explicitly describes its own number as a circumstantial/calculated estimate, not an
-      official Taylor's figure, so none is usable here. Confirms the existing note.
+      official Taylor's figure, so none is usable here. Confirms the existing note. Checked 2026-11-04
+      via sub-agent research, this time against INSTITUTION profile pages rather than subject tables:
+      QS's topuniversities.com/universities/taylors-university profile shows only rank, programme
+      count, and international-student share — no acceptance rate, only entry-requirement minimums;
+      THE's timeshighereducation.com Taylor's profile has no admissions stats at all ("There is no
+      further information for students at this time"); Bachelorsportal's institution page and its exact
+      program match (bachelorsportal.com/studies/327600/culinary-management.html) list only tuition,
+      deadlines, and requirements; Taylor's own "About Taylor's" page has no facts-and-figures section.
+      Genuinely unpublished by any primary or ranking-body source — no edit warranted.
   satActEquivalent:
     unit: "percentile, national test-taking cohort"
     confidence: low
@@ -97,7 +126,11 @@ admissions:
       pathway (min. CGPA 2.00), STPM (min. CC, CGPA 2.00), or UEC (min. 5 B's); other accepted
       qualifications include A-Levels (min. DD), IB (min. 24 points), and — for applicants holding it —
       ATAR (min. 55). Intake is heterogeneous across these pathways with no single standardized score, so
-      no percentile conversion is recorded here per project convention.
+      no percentile conversion is recorded here per project convention. Re-confirmed 2026-11-04 as a
+      deliberate exclusion, not a gap: QS's university-wide admission minimums separately list "ATAR
+      65+" as a general floor, distinct in scope from this program's own ATAR 55 minimum — neither is a
+      percentile conversion and neither resolves the underlying multi-pathway heterogeneity, so this
+      field remains intentionally blank.
     source:
       label: "Bachelor of Culinary Management (Honours) — Entry Requirements"
       url: https://university.taylors.edu.my/en/study/explore-all-programmes/taylors-culinary-institute/undergraduate/bachelor-of-culinary-management.html
@@ -133,7 +166,19 @@ academicResearch:
       funding" figure (different grant schemes, different time windows). Using any of them here would
       misattribute a university-wide number — almost certainly dominated by Taylor's much larger
       engineering/business/science faculties — to this undergraduate culinary program, so none was
-      used. Not yet sourced for v1.
+      used. Not yet sourced for v1. Checked 2026-11-04 via sub-agent research for a single clean annual
+      total, following this project's convention of using a university-wide total when flagged as such
+      (as with griffith.yaml, jcu.yaml, surrey-htm.yaml): Taylor's is privately held (the Loy family;
+      no Bursa Malaysia listing, no IPO, no sukuk/bond rating found in MARC/RAM searches), so no
+      audited financial statements are publicly available to pull a research-expenditure line from.
+      Malaysia's MASTIC National Survey of R&D (the HERD/HERDC equivalent) covers Higher Learning
+      Institutions only as a sector aggregate across all editions found (2012/2016/2019/2021), never
+      broken out by named institution. THE's World University Rankings profile for Taylor's has no
+      filled-in "Key stats" at all (research income, total income, student/staff counts all blank —
+      genuinely unpublished, not a fetch-blocking issue) and THE Impact Rankings surfaced nothing
+      Taylor's-specific either. MyRA (Malaysia's research-assessment instrument) rated Taylor's in 2011
+      but outputs only a star tier, not a dollar figure. No genuine annual total-research-income figure
+      exists anywhere public for this institution.
   hasPhDProgram:
     value: 1
     unit: boolean (1=yes, 0=no)
@@ -156,7 +201,14 @@ academicQuality:
       of a similar name, Taylor University in Upland, Indiana (which does publish a roughly 74-77%
       six-year graduation rate via Data USA/College Factual/IPEDS) — explicitly a different school, not
       used. IPEDS/NCES doesn't cover Malaysian institutions, and no Malaysian-government or Taylor's-own
-      equivalent disclosure was found. Not yet sourced for v1.
+      equivalent disclosure was found. Not yet sourced for v1. Checked 2026-11-04 via sub-agent
+      research: Malaysia's SETARA institutional rating gives Taylor's "Tier 5: Excellent" across its
+      2009/2011/2013/2017 audits, and MQA's discipline-level D-SETARA rated Taylor's Hospitality,
+      Tourism & Culinary Arts school "Tier 6: Outstanding" in 2012 (the only institution to receive it
+      that year) — but both SETARA and D-SETARA publish categorical tiers, not graduation-rate
+      percentages, so neither is usable for this field. QS Stars (5-star, Taylor's current rating) has
+      no retention/completion component. No additional MOHE tracer-study table beyond the
+      already-checked one reports a completion percentage. Confirmed genuinely absent.
   retentionRate:
     unit: "%"
     confidence: low
@@ -165,11 +217,44 @@ academicQuality:
       for Taylor's University, Malaysia; search results again surfaced the unrelated Taylor University
       (Upland, Indiana — roughly 89-91% first-to-second-year retention per Data USA and its own press
       release), a different institution, not used. No Malaysian equivalent found. Not yet sourced for
-      v1.
+      v1. Checked 2026-11-04 via sub-agent research against the same new sources checked for
+      sixYearGraduationRate above (SETARA/D-SETARA tiers, QS Stars categories, the MOHE tracer study) —
+      same result: no numeric retention figure found anywhere. Confirmed genuinely absent.
   facultyStudentRatio:
+    value: 10.0
     unit: students per faculty
-    confidence: low
-    notes: Not yet sourced for v1 — no ratio found on Taylor's own site (about-us, QS rankings page) or readable on THE's Taylor's University profile (key stats appear to be JavaScript-rendered and didn't come through on fetch); only an unverified third-party estimate (16:1, university-wide) was found.
+    source:
+      label: "Taylor's University profile — Students & Staff panel"
+      url: https://www.topuniversities.com/universities/taylors-university
+      publisher: QS Quacquarelli Symonds
+      asOfDate: "2026-11-04"
+    lastVerified: "2026-11-04"
+    confidence: medium
+    notes: >-
+      Not sourced for v1 — no ratio found on Taylor's own site (about-us, QS rankings page); only an
+      unverified third-party estimate (16:1, university-wide) was found. Checked 2026-11-04 via
+      sub-agent research using Claude in Chrome (a real browser session), which resolves the earlier
+      "JS-rendered, blocked by fetch" hypothesis: THE's Taylor's University page
+      (timeshighereducation.com/world-university-rankings/taylors-university-sdn-bhd) is a sparse,
+      unclaimed/unranked listing ("Do you work for this institution? Make your university stand out by
+      adding more stats" / "There is no further information for students at this time") with no
+      key-stats panel at all — the content isn't blocked, it genuinely doesn't exist; Taylor's is not
+      part of THE's ranked World University Rankings. QS's topuniversities.com profile separately shows
+      a "Faculty Student Ratio" indicator score of 59.2, but that's QS's normalized 0-100
+      ranking-indicator score, not a raw students-per-faculty count, so it isn't the same unit as this
+      project's other facultyStudentRatio entries and wasn't used. Instead, used the SAME page's raw
+      "Students & Staff" panel figures: 8,669 total students / 869 total faculty staff = 8,669/869 ≈
+      9.98, rounded to 10.0. A first automated element read of these raw counts was knocked off before
+      independent confirmation by the page's aggressive ad-driven redirects; re-verified 2026-11-04 in
+      a second, cleaner pass (navigate, immediate get_page_text with no clicks, then a non-interactive
+      accessibility-tree `find` read of the still-collapsed Students & Staff accordion, confirmed via
+      screenshot that nothing was expanded/clicked) — both passes returned the identical 8,669/869
+      figures independently. No explicit year is attached to the Students & Staff counts themselves;
+      the surrounding page blends ranking cycles (QS World University Rankings 2027 context, with
+      prose citing 2025 and 2024 QS editions elsewhere), so this is treated as a current-page-live
+      snapshot rather than a dated as-of figure — kept at medium rather than high confidence for that
+      reason, consistent with this field's confidence level for other schools sourced from a rankings
+      profile page.
 
 costOfAttendance:
   totalCost:
