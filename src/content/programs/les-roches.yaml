@@ -27,6 +27,12 @@ outcomes:
       "Luxury & Hospitality Career Index" study (n=451 Glion+Les Roches grads, Oct 2026) covers career
       mobility and management-role percentages but explicitly no salary figure. No HotellerieSuisse/
       GastroSuisse survey or alumni-association report found either. Confirmed genuinely absent.
+      Checked again 2026-11-04 (second sub-agent pass, fresh angles): Les Roches' Marbella and Abu Dhabi
+      campus pages, a Monocle feature with its own "Les Roches in numbers" sidebar, Sommet Education's
+      CSR page and foundation site, Les Roches' official LinkedIn page and posts, its Hosco recruiting
+      partnership, and its alumni-network/reunion pages were all checked directly — every one traces
+      back to the same employment-rate/job-offer-count cluster (94-98% employed, "5 average job offers
+      per student"), never a dollar salary figure. Confirmed genuinely absent, round 2.
   employmentRate:
     value: 98
     unit: "%"
@@ -76,6 +82,11 @@ outcomes:
       internship-specific stat; no NECHE disclosure document exists to check (see startingSalary note);
       the Sommet Education career-index study has no internship-specific figure either; no post-2023
       press release with a differently-dated stat was found. Confirmed genuinely absent.
+      Checked again 2026-11-04 (second sub-agent pass): Les Roches' Marbella/Abu Dhabi campus pages and
+      its postgraduate/career-services brochure page surface additional stats ("200+ employer recruiting
+      visits per semester," "2000+ open positions per semester") but still nothing internship-specific —
+      only general employment/job-offer metrics already captured elsewhere. Confirmed genuinely absent,
+      round 2.
 
 admissions:
   acceptanceRate:
@@ -101,6 +112,16 @@ admissions:
       application/admission counts. Confirmed genuinely unpublished. Side note for the supervisor,
       unrelated to this field: NECHE's institutional page shows Les Roches was "Placed on Program of
       Special Monitoring" in April 2026 — not something this dataset tracks, but worth knowing.
+      Checked again 2026-11-04 (second sub-agent pass): chased that NECHE monitoring action as a
+      potential lead for this field, since such actions are sometimes tied to student-achievement
+      findings. Resolved as a dead end — the linked document is NECHE Policy Pp 144, a generic,
+      institution-agnostic policy that's automatically attached whenever any accredited institution
+      undergoes a sale/change of control; it names no institution and discloses no admissions data. Also
+      cross-checked Yocket (~90%) and EduRank (~90%, but computed for the distinct "Les Roches-Gruyère
+      University of Applied Sciences" legal entity, not this program, and self-described as the
+      aggregator's own calculation) — both rejected as unverifiable aggregator figures, same as the
+      already-rejected gotouniversity.com number. FindMyOrbit and StudyFromUAE explicitly list this as
+      "not publicly disclosed." Confirmed genuinely unpublished, round 2.
   satActEquivalent:
     unit: "percentile, national test-taking cohort"
     confidence: low
@@ -111,7 +132,10 @@ admissions:
       published for the admitted cohort, so left blank. Re-confirmed 2026-11-04: QS's own institution
       profile independently confirms admissions criteria are English-proficiency tests (IELTS/TOEFL/
       Duolingo/Cambridge) plus GPA, not SAT/ACT — no standardized-test percentile found anywhere. Field
-      remains intentionally blank.
+      remains intentionally blank. Re-confirmed again 2026-11-04 (second sub-agent pass, alongside the
+      NECHE-monitoring-lead check for acceptanceRate above): no NECHE document or admissions aggregator
+      referenced any standardized-test-based index for this program either. Structurally inapplicable,
+      round 2.
 
 academicResearch:
   facultyPubCitationIndex:
@@ -148,6 +172,17 @@ academicResearch:
       (lesroches.edu/research-and-innovation/research/) was read in full this time — describes the Les
       Roches Research Committee's governance and focus areas, zero currency figures anywhere. Confirmed
       genuinely unavailable, for reasons structurally different from (even stricter than) EHL's case.
+      Checked again 2026-11-04 (second sub-agent pass): CORDIS (EU Horizon Europe/2020 funded-projects
+      database), searched via its dedicated organisation-name filter, returns zero results for Les
+      Roches as a participant in any EU-funded research project, ever. ARAMIS (the Swiss federal
+      government's official research-project database, which also indexes Innosuisse-funded projects —
+      Innosuisse itself has no public per-partner project search) was searched via its Participant field
+      for "Les Roches"; all 28 hits were false positives on the surname "Rochat," none the institution.
+      Erasmus+'s project database also returned zero results, but this is structurally expected rather
+      than informative: Switzerland hasn't been a full Erasmus+ programme country for higher education
+      since 2014, so Swiss mobility funding runs through the separate, non-EU-indexed SEMP/Movetia
+      scheme instead. Confirmed genuinely absent, round 2 — no further public funding database found to
+      check.
   hasPhDProgram:
     value: 0
     unit: boolean (1=yes, 0=no)
@@ -183,6 +218,15 @@ academicQuality:
       ("students still within the academic program in their 3rd and 6th semesters") with no NECHE,
       IPEDS, or other external source cited — a dead end, since there's no shared external dataset that
       would also cover Les Roches. Confirmed genuinely absent.
+      Checked again 2026-11-04 (second sub-agent pass): chased the NECHE "Program of Special Monitoring"
+      action (April 2026) as a potential lead, since monitoring actions are sometimes tied to
+      student-achievement findings — resolved as a dead end (see acceptanceRate's note for detail: it's
+      a generic, institution-agnostic policy document automatically attached to any change-of-control
+      sale, not a substantive finding). Also walked Les Roches' "in numbers" page section by section
+      (via live browser, confirmed via its accessibility tree) — despite the page's own intro text
+      promising "the percentage of students who graduate from each program," its actual four sections
+      (Students overall / Where our students come from / Careers and Internship / More Career
+      information) contain no completion-rate figure at all. Confirmed genuinely absent, round 2.
   retentionRate:
     unit: "%"
     confidence: low
@@ -191,7 +235,9 @@ academicQuality:
       Roches-published first-to-second-year retention rate found. Left blank. Checked 2026-11-04 via
       sub-agent research against the same angles checked for sixYearGraduationRate above (NECHE
       disclosure document, NECHE institutional directory, Glion cross-reference check) — same result,
-      no retention figure found anywhere. Confirmed genuinely absent.
+      no retention figure found anywhere. Confirmed genuinely absent. Checked again 2026-11-04 (second
+      sub-agent pass, same NECHE-monitoring-action dead end and "in numbers" page walk-through as
+      sixYearGraduationRate above) — no retention figure found. Confirmed genuinely absent, round 2.
   facultyStudentRatio:
     value: 16
     unit: students per faculty
