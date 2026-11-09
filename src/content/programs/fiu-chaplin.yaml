@@ -53,6 +53,23 @@ outcomes:
       percentage/rate — so no internship-placement-rate figure is recorded for v1. Re-checked
       2026-11-03 on hospitality.fiu.edu/career/ and hospitality.fiu.edu/career/employers — same
       counts-only pattern, still no stated percentage.
+  requiredInternshipHours:
+    value: 300
+    unit: hours
+    source:
+      label: "HFT 4945 — Advanced Internship in Hospitality/Tourism Management (official undergraduate catalog)"
+      url: https://catalog.fiu.edu/courses/0197521
+      publisher: "Florida International University — Office of the Registrar"
+      asOfDate: "2026-11-08"
+    lastVerified: "2026-11-08"
+    confidence: medium
+    notes: >-
+      Catalog text for HFT 4945: "Minimum 300 hours/ten weeks field experience," with a prerequisite of
+      1,000 total hospitality work hours (500 of which while enrolled at FIU). Independently confirmed
+      on the Chaplin School's own career page (hospitality.fiu.edu/career/industry-experience-requirement/),
+      which states the same "300 hours and 10 weeks minimum... to fulfill the HFT 4945" requirement.
+      Recorded value is the specific internship-course requirement (300 hours), not the broader
+      1,000-hour cumulative prerequisite.
 
 admissions:
   acceptanceRate:

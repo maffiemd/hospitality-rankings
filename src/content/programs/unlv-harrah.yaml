@@ -60,6 +60,23 @@ outcomes:
       (unlv.edu/hospitality/careers) report internship volume only (about 600 student internship
       placements per year), with no completion- or placement-rate percentage disclosed. No disclosed
       internship placement-rate percentage found for v1.
+  requiredInternshipHours:
+    value: 1000
+    unit: hours
+    source:
+      label: "Work Experience Information and Forms"
+      url: https://www.unlv.edu/hospitality/bbcsc/work-experience
+      publisher: "University of Nevada, Las Vegas — William F. Harrah College of Hospitality"
+      asOfDate: "2026-11-09"
+    lastVerified: "2026-11-09"
+    confidence: medium
+    notes: >-
+      Confirmed directly on the college's own Work Experience page: "the Harrah College of Hospitality
+      requires each student to complete 1,000 hours of work experience (500 hours for second bachelor's
+      degree program) in the hospitality industry." Hours completed as part of a for-credit internship
+      cannot be double-counted toward this requirement, per the same page — this is a distinct
+      work-experience requirement, not specifically an "internship" in course form, but serves the same
+      experiential-learning purpose as other schools' internship-hour requirements in this dataset.
 
 admissions:
   acceptanceRate:

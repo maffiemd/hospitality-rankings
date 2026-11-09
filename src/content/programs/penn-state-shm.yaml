@@ -57,6 +57,17 @@ outcomes:
       and Industry & Careers pages (hhd.psu.edu/shm/undergraduate/career-opportunities/career-center, hhd.psu.edu/shm/industry-and-careers) — neither
       discloses a completion or placement percentage specific to internships/work experience; only the "90-95 percent" full-time employment placement
       figure already used for employmentRate is reported. Left unsourced for v1.
+  requiredInternshipHours:
+    value: 1000
+    unit: hours
+    source:
+      label: "SHM Industry & Careers page"
+      url: https://hhd.psu.edu/shm/industry-and-careers
+      publisher: "Pennsylvania State University — School of Hospitality Management"
+      asOfDate: "2026-11-09"
+    lastVerified: "2026-11-09"
+    confidence: medium
+    notes: SHM requires a minimum of 1,000 hours of documented hospitality professional work experience for graduation — not necessarily a single formal internship — per the program's own Industry & Careers page.
 
 admissions:
   acceptanceRate:

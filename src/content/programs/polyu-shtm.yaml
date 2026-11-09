@@ -77,6 +77,23 @@ outcomes:
       undertake placement at Hotel ICON, local hotels, or SHTM-approved overseas hospitality
       organisations), but no disclosed placement-completion-rate percentage was found as of
       2026-11-03, including in PolyU's WIE handbook/booklet pages.
+  requiredInternshipHours:
+    value: 960
+    unit: hours
+    source:
+      label: "SHTM Work-Integrated Education (WIE) — Introduction page"
+      url: https://www.polyu.edu.hk/shtm/experience-and-opportunities/work-integrated-education-wie/introduction/
+      publisher: "The Hong Kong Polytechnic University — School of Hotel and Tourism Management"
+      asOfDate: "2026-11-08"
+    lastVerified: "2026-11-08"
+    confidence: medium
+    notes: >-
+      SHTM's WIE page states "six months of placement on a full-time basis," with a part-time
+      alternative of "960 hours of cumulative work experience." Independently confirmed on two
+      programme-structure pages (Specialism and Secondary-Major variants of JS3310), both of which
+      list "WIE pattern A/B (for 6 months)" in Year 3. Recorded value uses the explicitly-stated
+      960-hour part-time figure for a unit consistent with other programs in this dataset; the
+      full-time route is ~6 months rather than a stated hour count.
 
 admissions:
   acceptanceRate:

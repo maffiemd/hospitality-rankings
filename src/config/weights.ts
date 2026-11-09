@@ -38,14 +38,26 @@ export const CATEGORIES: CategoryConfig[] = [
   {
     key: "outcomes",
     label: "Career Outcomes & Industry Reputation",
-    weight: 0.27,
+    // Absorbs the former standalone "placement" category's weight (0.135):
+    // internshipPlacementRate turned out to have near-zero real coverage
+    // across the dataset (almost no institution discloses a placement
+    // percentage), so it was dropped as a scored metric. The curriculum's
+    // required internship hours — a measure of experiential-learning rigor
+    // that most schools DO disclose — replaces it here instead.
+    weight: 0.405,
     metrics: [
-      { path: "outcomes.startingSalary", label: "Starting Salary", weight: 15 / 35, direction: "higherIsBetter" },
-      { path: "outcomes.employmentRate", label: "Employment Rate", weight: 10 / 35, direction: "higherIsBetter" },
+      { path: "outcomes.startingSalary", label: "Starting Salary", weight: 0.35, direction: "higherIsBetter" },
+      { path: "outcomes.employmentRate", label: "Employment Rate", weight: 0.25, direction: "higherIsBetter" },
       {
         path: "outcomes.recruiterReputationScore",
         label: "Recruiter Reputation",
-        weight: 10 / 35,
+        weight: 0.25,
+        direction: "higherIsBetter",
+      },
+      {
+        path: "outcomes.requiredInternshipHours",
+        label: "Required Internship Hours",
+        weight: 0.15,
         direction: "higherIsBetter",
       },
     ],
@@ -100,19 +112,6 @@ export const CATEGORIES: CategoryConfig[] = [
         path: "admissions.satActEquivalent",
         label: "Selectivity Percentile",
         weight: 10 / 20,
-        direction: "higherIsBetter",
-      },
-    ],
-  },
-  {
-    key: "placement",
-    label: "Internship / Placement Pipeline",
-    weight: 0.135,
-    metrics: [
-      {
-        path: "outcomes.internshipPlacementRate",
-        label: "Internship Placement Rate",
-        weight: 1,
         direction: "higherIsBetter",
       },
     ],

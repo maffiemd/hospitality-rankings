@@ -49,6 +49,20 @@ outcomes:
       found for v1. Checked 2026-11-03: Good Universities Guide's course-detail page confirms the 400
       work-experience hours but gives no completion-rate percentage; jcu.edu.au blocks automated fetch
       (HTTP 403) site-wide. No additional source found.
+  requiredInternshipHours:
+    value: 400
+    unit: hours
+    source:
+      label: "Bachelor of Tourism, Hospitality and Events — course page"
+      url: https://www.jcu.edu.au/courses/bachelor-of-tourism-hospitality-and-events
+      publisher: James Cook University
+      asOfDate: "2026-11-09"
+    lastVerified: "2026-11-09"
+    confidence: medium
+    notes: >-
+      JCU's own course page states directly (confirmed via a real browser session, since jcu.edu.au
+      blocks automated fetch) that students "complete 400 hours of work experience and industry-based
+      assessments," with "400 hours" also called out as a standalone fast-fact on the page.
 
 admissions:
   acceptanceRate:

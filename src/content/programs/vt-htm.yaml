@@ -64,6 +64,23 @@ outcomes:
       placement (not internships specifically), carries no visible date, and could not be
       corroborated against a current report, so it was not used. No disclosed internship-specific
       placement-rate percentage found for v1.
+  requiredInternshipHours:
+    value: 400
+    unit: hours
+    source:
+      label: "HTM 4964 General Information and Guidelines (department PDF, revised August 2018)"
+      url: https://htm.pamplin.vt.edu/content/dam/htm_pamplin_vt_edu/forms/HTM%204964%20General%20Information%20and%20Guidelines.pdf
+      publisher: "Virginia Tech — Howard Feiertag Department of Hospitality and Tourism Management"
+      asOfDate: "2026-11-08"
+    lastVerified: "2026-11-08"
+    confidence: medium
+    notes: >-
+      HTM 4964 ("Field Study in HTM," 3 credits, required of all HTM students) requires 400 hours of
+      supervised work experience, per the department's own official guidelines PDF and its field-study
+      page (htm.pamplin.vt.edu/undergraduate/fieldstudy.html); students cannot graduate in December
+      without completing all 400 hours. A separate 300-hour prerequisite of verified industry
+      experience must be completed before enrolling in this course — not counted in the recorded
+      value, which reflects the course's own required hours.
 
 admissions:
   acceptanceRate:

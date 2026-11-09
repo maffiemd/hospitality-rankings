@@ -99,6 +99,27 @@ outcomes:
       across Taylor's own pages as 10 weeks, 3 months, or 6 months). QS Stars documentation confirms a
       5-Star Employability rating but doesn't break this out into a placement percentage. No new figure
       found; recommend leaving blank.
+  requiredInternshipHours:
+    value: 960
+    unit: hours
+    source:
+      label: "Malaysian Qualifications Register — Bachelor of Culinary Management (Honours), reference A9387"
+      url: https://www.mqa.gov.my/mqr/english/epapar.cfm?NoRujA=A9387&IdAkrKP=5732
+      publisher: Malaysian Qualifications Agency (MQA)
+      asOfDate: "2026-11-09"
+    lastVerified: "2026-11-09"
+    confidence: low
+    notes: >-
+      This is Malaysia's national qualifications-accreditation register, not a Taylor's marketing
+      page or an aggregator — it resolves the inconsistency found across Taylor's own pages (10 weeks /
+      3 months / 6 months). For the current curriculum (cohorts starting 04/01/2023 onward), the
+      register's duration table lists "Industrial Training: 24 (weeks) / 1 (semester)," independently
+      confirmed via two separate live reads of the register page, including a direct re-check on
+      2026-11-09. The register states weeks, not hours; the recorded value converts this to hours
+      assuming a standard 40-hour work week (24 x 40 = 960), stated explicitly as an assumption rather
+      than an MQA-stated figure, so as to be comparable with other programs' hour-denominated values —
+      flagged low confidence for that reason, lower than the medium confidence given to programs where
+      an hours figure is directly stated by the institution itself.
 
 admissions:
   acceptanceRate:

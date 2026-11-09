@@ -16,7 +16,7 @@ import { href } from "../lib/url";
   </p>
 
   <p>
-    This tool combines six categories into a single fit score (0-100) per program. Every weight
+    This tool combines five categories into a single fit score (0-100) per program. Every weight
     below lives in one config file in the source code
     (<code>src/config/weights.ts</code>), so it can be retuned without touching any scoring logic.
     This page is generated from that same file, so it never drifts out of sync with what was
@@ -56,10 +56,18 @@ import { href } from "../lib/url";
 
   <h2><span class="marker">&#9656;</span> Why this split</h2>
   <p>
-    <strong>Career outcomes &amp; industry reputation (27%)</strong> is the largest single bucket,
+    <strong>Career outcomes &amp; industry reputation (40.5%)</strong> is the largest single bucket,
     echoing how US News weights undergraduate outcomes most heavily in its own methodology: for a
     professional degree like hospitality administration, what happens to graduates is the most
-    direct signal of program quality.
+    direct signal of program quality. This category absorbs what was previously a standalone
+    "Internship / Placement Pipeline" category: <code>internshipPlacementRate</code> turned out to
+    have near-zero real disclosure across the dataset — almost no institution publishes a placement
+    percentage — so it was dropped as a scored metric (the raw data point is still tracked and shown
+    on each program's profile page, just no longer scored). In its place,
+    <code>requiredInternshipHours</code> measures the curriculum's own required internship or
+    work-experience hours: a measure of how much hands-on, supervised experience is actually built
+    into the degree, which most schools do disclose, even when a completion/placement rate isn't
+    available.
   </p>
   <p>
     <strong>Academic research (22.5%)</strong> mirrors US News's faculty-resources
@@ -99,12 +107,6 @@ import { href } from "../lib/url";
     left unscored on this metric rather than estimated, per this project's sourcing standard.
   </p>
   <p>
-    <strong>Internship / placement pipeline (13.5%)</strong> has no direct analog in US News or QS. It is
-    included because hospitality education is built around supervised work experience, and
-    hospitality-specific rankings (e.g. CEOWORLD's) treat placement-pipeline strength as a
-    first-order signal distinct from the outcomes it eventually produces.
-  </p>
-  <p>
     <strong>Cost of attendance (10%)</strong> is the newest category, added because what a program
     costs is a decision input in its own right, not just a footnote to its outcomes. The metric is
     each school's published total cost of attendance (tuition, fees, books, and food &amp; housing)
@@ -114,7 +116,7 @@ import { href } from "../lib/url";
     the US, so the 9 international programs aren't yet scored on this metric; each one's own
     published tuition and estimated living costs still need to be sourced directly, flagged as such
     on their profile pages rather than left unstated. Given this gap, this category's weight was
-    deliberately kept modest (and the other five categories' weights trimmed proportionally to make
+    deliberately kept modest (and the other four categories' weights trimmed proportionally to make
     room for it) rather than given outsized influence while a third of the roster can't yet be scored
     on it.
   </p>

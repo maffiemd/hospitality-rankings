@@ -56,6 +56,17 @@ outcomes:
       internships page (purdue.edu/hhs/htm-career-center/students/internships), the program's Experiential Learning page
       (hhs.purdue.edu/htm/experiential-learning), and its Internship Guide PDF — none discloses a completion or placement percentage specific to
       internships; only the program's post-graduation 98% job-placement rate (already used for employmentRate) is reported. Left unsourced for v1.
+  requiredInternshipHours:
+    value: 320
+    unit: hours
+    source:
+      label: "HTM Career Center — Internships page (HTM 302 curriculum requirement)"
+      url: https://www.purdue.edu/hhs/htm-career-center/students/internships
+      publisher: "Purdue University — White Lodging-J.W. Marriott, Jr. School of Hospitality and Tourism Management"
+      asOfDate: "2026-11-09"
+    lastVerified: "2026-11-09"
+    confidence: medium
+    notes: HTM requires at least one internship (HTM 302), with a minimum of 320 paid work hours, as part of the curriculum, per the HTM Career Center's own internships page.
 
 admissions:
   acceptanceRate:

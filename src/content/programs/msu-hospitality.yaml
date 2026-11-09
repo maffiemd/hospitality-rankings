@@ -60,6 +60,17 @@ outcomes:
       Two internships (a Level 1 and a Level 2, each a minimum of 400 paid hours over 10 weeks) are a
       mandatory graduation requirement for the major, so this 100% figure measures required-and-completed
       internships rather than competitive placement selectivity.
+  requiredInternshipHours:
+    value: 800
+    unit: hours
+    source:
+      label: "School of Hospitality Business Undergraduate Internship Report — Class of 2025"
+      url: https://broad.msu.edu/app/uploads/2026/02/HB-Undergrad-InternshipReport25.pdf
+      publisher: "MSU Broad College of Business, School of Hospitality Business"
+      asOfDate: "2025-12-01"
+    lastVerified: "2026-11-09"
+    confidence: medium
+    notes: Two mandatory internships (Level 1 and Level 2), each a minimum of 400 paid hours, for 800 hours total — per the program's own internship report.
 
 admissions:
   acceptanceRate:

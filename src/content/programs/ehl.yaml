@@ -75,6 +75,27 @@ outcomes:
       rate, so not usable — and otherwise repeats the already-recorded 96%-jobs-in-6-months employment
       figure. No press/news coverage of the recruitment event ties a percentage to its outcomes.
       Confirmed genuinely absent.
+  requiredInternshipHours:
+    value: 1920
+    unit: hours
+    source:
+      label: "Bachelor Degree in Hospitality — program page (Format section)"
+      url: https://www.ehl.edu/en/study/bachelor-degree-in-hospitality
+      publisher: EHL Hospitality Business School
+      asOfDate: "2026-11-09"
+    lastVerified: "2026-11-09"
+    confidence: medium
+    notes: >-
+      EHL's own program page states the full track is "including two 6-month internships and a
+      business project." Its dedicated internship-detail page
+      (ehl.edu/en/study/bachelor-degree-in-hospitality/hands-on-experience) gives the precise figure
+      for each: "minimum 24 working weeks, holidays excluded" — one Operational Internship (in the
+      Preparatory Year) and one Business Internship (Semester BOSC4, inside the 3-year Bachelor
+      proper) — 48 weeks total. Direct-entry students who skip the Preparatory Year do only one of the
+      two (per ehl.edu/en/study/bachelor-degree-in-hospitality/direct-entry). Converted to hours
+      assuming a standard 40-hour work week (48 weeks x 40 = 1,920), stated explicitly as an
+      assumption since neither page states total hours directly. Recorded value reflects the full
+      4-year track this project's costOfAttendance figure is also based on.
 
 admissions:
   acceptanceRate:

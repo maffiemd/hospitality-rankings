@@ -87,6 +87,27 @@ outcomes:
       visits per semester," "2000+ open positions per semester") but still nothing internship-specific —
       only general employment/job-offer metrics already captured elsewhere. Confirmed genuinely absent,
       round 2.
+  requiredInternshipHours:
+    unit: hours
+    confidence: low
+    notes: >-
+      Checked 2026-11-09 for a new "required internship duration" field (distinct from
+      internshipPlacementRate above): Les Roches' own official materials conflict with each other, so
+      no single figure is entered rather than picking one arbitrarily. The curriculum/program-structure
+      page (brochure.lesroches.edu/bachelor/bachelor-of-science) states a "20-week internship" at both
+      the relevant slots (Preparatory Experiential Year and BSc Semester 3). The main public program
+      page (lesroches.edu/programs/bachelor-science-hospitality-management/) instead states "two
+      six-month professional internships" in its own FAQ and labels the same Experiential-Year slot a
+      "Six-month Practical Hospitality Immersion" in its structure diagram — a 20-week vs. ~26-week
+      (6-month) discrepancy for what appears to be the identical internship, too large to be rounding.
+      A third page (brochure.lesroches.edu/bachelor/navigating-your-path-to-success) states "three
+      internships/work placements built into their program," conflicting with both other pages' count
+      of two (possibly counting the optional Semester 6 "Professional Immersion" elective as a third
+      when chosen, but this isn't stated). The file's prior framing ("same program shape as sister
+      school Glion") is structurally correct, but this project's no-fabrication policy means inheriting
+      Glion's 6-month figure by assumption, or picking one of Les Roches' own conflicting pages, would
+      misrepresent an unsettled figure as confirmed. Left blank pending either a future source that
+      resolves the conflict, or a supervisor decision on which official page to trust.
 
 admissions:
   acceptanceRate:

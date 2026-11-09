@@ -58,6 +58,17 @@ outcomes:
       starting salary (both already recorded above, unchanged) and a "450 hours of paid
       hospitality-related work experience" graduation requirement, but no internship completion or
       placement percentage.
+  requiredInternshipHours:
+    value: 450
+    unit: hours
+    source:
+      label: "Lerner College — Hospitality and Event Business Management career-outcomes page"
+      url: https://www.lerner.udel.edu/programs/undergraduate-programs/majors/hospitality-and-event-business-management-bs/
+      publisher: "University of Delaware — Alfred Lerner College of Business and Economics"
+      asOfDate: "2026-11-09"
+    lastVerified: "2026-11-09"
+    confidence: medium
+    notes: The program requires "450 hours of paid hospitality-related work experience" for graduation, per its own career-outcomes page.
 
 admissions:
   acceptanceRate:

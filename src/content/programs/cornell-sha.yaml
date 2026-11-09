@@ -48,6 +48,17 @@ outcomes:
       and business.cornell.edu/nolan/, plus the employment-statistics page, which redirects to the career-outcomes page). SHA requires 800 hours of practical
       experience through work/internship placements for graduation, but none of these pages (nor the Class of 2025 figures they report) discloses a completion
       or placement percentage specific to internships — only the overall full-time employment rate (91%) is reported. Left unsourced for v1.
+  requiredInternshipHours:
+    value: 800
+    unit: hours
+    source:
+      label: "Nolan School — BS Hotel Administration career-outcomes page"
+      url: https://business.cornell.edu/admissions/undergraduate/bs-hotel-administration/career-outcomes/
+      publisher: "Cornell University — Nolan School of Hotel Administration, SC Johnson College of Business"
+      asOfDate: "2026-11-09"
+    lastVerified: "2026-11-09"
+    confidence: medium
+    notes: SHA requires 800 hours of practical experience through work/internship placements for graduation, per the Nolan School's own career-outcomes page.
 
 admissions:
   acceptanceRate:

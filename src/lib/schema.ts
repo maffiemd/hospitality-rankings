@@ -23,7 +23,8 @@ export const outcomesMetrics = z.object({
   startingSalary: metric, // USD/year
   employmentRate: metric, // %
   recruiterReputationScore: metric, // 0-100, provisional proxy
-  internshipPlacementRate: metric, // %
+  internshipPlacementRate: metric, // %, kept as a data point but not scored — see weights.ts
+  requiredInternshipHours: metric, // hours, higher = more experiential rigor built into the curriculum
 });
 
 export const admissionsMetrics = z.object({

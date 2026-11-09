@@ -46,6 +46,28 @@ outcomes:
     unit: "%"
     confidence: low
     notes: Glion's bachelor curriculum includes two mandatory 6-month paid internships, and the school cites an average of multiple internship offers per student per semester, but no specific internship "placement rate" percentage is disclosed. Left blank rather than inferring one from curriculum structure. Checked 2026-11-03 — Glion's "Glion in Figures" page (glion.edu/glion-in-figures/) has real charts for "Students on internship per industry sector" and "per region," and a chart of total students-plus-internship headcount by year (2024 figure 1,633) — all headcounts/distributions, not a placement-rate percentage. Still left blank.
+  requiredInternshipHours:
+    value: 1920
+    unit: hours
+    source:
+      label: "Bachelor's in International Hospitality Business — program structure page"
+      url: https://brochure.glion.edu/bachelors-programs/bachelors-in-international-hospitality-business
+      publisher: Glion Institute of Higher Education
+      asOfDate: "2026-11-09"
+    lastVerified: "2026-11-09"
+    confidence: medium
+    notes: >-
+      Glion's own program-structure page lists two internships for the full 4-year track: a "24-week
+      operational internship placement" in the Experiential Year (Semester 2 — skippable for
+      direct-entry students who skip the Experiential Year) and a "24-week administrative internship
+      placement" inside the 3-year BSc itself (Year 2, Semester 3) — 48 weeks total. A separate,
+      shorter "12-week professional work placement" in BSc Year 3 Semester 6 is explicitly NOT labeled
+      an internship and is excluded from this total. Corroborated by glion.edu/bachelor-internships/
+      ("Your Bachelor's degree includes two internships"). Converted to hours assuming a standard
+      40-hour work week (48 weeks x 40 = 1,920), stated explicitly as an assumption since neither page
+      states total hours directly. Direct-entry students who skip the Experiential Year would only
+      have the one 24-week BSc-internal internship — the recorded value reflects the full 4-year track
+      this project's costOfAttendance figure is also based on.
 
 admissions:
   acceptanceRate:

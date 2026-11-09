@@ -82,6 +82,17 @@ outcomes:
       track), but discloses no program-specific completion/placement percentage. Used the university-wide
       figure as the best available proxy rather than leaving this blank, flagged low confidence for both
       the scope mismatch and the missing cohort/year.
+  requiredInternshipHours:
+    value: 600
+    unit: hours
+    source:
+      label: "Hospitality Management B.S. program page"
+      url: https://www.jwu.edu/academics/programs/hospitality-management-bs/
+      publisher: Johnson & Wales University
+      asOfDate: "2026-11-09"
+    lastVerified: "2026-11-09"
+    confidence: medium
+    notes: The program requires 600 hours of Work Integrated Learning on the 3-year track, or a 6-credit internship (no stated hour figure) on the 4-year track — the recorded value reflects the hour-based (3-year) track.
 
 admissions:
   acceptanceRate:

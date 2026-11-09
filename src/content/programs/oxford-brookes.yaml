@@ -30,6 +30,17 @@ outcomes:
     unit: "%"
     confidence: low
     notes: The course offers an optional (not mandatory) supervised year-long work placement in year 3 of the 4-year route, with past placements at employers such as Marriott, Four Seasons, and The Savoy. No placement-rate percentage is published. Left blank.
+  requiredInternshipHours:
+    unit: hours
+    confidence: low
+    notes: >-
+      The course's year-long work placement (optional, year 3 of the 4-year route) has no course-specific
+      hour or week figure stated anywhere checked (the course page, its module listing, or the
+      Hospitality/Tourism subject-area work-experience page). A 40-week minimum exists but only as a
+      generic Business School/subject-area-wide figure, not tied by name to this course or its THEM5005
+      placement module, so per this project's no-fabrication policy it is not entered here. Left blank
+      rather than assuming the generic figure applies, or converting "year-long" to an hours estimate
+      without a stated weekly-hours basis.
 
 admissions:
   acceptanceRate:

@@ -61,6 +61,23 @@ outcomes:
       gap): the program's own page states "All students will have the opportunity to undertake a
       work-integrated learning activity in this degree program," confirming the opportunity exists
       for every student, but discloses no completion or placement-rate percentage. Left blank.
+  requiredInternshipHours:
+    unit: hours
+    confidence: low
+    notes: >-
+      The degree's WIL requirement is satisfied by a Griffith Business School internship course
+      (3001GBS "UG Business Internship I," or its pair 3000GBS/3018GBS) — confirmed via the degree's
+      own "Degree structure" page (griffith.edu.au, requires a real browser session; blocks automated
+      fetch). That course's own official course-profile page (my.griffith.edu.au/programs-courses/
+      course/3001GBS) does not itself state an hours figure. Griffith Business School's "Partner with
+      us" internship page (griffith.edu.au/griffith-business-school/student-opportunities/
+      business-internships/partner-with-us) states internship students are available "part-time (one
+      to two days per week) for approximately 12 weeks" per trimester placement — but this describes
+      the 3000/3001/3018GBS course family generically, not a hard hour count tied specifically to this
+      WIL requirement, and "exact placement hours and days are negotiated between students and
+      industry hosts" per the same page. Left blank rather than computing a hours estimate from the
+      "1-2 days/week for ~12 weeks" range, which would require assuming a specific day length not
+      stated anywhere.
 
 admissions:
   acceptanceRate:

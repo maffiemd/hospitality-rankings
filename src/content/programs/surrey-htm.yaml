@@ -51,6 +51,18 @@ outcomes:
       anywhere checked (Discover Uni, Surrey's own course and placement-team pages) — a compulsory
       placement structurally implies a rate near 100% of continuing students, but this project does
       not substitute a structural inference for a published percentage. Left blank.
+  requiredInternshipHours:
+    unit: hours
+    confidence: low
+    notes: >-
+      Surrey's own programme specification (catalogue.surrey.ac.uk/2025-6/programme/UKA10-6) confirms
+      the "Professional Training Year" module (120 credits) is "full-year work" and listed as "Core,"
+      consistent with Discover Uni's "Placement year: Compulsory" characterization — but states no
+      week or hour count beyond "year-long." The university-wide Professional Training Placements
+      scheme page says placements "can be up to 12 months in length," not course-specific. A
+      help-article figure (~1,125 total hours / ~30 weeks) could not be independently re-verified (its
+      direct URL 404'd), so it isn't used. Left blank rather than entering an unverified or
+      course-unspecific figure.
 
 admissions:
   acceptanceRate:

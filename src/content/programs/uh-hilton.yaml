@@ -63,6 +63,17 @@ outcomes:
       (91% domestic / 77% international undergraduates employed or accepted to graduate school), but
       that is an overall post-graduation job/further-education placement rate, not an
       internship-completion or internship-placement rate, so it doesn't fill this field either.
+  requiredInternshipHours:
+    value: 1000
+    unit: hours
+    source:
+      label: "Hilton College — Student Resources / Career Services"
+      url: https://www.uh.edu/hilton-college/student-resources/career-services/
+      publisher: "University of Houston — Conrad N. Hilton College of Global Hospitality Leadership"
+      asOfDate: "2026-11-09"
+    lastVerified: "2026-11-09"
+    confidence: medium
+    notes: Hilton College requires a minimum of 1,000 clock hours of hospitality-industry work experience for graduation.
 
 admissions:
   acceptanceRate:

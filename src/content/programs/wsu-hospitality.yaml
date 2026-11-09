@@ -64,6 +64,17 @@ outcomes:
       breakout. An older, undated (pre-Carson-College-naming) WSU news article says the program's
       internship placement rate "grew sharply" over the prior year but gives no exact figure. No
       disclosed completion- or placement-rate percentage was found for v1.
+  requiredInternshipHours:
+    value: 1000
+    unit: hours
+    source:
+      label: "Carson College — Hospitality Business Management Industry Experience requirement"
+      url: https://business.wsu.edu/departments/hospitality/industry-experience/
+      publisher: "Washington State University — Carson College of Business"
+      asOfDate: "2026-11-09"
+    lastVerified: "2026-11-09"
+    confidence: medium
+    notes: The major requires 1,000 hours of paid industry work for graduation, with an employer-evaluation-score threshold (80%+) applied to that work.
 
 admissions:
   acceptanceRate:
