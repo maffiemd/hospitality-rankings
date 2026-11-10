@@ -270,6 +270,20 @@ academicQuality:
     lastVerified: "2026-11-03"
     confidence: medium
     notes: Les Roches' own published "Student to faculty ratio" marketing statistic, on a page last updated 2026-10-29; no academic year or methodology is given.
+  facultyDoctorateRate:
+    value: 31.8
+    unit: "%"
+    source:
+      label: "Les Roches (Crans-Montana)'s own faculty directory"
+      url: https://lesroches.edu/meet-les-roches/our-faculty/crans-montana/
+      publisher: "Les Roches Global Hospitality Education (Crans-Montana campus)"
+      asOfDate: "2026-10-21"
+    lastVerified: "2026-11-10"
+    confidence: low
+    notes: >-
+      7 of 22 named faculty hold a doctorate. 2 faculty in visible progress toward a
+      doctorate (not yet completed) are not counted as holding one, per this project's
+      no-fabrication convention — an unfinished degree is not a held degree.
 
 costOfAttendance:
   totalCost:

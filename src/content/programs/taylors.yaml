@@ -276,6 +276,21 @@ academicQuality:
       snapshot rather than a dated as-of figure — kept at medium rather than high confidence for that
       reason, consistent with this field's confidence level for other schools sourced from a rankings
       profile page.
+  facultyDoctorateRate:
+    value: 29.0
+    unit: "%"
+    source:
+      label: "Taylor's Culinary Institute's own staff directory"
+      url: https://university.taylors.edu.my/en/study/explore-all-programmes/taylors-culinary-institute/staff-directory-for-taylors-culinary-institute.html
+      publisher: "Taylor's University — Taylor's Culinary Institute"
+      asOfDate: "2026-10-21"
+    lastVerified: "2026-11-10"
+    confidence: medium
+    notes: >-
+      9 of 31 named faculty hold a doctorate, determined from academic rank/honorific titles
+      shown on the institute's own directory (e.g., "Professor II", "Associate Professor I",
+      "PhD" suffix) — a culinary/vocational-institute faculty that is predominantly
+      industry-practitioner rather than doctorate-holding.
 
 costOfAttendance:
   totalCost:

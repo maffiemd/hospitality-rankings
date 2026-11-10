@@ -190,6 +190,19 @@ academicQuality:
     lastVerified: "2026-11-03"
     confidence: medium
     notes: University-wide figure (THE World University Rankings 2027 edition); not broken out for the tourism/hospitality program specifically. No Australian source (QILT/ComparED) publishes a course-level staff ratio.
+  facultyDoctorateRate:
+    value: 100
+    unit: "%"
+    source:
+      label: "Department of Tourism and Marketing's own faculty directory"
+      url: https://www.griffith.edu.au/griffith-business-school/department-of-tourism-and-marketing/staff
+      publisher: "Griffith University — Griffith Business School, Department of Tourism and Marketing"
+      asOfDate: "2026-10-21"
+    lastVerified: "2026-11-10"
+    confidence: high
+    notes: >-
+      All 34 named faculty hold a doctorate, individually bio-verified (not assumed from the
+      "Dr"/"Professor" titles shown on the directory).
 
 costOfAttendance:
   totalCost:

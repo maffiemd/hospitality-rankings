@@ -158,6 +158,20 @@ academicQuality:
     lastVerified: "2026-11-03"
     confidence: medium
     notes: University-wide figure (THE World University Rankings 2027 edition), not broken out for the hospitality/tourism program specifically. Discover Uni's course page does not publish a staff ratio for this course.
+  facultyDoctorateRate:
+    value: 100
+    unit: "%"
+    source:
+      label: "Oxford Brookes Business School's own staff directory"
+      url: https://www.brookes.ac.uk/about-brookes/structure-and-governance/faculties-and-schools/business/about/staff
+      publisher: "Oxford Brookes Business School — Hospitality, Tourism and Events Management subject area"
+      asOfDate: "2026-10-21"
+    lastVerified: "2026-11-10"
+    confidence: high
+    notes: >-
+      All 11 named faculty hold a doctorate (indicated by the "Dr" or "Professor" prefix on
+      each person's own directory listing); this program's title-convention held with zero
+      false positives.
 
 costOfAttendance:
   totalCost:

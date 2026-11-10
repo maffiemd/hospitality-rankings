@@ -196,6 +196,21 @@ academicQuality:
     lastVerified: "2026-11-03"
     confidence: medium
     notes: School-specific figure (not university-wide) — THE's dedicated SHTM profile page, alongside an FTE student count of 1,040; no reporting year is stated on the page beyond the profile itself.
+  facultyDoctorateRate:
+    value: 90.8
+    unit: "%"
+    source:
+      label: "School of Hotel and Tourism Management's own faculty directory"
+      url: https://www.polyu.edu.hk/shtm/people/academic-staff/
+      publisher: "Hong Kong Polytechnic University — School of Hotel and Tourism Management"
+      asOfDate: "2026-10-21"
+    lastVerified: "2026-11-10"
+    confidence: high
+    notes: >-
+      69 of 76 named faculty hold a doctorate (PhD or the school's own D.HTM). All
+      individually bio-verified, including everyone with a plain "Professor"/"Associate
+      Professor"/"Assistant Professor" title — the convention held with zero false
+      positives here.
 
 costOfAttendance:
   totalCost:

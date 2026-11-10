@@ -176,6 +176,21 @@ academicQuality:
     lastVerified: "2026-10-21"
     confidence: medium
     notes: University-wide ratio; IPEDS/College Navigator does not report this broken out by individual school or department.
+  facultyDoctorateRate:
+    value: 80.0
+    unit: "%"
+    source:
+      label: "Hospitality and Sport Business Management's own faculty directory"
+      url: https://lerner.udel.edu/faculty-staff-directory/groups/hospitality-and-sport-business-management
+      publisher: "University of Delaware Lerner College of Business — Hospitality and Sport Business Management"
+      asOfDate: "2026-10-21"
+    lastVerified: "2026-11-10"
+    confidence: medium
+    notes: >-
+      12 of 15 named faculty hold a doctorate; mix of individually-verified and
+      title-convention-trusted determinations. Scope matches the department's combined
+      Hospitality + Sport Business Management faculty, the same scope used for this
+      program's facultyPubCitationIndex metric.
 
 costOfAttendance:
   totalCost:

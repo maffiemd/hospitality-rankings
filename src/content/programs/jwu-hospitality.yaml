@@ -222,6 +222,23 @@ academicQuality:
     lastVerified: "2026-10-21"
     confidence: medium
     notes: University-wide ratio; IPEDS/College Navigator does not report this broken out by individual school or department.
+  facultyDoctorateRate:
+    value: 40.0
+    unit: "%"
+    source:
+      label: "College of Hospitality & Business's own academic directory (Providence campus)"
+      url: https://catalog.jwu.edu/aboutjwu/academicdirectories/hospitality-business/providence/providence.pdf
+      publisher: "Johnson & Wales University — College of Hospitality & Business (Providence campus)"
+      asOfDate: "2026-10-21"
+    lastVerified: "2026-11-10"
+    confidence: medium
+    notes: >-
+      4 of 10 named faculty hold a doctorate (DBA or PhD). Scope is the Providence-campus
+      roster, matching this program's existing facultyPubCitationIndex scope. The
+      title-implies-doctorate convention was abandoned here after discovering the
+      hospitality program's own department chair, Catherine Davin ("Associate Professor,
+      Chair of Hospitality Programs"), holds only an M.S./B.S. — so every person was
+      individually checked.
 
 costOfAttendance:
   totalCost:

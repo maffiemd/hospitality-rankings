@@ -86,13 +86,24 @@ import { href } from "../lib/url";
   </p>
   <p>
     <strong>Academic quality &amp; completion (13.5%)</strong> tracks whether students who enroll
-    actually finish: six-year graduation rate, first-to-second-year retention, and faculty-student
-    ratio. This is the single largest factor in US News's own undergraduate methodology (graduation
-    and retention together typically run 17-20% there): a program can have excellent outcomes for the
-    students who make it to graduation while still losing a large share of its cohort along the way,
-    which outcomes and admissions data alone wouldn't surface. This data comes from IPEDS/College
-    Navigator and is university-wide rather than program-specific, since the federal data doesn't
-    break completion out by major; that's flagged on every program's profile page.
+    actually finish, and the caliber of the people teaching them: six-year graduation rate,
+    first-to-second-year retention, faculty-student ratio, and the share of each program's named
+    faculty roster holding a doctorate (PhD, EdD, DBA, or an equivalent like a J.D. or PolyU's own
+    D.HTM), each weighted equally within the category. Graduation and retention echo US News's own
+    undergraduate methodology (together typically 17-20% there): a program can have excellent
+    outcomes for the students who make it to graduation while still losing a large share of its
+    cohort along the way, which outcomes and admissions data alone wouldn't surface. That data comes
+    from IPEDS/College Navigator and is university-wide rather than program-specific, since the
+    federal data doesn't break completion out by major; that's flagged on every program's profile
+    page. The faculty-doctorate metric reuses the same named-faculty roster compiled for
+    <code>facultyPubCitationIndex</code> above; a faculty member's degree is counted only when it was
+    individually confirmed (or, for some programs, carried by an unambiguous title convention that
+    was itself spot-checked and held up) rather than assumed from rank alone — a plain "Professor" or
+    department-chair title turned out NOT to reliably imply a doctorate at several institutions during
+    this project's research, so titles alone were not trusted as a shortcut once that pattern emerged.
+    Faculty whose degree couldn't be determined are excluded from both the numerator and denominator
+    rather than guessed, which is flagged as partial coverage on a handful of profile pages where a
+    large share of the roster couldn't be confirmed either way.
   </p>
   <p>
     <strong>Admissions selectivity (13.5%)</strong> is deliberately modest, echoing US News's own recent

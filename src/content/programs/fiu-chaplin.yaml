@@ -190,6 +190,22 @@ academicQuality:
     lastVerified: "2026-10-21"
     confidence: medium
     notes: University-wide ratio; IPEDS/College Navigator does not report this broken out by individual school or department.
+  facultyDoctorateRate:
+    value: 69.0
+    unit: "%"
+    source:
+      label: "Chaplin School of Hospitality & Tourism Management's own faculty directory"
+      url: https://hospitality.fiu.edu/faculty
+      publisher: "Florida International University — Chaplin School of Hospitality & Tourism Management"
+      asOfDate: "2026-10-21"
+    lastVerified: "2026-11-10"
+    confidence: high
+    notes: >-
+      20 of 29 named faculty hold a doctorate (one, Paul Moore, via an EdD that also carries
+      a JD). FIU's own faculty directory lists degree suffixes directly per person, which
+      surfaced two title-convention failures: Rocco Angelo ("Alumni E.M. Statler Professor",
+      a named chair) holds only an MBA, and Jose Hernandez-Solaun ("Assistant Professor")
+      holds only a BA+MBA — neither has a doctorate despite the senior-sounding title.
 
 costOfAttendance:
   totalCost:

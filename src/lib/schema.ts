@@ -42,6 +42,7 @@ export const academicQualityMetrics = z.object({
   sixYearGraduationRate: metric, // %, higher is better — IPEDS "150% of normal time" completion rate
   retentionRate: metric, // %, higher is better — first-to-second-year full-time retention
   facultyStudentRatio: metric, // students per faculty (lower is better) — moved here from academicResearch
+  facultyDoctorateRate: metric, // %, higher is better — share of named faculty roster holding a doctorate (PhD/EdD/DBA/JD/equivalent)
 });
 
 export const costOfAttendanceMetrics = z.object({

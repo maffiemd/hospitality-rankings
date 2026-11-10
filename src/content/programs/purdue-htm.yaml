@@ -168,6 +168,19 @@ academicQuality:
     lastVerified: "2026-10-21"
     confidence: medium
     notes: University-wide ratio; IPEDS/College Navigator does not report this broken out by individual school or department.
+  facultyDoctorateRate:
+    value: 76.9
+    unit: "%"
+    source:
+      label: "White Lodging-J.W. Marriott Jr. School of Hospitality and Tourism Management's own faculty directory"
+      url: https://hhs.purdue.edu/about-hhs/directory/?hhs_department_staff=htm
+      publisher: "Purdue University College of Health and Human Sciences — White Lodging-J.W. Marriott Jr. School of Hospitality and Tourism Management"
+      asOfDate: "2026-10-21"
+    lastVerified: "2026-11-10"
+    confidence: medium
+    notes: >-
+      20 of 26 named faculty hold a doctorate (PhD/EdD/DBA); mix of individually-verified and
+      title-convention-trusted determinations.
 
 costOfAttendance:
   totalCost:

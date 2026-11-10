@@ -164,6 +164,21 @@ academicQuality:
     lastVerified: "2026-11-03"
     confidence: medium
     notes: Glion's own published "Student to Faculty Ratio" marketing statistic (also shown on glion.edu's homepage); no academic year or methodology is given, and no independent faculty/student headcount data was found to cross-check it against.
+  facultyDoctorateRate:
+    value: 22.9
+    unit: "%"
+    source:
+      label: "Glion's own faculty directory"
+      url: https://www.glion.edu/our-faculty/
+      publisher: "Glion Institute of Higher Education"
+      asOfDate: "2026-10-21"
+    lastVerified: "2026-11-10"
+    confidence: low
+    notes: >-
+      8 of 35 faculty whose degree status could be determined hold a doctorate. Glion's full
+      named faculty roster is 44 people, predominantly industry-practitioner teaching staff;
+      several could not be confidently determined and are excluded rather than extrapolated.
+      In-progress/unfinished doctorates are not counted as held.
 
 costOfAttendance:
   totalCost:

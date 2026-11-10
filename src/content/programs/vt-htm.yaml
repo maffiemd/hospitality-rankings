@@ -192,6 +192,20 @@ academicQuality:
     lastVerified: "2026-10-21"
     confidence: medium
     notes: University-wide ratio; IPEDS/College Navigator does not report this broken out by individual school or department.
+  facultyDoctorateRate:
+    value: 66.7
+    unit: "%"
+    source:
+      label: "Department of Hospitality and Tourism Management's own faculty directory"
+      url: https://htm.pamplin.vt.edu/directory.html
+      publisher: "Virginia Tech Pamplin College of Business — Department of Hospitality and Tourism Management"
+      asOfDate: "2026-10-21"
+    lastVerified: "2026-11-10"
+    confidence: high
+    notes: >-
+      10 of 15 named faculty hold a qualifying doctorate (9 PhD + 1 JD — Candace Fitch,
+      "Feiertag Professor of Practice"). All 15 individually bio-verified after finding
+      Elizabeth Allen ("Assistant Professor") holds only an MSBA, no doctorate.
 
 costOfAttendance:
   totalCost:

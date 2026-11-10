@@ -190,6 +190,21 @@ academicQuality:
     lastVerified: "2026-10-21"
     confidence: medium
     notes: University-wide ratio; IPEDS/College Navigator does not report this broken out by individual school or department.
+  facultyDoctorateRate:
+    value: 92.9
+    unit: "%"
+    source:
+      label: "School of Hospitality Business Management's own faculty directory"
+      url: https://business.wsu.edu/hospitality-business-management/
+      publisher: "Washington State University Carson College of Business — School of Hospitality Business Management"
+      asOfDate: "2026-10-21"
+    lastVerified: "2026-11-10"
+    confidence: high
+    notes: >-
+      13 of 14 named faculty hold a doctorate. All individually bio-verified after discovering
+      the title-implies-doctorate convention is unsafe here: the department's own chair, James
+      Harbour (titled "Associate Professor (Career Track) and Don Smith Distinguished
+      Professor"), holds only an MBA and BA, no doctorate at all.
 
 costOfAttendance:
   totalCost:

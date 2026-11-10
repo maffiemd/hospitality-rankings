@@ -170,6 +170,20 @@ academicQuality:
     lastVerified: "2026-11-03"
     confidence: medium
     notes: University-wide figure (THE World University Rankings 2027 edition), not broken out for the hospitality/tourism program specifically. Discover Uni's course page does not publish a staff ratio for this course.
+  facultyDoctorateRate:
+    value: 85.3
+    unit: "%"
+    source:
+      label: "School of Hospitality and Tourism Management's own faculty directory"
+      url: https://www.surrey.ac.uk/school-hospitality-tourism-management/people
+      publisher: "University of Surrey — School of Hospitality and Tourism Management"
+      asOfDate: "2026-10-21"
+    lastVerified: "2026-11-10"
+    confidence: high
+    notes: >-
+      29 of 34 named faculty hold a doctorate, all individually bio-verified. Mark Ashton
+      ("Professor of Hospitality Operations Management and Innovation") holds only an MRes —
+      an industry-practice professorship, not a research doctorate.
 
 costOfAttendance:
   totalCost:

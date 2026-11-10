@@ -180,6 +180,20 @@ academicQuality:
     lastVerified: "2026-10-21"
     confidence: medium
     notes: University-wide ratio; IPEDS/College Navigator does not report this broken out by individual school or department.
+  facultyDoctorateRate:
+    value: 81.8
+    unit: "%"
+    source:
+      label: "Conrad N. Hilton College's own faculty directory"
+      url: https://www.uh.edu/hilton-college/about/our-faculty/
+      publisher: "University of Houston — Conrad N. Hilton College of Global Hospitality Leadership"
+      asOfDate: "2026-10-21"
+    lastVerified: "2026-11-10"
+    confidence: high
+    notes: >-
+      27 of 33 named faculty hold a qualifying doctorate (26 PhD/EdD + 1 JD — Stephen Barth,
+      titled "Professor, Attorney"). All 33 individually bio-verified rather than assumed
+      from title.
 
 costOfAttendance:
   totalCost:

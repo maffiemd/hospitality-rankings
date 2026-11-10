@@ -178,6 +178,22 @@ academicQuality:
     lastVerified: "2026-10-21"
     confidence: medium
     notes: University-wide ratio; IPEDS/College Navigator does not report this broken out by individual school or department.
+  facultyDoctorateRate:
+    value: 97.6
+    unit: "%"
+    source:
+      label: "William F. Harrah College of Hospitality's own faculty directory"
+      url: https://www.unlv.edu/hospitality/contact/all-facultystaff
+      publisher: "University of Nevada, Las Vegas — William F. Harrah College of Hospitality"
+      asOfDate: "2026-10-21"
+    lastVerified: "2026-11-10"
+    confidence: high
+    notes: >-
+      41 of 42 named faculty hold a qualifying doctorate (38 PhD/EdD + 3 JD — Dana Cotham,
+      Michael Gebhart, Bill Werner). All individually bio-verified; Bill Werner (plain
+      "Associate Professor" title) was found to hold only a JD and BA, no PhD — the one
+      title-convention failure here, which is why the whole roster was individually
+      re-checked.
 
 costOfAttendance:
   totalCost:

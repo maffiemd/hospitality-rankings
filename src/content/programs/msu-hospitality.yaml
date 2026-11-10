@@ -206,6 +206,19 @@ academicQuality:
     lastVerified: "2026-10-21"
     confidence: medium
     notes: University-wide ratio; IPEDS/College Navigator does not report this broken out by individual school or department.
+  facultyDoctorateRate:
+    value: 76.9
+    unit: "%"
+    source:
+      label: "School of Hospitality Business's own faculty directory"
+      url: "https://broad.msu.edu/directory/?q=&expertise=0&program=0&department=5&employment%5B0%5D=1"
+      publisher: "Michigan State University Eli Broad College of Business — School of Hospitality Business"
+      asOfDate: "2026-10-21"
+    lastVerified: "2026-11-10"
+    confidence: high
+    notes: >-
+      10 of 13 named faculty hold a doctorate, all individually bio-verified. Bonnie
+      Knutson's PhD was confirmed via her own MSU-hosted CV (linked from her bio page).
 
 costOfAttendance:
   totalCost:

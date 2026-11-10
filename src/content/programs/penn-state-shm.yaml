@@ -168,6 +168,20 @@ academicQuality:
     lastVerified: "2026-10-21"
     confidence: medium
     notes: University-wide ratio; IPEDS/College Navigator does not report this broken out by individual school or department.
+  facultyDoctorateRate:
+    value: 68.8
+    unit: "%"
+    source:
+      label: "Penn State School of Hospitality Management's own faculty directory"
+      url: https://hhd.psu.edu/contact/faculty-and-staff?department=186
+      publisher: "Penn State College of Health and Human Development — School of Hospitality Management"
+      asOfDate: "2026-10-21"
+    lastVerified: "2026-11-10"
+    confidence: high
+    notes: >-
+      11 of 16 named faculty hold a doctorate, all 16 individually bio-verified (not assumed
+      from title) — this program's title-implies-doctorate convention held cleanly here with
+      zero false positives.
 
 costOfAttendance:
   totalCost:

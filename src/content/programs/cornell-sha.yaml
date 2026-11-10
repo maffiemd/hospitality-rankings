@@ -158,6 +158,23 @@ academicQuality:
     lastVerified: "2026-10-21"
     confidence: medium
     notes: University-wide ratio; IPEDS/College Navigator does not report this broken out by individual school or department.
+  facultyDoctorateRate:
+    value: 78.6
+    unit: "%"
+    source:
+      label: "Nolan School of Hotel Administration's own faculty directory"
+      url: https://business.cornell.edu/expertise/profiles/?schools=nolan
+      publisher: "Cornell SC Johnson College of Business — Nolan School of Hotel Administration"
+      asOfDate: "2026-10-21"
+    lastVerified: "2026-11-10"
+    confidence: high
+    notes: >-
+      55 of 70 determined faculty hold a qualifying doctorate (36 PhD + 1 JD among 37
+      individually bio-verified people with academic-sounding titles, zero failures found
+      there; plus 18 of 33 faculty with ambiguous/teaching-track titles individually checked,
+      including 3 more JD-holders). One of the roster's 71 named faculty (Mary MacAusland,
+      "Professor of Practice") was not conclusively resolved between research passes and is
+      excluded from both numerator and denominator rather than guessed.
 
 costOfAttendance:
   totalCost:

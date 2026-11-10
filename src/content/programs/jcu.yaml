@@ -178,6 +178,18 @@ academicQuality:
     lastVerified: "2026-11-03"
     confidence: medium
     notes: University-wide figure (THE World University Rankings 2027 edition); not broken out for the tourism/hospitality/events program specifically. No Australian source (QILT/ComparED) publishes a course-level staff ratio.
+  facultyDoctorateRate:
+    value: 100
+    unit: "%"
+    source:
+      label: "JCU Tourism research unit's own researcher directory"
+      url: "https://portfolio.jcu.edu.au/researchers?unit=Tourism"
+      publisher: "James Cook University — Tourism research unit"
+      asOfDate: "2026-10-21"
+    lastVerified: "2026-11-10"
+    confidence: high
+    notes: >-
+      All 4 named faculty hold a doctorate, individually bio-verified.
 
 costOfAttendance:
   totalCost:

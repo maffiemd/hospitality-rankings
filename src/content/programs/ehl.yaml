@@ -241,6 +241,22 @@ academicQuality:
       (e.g. Bachelor's-only or single-campus) rather than full-institution enrollment, so this ratio may
       not be apples-to-apples with other schools' institution-wide facultyStudentRatio entries in this
       dataset. Recorded as the best available figure, not a confirmed institutional fact.
+  facultyDoctorateRate:
+    value: 57.6
+    unit: "%"
+    source:
+      label: "EHL's own faculty research directory"
+      url: https://www.ehl.edu/en/research
+      publisher: "EHL Hospitality Business School"
+      asOfDate: "2026-10-21"
+    lastVerified: "2026-11-10"
+    confidence: low
+    notes: >-
+      49 of 85 faculty whose degree status could be determined hold a doctorate (PhD or DBA).
+      EHL's full named faculty roster is 139 people; the other 54 could not be confidently
+      determined and are excluded from both numerator and denominator rather than
+      extrapolated — so this figure describes the ~61% of the roster that could be checked,
+      not the full faculty. Flagged as partial coverage.
 
 costOfAttendance:
   totalCost:
